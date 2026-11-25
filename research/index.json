@@ -578,6 +578,67 @@
   "merged": {}
  },
  {
+  "id": "potions",
+  "title": "Potions",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "potion",
+   "flask",
+   "phial",
+   "vial",
+   "consumables"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "other potions besides weed killer",
+   "a pouring animation",
+   "empty flasks as items"
+  ],
+  "used_by": [
+   "items.js potion; euclid game.html (weed killer)"
+  ],
+  "file": "research/objects/items/potions/_potions.md",
+  "sections": [
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "weed-killer",
+  "title": "Weed killer",
+  "kind": "object",
+  "class": null,
+  "parent": "potions",
+  "aliases": [
+   "herbicide",
+   "vine killer",
+   "potion-weak",
+   "potion-strong",
+   "potion-strongest"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "withered-vine drawing (vines currently just fall away as they do under the ax)"
+  ],
+  "used_by": [
+   "items.js potion; euclid game.html pour()"
+  ],
+  "file": "research/objects/items/potions/weed-killer.md",
+  "sections": [
+   "Distinguishing features"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "scroll",
   "title": "Scroll",
   "kind": "object",
