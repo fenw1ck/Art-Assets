@@ -18,7 +18,7 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
   `garden.js` needs `plants.js` loaded first.
 - `research/`: the research library: living things (plants, birds), made things (containers), materials (stone, wood, metal), floor layouts, and how to render them (light and shadow, colour, textures, wear, readability). Entries carry `traits` in the vocabulary of `research/traits.yaml`, which the drawing programs read. See `research/README.md`. It replaces PLANT_ART.md.
 - `index.html`: redirects to the [Request Builder](https://fenw1ck.github.io/Claude-API-Optimization/), where art requests are made now (its art card asks the old builder's questions, checks this research library and previews what the engine can already draw).
-- `builder-archive.html`: the retired Art Asset Builder (intake, library lookup, live preview, research library and gallery tabs), kept working in case it is needed again; also tagged `art-builder-archive` in git.
+- `builder-archive.html`: the retired Art Asset Builder (intake, library lookup, live preview, research library and gallery tabs), kept working in case it is needed again; the last version of the builder before the change is commit cd99c14.
 
 ## Tools
 
