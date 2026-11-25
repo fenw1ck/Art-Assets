@@ -471,6 +471,80 @@
   "merged": {}
  },
  {
+  "id": "clothing",
+  "title": "Clothing",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "clothes",
+   "wardrobe",
+   "worn items",
+   "equipment"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "hats other than crowns and wreaths",
+   "more shirts and trousers",
+   "how clothes show on the player figure"
+  ],
+  "used_by": [
+   "items.js boots",
+   "cape",
+   "gloves",
+   "crown",
+   "ring",
+   "shirt",
+   "pants; euclid game.html (the wardrobe)"
+  ],
+  "file": "research/objects/items/clothing/_clothing.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 1,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "boots",
+  "title": "Boots and sandals",
+  "kind": "object",
+  "class": null,
+  "parent": "clothing",
+  "aliases": [
+   "boot",
+   "sandals",
+   "krepides",
+   "endromis",
+   "endromides",
+   "talaria",
+   "winged sandals",
+   "greaves",
+   "knemides"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "measured sole shapes",
+   "embades (fur-lined tall boots)",
+   "soles in bronze-age finds"
+  ],
+  "used_by": [
+   "items.js boots"
+  ],
+  "file": "research/objects/items/clothing/boots.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "coin",
   "title": "Coin",
   "kind": "object",
