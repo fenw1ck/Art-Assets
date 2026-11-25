@@ -5,6 +5,7 @@
 <script src="../core.js"></script>
 <script src="../plants.js"></script>
 <script src="../containers.js"></script>
+<script src="../items.js"></script>
 <script src="../tools.js"></script>
 <script src="../vines.js"></script>
 <script src="../furniture.js"></script>
@@ -62,6 +63,20 @@ if(sheet==='plants'){
   [['stone',1],['stone',4],['wood',2],['wood',5]].forEach(([k,sd],i)=>{const t=F[k](4,6,48,sd),x=pad+i*240;ctx.drawImage(t,x,40);label(k+' seed '+sd,x,340,SUB);
     if(i%2){const r=F.carpet(2.6,3.6,48,sd);ctx.drawImage(r,x+(192-r.width)/2,40+(288-r.height)/2);label('+ carpet',x+120,340,SUB)}});
   for(let i=0;i<4;i++){const r=F.carpet(2.2,3.2,48,i+1);ctx.drawImage(r,pad+i*240,380);label('carpet seed '+(i+1),pad+i*240,620,SUB)}
+}else if(sheet==='items'){
+  const I=ITEMART,pad=20;c.width=1100;c.height=1440;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  label('Coins (research/objects/items/coin.md): gold, silver, bronze × fresh, worn, rusty, muddy',pad,22,INK,'bold 13px system-ui');
+  ['gold','silver','bronze'].forEach((m,j)=>['fresh','worn','rusty','muddy'].forEach((st,i)=>{I.coin(ctx,pad+60+i*120,90+j*110,42,{metal:m,state:st,seed:i+j*4});if(j===0)label(st,pad+40+i*120,46,SUB)}));
+  [6,10,16,28].forEach((r,i)=>I.coin(ctx,560+i*70,120,r,{seed:3}));label('size ladder',560,46,SUB);I.coins(ctx,900,190,90,9,{seed:2});label('a heap',870,215,SUB);
+  label('Every item the game knows (ITEMS in game.html)',pad,520,INK,'bold 13px system-ui');
+  label('Scrolls (research/objects/items/scroll.md): each game scroll\'s ribbon, then seeded ribbons, and the size ladder',pad,360,INK,'bold 13px system-ui');
+  ['scroll-circles','scroll-lines','scroll-angles','scroll-parallels','scroll-areas','scroll-squares','scroll',  'scroll'].forEach((id,i)=>{I.draw(ctx,id,pad+60+i*120,450,110,{seed:i+1});label(id,pad+10+i*120,468,SUB)});[24,48].forEach((s2,i)=>I.draw(ctx,'scroll',1010,400+i*50,s2,{seed:4}));
+  const ids=['necklace-lapis','necklace-gold','sword-bronze','sword-star','cape-indigo','cape-constellation','gloves-linen','gloves-gilded','crown-laurel','crown-elements','chalice','astrolabe','compass','straightedge','lyre','tile','amphora','lamp','ring','map','bust','hourglass','chest','bronze-ax'];
+  ids.forEach((id,i)=>{const x=pad+50+(i%12)*88,y=660+Math.floor(i/12)*190;I.draw(ctx,id,x,y,78,{seed:i});label(id,x-40,y+18,SUB)});
+  label('Clothing (research/objects/items/clothing/): boots in three speed upgrades, greaves, chiton, trousers',pad,1060,INK,'bold 13px system-ui');
+  ['boots-sandals','boots-wayfarer','boots-winged','boots-greaves','shirt-chiton','pants-wool'].forEach((id,i)=>{I.draw(ctx,id,pad+70+i*150,1200,120,{seed:i});label(id,pad+20+i*150,1220,SUB)});
+  label('Potions (research/objects/items/potions/): weed killer, weak / strong / strongest; full, half, nearly empty',pad,1260,INK,'bold 13px system-ui');
+  ['potion-weak','potion-strong','potion-strongest'].forEach((id,i)=>{I.draw(ctx,id,pad+70+i*150,1410,120,{seed:i});label(id,pad+20+i*150,1428,SUB)});[1,.5,.15].forEach((l,i)=>I.draw(ctx,'potion-strong',pad+560+i*130,1410,110,{level:l}));
 }else if(sheet==='tools'){
   const T=TOOLS,pad=20,cw=240;c.width=pad+3*cw+40;c.height=1420;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   label('Axes (research/objects/tools/axe.md): basic, improved, best',pad,22,INK,'bold 13px system-ui');

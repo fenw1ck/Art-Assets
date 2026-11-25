@@ -435,6 +435,241 @@
   "merged": {}
  },
  {
+  "id": "items",
+  "title": "Items",
+  "kind": "object",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "item",
+   "inventory item",
+   "pickup",
+   "loot"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "food and crafting ingredients",
+   "rarity tiers",
+   "item weights"
+  ],
+  "used_by": [
+   "items.js",
+   "euclid game.html (rooms",
+   "chests",
+   "the bag)"
+  ],
+  "file": "research/objects/items/_items.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "clothing",
+  "title": "Clothing",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "clothes",
+   "wardrobe",
+   "worn items",
+   "equipment"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "hats other than crowns and wreaths",
+   "more shirts and trousers",
+   "how clothes show on the player figure"
+  ],
+  "used_by": [
+   "items.js boots",
+   "cape",
+   "gloves",
+   "crown",
+   "ring",
+   "shirt",
+   "pants; euclid game.html (the wardrobe)"
+  ],
+  "file": "research/objects/items/clothing/_clothing.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 1,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "boots",
+  "title": "Boots and sandals",
+  "kind": "object",
+  "class": null,
+  "parent": "clothing",
+  "aliases": [
+   "boot",
+   "sandals",
+   "krepides",
+   "endromis",
+   "endromides",
+   "talaria",
+   "winged sandals",
+   "greaves",
+   "knemides"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "measured sole shapes",
+   "embades (fur-lined tall boots)",
+   "soles in bronze-age finds"
+  ],
+  "used_by": [
+   "items.js boots"
+  ],
+  "file": "research/objects/items/clothing/boots.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "coin",
+  "title": "Coin",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "coins",
+   "gold coin",
+   "silver coin",
+   "bronze coin",
+   "money"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "photos of real worn and buried coins",
+   "exergue and mint marks"
+  ],
+  "used_by": [
+   "items.js coin",
+   "coins"
+  ],
+  "file": "research/objects/items/coin.md",
+  "sections": [
+   "Parts",
+   "States",
+   "Sources"
+  ],
+  "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "potions",
+  "title": "Potions",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "potion",
+   "flask",
+   "phial",
+   "vial",
+   "consumables"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "other potions besides weed killer",
+   "a pouring animation",
+   "empty flasks as items"
+  ],
+  "used_by": [
+   "items.js potion; euclid game.html (weed killer)"
+  ],
+  "file": "research/objects/items/potions/_potions.md",
+  "sections": [
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "weed-killer",
+  "title": "Weed killer",
+  "kind": "object",
+  "class": null,
+  "parent": "potions",
+  "aliases": [
+   "herbicide",
+   "vine killer",
+   "potion-weak",
+   "potion-strong",
+   "potion-strongest"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "withered-vine drawing (vines currently just fall away as they do under the ax)"
+  ],
+  "used_by": [
+   "items.js potion; euclid game.html pour()"
+  ],
+  "file": "research/objects/items/potions/weed-killer.md",
+  "sections": [
+   "Distinguishing features"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "scroll",
+  "title": "Scroll",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "scrolls",
+   "papyrus roll",
+   "parchment roll",
+   "rotulus"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "an open (unrolled) scroll",
+   "roll holders and labels (sillyboi)"
+  ],
+  "used_by": [
+   "items.js scroll"
+  ],
+  "file": "research/objects/items/scroll.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",

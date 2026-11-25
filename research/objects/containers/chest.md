@@ -52,6 +52,8 @@ traits:
 
 ## Log
 
+- 2026-11-25: chests are also Items (see `items`): in the Euclid game a chest holds coins and one random item, and once empty it can be picked up and placed in another room.
+
 - 2026-11-24: created from the first brief. Proportions from dealer measurements of two antique chests.
 
 ## Sources
