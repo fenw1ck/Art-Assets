@@ -16,7 +16,7 @@ from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = (ROOT / "tools" / "contact-sheet.html").as_uri()
-SHEETS = ["plants", "ladder", "core", "containers", "tools", "vines", "furniture"]
+SHEETS = ["plants", "ladder", "core", "containers", "tools", "vines", "furniture", "bedroom", "floors"]
 ONLY = []
 
 
