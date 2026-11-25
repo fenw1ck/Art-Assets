@@ -4,6 +4,7 @@ on light and dark backgrounds. Optionally compare them pixel by pixel with an ea
 
 Run from the repository folder:
   python3 tools/contact-sheet.py                      write contact/*.png
+  python3 tools/contact-sheet.py --sheet vines         render only one sheet (repeatable)
   python3 tools/contact-sheet.py --out before         write to another folder (e.g. before a change)
   python3 tools/contact-sheet.py --compare before     render, then report how many pixels differ from before/
                                                       (and write contact/diff-*.png where they do)
@@ -15,7 +16,8 @@ from playwright.sync_api import sync_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = (ROOT / "tools" / "contact-sheet.html").as_uri()
-SHEETS = ["plants", "ladder", "core", "containers"]
+SHEETS = ["plants", "ladder", "core", "containers", "tools", "vines"]
+ONLY = []
 
 
 def browser(p):
@@ -29,7 +31,7 @@ def render(out):
     errors = []
     with sync_playwright() as p:
         b = browser(p)
-        for sheet in SHEETS:
+        for sheet in ONLY or SHEETS:
             for bg in ("light", "dark"):
                 pg = b.new_page(viewport={"width": 1000, "height": 800})
                 pg.on("pageerror", lambda e, s=sheet: errors.append(f"{s}: {e}"))
@@ -71,7 +73,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="contact")
     ap.add_argument("--compare")
+    ap.add_argument("--sheet", action="append", help="render only this sheet (repeatable)")
     a = ap.parse_args()
+    ONLY[:] = a.sheet or []
     out = (ROOT / a.out).resolve()
     ok = render(out)
     if a.compare:

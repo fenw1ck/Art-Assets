@@ -6,6 +6,8 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 
 - `core.js`: shared helpers: colour, hue-shifted colour ramps, seeded random numbers, noise, warped noise, Voronoi cells and the ground shadow, plus the factor modules for perspective (`view`, `face`), shading (`light`, `shade`), line (`ink`, `weight`) and resolution (`lod`). Load it first. `plants.js` and `garden.js` still have their own copies of these and will move onto `core.js` one at a time, each move checked pixel for pixel.
 - `containers.js`: chests drawn from research traits (`CONTAINERS.drawChest`), closed or open, flat or domed lid, with wood grain, iron or brass fittings, wear and coins. Needs `core.js`.
+- `tools.js`: `TOOLS.drawAx`, the ax in three tiers (Bronze, Iron, Starmetal: 10, 6 and 3 strikes), metal head on a wooden haft, with `TOOLS.swing(u)` for the swing and `TOOLS.bitPoint` to aim it. Needs `core.js`.
+- `vines.js`: `VINES.render`, woody vines grown over a doorway: English ivy, muscadine grape, wisteria and Virginia creeper, with their leaves, bark, rootlets or tendrils, and sometimes flowers, fruit or autumn colour. States: full, damaged (0..1, clearing from the lock outward, an even share per strike) and cut back. `VINES.pick(seed)` chooses a species per door; `VINES.removed` lists the leaves that fall between two damage values. Needs `core.js`.
 - `plants.js`: `drawPlant` and the 51 plant symbols (name, silhouette, colours, mature size).
 - `garden.js`: `window.GARDEN`, the garden generator and its shared pieces:
   - `plan(seed)` lays out a walled garden 8–50 cells wide and 16–50 tall, themed herb, vegetable, fruit, flower or mixed: paths, beds planted at each plant's spread, trellises, lanterns, benches, tools, a fountain, lock spots, a treasure spot and the gate.
@@ -19,7 +21,7 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 ## Tools
 
 - `python3 tools/research.py lookup <name>`: what the library already knows, level by level. Also `traits`, `map`, `check` and `index`.
-- `python3 tools/contact-sheet.py`: every plant in every state, the size ladder, the chests and core.js's test swatches, on light and dark backgrounds, written to `contact/`. With `--compare <folder>` it reports which pixels changed.
+- `python3 tools/contact-sheet.py`: every plant in every state, the size ladder, the chests, the axes, the vines and core.js's test swatches, on light and dark backgrounds, written to `contact/`. With `--compare <folder>` it reports which pixels changed; `--sheet vines` renders one sheet.
 
 ## Making new art
 

@@ -334,6 +334,111 @@
   }
  },
  {
+  "id": "tools",
+  "title": "Hand tools",
+  "kind": "object",
+  "class": "tool",
+  "parent": "none",
+  "aliases": [
+   "tool",
+   "hand tool",
+   "implement"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "pick",
+   "hoe",
+   "watering can",
+   "shovel"
+  ],
+  "used_by": [
+   "tools.js"
+  ],
+  "file": "research/objects/tools/_tools.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {
+   "head_shape": "single-bit",
+   "head_metal": "wrought iron",
+   "head_colour": "#6d7177",
+   "haft_wood": "hickory",
+   "haft_colour": "#b07c45",
+   "lugs": true,
+   "strikes": 10,
+   "states": [
+    "held",
+    "swing"
+   ]
+  }
+ },
+ {
+  "id": "axe",
+  "title": "Ax (single-bit felling ax)",
+  "kind": "object",
+  "class": "tool",
+  "parent": "tools",
+  "aliases": [
+   "ax",
+   "axe",
+   "hatchet",
+   "felling axe",
+   "bronze ax",
+   "iron ax",
+   "starmetal ax"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "double-bit and broad axes",
+   "photos of ancient bronze heads (shaft-hole axes)",
+   "head weights by tier"
+  ],
+  "used_by": [
+   "tools.js drawAx",
+   "euclid game.html (vine cutting)"
+  ],
+  "file": "research/objects/tools/axe.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 6,
+  "traits": {
+   "head_shape": "single-bit",
+   "head_metal": "wrought iron",
+   "head_colour": "#6d7177",
+   "haft_wood": "hickory",
+   "haft_colour": "#b07c45",
+   "lugs": true,
+   "strikes": 6
+  },
+  "merged": {
+   "head_shape": "single-bit",
+   "head_metal": "wrought iron",
+   "head_colour": "#6d7177",
+   "haft_wood": "hickory",
+   "haft_colour": "#b07c45",
+   "lugs": true,
+   "strikes": 6,
+   "states": [
+    "held",
+    "swing"
+   ]
+  }
+ },
+ {
   "id": "floors",
   "title": "Floor layouts",
   "kind": "pattern",
@@ -619,6 +724,7 @@
    ]
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -666,6 +772,7 @@
    "inflorescence": "ball"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -721,6 +828,7 @@
    "inflorescence": "umbel"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -734,6 +842,86 @@
    "branching": "basal-crown",
    "repeats": "umbel",
    "inflorescence": "umbel"
+  }
+ },
+ {
+  "id": "english-ivy",
+  "title": "English ivy",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "plants",
+  "aliases": [
+   "Hedera helix",
+   "ivy",
+   "common ivy",
+   "Araliaceae"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "Irish ivy (H. hibernica) differences",
+   "variegated forms",
+   "photos of cut stems"
+  ],
+  "used_by": [
+   "vines.js english-ivy"
+  ],
+  "file": "research/subjects/plants/english-ivy.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
+  "traits": {
+   "arrangement": "alternate",
+   "leaf": "simple",
+   "leaf_shape": "cordate",
+   "margin": "lobed",
+   "surface": "glossy",
+   "stem": "woody",
+   "climbing": "aerial-roots",
+   "inflorescence": "umbel",
+   "flower_colour": "#c7cc6e",
+   "fruit": "drupe",
+   "fruit_ripening": [
+    "#4a6a3a",
+    "#1c1d28"
+   ],
+   "foliage_colour": "#2c5627",
+   "bark_colour": "#8b7656",
+   "leaf_cm": 7,
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ]
+  },
+  "merged": {
+   "climbing": "aerial-roots",
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ],
+   "stem": "woody",
+   "arrangement": "alternate",
+   "leaf": "simple",
+   "leaf_shape": "cordate",
+   "margin": "lobed",
+   "surface": "glossy",
+   "inflorescence": "umbel",
+   "flower_colour": "#c7cc6e",
+   "fruit": "drupe",
+   "fruit_ripening": [
+    "#4a6a3a",
+    "#1c1d28"
+   ],
+   "foliage_colour": "#2c5627",
+   "bark_colour": "#8b7656",
+   "leaf_cm": 7
   }
  },
  {
@@ -781,6 +969,7 @@
    "inflorescence": "spike-of-whorls"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -795,6 +984,85 @@
    "branching": "axillary-shoots",
    "repeats": "opposite-pairs",
    "inflorescence": "spike-of-whorls"
+  }
+ },
+ {
+  "id": "muscadine",
+  "title": "Muscadine grape",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "vitaceae",
+  "aliases": [
+   "Vitis rotundifolia",
+   "muscadine",
+   "scuppernong",
+   "bullace",
+   "wild grape"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "flower clusters (small and greenish",
+   "not drawn)",
+   "winter bare vine"
+  ],
+  "used_by": [
+   "vines.js muscadine"
+  ],
+  "file": "research/subjects/plants/muscadine.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
+  "traits": {
+   "leaf": "simple",
+   "leaf_shape": "round",
+   "margin": "dentate",
+   "surface": "glossy",
+   "inflorescence": "cluster",
+   "flower_colour": "#c9cf8a",
+   "fruit_per_group": "3-7",
+   "fruit_ripening": [
+    "#7a9a3e",
+    "#3b1a3c"
+   ],
+   "foliage_colour": "#3d6b2c",
+   "bark_colour": "#6d5f45",
+   "leaf_cm": 12,
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ]
+  },
+  "merged": {
+   "climbing": "tendrils",
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ],
+   "stem": "woody",
+   "arrangement": "alternate",
+   "fruit": "berry",
+   "leaf": "simple",
+   "leaf_shape": "round",
+   "margin": "dentate",
+   "surface": "glossy",
+   "inflorescence": "cluster",
+   "flower_colour": "#c9cf8a",
+   "fruit_per_group": "3-7",
+   "fruit_ripening": [
+    "#7a9a3e",
+    "#3b1a3c"
+   ],
+   "foliage_colour": "#3d6b2c",
+   "bark_colour": "#6d5f45",
+   "leaf_cm": 12
   }
  },
  {
@@ -846,6 +1114,7 @@
    "foliage_colour": "#3c7a35"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -899,6 +1168,7 @@
    "arrangement": "alternate"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -959,6 +1229,7 @@
    "foliage_colour": "#3f7f3a"
   },
   "merged": {
+   "climbing": "none",
    "states": [
     "seedling",
     "immature",
@@ -984,6 +1255,202 @@
     "#e0483b"
    ],
    "foliage_colour": "#3f7f3a"
+  }
+ },
+ {
+  "id": "virginia-creeper",
+  "title": "Virginia creeper",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "vitaceae",
+  "aliases": [
+   "Parthenocissus quinquefolia",
+   "woodbine",
+   "five-leaved ivy",
+   "five-finger"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "flower clusters (inconspicuous",
+   "not drawn)",
+   "winter bare vine"
+  ],
+  "used_by": [
+   "vines.js virginia-creeper"
+  ],
+  "file": "research/subjects/plants/virginia-creeper.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
+  "traits": {
+   "leaf": "palmate",
+   "leaf_shape": "ovate",
+   "margin": "serrate",
+   "surface": "matte",
+   "climbing": "adhesive-tendrils",
+   "inflorescence": "cluster",
+   "fruit_ripening": [
+    "#4a6a3a",
+    "#232a46"
+   ],
+   "foliage_colour": "#335f2a",
+   "bark_colour": "#6a5648",
+   "leaf_cm": 15,
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ]
+  },
+  "merged": {
+   "climbing": "adhesive-tendrils",
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ],
+   "stem": "woody",
+   "arrangement": "alternate",
+   "fruit": "berry",
+   "leaf": "palmate",
+   "leaf_shape": "ovate",
+   "margin": "serrate",
+   "surface": "matte",
+   "inflorescence": "cluster",
+   "fruit_ripening": [
+    "#4a6a3a",
+    "#232a46"
+   ],
+   "foliage_colour": "#335f2a",
+   "bark_colour": "#6a5648",
+   "leaf_cm": 15
+  }
+ },
+ {
+  "id": "vitaceae",
+  "title": "Grape family (Vitaceae)",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "plants",
+  "aliases": [
+   "grape family",
+   "vine family"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "bunch grapes (Vitis vinifera)",
+   "Boston ivy"
+  ],
+  "used_by": [
+   "vines.js"
+  ],
+  "file": "research/subjects/plants/vitaceae.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {
+   "arrangement": "alternate",
+   "stem": "woody",
+   "climbing": "tendrils",
+   "fruit": "berry"
+  },
+  "merged": {
+   "climbing": "tendrils",
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "woody",
+   "arrangement": "alternate",
+   "fruit": "berry"
+  }
+ },
+ {
+  "id": "wisteria",
+  "title": "Wisteria",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "plants",
+  "aliases": [
+   "Wisteria sinensis",
+   "Wisteria floribunda",
+   "Wisteria frutescens",
+   "Chinese wisteria",
+   "Japanese wisteria",
+   "American wisteria",
+   "Fabaceae"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "pea family (Fabaceae) entry",
+   "winter bare vine",
+   "white and pink forms"
+  ],
+  "used_by": [
+   "vines.js wisteria"
+  ],
+  "file": "research/subjects/plants/wisteria.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 6,
+  "traits": {
+   "arrangement": "alternate",
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "matte",
+   "stem": "woody",
+   "climbing": "twining",
+   "inflorescence": "cluster",
+   "flower_colour": "#9a7fd2",
+   "fruit": "pod",
+   "foliage_colour": "#4a7a32",
+   "bark_colour": "#8a8780",
+   "leaf_cm": 25,
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ]
+  },
+  "merged": {
+   "climbing": "twining",
+   "states": [
+    "full",
+    "damaged",
+    "cut"
+   ],
+   "stem": "woody",
+   "arrangement": "alternate",
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "matte",
+   "inflorescence": "cluster",
+   "flower_colour": "#9a7fd2",
+   "fruit": "pod",
+   "foliage_colour": "#4a7a32",
+   "bark_colour": "#8a8780",
+   "leaf_cm": 25
   }
  }
 ]
