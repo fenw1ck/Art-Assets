@@ -435,6 +435,75 @@
   "merged": {}
  },
  {
+  "id": "items",
+  "title": "Items",
+  "kind": "object",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "item",
+   "inventory item",
+   "pickup",
+   "loot"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "food and crafting ingredients",
+   "rarity tiers",
+   "item weights"
+  ],
+  "used_by": [
+   "items.js",
+   "euclid game.html (rooms",
+   "chests",
+   "the bag)"
+  ],
+  "file": "research/objects/items/_items.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "coin",
+  "title": "Coin",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "coins",
+   "gold coin",
+   "silver coin",
+   "bronze coin",
+   "money"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "photos of real worn and buried coins",
+   "exergue and mint marks"
+  ],
+  "used_by": [
+   "items.js coin",
+   "coins"
+  ],
+  "file": "research/objects/items/coin.md",
+  "sections": [
+   "Parts",
+   "States",
+   "Sources"
+  ],
+  "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",
