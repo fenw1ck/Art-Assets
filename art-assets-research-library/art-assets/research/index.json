@@ -1,0 +1,519 @@
+[
+ {
+  "id": "stone",
+  "title": "Stone",
+  "kind": "material",
+  "parent": "none",
+  "aliases": [
+   "rock",
+   "masonry stone"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "granite",
+   "limestone",
+   "slate",
+   "travertine",
+   "photos of each",
+   "how each weathers"
+  ],
+  "used_by": [],
+  "file": "research/materials/stone/_stone.md",
+  "sections": [
+   "Parts",
+   "Rendering notes",
+   "Log"
+  ],
+  "sources": 0
+ },
+ {
+  "id": "marble",
+  "title": "Marble (and decorative stones sold as marble)",
+  "kind": "material",
+  "parent": "stone",
+  "aliases": [
+   "Carrara",
+   "giallo antico",
+   "portasanta",
+   "breccia",
+   "Portoro",
+   "verde antico",
+   "Sienna marble"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "colour swatches from photos for each named stone",
+   "vein measurements",
+   "polish/reflection"
+  ],
+  "used_by": [],
+  "file": "research/materials/stone/marble.md",
+  "sections": [
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3
+ },
+ {
+  "id": "villamayor-sandstone",
+  "title": "Villamayor sandstone (Salamanca's golden stone)",
+  "kind": "material",
+  "parent": "stone",
+  "aliases": [
+   "golden stone",
+   "piedra franca",
+   "piedra de Villamayor",
+   "Salamanca stone",
+   "arenisca de Villamayor"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "colour swatches from photos (fresh vs weathered)",
+   "carving detail (Plateresque)",
+   "decay patterns"
+  ],
+  "used_by": [],
+  "file": "research/materials/stone/villamayor-sandstone.md",
+  "sections": [
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3
+ },
+ {
+  "id": "floors",
+  "title": "Floor layouts",
+  "kind": "pattern",
+  "parent": "none",
+  "aliases": [
+   "floor",
+   "paving",
+   "opus sectile",
+   "opus tessellatum",
+   "Cosmatesque",
+   "Cosmati",
+   "opus alexandrinum",
+   "checkerboard",
+   "ashlar"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "measured examples",
+   "borders and bands",
+   "running bond and herringbone",
+   "photos"
+  ],
+  "used_by": [],
+  "file": "research/patterns/floors.md",
+  "sections": [
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5
+ },
+ {
+  "id": "colour",
+  "title": "Colour ramps and palettes",
+  "kind": "technique",
+  "parent": "none",
+  "aliases": [
+   "color",
+   "hue shifting",
+   "colour ramp",
+   "palette",
+   "dark mode"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "ramps for each material in materials.js",
+   "a check for colour blindness"
+  ],
+  "used_by": [],
+  "file": "research/rendering/colour.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3
+ },
+ {
+  "id": "light-and-shadow",
+  "title": "Light and shadow",
+  "kind": "technique",
+  "parent": "none",
+  "aliases": [
+   "shading",
+   "form shadow",
+   "cast shadow",
+   "core shadow",
+   "terminator",
+   "occlusion"
+  ],
+  "depth": "standard",
+  "updated": "2026-11-24",
+  "gaps": [
+   "several light sources (torches",
+   "lamps)",
+   "night scenes",
+   "translucency (leaves",
+   "marble)"
+  ],
+  "used_by": [
+   "plants.js ell",
+   "leaf",
+   "trunk",
+   "shadow"
+  ],
+  "file": "research/rendering/light-and-shadow.md",
+  "sections": [
+   "Parts",
+   "Construction order",
+   "Log",
+   "Sources"
+  ],
+  "sources": 4
+ },
+ {
+  "id": "readability",
+  "title": "Readability checks",
+  "kind": "technique",
+  "parent": "none",
+  "aliases": [
+   "silhouette test",
+   "value check",
+   "grayscale",
+   "level of detail",
+   "LOD"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "minimum sizes measured in each project"
+  ],
+  "used_by": [
+   "tools/contact-sheet.py"
+  ],
+  "file": "research/rendering/readability.md",
+  "sections": [
+   "Log",
+   "Sources"
+  ],
+  "sources": 2
+ },
+ {
+  "id": "textures",
+  "title": "Textures",
+  "kind": "technique",
+  "parent": "none",
+  "aliases": [
+   "texture",
+   "veins",
+   "cracks",
+   "grout",
+   "seams",
+   "grain",
+   "noise",
+   "voronoi",
+   "domain warping"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "wood grain",
+   "bark",
+   "feather barbs at large sizes",
+   "water",
+   "glass",
+   "a canvas noise implementation in core.js"
+  ],
+  "used_by": [
+   "plants.js dapple"
+  ],
+  "file": "research/rendering/textures.md",
+  "sections": [
+   "Log",
+   "Sources"
+  ],
+  "sources": 5
+ },
+ {
+  "id": "wear",
+  "title": "Wear, weathering and decline",
+  "kind": "technique",
+  "parent": "none",
+  "aliases": [
+   "weathering",
+   "decay",
+   "damage",
+   "patina",
+   "grime",
+   "abandoned"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "moss and ivy growth",
+   "water stains",
+   "bronze patina"
+  ],
+  "used_by": [],
+  "file": "research/rendering/wear.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 2
+ },
+ {
+  "id": "birds",
+  "title": "Birds",
+  "kind": "subject",
+  "parent": "none",
+  "aliases": [
+   "bird",
+   "aves"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "orders and families (passerines",
+   "raptors",
+   "waterfowl…)",
+   "leg and foot types",
+   "wing shapes in flight",
+   "posture by group",
+   "photos"
+  ],
+  "used_by": [],
+  "file": "research/subjects/birds/_birds.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 7
+ },
+ {
+  "id": "plants",
+  "title": "Plants (flowering plants)",
+  "kind": "subject",
+  "parent": "none",
+  "aliases": [
+   "plant",
+   "vegetable",
+   "herb",
+   "flower"
+  ],
+  "depth": "standard",
+  "updated": "2026-11-24",
+  "gaps": [
+   "seedling (cotyledon) shapes by family",
+   "decline photos per family",
+   "root crops below ground"
+  ],
+  "used_by": [
+   "plants.js"
+  ],
+  "file": "research/subjects/plants/_plants.md",
+  "sections": [
+   "Parts",
+   "Construction order",
+   "States",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5
+ },
+ {
+  "id": "allium",
+  "title": "Onion family (Allium)",
+  "kind": "subject",
+  "parent": "plants",
+  "aliases": [
+   "chives",
+   "onion",
+   "garlic",
+   "leek"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "sources",
+   "onion and garlic bulbs (drawn generically today)"
+  ],
+  "used_by": [
+   "plants.js drawChives"
+  ],
+  "file": "research/subjects/plants/allium.md",
+  "sections": [
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0
+ },
+ {
+  "id": "apiaceae",
+  "title": "Carrot family (Apiaceae)",
+  "kind": "subject",
+  "parent": "plants",
+  "aliases": [
+   "carrot family",
+   "parsley",
+   "cilantro",
+   "coriander",
+   "dill",
+   "carrot"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "sources not recorded",
+   "carrot (drawn generically today)",
+   "umbel ray counts"
+  ],
+  "used_by": [
+   "plants.js drawCarrotFamily"
+  ],
+  "file": "research/subjects/plants/apiaceae.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0
+ },
+ {
+  "id": "lamiaceae",
+  "title": "Mint family (Lamiaceae)",
+  "kind": "subject",
+  "parent": "plants",
+  "aliases": [
+   "mint family",
+   "basil",
+   "mint",
+   "thyme",
+   "lavender",
+   "Ocimum basilicum",
+   "Mentha",
+   "Thymus"
+  ],
+  "depth": "standard",
+  "updated": "2026-11-24",
+  "gaps": [
+   "lavender (drawn generically today)",
+   "oregano",
+   "rosemary",
+   "sage"
+  ],
+  "used_by": [
+   "plants.js drawMintFamily"
+  ],
+  "file": "research/subjects/plants/lamiaceae.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 2
+ },
+ {
+  "id": "pepper",
+  "title": "Pepper and eggplant",
+  "kind": "subject",
+  "parent": "solanaceae",
+  "aliases": [
+   "pepper_bell",
+   "bell pepper",
+   "Capsicum annuum",
+   "eggplant",
+   "aubergine",
+   "Solanum melongena"
+  ],
+  "depth": "standard",
+  "updated": "2026-11-24",
+  "gaps": [
+   "hot pepper shapes",
+   "eggplant sources"
+  ],
+  "used_by": [
+   "plants.js drawPepper"
+  ],
+  "file": "research/subjects/plants/pepper.md",
+  "sections": [
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 4
+ },
+ {
+  "id": "solanaceae",
+  "title": "Nightshade family (Solanaceae)",
+  "kind": "subject",
+  "parent": "plants",
+  "aliases": [
+   "nightshade family"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "potato structure",
+   "family-level flower details"
+  ],
+  "used_by": [],
+  "file": "research/subjects/plants/solanaceae.md",
+  "sections": [
+   "Parts",
+   "Log"
+  ],
+  "sources": 0
+ },
+ {
+  "id": "tomato",
+  "title": "Tomato",
+  "kind": "subject",
+  "parent": "solanaceae",
+  "aliases": [
+   "Solanum lycopersicum",
+   "cherry tomato",
+   "tomato_cherry",
+   "tomato_indeterminate",
+   "tomato_determinate"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "sources not recorded for the original research",
+   "seedling true-leaf shape",
+   "decline photos"
+  ],
+  "used_by": [
+   "plants.js drawTomato"
+  ],
+  "file": "research/subjects/plants/tomato.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "Log"
+  ],
+  "sources": 0
+ }
+]

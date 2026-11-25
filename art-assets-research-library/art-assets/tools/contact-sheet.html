@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>contact sheet</title>
+<style>body{margin:0}canvas{display:block}</style></head><body>
+<canvas id="c"></canvas>
+<script src="../core.js"></script>
+<script src="../plants.js"></script>
+<script>
+/* Opened by tools/contact-sheet.py. ?sheet=plants|ladder|core &bg=light|dark */
+const Q=new URLSearchParams(location.search),sheet=Q.get('sheet')||'plants',dark=Q.get('bg')==='dark';
+const BG=dark?'#1d2126':'#f4efe2',BG2=dark?'#252a30':'#efe8d6',INK=dark?'#e8e4da':'#333',SUB=dark?'#9aa0a8':'#777',GOOD=dark?'#8fd49a':'#1d6a2a';
+const c=document.getElementById('c'),ctx=c.getContext('2d');
+const BOT=/^(tomato|pepper|eggplant|basil|mint|thyme|parsley|cilantro|dill|chives)/;
+const STAGES=['seedling','young','mature','past','dormant','dead'];
+function label(t,x,y,col,font){ctx.fillStyle=col||INK;ctx.font=font||'11px system-ui,sans-serif';ctx.fillText(t,x,y)}
+if(sheet==='plants'){
+  const cw=110,ch=120,lw=150,L=PLANTS.list;c.width=lw+cw*STAGES.length;c.height=30+ch*L.length;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  STAGES.forEach((s,i)=>label(s,lw+i*cw+8,20,INK,'bold 12px system-ui,sans-serif'));
+  L.forEach((p,r)=>{const y0=30+r*ch,b=BOT.test(p.id);ctx.fillStyle=r%2?BG2:BG;ctx.fillRect(0,y0,c.width,ch);
+    label(p.common_name,6,y0+16,b?GOOD:INK,(b?'bold ':'')+'11px system-ui,sans-serif');label(p.silhouette,6,y0+30,SUB,'10px system-ui');label(b?'botanical':'generic',6,y0+43,SUB,'10px system-ui');
+    STAGES.forEach((s,i)=>{try{PLANTS.drawFit(ctx,p,lw+i*cw+cw/2,y0+ch-8,ch-22,s,7)}catch(e){label('ERR '+e.message,lw+i*cw+4,y0+60,'red')}})});
+}else if(sheet==='ladder'){
+  const ids=['tomato_indeterminate','pepper_bell','basil','lettuce','apple'],sizes=[16,24,48,96,200,400];
+  c.width=sizes.reduce((a,b)=>a+b+30,40);c.height=ids.length*430;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  ids.forEach((id,r)=>{let x=20;sizes.forEach(s=>{PLANTS.drawFit(ctx,PLANTS.byId[id],x+s/2,r*430+410,s,'mature',7);label(s+'px',x,r*430+424,SUB);x+=s+30})});
+}else{ /* core.js: ramps, noise, warp, a marble test and Voronoi stones */
+  const A=ART_CORE,S=180,pad=24;c.width=pad+4*(S+pad);c.height=760;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  label('ramp(base, 7): hue-shifted, dark to light; base in the middle',pad,20,INK,'bold 12px system-ui');
+  ['#3f7f3a','#e0483b','#c9a25a','#8a6ac8','#b0b4b8'].forEach((b,j)=>{A.ramp(b,7).forEach((col,i)=>{ctx.fillStyle=col;ctx.fillRect(pad+i*44,30+j*30,40,24)});label(b,pad+7*44+8,46+j*30,SUB)});
+  const field=(x0,y0,f,title)=>{const im=ctx.createImageData(S,S);for(let y=0;y<S;y++)for(let x=0;x<S;x++){const v=f(x,y),k=(y*S+x)*4;
+      const col=Array.isArray(v)?v:[v*255,v*255,v*255];im.data[k]=col[0];im.data[k+1]=col[1];im.data[k+2]=col[2];im.data[k+3]=255}ctx.putImageData(im,x0,y0);label(title,x0,y0+S+14,SUB)};
+  const y1=210;
+  field(pad,y1,(x,y)=>A.noise(x/24,y/24,3),'noise');
+  field(pad+(S+pad),y1,(x,y)=>A.fbm(x/60,y/60,3),'fbm (5 octaves)');
+  field(pad+2*(S+pad),y1,(x,y)=>A.warp(x/70,y/70,3),'warp (domain-warped fbm)');
+  field(pad+3*(S+pad),y1,(x,y)=>{const v=A.voronoi(x,y,36,5);return v.edge<2?0:.35+.5*v.id},'voronoi cells and edges');
+  const y2=y1+S+40,stone='#ece6dc',vein='#7d7a76';
+  field(pad,y2,(x,y)=>{const b=Math.abs(Math.sin((x*.9+y*.35)/22+6*A.fbm(x/70,y/70,9))),t=Math.pow(1-b,14);return A.hex(A.mix(stone,vein,t*.9))},'marble: banding + warp');
+  field(pad+(S+pad),y2,(x,y)=>{const v=A.voronoi(x,y,30,11),base=A.mix('#b8863e','#7a3a28',v.id),g=A.fbm(x/6,y/6,2)*.25;return v.edge<1.6?A.hex('#e8dcc4'):A.hex(A.mix(base,'#2a1a10',g))},'breccia: voronoi fragments');
+  field(pad+2*(S+pad),y2,(x,y)=>{const g=A.noise(x/1.6,y/1.6,4)*.18+A.fbm(x/90,y/30,8)*.25,p=A.fbm(x/120,y/120,6);return A.hex(A.mix(A.mix('#e9d6a6','#c58f45',p),'#6b4a22',g))},'sandstone: grain, bedding, patina');
+  field(pad+3*(S+pad),y2,(x,y)=>{const t=60,gx=x%t,gy=y%t,seam=gx<3||gy<3,v=A.fbm(x/40+Math.floor(x/t)*7,y/40,Math.floor(y/t)*3+Math.floor(x/t));
+      if(seam)return A.hex(gx<1.5||gy<1.5?'#5b5148':'#8a7e70');return A.hex(A.mix('#d9cfc2','#a89a88',v))},'tiles + grout test');
+}
+document.title='done';
+</script></body></html>

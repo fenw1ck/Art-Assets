@@ -1,0 +1,69 @@
+---
+id: plants
+title: Plants (flowering plants)
+kind: subject
+parent: none
+aliases: [plant, vegetable, herb, flower]
+depth: standard
+updated: 2026-11-24
+gaps: [seedling (cotyledon) shapes by family, decline photos per family, root crops below ground]
+used_by: [plants.js]
+---
+
+# Plants
+
+Moved here from PLANT_ART.md (Planting-Guide and euclid), which this entry and its children replace.
+
+## Parts
+
+- **Stem:** nodes, where leaves and buds attach, and the internodes between them. Round or square in section, green or woody, smooth or hairy.
+- **Leaf:** the blade, its stalk (petiole; a leaf without one is sessile) and the midrib.
+  - **Simple or compound.** A compound leaf is divided into leaflets: pinnate (in pairs along a central stalk, the rachis), palmate (spreading from one point) or bipinnate (twice divided).
+  - **Shape:** ovate (egg-shaped, widest near the base), obovate, lance, linear, round, cordate, or thread-like.
+  - **Tip:** pointed or rounded.
+  - **Margin:** entire (smooth), serrate (teeth pointing forward), dentate (teeth pointing out), crenate (rounded teeth), wavy, or lobed.
+  - **Venation:** pinnate (a midrib with side veins), palmate (veins from one point), or parallel.
+  - **Surface:** glossy, puckered (bullate), wrinkled, or hairy.
+- **Leaf arrangement (phyllotaxy):** alternate (one per node, sides taking turns), opposite (two per node), decussate (opposite pairs each turned a quarter turn), whorled (three or more per node), or basal/rosette (from the base). Alternate leaves usually follow a spiral of about 137.5° (the golden angle).
+- **Branching:** a main stem with side shoots from the leaf angles (axils); a stem that forks again and again; or a crown of leaf stalks at ground level.
+- **Flowers (inflorescence):** where they appear (leaf angles, forks, between nodes, tips), single or grouped. Groups are clusters, spikes of whorls, umbels (umbrella-shaped), heads, or balls.
+- **Fruit:** where it hangs, how many per group, its shape, and how its colour changes as it ripens. Lower, older fruit ripen first.
+
+## Construction order
+
+1. Look at single leaves first, from close photos: simple or compound, shape, tip, margin, surface, veins.
+2. Work out the structure from botanical ID guides, which are more reliable than any one photo: arrangement, branching, stem, where the flowers and fruit go.
+3. Build from rules, not from one picture:
+   - one small function per part (leaf, leaflet, flower, fruit, stem);
+   - one shoot function that places the parts along a stem by the plant's rules;
+   - when the plant repeats itself, call the shoot again at a smaller size (L-system style).
+   - Seed the randomness, so each plant looks natural but is the same every time.
+4. Draw every state from the same structure.
+5. Shade: leaves get a lit half and a shaded half, a pale midrib and veins, and gloss or pucker where the real leaf has it. Fruit gets a gradient and a glint. Stems taper. Every plant sits on a soft shadow.
+6. Check: every plant and state side by side, compared with photos. Tune the proportions: leaf size against plant size, fruit size, spread. Keep each fix as a rule in code.
+
+## States
+
+- **seedling:** seed leaves (cotyledons), then the first true leaves. These often have a different shape from the cotyledons.
+- **immature (young):** leaves and stem only, or first flowers.
+- **mature:** full size, flowering or fruiting.
+- **declining:** droop and wilting; yellowing that starts on the oldest, lowest leaves; leaf edges brown and dry; leaves dropping; fruit shrivelling or splitting. Used in the abandoned greenhouses.
+- **dead:** the skeleton remains (stems, stake, seed heads) with curled, brown, papery leaves. No cartoon symbols.
+- **dormant:** perennials and trees only. Bare branches, or a crown at ground level.
+
+## Rendering notes
+
+- Light: upper-left key light; see `rendering/light-and-shadow.md`.
+- Big foliage masses are dappled with small leaves, not left as smooth balloons.
+
+## Log
+
+- 2026-11-24: created from PLANT_ART.md plus botanical glossaries. Added the decline and dead states (realistic decline was decided 24 Nov 2026).
+
+## Sources
+
+- Purdue Plant ID glossary: https://hort.purdue.edu/plant-id-pal/glossary.html
+- OpenTextBC, Plant Identification, ch. 14 Leaves: https://opentextbc.ca/plantidentification/chapter/plant-morphology-leaves/
+- UT Austin Biodiversity Center, Botany basics: understanding leaves: https://biodiversity.utexas.edu/news/features/botany-basics-understanding-leaves
+- Cornell Cooperative Extension, Botany language basics for plant ID: https://dlc.cce.cornell.edu/pluginfile.php/452580/mod_page/content/14/Botany%20Language%20Basics%20for%20Plant%20Id.pdf
+- Prusinkiewicz & Lindenmayer, The Algorithmic Beauty of Plants (free online): https://algorithmicbotany.org/papers/abop/abop.pdf
