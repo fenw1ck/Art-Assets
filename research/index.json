@@ -463,7 +463,9 @@
    "running bond and herringbone",
    "photos"
   ],
-  "used_by": [],
+  "used_by": [
+   "garden.js render wild"
+  ],
   "file": "research/patterns/floors.md",
   "sections": [
    "Distinguishing features",
@@ -471,7 +473,7 @@
    "Log",
    "Sources"
   ],
-  "sources": 5,
+  "sources": 8,
   "traits": {},
   "merged": {}
  },

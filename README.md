@@ -11,7 +11,7 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 - `plants.js`: `drawPlant` and the 51 plant symbols (name, silhouette, colours, mature size).
 - `garden.js`: `window.GARDEN`, the garden generator and its shared pieces:
   - `plan(seed)` lays out a walled garden 8–50 cells wide and 16–50 tall, themed herb, vegetable, fruit, flower or mixed: paths, beds planted at each plant's spread, trellises, lanterns, benches, tools, a fountain, lock spots, a treasure spot and the gate.
-  - `render(plan, s)` draws the still parts onto a canvas at `s` px per cell.
+  - `render(plan, s, o)` draws the still parts onto a canvas at `s` px per cell; `o.wild` gives an abandoned greenhouse floor (irregular flagstone or packed-dirt paths, moss and grass creeping in).
   - `fountain`, `lantern` (animated), `chest`, `pedestal` and `gate` each draw a single piece at any scale.
 
   `garden.js` needs `plants.js` loaded first.
