@@ -504,6 +504,37 @@
   "merged": {}
  },
  {
+  "id": "scroll",
+  "title": "Scroll",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "scrolls",
+   "papyrus roll",
+   "parchment roll",
+   "rotulus"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "an open (unrolled) scroll",
+   "roll holders and labels (sillyboi)"
+  ],
+  "used_by": [
+   "items.js scroll"
+  ],
+  "file": "research/objects/items/scroll.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",
