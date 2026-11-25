@@ -16,7 +16,7 @@
 const Q=new URLSearchParams(location.search),sheet=Q.get('sheet')||'plants',dark=Q.get('bg')==='dark';
 const BG=dark?'#1d2126':'#f4efe2',BG2=dark?'#252a30':'#efe8d6',INK=dark?'#e8e4da':'#333',SUB=dark?'#9aa0a8':'#777',GOOD=dark?'#8fd49a':'#1d6a2a';
 const c=document.getElementById('c'),ctx=c.getContext('2d');
-const BOT=/^(tomato|pepper|eggplant|basil|mint|thyme|parsley|cilantro|dill|chives)/;
+const BOT=/^(tomato|pepper|eggplant|basil|mint|thyme|parsley|cilantro|dill|chives|potato)/;
 const STAGES=['seedling','young','mature','past','dormant','dead'];
 function label(t,x,y,col,font){ctx.fillStyle=col||INK;ctx.font=font||'11px system-ui,sans-serif';ctx.fillText(t,x,y)}
 if(sheet==='plants'){
@@ -29,6 +29,14 @@ if(sheet==='plants'){
   const ids=['tomato_indeterminate','pepper_bell','basil','lettuce','apple'],sizes=[16,24,48,96,200,400];
   c.width=sizes.reduce((a,b)=>a+b+30,40);c.height=ids.length*430;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   ids.forEach((id,r)=>{let x=20;sizes.forEach(s=>{PLANTS.drawFit(ctx,PLANTS.byId[id],x+s/2,r*430+410,s,'mature',7);label(s+'px',x,r*430+424,SUB);x+=s+30})});
+}else if(sheet==='potato'){
+  /* the potato (research/subjects/plants/potato.md): stages, hilling 0-3, skins, sizes, the tuber food item */
+  const P=PLANTS.byId.potato;c.width=1300;c.height=1250;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  label('Stages (seed 7)',20,24,INK,'bold 13px system-ui');['seedling','young','mature','past','dormant','dead'].forEach((s,i)=>{PLANTS.drawFit(ctx,P,110+i*200,300,250,s,7);label(s,70+i*200,322,SUB)});
+  label('Hilling: soil mounded 0, 1, 2, 3 times (mature): more tubers, 3 / 5 / 7 / 9 at harvest',20,360,INK,'bold 13px system-ui');[0,1,2,3].forEach(k=>{PLANTS.drawFit(ctx,P,140+k*300,640,250,'mature',11,{hill:k});const H=PLANTS.harvest(P,{hill:k});label(`hill ${k}: ${H.count} potatoes`,90+k*300,662,SUB)});
+  label('Seeded copies (skin and flower colour vary by seed)',20,700,INK,'bold 13px system-ui');[1,2,3,4,5,6].forEach((sd,i)=>{PLANTS.drawFit(ctx,P,110+i*200,900,180,'mature',sd);label('seed '+sd+' · '+PLANTS.potatoSkin(sd),60+i*200,920,SUB)});
+  label('Size ladder (16-400 px)',20,960,INK,'bold 13px system-ui');let x=30;for(const s of[16,24,48,96,200]){PLANTS.drawFit(ctx,P,x+s*.45,1230,s,'mature',7);label(s+'px',x,1245,SUB);x+=s*.95+40}
+  label('Tubers: red, purple, brown',700,960,INK,'bold 13px system-ui');if(window.ITEMART){label('Food items (items.js): raw potatoes, baked potato; harvest produce by part',700,1170,INK,'bold 13px system-ui');['potato-red','potato-purple','potato-brown','potato-baked','produce-tomato_cherry','produce-carrot','produce-lettuce','produce-sunflower','produce-onion'].forEach((id,i)=>{ITEMART.draw(ctx,id,720+i*62,1235,56,{seed:i})})}['red','purple','brown'].forEach((k,i)=>{PLANTS.tuber(ctx,760+i*170,1080,64,46,-.2,k,i+3);label(k,740+i*170,1150,SUB)});
 }else if(sheet==='containers'){
   const C=CONTAINERS,T=C.defaults,cw=280,pad=20;c.width=pad+5*cw;c.height=1500;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   const cell=(i,row,t,state,size,o,lab,seed)=>{const x=pad+i*cw+cw/2,y=row;C.drawChest(ctx,t,x,y,size,state,seed||7,o||{});label(lab,pad+i*cw+10,y+22,SUB)};
