@@ -334,6 +334,43 @@
   }
  },
  {
+  "id": "cooking-fire",
+  "title": "Cooking fire and fuel",
+  "kind": "object",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "campfire",
+   "cauldron",
+   "firewood",
+   "kindling",
+   "fuel",
+   "cooking minigame"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "a spit or griddle",
+   "rain putting a fire out"
+  ],
+  "used_by": [
+   "kitchen.js campfire",
+   "cauldron; items.js firewood",
+   "kindling",
+   "cauldron",
+   "dish; engine.js ENGINE.cook",
+   "ENGINE.fuel"
+  ],
+  "file": "research/objects/cooking-fire.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "furniture",
   "title": "Furniture",
   "kind": "object",
@@ -397,6 +434,42 @@
    "Sources"
   ],
   "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "kitchen",
+  "title": "Kitchen",
+  "kind": "object",
+  "class": null,
+  "parent": "furniture",
+  "aliases": [
+   "kitchen range",
+   "range",
+   "stove",
+   "oven",
+   "cookstove",
+   "kitchen table",
+   "kitchen island"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "sink and dresser",
+   "a hearth with a spit as an older alternative"
+  ],
+  "used_by": [
+   "kitchen.js stove",
+   "table",
+   "island",
+   "shelf"
+  ],
+  "file": "research/objects/furniture/kitchen.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 3,
   "traits": {},
   "merged": {}
  },
@@ -595,7 +668,10 @@
   "depth": "outline",
   "updated": "2026-11-25",
   "gaps": [
-   "cooked versions of other produce",
+   "cooked versions of other produce (eggplant",
+   "corn",
+   "beans",
+   "winter squash)",
    "a cooking pot or fire as a station",
    "what eating does"
   ],
@@ -705,6 +781,37 @@
   "merged": {}
  },
  {
+  "id": "weapons",
+  "title": "Weapons",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "weapon",
+   "knife",
+   "sword",
+   "staff",
+   "blade",
+   "melee weapons"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "real bronze-age blade profiles (leaf-shaped xiphos)",
+   "a repair mechanic"
+  ],
+  "used_by": [
+   "items.js D.weapon; engine.js ENGINE.combat"
+  ],
+  "file": "research/objects/items/weapons.md",
+  "sections": [
+   "Distinguishing features"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",
@@ -808,6 +915,38 @@
     "swing"
    ]
   }
+ },
+ {
+  "id": "traps",
+  "title": "Traps",
+  "kind": "object",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "trap",
+   "pressure plate",
+   "spikes",
+   "flame thrower",
+   "poison fog",
+   "path trap",
+   "euler path"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "swinging blades",
+   "falling floor"
+  ],
+  "used_by": [
+   "traps.js; engine.js ENGINE.traps"
+  ],
+  "file": "research/objects/traps.md",
+  "sections": [
+   "Parts"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "floors",
@@ -1174,6 +1313,179 @@
    "Sources"
   ],
   "sources": 7,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "creatures",
+  "title": "Creatures of myth",
+  "kind": "subject",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "monsters",
+   "mythical creatures",
+   "enemies",
+   "fantasy creatures",
+   "bestiary"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "vase-painting references for each pose",
+   "more creatures (sphinx",
+   "griffin",
+   "chimera",
+   "cyclops)"
+  ],
+  "used_by": [
+   "creatures.js"
+  ],
+  "file": "research/subjects/creatures/_creatures.md",
+  "sections": [
+   "Parts",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "basilisk",
+  "title": "Basilisk",
+  "kind": "subject",
+  "class": null,
+  "parent": "creatures",
+  "aliases": [
+   "basilisks",
+   "Basiliskos",
+   "serpent-king"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "the medieval rooster-serpent form",
+   "not used"
+  ],
+  "used_by": [
+   "creatures.js D.basilisk"
+  ],
+  "file": "research/subjects/creatures/basilisk.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 1,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "harpy",
+  "title": "Harpy",
+  "kind": "subject",
+  "class": null,
+  "parent": "creatures",
+  "aliases": [
+   "harpies",
+   "Harpyiai"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "wing feather detail from vase paintings"
+  ],
+  "used_by": [
+   "creatures.js D.harpy"
+  ],
+  "file": "research/subjects/creatures/harpy.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 1,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "hydra",
+  "title": "Hydra",
+  "kind": "subject",
+  "class": null,
+  "parent": "creatures",
+  "aliases": [
+   "Lernaean Hydra",
+   "hydras"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "nine heads at large sizes (five drawn)"
+  ],
+  "used_by": [
+   "creatures.js D.hydra"
+  ],
+  "file": "research/subjects/creatures/hydra.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "manticore",
+  "title": "Manticore",
+  "kind": "subject",
+  "class": null,
+  "parent": "creatures",
+  "aliases": [
+   "manticores",
+   "Mantikhora",
+   "Androphagos"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "three rows of teeth at large sizes"
+  ],
+  "used_by": [
+   "creatures.js D.manticore"
+  ],
+  "file": "research/subjects/creatures/manticore.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "minotaur",
+  "title": "Minotaur",
+  "kind": "subject",
+  "class": null,
+  "parent": "creatures",
+  "aliases": [
+   "minotaurs",
+   "Asterion",
+   "bull-man"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "labrys (double axe) as an optional prop"
+  ],
+  "used_by": [
+   "creatures.js D.minotaur"
+  ],
+  "file": "research/subjects/creatures/minotaur.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 1,
   "traits": {},
   "merged": {}
  },
