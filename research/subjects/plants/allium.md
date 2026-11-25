@@ -8,6 +8,14 @@ depth: outline
 updated: 2026-11-24
 gaps: [sources, onion and garlic bulbs (drawn generically today)]
 used_by: [plants.js drawChives]
+traits:
+  arrangement: basal
+  leaf: simple
+  leaf_shape: linear
+  stem: hollow-tube
+  branching: basal-crown
+  repeats: none
+  inflorescence: ball
 ---
 
 # Onion family

@@ -8,6 +8,14 @@ depth: standard
 updated: 2026-11-24
 gaps: [lavender (drawn generically today), oregano, rosemary, sage]
 used_by: [plants.js drawMintFamily]
+traits:
+  arrangement: decussate
+  leaf: simple
+  leaf_shape: ovate
+  stem: square-green
+  branching: axillary-shoots
+  repeats: opposite-pairs
+  inflorescence: spike-of-whorls
 ---
 
 # Mint family

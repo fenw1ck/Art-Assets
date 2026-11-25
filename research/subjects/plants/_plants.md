@@ -2,12 +2,16 @@
 id: plants
 title: Plants (flowering plants)
 kind: subject
+class: plant
 parent: none
 aliases: [plant, vegetable, herb, flower]
 depth: standard
 updated: 2026-11-24
 gaps: [seedling (cotyledon) shapes by family, decline photos per family, root crops below ground]
 used_by: [plants.js]
+traits:
+  stem: round-green
+  states: [seedling, immature, mature, declining, dead]
 ---
 
 # Plants

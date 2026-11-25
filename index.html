@@ -53,6 +53,7 @@ details.q[open] summary{margin-bottom:8px}
 .badge{display:inline-block;font-size:13px;font-weight:600;border-radius:999px;padding:1px 9px;margin-left:6px;background:var(--card);border:1px solid var(--line)}
 .badge.outline{color:var(--bronze)}.badge.standard{color:var(--leaf)}.badge.deep{color:var(--leaf);font-weight:700}
 .gaps{font-size:14px;color:var(--sub);margin:4px 0 0}
+.prev{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:10px}.prev figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px}.prev canvas{width:100%;height:150px;display:block}.prev figcaption{font-size:13px;color:var(--sub);text-align:center}
 .brief{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
 pre{overflow-x:auto;white-space:pre-wrap;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:14px;font:14px/1.5 ui-monospace,Menlo,monospace;max-height:440px}
 button{font:600 16px Figtree,sans-serif;min-height:44px;padding:0 18px;border-radius:10px;border:0;background:var(--leaf);color:var(--onleaf);cursor:pointer}
@@ -79,7 +80,7 @@ a{color:var(--leaf)}
 @media(prefers-reduced-motion:no-preference){#strip{animation:rise .9s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(10px)}}}
 </style></head><body>
 <header>
-  <div class="top"><div><h1>Art Asset Builder</h1><p>Describe a piece of art. The research library shows what is already known about it, and the brief goes to Claude to build.</p></div></div>
+  <div class="top"><div><h1>Art Asset Builder</h1><p>Describe a piece of art. If the research library covers it, the engine draws it right here. If not, the brief is the request for research.</p></div></div>
   <canvas id="strip" aria-label="Plants drawn by plants.js"></canvas>
   <nav aria-label="Sections"><a href="#build">Build</a><a href="#library">Research library</a><a href="#gallery">Gallery</a></nav>
 </header>
@@ -121,12 +122,14 @@ a{color:var(--leaf)}
   <div id="detail" class="panel"><p class="note">Choose an entry to see its depth, sections and gaps.</p></div></div>
 </section>
 <section id="v-gallery" hidden>
+ <h2 style="font-size:28px;margin-bottom:12px">Objects</h2><div class="plants" id="objs" style="margin-bottom:28px"></div>
  <h2 style="font-size:28px;margin-bottom:12px">Every plant in plants.js</h2>
  <div class="stages" id="stg"></div><div class="plants" id="pl"></div>
 </section>
 </main>
 <script src="core.js"></script>
 <script src="plants.js"></script>
+<script src="containers.js"></script>
 <script>
 {
 const $=id=>document.getElementById(id);
@@ -139,6 +142,14 @@ const PLACES={
 const PATTERNS=['Recursive shoot (like the tomato)','Repeated fork (pepper, trees)','Opposite pairs turned 90° (mint family)','Compound frond (parsley)','Umbel of umbels (dill)','Golden-angle spiral (lettuce, sunflower)','Whorl stack (lavender)','Overlapping rows (feathers, roof tiles)','Tiling with jitter (floors, ivy)','Ring repeat (crowns, astrolabes)','No repetition'];
 PATTERNS.forEach(p=>$('repeat').insertAdjacentHTML('beforeend',`<option>${esc(p)}</option>`));
 let LIB=[],BY={};
+/* the engine's drawing programs, by class: what the page can draw by itself, with no AI */
+const rootOf=e=>chain(e).filter(x=>!x.missing).at(-1);
+const plantId=e=>window.PLANTS&&[e.id,...(e.aliases||[])].map(n=>String(n).toLowerCase().replace(/[ ()]+/g,'_')).find(n=>PLANTS.byId[n]);
+const DRAW={
+ container:{name:'containers.js',can:e=>!!window.CONTAINERS,draw:(c,e,st,W,H,seed)=>CONTAINERS.drawChest(c,e.merged||{},W/2,H-12,Math.min(W*.62,H*1.05),st,seed,{fill:.7})},
+ plant:{name:'plants.js',can:e=>!!plantId(e),draw:(c,e,st,W,H,seed)=>{const m={immature:'young',declining:'past'};PLANTS.drawFit(c,PLANTS.byId[plantId(e)],W/2,H-8,H-20,m[st]||st,seed)}}};
+const drawer=e=>{const d=e&&DRAW[e.class];return d&&d.can(e)?d:null};
+function paint(cv,fn){const r=devicePixelRatio||1,W=cv.clientWidth||150,H=cv.clientHeight||150;cv.width=W*r;cv.height=H*r;const c=cv.getContext('2d');c.setTransform(r,0,0,r,0,0);c.clearRect(0,0,W,H);try{fn(c,W,H)}catch(err){c.fillStyle='#b33';c.font='12px sans-serif';c.fillText('Could not draw: '+err.message,6,20)}}
 const names=e=>[e.id,e.title,...(e.aliases||[])].filter(Boolean).map(s=>String(s).toLowerCase());
 const chain=e=>{const out=[e];while(out.at(-1).parent&&out.at(-1).parent!=='none'){const p=BY[out.at(-1).parent];if(!p||out.includes(p)){out.push({id:out.at(-1).parent,missing:true});break}out.push(p)}return out};
 function find(q){q=q.toLowerCase().trim();if(q.length<2)return null;
@@ -154,7 +165,7 @@ function suggestStates(what,root){const w=what.toLowerCase();
  if(root==='birds'||/bird|robin|sparrow|owl|hawk|crow|duck|wren|finch/.test(w))return[['perched',1],['flying',1]];
  return[['one state',1]]}
 let lastStates='';
-function renderStates(){const what=$('what').value,e=find(what),root=e?chain(e).filter(x=>!x.missing).at(-1).id:'';const s=suggestStates(what,root),key=s.map(x=>x[0]).join();
+function renderStates(){const what=$('what').value,e=find(what),root=e?rootOf(e).id:'';const s=e&&e.merged&&Array.isArray(e.merged.states)?e.merged.states.map(n=>[n,1]):suggestStates(what,root),key=s.map(x=>x[0]).join();
  if(key===lastStates)return;lastStates=key;$('states').innerHTML=s.map(([n,on])=>`<label><input type="checkbox" value="${esc(n)}" ${on?'checked':''}>${esc(n)}</label>`).join('')}
 /* the library match panel */
 let parentPick='';
@@ -165,11 +176,13 @@ function renderMatch(){const what=$('what').value.trim(),box=$('match');
  if(e){h+=`<p>Filed as <b>${esc(e.title)}</b>.</p>`+chain(e).map(l=>l.missing?`<div class="lvl miss"><b>${esc(l.id)}</b> — no entry yet</div>`:
    `<div class="lvl"><b>${esc(l.title)}</b><span class="badge ${esc(l.depth)}">${esc(l.depth)}</span><span class="badge">${esc(l.sources)} sources</span><p class="gaps">${l.gaps&&l.gaps.length?'Gaps: '+esc(l.gaps.join('; ')):'No gaps listed'}</p></div>`).join('');
    const gaps=chain(e).some(l=>l.missing||(l.gaps&&l.gaps.length));
-   h+=`<p style="margin:12px 0 6px;font-weight:600">Research</p><div class="chips" role="radiogroup">${radio('use','Use as is',!gaps)}${radio('gaps','Fill the gaps',gaps)}${radio('deep','Deeper search',false)}</div>`}
+   h+=`<p style="margin:12px 0 6px;font-weight:600">Research</p><div class="chips" role="radiogroup">${radio('use','Use as is',!gaps)}${radio('gaps','Fill the gaps',gaps)}${radio('deep','Deeper search',false)}</div>`;
+   const d=drawer(e);h+=d?`<p style="margin:14px 0 0;font-weight:600">The engine can draw this now <span class="badge standard">${esc(d.name)}</span></p><div class="prev" id="prev"></div>`:`<p class="note" style="margin-top:12px">No drawing program for this yet. A developer adds one per class.</p>`}
  else{const roots=LIB.filter(x=>x.kind!=='technique'),w=what.toLowerCase(),guess=/bird|robin|sparrow|owl|hawk|crow|duck|wren|finch|jay|eagle/.test(w)?'birds':/plant|tree|herb|flower|vine|shrub|fern/.test(w)?'plants':/marble|stone|granite|slate/.test(w)?'stone':/floor|paving|tile/.test(w)?'floors':'',sel=parentPick||guess;
    h+=`<p>Nothing filed under "${esc(what)}" yet. It will get a new entry. Only what sets it apart is researched; the rest comes from its parent.</p>
    <label class="hint" for="parent">File it under</label><select id="parent"><option value="">Not sure (Claude decides)</option>${roots.map(x=>`<option value="${esc(x.id)}" ${x.id===sel?'selected':''}>${esc(x.title)}</option>`).join('')}</select>`}
  box.innerHTML=h;
+ const pv=$('prev');if(pv&&e){const d=drawer(e),sts=[...$('states').querySelectorAll('input:checked')].map(i=>i.value);pv.innerHTML=sts.map(st=>`<figure><canvas></canvas><figcaption>${esc(st)}</figcaption></figure>`).join('');pv.querySelectorAll('canvas').forEach((cv,i)=>paint(cv,(c,W,H)=>d.draw(c,e,sts[i],W,H,7)))}
  const pr=$('parent');if(pr){if(!parentPick&&pr.value)parentPick='';pr.onchange=()=>{parentPick=pr.value;renderOut()}}
  box.querySelectorAll('input[name=research]').forEach(r=>r.onchange=renderOut)}
 const radio=(v,t,on)=>`<label><input type="radio" name="research" value="${v}" ${on?'checked':''}>${t}</label>`;
@@ -182,7 +195,7 @@ function brief(){const what=$('what').value.trim(),d=placeData(),e=find(what),rc
  const states=[...$('states').querySelectorAll('input:checked')].map(i=>i.value).concat($('morestates').value.split(',').map(s=>s.trim()).filter(Boolean));
  const L=['# Art brief','',`1. What: ${what||'(required)'}`,`2. Where: ${$('project').value||'(required)'}${d?' / '+d[0]+` (view: ${d[1]}; sizes: ${d[2]})`:''}`,
   `3. Look notes: ${$('look').value.trim()||'none, so decide from research'}`,`4. States: ${states.join(', ')||'engine decides'}`,`5. Repeating structure: ${$('repeat').value||'engine decides'}`,`6. Variation: ${$('vary').value||'engine decides (seeded)'}`,'','## Research'];
- if(e){L.push(`Library entry: ${e.id} (${chain(e).map(l=>l.missing?l.id+': missing':`${l.id}: ${l.depth}`).join(' → ')})`);L.push(`Choice: ${rc?{use:'use as is',gaps:'fill the listed gaps',deep:'run a deeper search'}[rc.value]:'fill the listed gaps'}`)}
+ if(e){L.push(`Library entry: ${e.id} (${chain(e).map(l=>l.missing?l.id+': missing':`${l.id}: ${l.depth}`).join(' → ')})`);if(drawer(e))L.push(`Engine: can draw it now with ${drawer(e).name}`);L.push(`Choice: ${rc?{use:'use as is',gaps:'fill the listed gaps',deep:'run a deeper search'}[rc.value]:'fill the listed gaps'}`)}
  else if(what)L.push(`No entry yet. New entry under: ${($('parent')&&$('parent').value)||'Claude decides'}`);
  L.push('','Follow the Art Asset Builder process in fenw1ck/art-assets: check research/ first, add what is learned, check with tools/contact-sheet.py.');return L.join('\n')}
 function renderOut(){$('out').textContent=brief();try{localStorage.setItem('aab-draft',JSON.stringify(save()))}catch(e){}}
@@ -190,7 +203,7 @@ const FIELDS=['what','project','place','look','morestates','repeat','vary'];
 const save=()=>Object.fromEntries(FIELDS.map(k=>[k,$(k).value]).concat([['parent',parentPick]]));
 function update(){renderStates();renderMatch();renderOut()}
 $('what').addEventListener('input',update);$('project').addEventListener('change',()=>{renderPlaces();renderOut()});$('place').addEventListener('change',()=>{renderPlaceInfo();renderOut()});
-['look','morestates','repeat','vary'].forEach(k=>$(k).addEventListener('input',renderOut));$('states').addEventListener('change',renderOut);
+['look','morestates','repeat','vary'].forEach(k=>$(k).addEventListener('input',renderOut));$('states').addEventListener('change',()=>{renderMatch();renderOut()});
 $('f').addEventListener('submit',e=>e.preventDefault());
 $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(brief());$('copied').hidden=false;setTimeout(()=>$('copied').hidden=true,1800)}catch(e){const r=document.createRange();r.selectNodeContents($('out'));getSelection().removeAllRanges();getSelection().addRange(r)}});
 $('reset').addEventListener('click',()=>{FIELDS.forEach(k=>$(k).value='');parentPick='';lastStates='';renderPlaces();update()});
@@ -206,7 +219,11 @@ $('libq').addEventListener('input',renderTree);
 const STAGES=['seedling','young','mature','past','dormant','dead'];let stage='mature',drawn=false;
 $('stg').innerHTML=STAGES.map(s=>`<button type="button" data-s="${s}" aria-pressed="${s===stage}">${s==='past'?'declining (past)':s==='young'?'immature (young)':s}</button>`).join('');
 $('stg').querySelectorAll('button').forEach(b=>b.onclick=()=>{stage=b.dataset.s;$('stg').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawGallery()});
-function drawGallery(){if(!window.PLANTS)return;const box=$('pl');if(!drawn){box.innerHTML=PLANTS.list.map(p=>`<div class="pc"><canvas data-id="${esc(p.id)}"></canvas><div>${esc(p.common_name)}</div><small>${esc(p.silhouette)}</small></div>`).join('');drawn=true}
+function drawObjects(){const box=$('objs'),chest=BY.chest;if(!window.CONTAINERS||!chest){box.innerHTML='<p class="note">No objects yet.</p>';return}
+ const items=[['closed',{}],['open',{fill:.7}],['closed',{lid:'domed',lid_height:.2}],['open',{lid:'domed',lid_height:.2},1]];
+ if(!box.children.length)box.innerHTML=items.map(([st,t])=>`<div class="pc"><canvas></canvas><div>${esc(chest.title)}</div><small>${esc(st)}${t.lid?', domed lid':''}</small></div>`).join('');
+ box.querySelectorAll('canvas').forEach((cv,i)=>{const[st,t,f]=items[i];paint(cv,(c,W,H)=>CONTAINERS.drawChest(c,Object.assign({},chest.merged,t),W/2,H-12,Math.min(W*.62,H),st,7,{fill:f||.7}))})}
+function drawGallery(){drawObjects();if(!window.PLANTS)return;const box=$('pl');if(!drawn){box.innerHTML=PLANTS.list.map(p=>`<div class="pc"><canvas data-id="${esc(p.id)}"></canvas><div>${esc(p.common_name)}</div><small>${esc(p.silhouette)}</small></div>`).join('');drawn=true}
  box.querySelectorAll('canvas').forEach(cv=>{const r=devicePixelRatio||1,W=cv.clientWidth||150,H=150;cv.width=W*r;cv.height=H*r;const c=cv.getContext('2d');c.setTransform(r,0,0,r,0,0);c.clearRect(0,0,W,H);try{PLANTS.drawFit(c,PLANTS.byId[cv.dataset.id],W/2,H-10,H-24,stage,7)}catch(e){}})}
 /* the header strip */
 function drawStrip(){const cv=$('strip');if(!window.PLANTS)return;const r=devicePixelRatio||1,W=cv.clientWidth,H=cv.clientHeight;cv.width=W*r;cv.height=H*r;const c=cv.getContext('2d');c.setTransform(r,0,0,r,0,0);

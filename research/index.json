@@ -1,8 +1,47 @@
 [
  {
+  "id": "metal",
+  "title": "Metal",
+  "kind": "material",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "wrought iron",
+   "iron",
+   "brass",
+   "bronze",
+   "copper",
+   "ironwork",
+   "hardware"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "gold",
+   "silver",
+   "steel",
+   "polished vs cast",
+   "swatches from photos"
+  ],
+  "used_by": [
+   "containers.js"
+  ],
+  "file": "research/materials/metal/_metal.md",
+  "sections": [
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 6,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "stone",
   "title": "Stone",
   "kind": "material",
+  "class": null,
   "parent": "none",
   "aliases": [
    "rock",
@@ -25,12 +64,15 @@
    "Rendering notes",
    "Log"
   ],
-  "sources": 0
+  "sources": 0,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "marble",
   "title": "Marble (and decorative stones sold as marble)",
   "kind": "material",
+  "class": null,
   "parent": "stone",
   "aliases": [
    "Carrara",
@@ -56,12 +98,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 3
+  "sources": 3,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "villamayor-sandstone",
   "title": "Villamayor sandstone (Salamanca's golden stone)",
   "kind": "material",
+  "class": null,
   "parent": "stone",
   "aliases": [
    "golden stone",
@@ -85,12 +130,214 @@
    "Log",
    "Sources"
   ],
-  "sources": 3
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "wood",
+  "title": "Wood",
+  "kind": "material",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "timber",
+   "oak",
+   "pine",
+   "elm",
+   "walnut",
+   "chestnut",
+   "board",
+   "plank"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "colour swatches per species",
+   "fresh vs aged",
+   "end grain",
+   "bark (see plants)",
+   "painted wood"
+  ],
+  "used_by": [
+   "containers.js"
+  ],
+  "file": "research/materials/wood/_wood.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "containers",
+  "title": "Containers (chests, boxes, trunks)",
+  "kind": "object",
+  "class": "container",
+  "parent": "none",
+  "aliases": [
+   "container",
+   "box",
+   "trunk",
+   "coffer",
+   "casket",
+   "strongbox"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "barrels",
+   "baskets",
+   "jars and amphorae (likely their own class)",
+   "drawers"
+  ],
+  "used_by": [
+   "containers.js"
+  ],
+  "file": "research/objects/containers/_containers.md",
+  "sections": [
+   "Parts",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
+  "traits": {},
+  "merged": {
+   "construction": "six-board",
+   "lid": "flat",
+   "width": 1,
+   "height": 0.5,
+   "depth": 0.52,
+   "lid_height": 0.08,
+   "board_thickness": 0.035,
+   "planks": 3,
+   "feet": "none",
+   "wood": "oak",
+   "wood_colour": "#7a5230",
+   "grain": "flat-sawn",
+   "metal": "wrought iron",
+   "metal_colour": "#3b3a3a",
+   "bands": 2,
+   "corner_brackets": true,
+   "edge_binding": true,
+   "strap_hinges": true,
+   "lock_plate": "rectangle",
+   "hasp": true,
+   "handles": "ring",
+   "rivets": 0.6,
+   "contents": "coins",
+   "wear": 0.4,
+   "states": [
+    "closed",
+    "open"
+   ]
+  }
+ },
+ {
+  "id": "chest",
+  "title": "Wooden chest (iron-bound)",
+  "kind": "object",
+  "class": "container",
+  "parent": "containers",
+  "aliases": [
+   "wooden chest",
+   "treasure chest",
+   "iron-bound chest",
+   "coffer chest",
+   "sea chest",
+   "six-board chest"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-24",
+  "gaps": [
+   "photos of open chests (lid angle",
+   "inside)",
+   "domed-lid proportions",
+   "Greek/Roman wooden chests (none survive; only stone and clay copies)"
+  ],
+  "used_by": [
+   "containers.js drawChest"
+  ],
+  "file": "research/objects/containers/chest.md",
+  "sections": [
+   "Distinguishing features",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
+  "traits": {
+   "construction": "six-board",
+   "lid": "flat",
+   "width": 1,
+   "height": 0.5,
+   "depth": 0.52,
+   "lid_height": 0.09,
+   "planks": 3,
+   "feet": "none",
+   "wood": "oak",
+   "wood_colour": "#7a5230",
+   "grain": "flat-sawn",
+   "metal": "wrought iron",
+   "metal_colour": "#3b3a3a",
+   "bands": 2,
+   "corner_brackets": true,
+   "edge_binding": true,
+   "strap_hinges": true,
+   "lock_plate": "rectangle",
+   "hasp": true,
+   "handles": "ring",
+   "rivets": 0.6,
+   "contents": "coins",
+   "wear": 0.4,
+   "states": [
+    "closed",
+    "open"
+   ]
+  },
+  "merged": {
+   "construction": "six-board",
+   "lid": "flat",
+   "width": 1,
+   "height": 0.5,
+   "depth": 0.52,
+   "lid_height": 0.09,
+   "board_thickness": 0.035,
+   "planks": 3,
+   "feet": "none",
+   "wood": "oak",
+   "wood_colour": "#7a5230",
+   "grain": "flat-sawn",
+   "metal": "wrought iron",
+   "metal_colour": "#3b3a3a",
+   "bands": 2,
+   "corner_brackets": true,
+   "edge_binding": true,
+   "strap_hinges": true,
+   "lock_plate": "rectangle",
+   "hasp": true,
+   "handles": "ring",
+   "rivets": 0.6,
+   "contents": "coins",
+   "wear": 0.4,
+   "states": [
+    "closed",
+    "open"
+   ]
+  }
  },
  {
   "id": "floors",
   "title": "Floor layouts",
   "kind": "pattern",
+  "class": null,
   "parent": "none",
   "aliases": [
    "floor",
@@ -119,12 +366,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 5
+  "sources": 5,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "colour",
   "title": "Colour ramps and palettes",
   "kind": "technique",
+  "class": null,
   "parent": "none",
   "aliases": [
    "color",
@@ -146,12 +396,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 3
+  "sources": 3,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "light-and-shadow",
   "title": "Light and shadow",
   "kind": "technique",
+  "class": null,
   "parent": "none",
   "aliases": [
    "shading",
@@ -183,12 +436,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 4
+  "sources": 4,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "readability",
   "title": "Readability checks",
   "kind": "technique",
+  "class": null,
   "parent": "none",
   "aliases": [
    "silhouette test",
@@ -210,12 +466,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 2
+  "sources": 2,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "textures",
   "title": "Textures",
   "kind": "technique",
+  "class": null,
   "parent": "none",
   "aliases": [
    "texture",
@@ -246,12 +505,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 5
+  "sources": 5,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "wear",
   "title": "Wear, weathering and decline",
   "kind": "technique",
+  "class": null,
   "parent": "none",
   "aliases": [
    "weathering",
@@ -275,12 +537,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 2
+  "sources": 2,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "birds",
   "title": "Birds",
   "kind": "subject",
+  "class": null,
   "parent": "none",
   "aliases": [
    "bird",
@@ -307,12 +572,15 @@
    "Log",
    "Sources"
   ],
-  "sources": 7
+  "sources": 7,
+  "traits": {},
+  "merged": {}
  },
  {
   "id": "plants",
   "title": "Plants (flowering plants)",
   "kind": "subject",
+  "class": "plant",
   "parent": "none",
   "aliases": [
    "plant",
@@ -339,12 +607,33 @@
    "Log",
    "Sources"
   ],
-  "sources": 5
+  "sources": 5,
+  "traits": {
+   "stem": "round-green",
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ]
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green"
+  }
  },
  {
   "id": "allium",
   "title": "Onion family (Allium)",
   "kind": "subject",
+  "class": "plant",
   "parent": "plants",
   "aliases": [
    "chives",
@@ -366,12 +655,38 @@
    "Distinguishing features",
    "Log"
   ],
-  "sources": 0
+  "sources": 0,
+  "traits": {
+   "arrangement": "basal",
+   "leaf": "simple",
+   "leaf_shape": "linear",
+   "stem": "hollow-tube",
+   "branching": "basal-crown",
+   "repeats": "none",
+   "inflorescence": "ball"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "hollow-tube",
+   "arrangement": "basal",
+   "leaf": "simple",
+   "leaf_shape": "linear",
+   "branching": "basal-crown",
+   "repeats": "none",
+   "inflorescence": "ball"
+  }
  },
  {
   "id": "apiaceae",
   "title": "Carrot family (Apiaceae)",
   "kind": "subject",
+  "class": "plant",
   "parent": "plants",
   "aliases": [
    "carrot family",
@@ -397,12 +712,35 @@
    "Distinguishing features",
    "Log"
   ],
-  "sources": 0
+  "sources": 0,
+  "traits": {
+   "arrangement": "basal",
+   "leaf": "bipinnate",
+   "branching": "basal-crown",
+   "repeats": "umbel",
+   "inflorescence": "umbel"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green",
+   "arrangement": "basal",
+   "leaf": "bipinnate",
+   "branching": "basal-crown",
+   "repeats": "umbel",
+   "inflorescence": "umbel"
+  }
  },
  {
   "id": "lamiaceae",
   "title": "Mint family (Lamiaceae)",
   "kind": "subject",
+  "class": "plant",
   "parent": "plants",
   "aliases": [
    "mint family",
@@ -432,12 +770,38 @@
    "Log",
    "Sources"
   ],
-  "sources": 2
+  "sources": 2,
+  "traits": {
+   "arrangement": "decussate",
+   "leaf": "simple",
+   "leaf_shape": "ovate",
+   "stem": "square-green",
+   "branching": "axillary-shoots",
+   "repeats": "opposite-pairs",
+   "inflorescence": "spike-of-whorls"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "square-green",
+   "arrangement": "decussate",
+   "leaf": "simple",
+   "leaf_shape": "ovate",
+   "branching": "axillary-shoots",
+   "repeats": "opposite-pairs",
+   "inflorescence": "spike-of-whorls"
+  }
  },
  {
   "id": "pepper",
   "title": "Pepper and eggplant",
   "kind": "subject",
+  "class": "plant",
   "parent": "solanaceae",
   "aliases": [
    "pepper_bell",
@@ -462,12 +826,58 @@
    "Log",
    "Sources"
   ],
-  "sources": 4
+  "sources": 4,
+  "traits": {
+   "leaf": "simple",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "glossy",
+   "branching": "repeated-fork",
+   "repeats": "repeated-fork",
+   "inflorescence": "single",
+   "flower_colour": "#fbfbf4",
+   "fruit": "pepper",
+   "fruit_per_group": "1",
+   "fruit_ripening": [
+    "#3f9a2f",
+    "#e86a1e",
+    "#c8281e"
+   ],
+   "foliage_colour": "#3c7a35"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green",
+   "arrangement": "alternate",
+   "leaf": "simple",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "glossy",
+   "branching": "repeated-fork",
+   "repeats": "repeated-fork",
+   "inflorescence": "single",
+   "flower_colour": "#fbfbf4",
+   "fruit": "pepper",
+   "fruit_per_group": "1",
+   "fruit_ripening": [
+    "#3f9a2f",
+    "#e86a1e",
+    "#c8281e"
+   ],
+   "foliage_colour": "#3c7a35"
+  }
  },
  {
   "id": "solanaceae",
   "title": "Nightshade family (Solanaceae)",
   "kind": "subject",
+  "class": "plant",
   "parent": "plants",
   "aliases": [
    "nightshade family"
@@ -484,12 +894,27 @@
    "Parts",
    "Log"
   ],
-  "sources": 0
+  "sources": 0,
+  "traits": {
+   "arrangement": "alternate"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green",
+   "arrangement": "alternate"
+  }
  },
  {
   "id": "tomato",
   "title": "Tomato",
   "kind": "subject",
+  "class": "plant",
   "parent": "solanaceae",
   "aliases": [
    "Solanum lycopersicum",
@@ -514,6 +939,51 @@
    "Construction order",
    "Log"
   ],
-  "sources": 0
+  "sources": 0,
+  "traits": {
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "serrate",
+   "surface": "puckered",
+   "branching": "axillary-shoots",
+   "repeats": "recursive-shoot",
+   "inflorescence": "truss",
+   "flower_colour": "#f2c21c",
+   "fruit": "berry",
+   "fruit_per_group": "3-7 (cherry 7-16)",
+   "fruit_ripening": [
+    "#8dbb4a",
+    "#f0a030",
+    "#e0483b"
+   ],
+   "foliage_colour": "#3f7f3a"
+  },
+  "merged": {
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green",
+   "arrangement": "alternate",
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "serrate",
+   "surface": "puckered",
+   "branching": "axillary-shoots",
+   "repeats": "recursive-shoot",
+   "inflorescence": "truss",
+   "flower_colour": "#f2c21c",
+   "fruit": "berry",
+   "fruit_per_group": "3-7 (cherry 7-16)",
+   "fruit_ripening": [
+    "#8dbb4a",
+    "#f0a030",
+    "#e0483b"
+   ],
+   "foliage_colour": "#3f7f3a"
+  }
  }
 ]

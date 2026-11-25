@@ -8,6 +8,12 @@ depth: outline
 updated: 2026-11-24
 gaps: [sources not recorded, carrot (drawn generically today), umbel ray counts]
 used_by: [plants.js drawCarrotFamily]
+traits:
+  arrangement: basal
+  leaf: bipinnate
+  branching: basal-crown
+  repeats: umbel
+  inflorescence: umbel
 ---
 
 # Carrot family

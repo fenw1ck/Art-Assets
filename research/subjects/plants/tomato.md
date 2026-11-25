@@ -8,6 +8,19 @@ depth: outline
 updated: 2026-11-24
 gaps: [sources not recorded for the original research, seedling true-leaf shape, decline photos]
 used_by: [plants.js drawTomato]
+traits:
+  leaf: pinnate
+  leaf_shape: ovate
+  margin: serrate
+  surface: puckered
+  branching: axillary-shoots
+  repeats: recursive-shoot
+  inflorescence: truss
+  flower_colour: "#f2c21c"
+  fruit: berry
+  fruit_per_group: 3-7 (cherry 7-16)
+  fruit_ripening: ["#8dbb4a", "#f0a030", "#e0483b"]
+  foliage_colour: "#3f7f3a"
 ---
 
 # Tomato

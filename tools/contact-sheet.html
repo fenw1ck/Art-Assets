@@ -4,8 +4,9 @@
 <canvas id="c"></canvas>
 <script src="../core.js"></script>
 <script src="../plants.js"></script>
+<script src="../containers.js"></script>
 <script>
-/* Opened by tools/contact-sheet.py. ?sheet=plants|ladder|core &bg=light|dark */
+/* Opened by tools/contact-sheet.py. ?sheet=plants|ladder|core|containers &bg=light|dark */
 const Q=new URLSearchParams(location.search),sheet=Q.get('sheet')||'plants',dark=Q.get('bg')==='dark';
 const BG=dark?'#1d2126':'#f4efe2',BG2=dark?'#252a30':'#efe8d6',INK=dark?'#e8e4da':'#333',SUB=dark?'#9aa0a8':'#777',GOOD=dark?'#8fd49a':'#1d6a2a';
 const c=document.getElementById('c'),ctx=c.getContext('2d');
@@ -22,6 +23,17 @@ if(sheet==='plants'){
   const ids=['tomato_indeterminate','pepper_bell','basil','lettuce','apple'],sizes=[16,24,48,96,200,400];
   c.width=sizes.reduce((a,b)=>a+b+30,40);c.height=ids.length*430;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   ids.forEach((id,r)=>{let x=20;sizes.forEach(s=>{PLANTS.drawFit(ctx,PLANTS.byId[id],x+s/2,r*430+410,s,'mature',7);label(s+'px',x,r*430+424,SUB);x+=s+30})});
+}else if(sheet==='containers'){
+  const C=CONTAINERS,T=C.defaults,cw=280,pad=20;c.width=pad+5*cw;c.height=1500;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  const cell=(i,row,t,state,size,o,lab,seed)=>{const x=pad+i*cw+cw/2,y=row;C.drawChest(ctx,t,x,y,size,state,seed||7,o||{});label(lab,pad+i*cw+10,y+22,SUB)};
+  label('Wooden chest (research/objects/containers/chest.md): states and variants',pad,22,INK,'bold 13px system-ui');
+  const dom=Object.assign({},T,{lid:'domed',lid_height:.2});
+  cell(0,250,T,'closed',190,{},'closed');cell(1,250,T,'open',190,{},'open (fill .6)');cell(2,250,dom,'closed',190,{},'domed lid, closed');cell(3,250,dom,'open',190,{fill:1},'domed lid, open (fill 1)');cell(4,250,T,'closed',190,{mirror:true},'mirrored');
+  cell(0,520,T,'closed',190,{view:'front'},'front view');cell(1,520,Object.assign({},T,{wear:0}),'closed',190,{},'wear 0');cell(2,520,Object.assign({},T,{wear:.95}),'closed',190,{},'wear .95');
+  cell(3,520,Object.assign({},T,{metal_colour:'#b58a3a',wood_colour:'#5a3a24',bands:3,lock_plate:'shield',handles:'bail'}),'closed',190,{},'brass, 3 bands, shield');cell(4,520,Object.assign({},T,{feet:'skids',grain:'quarter-sawn',edge_binding:false}),'closed',190,{},'skids, quarter-sawn, no edges');
+  label('seeds 1–5 (same traits)',pad,600,INK,'bold 12px system-ui');for(let i=0;i<5;i++)cell(i,760,T,'closed',150,{},'seed '+(i+1),i+1);
+  label('size ladder',pad,840,INK,'bold 12px system-ui');let x=pad;for(const s of[16,24,48,96,200,400]){C.drawChest(ctx,T,x+s/2+10,1290,s,'closed',7,{});label(s+'px',x,1310,SUB);x+=s+40}
+  label('silhouettes (closed, open)',pad,1350,INK,'bold 12px system-ui');for(const[i,st]of[[0,'closed'],[1,'open']]){const off=document.createElement('canvas');off.width=cw;off.height=140;const o2=off.getContext('2d');C.drawChest(o2,T,cw/2,125,110,st,7,{});o2.globalCompositeOperation='source-in';o2.fillStyle=INK;o2.fillRect(0,0,cw,140);ctx.drawImage(off,pad+i*cw,1355)}
 }else{ /* core.js: ramps, noise, warp, a marble test and Voronoi stones */
   const A=ART_CORE,S=180,pad=24;c.width=pad+4*(S+pad);c.height=760;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   label('ramp(base, 7): hue-shifted, dark to light; base in the middle',pad,20,INK,'bold 12px system-ui');

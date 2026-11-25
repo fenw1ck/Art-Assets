@@ -9,7 +9,8 @@ Each entry is one Markdown file with a short header (front matter), in a tree:
 ```
 research/
   rendering/      how to draw anything: light and shadow, colour, textures, wear, readability
-  subjects/       what things are made of: plants, birds, … (class → family → species)
+  subjects/       living things: plants, birds, … (class → family → species)
+  objects/        made things: containers, … (class → kind)
   materials/      stone, wood, metal, glass … (class → kind → named stone)
   patterns/       layouts: floors, walls, bonds, inlay
 ```
@@ -22,7 +23,7 @@ An entry only holds what is new at its level and inherits the rest from its pare
 ---
 id: tomato                  # unique, lower case
 title: Tomato
-kind: subject               # subject | material | pattern | technique
+kind: subject               # subject | object | material | pattern | technique
 parent: solanaceae          # the entry it inherits from (none for a root)
 aliases: [Solanum lycopersicum, cherry tomato]
 depth: standard             # outline | standard | deep (see below)
@@ -36,6 +37,20 @@ used_by: [plants.js drawTomato]
 - **outline:** the terms and the main facts from 1–2 sources. Enough to start a drawing.
 - **standard:** checked against several sources, with photos per state. Enough to build a finished asset.
 - **deep:** standard, plus measurements, variation within the kind, and how it changes over time or use.
+
+## Traits
+
+An entry can also carry a `traits:` block in its header: the facts a drawing program reads, in the fixed vocabulary of `research/traits.yaml`. The root entry of a tree names its vocabulary with `class:` (for example `class: container`). An entry only lists traits that differ from its parents. The merged result is the vocabulary's defaults, then each level from the root down, with the entry itself winning:
+
+```yaml
+class: container          # on the root entry only
+traits:
+  lid: flat
+  bands: 2
+  wood_colour: "#7a5230"
+```
+
+`python3 tools/research.py traits chest` prints the merged traits. `check` rejects traits that aren't in the vocabulary, or that are out of range. The vocabulary's `ask` and `options` are also the questions the builder page's guided form asks when nothing is on file.
 
 ## The body
 
@@ -54,7 +69,9 @@ Every entry uses the same sections; leave out any that don't apply:
 ```
 python3 tools/research.py lookup robin      # walks robin → birds and reports what exists
 python3 tools/research.py map               # the whole tree, with depth and gaps
-python3 tools/research.py check             # validates headers and parents
+python3 tools/research.py check             # validates headers, parents and traits
+python3 tools/research.py traits chest      # the merged traits a drawing program will use
+python3 tools/research.py index             # rewrites research/index.json and research/vocabulary.json
 ```
 
 `lookup` prints, for each level from the subject up to the root, whether an entry exists, its depth, its date and its gaps. That tells you what to ask:

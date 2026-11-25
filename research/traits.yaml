@@ -1,0 +1,68 @@
+# The traits vocabulary: the fixed words and numbers that research entries use in their `traits:` block.
+# Drawing programs read traits; the builder page's guided form asks for them using `ask` and `options`.
+# An entry's traits are merged with its parents' (the entry wins), so a species only lists what differs.
+#
+# Each trait:  type (enum | number | bool | colour | text | list),
+#              options (for enum), min/max (for number), default, ask (the guided-form question), help.
+
+container:
+  construction:
+    type: enum
+    options: [six-board, panelled, clamped, dug-out]
+    default: six-board
+    ask: "How is the box built?"
+    help: "six-board = front, back, two ends, lid and bottom nailed together; panelled = a frame holding thin panels"
+  lid:
+    type: enum
+    options: [flat, domed]
+    default: flat
+    ask: "What shape is the lid?"
+  width: {type: number, min: 0.3, max: 3, default: 1, ask: "Width (the unit for the other sizes)", help: "everything else is a fraction of the width"}
+  height: {type: number, min: 0.2, max: 2, default: 0.5, ask: "Height of the box without the lid, as a fraction of the width"}
+  depth: {type: number, min: 0.2, max: 2, default: 0.52, ask: "Depth, front to back, as a fraction of the width"}
+  lid_height: {type: number, min: 0.02, max: 0.6, default: 0.08, ask: "How tall is the lid (its rise, for a domed lid)?"}
+  board_thickness: {type: number, min: 0.01, max: 0.1, default: 0.035}
+  planks: {type: number, min: 1, max: 8, default: 3, ask: "How many boards make up the front, top to bottom?"}
+  feet:
+    type: enum
+    options: [none, end-boards, skids, bracket]
+    default: none
+    ask: "What does it stand on?"
+    help: "end-boards = the end boards run down past the bottom, as on a six-board chest"
+  wood: {type: text, default: oak, ask: "What wood? (an entry under materials/wood)"}
+  wood_colour: {type: colour, default: "#7a5230", ask: "The wood's main colour"}
+  grain:
+    type: enum
+    options: [flat-sawn, quarter-sawn, straight]
+    default: flat-sawn
+    help: "flat-sawn shows arched cathedral grain; quarter-sawn shows straight lines and ray fleck"
+  metal: {type: text, default: wrought iron, ask: "What are the fittings made of? (an entry under materials/metal)"}
+  metal_colour: {type: colour, default: "#3b3a3a"}
+  bands: {type: number, min: 0, max: 5, default: 2, ask: "How many metal straps wrap around the chest?"}
+  corner_brackets: {type: bool, default: true, ask: "Metal brackets on the corners?"}
+  edge_binding: {type: bool, default: true, ask: "Metal along the edges?"}
+  strap_hinges: {type: bool, default: true}
+  lock_plate: {type: enum, options: [none, rectangle, shield], default: rectangle, ask: "Lock plate shape"}
+  hasp: {type: bool, default: true}
+  handles: {type: enum, options: [none, ring, bail], default: ring, ask: "Handles on the ends"}
+  rivets: {type: number, min: 0, max: 1, default: 0.6, help: "how densely nails and rivets are set along the metal"}
+  contents: {type: enum, options: [empty, coins, cloth], default: coins, ask: "What shows inside when it is open?"}
+  wear: {type: number, min: 0, max: 1, default: 0.4, ask: "How worn is it? (0 new, 1 ruined)"}
+  states: {type: list, default: [closed, open]}
+
+plant:
+  arrangement: {type: enum, options: [alternate, opposite, decussate, whorled, basal], ask: "How are the leaves arranged on the stem?"}
+  leaf: {type: enum, options: [simple, pinnate, palmate, bipinnate], ask: "Is the leaf one blade or divided into leaflets?"}
+  leaf_shape: {type: enum, options: [ovate, obovate, lance, linear, round, cordate, thread], ask: "Leaf (or leaflet) shape"}
+  margin: {type: enum, options: [entire, serrate, dentate, crenate, wavy, lobed], ask: "Leaf edge"}
+  surface: {type: enum, options: [matte, glossy, puckered, wrinkled, hairy]}
+  branching: {type: enum, options: [axillary-shoots, repeated-fork, basal-crown, single-stem], ask: "How does it branch?"}
+  repeats: {type: enum, options: [recursive-shoot, repeated-fork, opposite-pairs, frond, umbel, spiral, whorl, none]}
+  inflorescence: {type: enum, options: [single, truss, cluster, spike-of-whorls, umbel, head, ball], ask: "How are the flowers grouped?"}
+  flower_colour: {type: colour}
+  fruit: {type: enum, options: [none, berry, pepper, pod, drupe, pome, achene]}
+  fruit_per_group: {type: text, help: "a range such as 3-7"}
+  fruit_ripening: {type: list, help: "colours from unripe to ripe"}
+  stem: {type: enum, options: [round-green, square-green, woody, hollow-tube]}
+  foliage_colour: {type: colour}
+  states: {type: list, default: [seedling, immature, mature, declining, dead]}
