@@ -8,6 +8,19 @@ depth: standard
 updated: 2026-11-24
 gaps: [hot pepper shapes, eggplant sources]
 used_by: [plants.js drawPepper]
+traits:
+  leaf: simple
+  leaf_shape: ovate
+  margin: entire
+  surface: glossy
+  branching: repeated-fork
+  repeats: repeated-fork
+  inflorescence: single
+  flower_colour: "#fbfbf4"
+  fruit: pepper
+  fruit_per_group: "1"
+  fruit_ripening: ["#3f9a2f", "#e86a1e", "#c8281e"]
+  foliage_colour: "#3c7a35"
 ---
 
 # Pepper and eggplant

@@ -8,6 +8,8 @@ depth: outline
 updated: 2026-11-24
 gaps: [potato structure, family-level flower details]
 used_by: []
+traits:
+  arrangement: alternate
 ---
 
 # Nightshade family

@@ -6,6 +6,7 @@ Run from the repository folder:
   python3 tools/research.py lookup <name> --in <parent>   for something new: show what its parent already covers
   python3 tools/research.py map             the whole tree, with depth, date and gaps
   python3 tools/research.py check           validate every entry's header and parent
+  python3 tools/research.py traits <name>   the merged traits a drawing program will use (entry over its parents over defaults)
   python3 tools/research.py index           rewrite research/index.json (the map, for other tools)
 
 Entries are the Markdown files under research/ (see research/README.md). Needs PyYAML.
@@ -16,7 +17,8 @@ import yaml
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LIB = ROOT / "research"
 DEPTHS = ["outline", "standard", "deep"]
-KINDS = ["subject", "material", "pattern", "technique"]
+KINDS = ["subject", "object", "material", "pattern", "technique"]
+VOCAB = yaml.safe_load((LIB / "traits.yaml").read_text()) if (LIB / "traits.yaml").exists() else {}
 SECTIONS = ["Parts", "Distinguishing features", "Construction order", "States", "Rendering notes", "Log", "Sources"]
 
 
@@ -35,6 +37,7 @@ def load():
         h["file"] = str(f.relative_to(ROOT))
         h["sections"] = [s for s in SECTIONS if re.search(rf"^## {re.escape(s)}", body, re.M)]
         h["sources"] = len(re.findall(r"^- .*https?://", body.split("## Sources", 1)[1], re.M)) if "## Sources" in body else 0
+        h["traits"] = h.get("traits") or {}
         for k in ("aliases", "gaps", "used_by"):
             h[k] = h.get(k) or []
         h["parent"] = h.get("parent") or "none"
@@ -69,6 +72,46 @@ def chain(entries, e):
             break
         out.append(p)
     return out
+
+
+def klass(entries, e):
+    for level in chain(entries, e):
+        if not level.get("missing") and level.get("class"):
+            return level["class"]
+    return None
+
+
+def merged(entries, e):
+    """Defaults from the vocabulary, then each level from the root down; the entry itself wins."""
+    c = klass(entries, e)
+    out = {k: v.get("default") for k, v in VOCAB.get(c, {}).items() if "default" in v}
+    for level in reversed(chain(entries, e)):
+        if not level.get("missing"):
+            out.update(level.get("traits") or {})
+    return c, out
+
+
+def bad_traits(c, traits):
+    probs = []
+    vocab = VOCAB.get(c)
+    if traits and not vocab:
+        return [f"traits given but no vocabulary for class '{c}'"]
+    for k, v in (traits or {}).items():
+        spec = vocab.get(k)
+        if not spec:
+            probs.append(f"trait '{k}' is not in the '{c}' vocabulary"); continue
+        t = spec.get("type")
+        if t == "enum" and v not in spec["options"]:
+            probs.append(f"trait '{k}': '{v}' is not one of {spec['options']}")
+        elif t == "number" and (not isinstance(v, (int, float)) or v < spec.get("min", -1e9) or v > spec.get("max", 1e9)):
+            probs.append(f"trait '{k}': {v} is outside {spec.get('min')}..{spec.get('max')}")
+        elif t == "bool" and not isinstance(v, bool):
+            probs.append(f"trait '{k}' must be true or false")
+        elif t == "colour" and not (isinstance(v, str) and re.fullmatch(r"#[0-9a-fA-F]{6}", v)):
+            probs.append(f"trait '{k}' must be a colour like #7a5230")
+        elif t == "list" and not isinstance(v, list):
+            probs.append(f"trait '{k}' must be a list")
+    return probs
 
 
 def describe(e):
@@ -145,6 +188,8 @@ def cmd_check(entries):
             if n and n in seen and seen[n] != e["id"]:
                 print(f"{e['file']}: name '{n}' also used by {seen[n]}"); bad += 1
             seen[n] = e["id"]
+        for prob in bad_traits(klass(entries, e), e["traits"]):
+            print(f"{e['file']}: {prob}"); bad += 1
         if e.get("depth") != "outline" and e["sources"] == 0:
             print(f"{e['file']}: depth {e['depth']} but no sources listed (note it as a gap)")
     print(f"{len(entries)} entries, {bad} problems")
@@ -152,16 +197,24 @@ def cmd_check(entries):
 
 
 def cmd_index(entries):
-    keep = ("id", "title", "kind", "parent", "aliases", "depth", "updated", "gaps", "used_by", "file", "sections", "sources")
-    data = sorted(({k: e.get(k) for k in keep} for e in entries.values() if "id" in e), key=lambda x: x["file"])
+    keep = ("id", "title", "kind", "class", "parent", "aliases", "depth", "updated", "gaps", "used_by", "file", "sections", "sources", "traits")
+    data = []
+    for e in entries.values():
+        if "id" not in e:
+            continue
+        d = {k: e.get(k) for k in keep}
+        d["class"], d["merged"] = merged(entries, e)
+        data.append(d)
+    data.sort(key=lambda x: x["file"])
     (LIB / "index.json").write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n")
-    print(f"wrote research/index.json, {len(data)} entries")
+    (LIB / "vocabulary.json").write_text(json.dumps(VOCAB, indent=1, ensure_ascii=False) + "\n")
+    print(f"wrote research/index.json ({len(data)} entries) and research/vocabulary.json")
 
 
 if __name__ == "__main__":
     a = sys.argv[1:]
     E = load()
-    if not a or a[0] not in ("lookup", "map", "check", "index"):
+    if not a or a[0] not in ("lookup", "map", "check", "index", "traits"):
         print(__doc__); sys.exit(1)
     if a[0] == "lookup":
         under = None
@@ -170,6 +223,14 @@ if __name__ == "__main__":
         cmd_lookup(E, " ".join(a[1:]), under)
     elif a[0] == "map":
         cmd_map(E)
+    elif a[0] == "traits":
+        e, near = find(E, " ".join(a[1:]))
+        if not e:
+            print("No entry. Close matches: " + ", ".join(near)); sys.exit(1)
+        c, t = merged(E, e)
+        print(f"{e['id']} (class {c}):")
+        for k, v in t.items():
+            print(f"  {k}: {v}")
     elif a[0] == "check":
         sys.exit(1 if cmd_check(E) else 0)
     else:

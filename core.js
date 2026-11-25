@@ -9,7 +9,14 @@
    ART_CORE.rngMulberry(seed)             the random numbers garden.js uses (keeps every existing garden the same)
    ART_CORE.noise(x,y,seed) / fbm(x,y,seed,octaves) / warp(x,y,seed,amount)   smooth noise, layered noise and domain-warped noise, 0..1
    ART_CORE.voronoi(x,y,cell,seed)        nearest and second-nearest distances and the cell id: stones, breccia, cracks (edge = d2-d1 small)
-   ART_CORE.shadow(ctx,x,y,w)             the soft ground shadow every object sits on */
+   ART_CORE.shadow(ctx,x,y,w)             the soft ground shadow every object sits on
+   Factor modules (used by containers.js; plants.js will move onto them):
+   ART_CORE.view(kind,s,{mirror})         perspective: 'three-quarter' (oblique, depth up and to the right) or 'front'; world x right, y up, z away; s px per unit
+   ART_CORE.face(ctx,V,O,U,W,draw)        draws on one flat face of a 3-D object: draw(ctx,lu,lw) works in the face's own units (u along U, v up along W)
+   ART_CORE.light(n)                      shading: how lit a surface with normal n is (0..1), key light from the upper left and in front
+   ART_CORE.shade(c,n)                    the colour c on a surface facing n, hue-shifted toward blue in shadow and yellow in light
+   ART_CORE.ink(c) / ART_CORE.weight(px)  line: a darker version of the local colour (never black) and a line width for an object px wide
+   ART_CORE.lod(px)                       resolution: 'icon' (<=48 px), 'card' (<=200) or 'detail' */
 (function(){
 "use strict";
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
@@ -53,5 +60,21 @@ function voronoi(x,y,cell,seed){const s=seed||0,gx=Math.floor(x/cell),gy=Math.fl
 /* the soft ground shadow (the same as plants.js) */
 function shadow(ctx,x,y,w){ctx.save();const g=ctx.createRadialGradient(x,y,0,x,y,w*.55);g.addColorStop(0,"rgba(30,20,8,.32)");g.addColorStop(1,"rgba(30,20,8,0)");ctx.fillStyle=g;ctx.beginPath();ctx.ellipse(x,y,w*.55,Math.max(2,w*.12),0,0,Math.PI*2);ctx.fill();ctx.restore()}
 
-window.ART_CORE={hex,rgb,mix,lighten,darken,toHsl,fromHsl,ramp,rngLCG,rngMulberry,noise,fbm,warp,voronoi,shadow,clamp};
+/* perspective */
+function view(kind,s,o){o=o||{};const a=(o.angle==null?32:o.angle)*Math.PI/180,k=o.depth==null?.5:o.depth,m=o.mirror?-1:1;
+  if(kind==='front')return{kind,s,mirror:!!o.mirror,p:(x,y,z)=>[x*s,-y*s]};
+  return{kind:'three-quarter',s,mirror:!!o.mirror,p:(x,y,z)=>[(x+m*z*k*Math.cos(a))*s,(-y-z*k*Math.sin(a))*s]}}
+function face(ctx,V,O,U,W,draw){const len=v=>Math.hypot(v[0],v[1],v[2])||1e-9,lu=len(U),lw=len(W),p0=V.p(...O),pu=V.p(O[0]+U[0],O[1]+U[1],O[2]+U[2]),pw=V.p(O[0]+W[0],O[1]+W[1],O[2]+W[2]);
+  ctx.save();ctx.transform((pu[0]-p0[0])/lu,(pu[1]-p0[1])/lu,(pw[0]-p0[0])/lw,(pw[1]-p0[1])/lw,p0[0],p0[1]);draw(ctx,lu,lw);ctx.restore()}
+/* shading: key light from the upper left and in front of the object, plus soft ambient */
+const KEY=(()=>{const v=[-.45,.78,-.43],l=Math.hypot(...v);return v.map(c=>c/l)})();
+function light(n){const l=Math.hypot(...n)||1;return .38+.62*Math.max(0,(n[0]*KEY[0]+n[1]*KEY[1]+n[2]*KEY[2])/l)}
+function shade(c,n,o){const t=typeof n==='number'?n:light(n),r=ramp(c,9,o);return r[clamp(Math.round(4+(t-.62)*8),0,8)]}
+/* line */
+const ink=(c,t)=>{const[h,s,l]=toHsl(c);return fromHsl(h,Math.min(1,s*1.1),l*(t==null?.42:t))};
+const weight=px=>Math.max(.5,px*.0055);
+/* resolution */
+const lod=px=>px<=48?'icon':px<=200?'card':'detail';
+
+window.ART_CORE={view,face,light,shade,ink,weight,lod,hex,rgb,mix,lighten,darken,toHsl,fromHsl,ramp,rngLCG,rngMulberry,noise,fbm,warp,voronoi,shadow,clamp};
 })();
