@@ -4,6 +4,9 @@ Everything learned while making art is kept here, so it is learned once. Before 
 
 ## How it is organised
 
+This tree is also the art library's branch structure: each piece of art on the library page lives under its research entry (see README, "How the art is organised").
+
+
 Each entry is one Markdown file with a short header (front matter), in a tree:
 
 ```

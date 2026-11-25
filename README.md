@@ -23,6 +23,25 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 - `index.html`: **the art library** (25 Nov 2026; https://fenw1ck.github.io/Art-Assets/). Every piece of art the modules can draw, drawn live, searchable by name, category, file and research aliases, with category filters. Tap a piece for its info card (file, function, research entry, aliases, gaps, used by) and **Edit this art**, which opens the Request Builder with an "Improve" ticket, a link back to the piece (`#<id>`) and the picture attached (passed as a PNG data URL in the hash, `#img=`). **Make new art** goes to the Request Builder. To add a new module's art to the library, add `add(...)` lines in index.html; `items.js` shows up by itself once it is on main.
 - `builder-archive.html`: the retired Art Asset Builder (intake, library lookup, live preview, research library and gallery tabs), kept working in case it is needed again; the last version of the builder before the change is commit cd99c14.
 
+## How the art is organised
+
+Decided 25 Nov 2026, after looking at how asset libraries are organised (digital asset management guides, game asset stores, faceted classification). The library uses **one branch plus tags**, as most of them do:
+
+- **One branch: where a piece lives** (like animal taxonomy or the Dewey system). The branches are the research tree in `research/`: kind of thing (Living things, Made things, Materials, Patterns and surfaces), then each entry's parents, down to the piece. Examples: Living things › Plants › Nightshade family › Potato; Made things › Items › Food › Potato red. A piece with no research entry of its own hangs under its nearest one, so giving it an entry later moves it to the right place.
+- **Tags (facets): find it by any trait.** Five groups, each piece carrying one or more tags in each:
+  - Where: indoor, outdoor, both.
+  - Use: consumable, permanent, wardrobe, environment, harvest, tool, container, currency.
+  - Rooms: greenhouse, garden, corridor, library, bedroom, front doors.
+  - Made of: plant, wood, stone, metal, fabric, glass, paper, leather, food, soil.
+  - Projects: Euclid game, Planting Guide.
+- **Where this lives in the code:** `index.html`. `TAGS_CAT` gives each library category its default tags, `TAGS_BY` changes them per piece, `CATPATH` gives the branch for pieces with no research entry, and each card's `res` list names its research entry (first) and fallbacks.
+- **On the page:** **How it's organised** shows the branch tree and every tag with its count. A card shows its branch and its tags, and tapping either lists everything filed there. You can also filter by typing, for example `room:greenhouse`, `use:consumable` or `in:Nightshade family`.
+- **Edit this art** sends the branch, the tags, the research entry (or the nearest one, as "file it under") and the drawing function to the Request Builder, which writes them into the ticket's Art brief.
+- **Adding art:**
+  - Give the piece a research entry where it belongs; that sets its branch.
+  - Add its card with `add(...)` in `index.html`.
+  - If its category's tags don't fit, add a `TAGS_BY` line. Keep to the tags above; add a new tag only when no existing one fits, and list it here.
+
 ## Tools
 
 - `python3 tools/research.py lookup <name>`: what the library already knows, level by level. Also `traits`, `map`, `check` and `index`.
