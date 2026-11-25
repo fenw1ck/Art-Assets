@@ -20,11 +20,17 @@ main{max-width:1200px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-tem
 @media(max-width:640px){#info .box{grid-template-columns:1fr}}
 #info canvas{width:100%;aspect-ratio:1;background:#f1ece2;border-radius:10px}#info h2{margin:0 0 4px}#info dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:10px 0;font-size:14px}#info dt{color:var(--sub)}#info dd{margin:0}
 #info .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.branch{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:4px 0 8px;font-size:14px}.branch span{color:var(--sub)}
+.branch button,.tags button,.tree button{font:inherit;font-size:13px;border:1px solid var(--line);background:#f4f7f6;border-radius:14px;padding:2px 10px;cursor:pointer;color:var(--ink)}.branch button:last-child{background:var(--acc);color:#fff;border-color:var(--acc)}
+.tags{display:flex;flex-wrap:wrap;gap:4px}.tags small,.tree small{color:var(--sub)}
+#org{max-width:1200px;margin:0 auto;padding:12px 20px;display:grid;grid-template-columns:1fr 1fr;gap:24px;border-bottom:1px solid var(--line)}#org[hidden]{display:none}@media(max-width:760px){#org{grid-template-columns:1fr}}
+#org h2{font-size:18px;margin:6px 0}#org h3{font-size:14px;margin:12px 0 4px;color:var(--sub)}#org p{margin:4px 0}.tree{list-style:none;padding-left:0;margin:6px 0}.tree ul{list-style:none;padding-left:18px;border-left:1px solid var(--line);margin:4px 0 4px 8px}.tree li{margin:3px 0}.note{color:var(--sub);font-size:13px}
 </style>
 </head><body>
 <header><h1>Art Assets</h1><p>Every piece of art the projects can draw, drawn live from this repo's code. Tap one for its card and to edit it; new art starts in the Request Builder.</p></header>
 <div class="bar"><input id="q" type="search" placeholder="Search: chest, tomato, ivy, bed…" aria-label="Search the art"><span id="n"></span>
- <a class="btn" href="https://fenw1ck.github.io/Claude-API-Optimization/">Make new art</a><div class="cats" id="cats"></div></div>
+ <button type="button" class="btn ghost" id="orgb" aria-expanded="false">How it's organised</button><a class="btn" href="https://fenw1ck.github.io/Claude-API-Optimization/">Make new art</a><div class="cats" id="cats"></div></div>
+<section id="org" hidden></section>
 <main id="grid"></main>
 <div id="info" role="dialog" aria-modal="true"><div class="box"><canvas id="big" width="600" height="600"></canvas><div id="det"></div></div></div>
 <script src="core.js"></script><script src="plants.js"></script><script src="containers.js"></script><script src="tools.js"></script><script src="vines.js"></script>
@@ -36,7 +42,7 @@ const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c
 const RB='https://fenw1ck.github.io/Claude-API-Optimization/',SITE='https://fenw1ck.github.io/Art-Assets/',GH='https://github.com/fenw1ck/Art-Assets/blob/main/';
 const A=[],add=(id,name,cat,file,fn,res,draw)=>A.push({id,name,cat,file,fn,res,draw});
 const fitImg=(ctx,img,S)=>{const k=Math.min(S*.9/img.width,S*.9/img.height);ctx.drawImage(img,(S-img.width*k)/2,(S-img.height*k)/2,img.width*k,img.height*k)};
-if(window.PLANTS)PLANTS.list.forEach(p=>add('plant-'+p.id,p.common_name,'Plants','plants.js','PLANTS.drawFit',[p.id.split('_')[0],'plants'],(c,S)=>PLANTS.drawFit(c,p,S/2,S*.92,S*.8,'mature',7)));
+if(window.PLANTS)PLANTS.list.forEach(p=>add('plant-'+p.id,p.common_name,'Plants','plants.js','PLANTS.drawFit',[p.id,p.id.split('_')[0],'plants'],(c,S)=>PLANTS.drawFit(c,p,S/2,S*.92,S*.8,'mature',7)));
 if(window.CONTAINERS)['closed','open'].forEach(st=>add('chest-'+st,'Chest ('+st+')','Containers','containers.js','CONTAINERS.drawChest',['chest'],(c,S)=>CONTAINERS.drawChest(c,CONTAINERS.defaults,S/2,S*.8,S*.62,st,7,{})));
 if(window.TOOLS)TOOLS.AXES.forEach((a,i)=>add('ax-'+i,a.name,'Tools','tools.js','TOOLS.drawAx',['axe','tools'],(c,S)=>TOOLS.drawAx(c,i,S*.42,S*.95,S*.88,0)));
 if(window.VINES)VINES.LIST.forEach((k,i)=>add('vine-'+k,k.replace(/-/g,' ').replace(/^./,m=>m.toUpperCase()),'Vines','vines.js','VINES.render',[k],(c,S)=>{c.save();c.translate(S*.27,S*.04);VINES.render(c,k,S*.46,S*.92,{seed:i+1});c.restore()}));
@@ -46,34 +52,94 @@ if(window.FURNITURE){add('bookshelf','Bookshelf','Furniture','furniture.js','FUR
 if(window.BEDROOM){BEDROOM.BEDS.forEach((t,i)=>add('bed-'+t,'Bed: '+t.replace(/-/g,' '),'Bedroom','bedroom.js','BEDROOM.bed',['bed'],(c,S)=>BEDROOM.bed(c,S/2,S*.85,S*.55,t,i+1,{view:'front'})));
  add('nightstand','Nightstand','Bedroom','bedroom.js','BEDROOM.nightstand',['nightstand'],(c,S)=>BEDROOM.nightstand(c,S/2,S*.92,S*.85,1,{light:'cylinder',t:1}));
  BEDROOM.LIGHTS.forEach(l=>add('nightlight-'+l,'Nightlight: '+l,'Bedroom','bedroom.js','BEDROOM.nightlight',['nightstand'],(c,S)=>BEDROOM.nightlight(c,S/2,S*.85,S*2.6,l,1)));
- BEDROOM.MOBILES.forEach((m,i)=>add('mobile-'+m,'Mobile: '+m,'Bedroom','bedroom.js','BEDROOM.mobile',['bed'],(c,S)=>BEDROOM.mobile(c,S/2,S*.02,S*1.05,m,i+1,1)))}
+ BEDROOM.MOBILES.forEach((m,i)=>add('mobile-'+m,'Mobile: '+m,'Bedroom','bedroom.js','BEDROOM.mobile',['furniture'],(c,S)=>BEDROOM.mobile(c,S/2,S*.02,S*1.05,m,i+1,1)))}
 if(window.FLOORS)[['stone','Stone floor','stone-floor'],['wood','Wood floor','wood-floor'],['carpet','Carpet','carpet']].forEach(([k,n,r])=>add('floor-'+k,n,'Floors','floors.js','FLOORS.'+k,[r],(c,S)=>fitImg(c,FLOORS[k](3,3,60,1),S)));
-if(window.GARDEN)[['fountain','Fountain'],['lantern','Lantern'],['pedestal','Pedestal'],['gate','Gate']].forEach(([k,n])=>add('garden-'+k,n,'Garden','garden.js','GARDEN.'+k,['plants'],(c,S)=>GARDEN[k](c,S/2,S/2,S*(k==='lantern'?.7:.28),1)));
+if(window.GARDEN)[['fountain','Fountain'],['lantern','Lantern'],['pedestal','Pedestal'],['gate','Gate']].forEach(([k,n])=>add('garden-'+k,n,'Garden','garden.js','GARDEN.'+k,['garden'],(c,S)=>GARDEN[k](c,S/2,S/2,S*(k==='lantern'?.7:.28),1)));
 if(window.ITEMART){const V={boots:['boots-sandals','boots-wayfarer','boots-winged','boots-greaves'],potion:['potion-weak','potion-strong','potion-strongest'],coin:['coin-gold','coin-silver','coin-bronze'],scroll:['scroll-circles','scroll-lines'],potato:['potato-red','potato-purple','potato-brown','potato-baked'],produce:['produce-tomato_cherry','produce-carrot','produce-lettuce','produce-sunflower']};
- Object.keys(ITEMART.D).filter(k=>!['parcel','ax','chest','coins'].includes(k)).forEach(k=>(V[k]||[k]).forEach(id=>add('item-'+id,id.replace(/-/g,' ').replace(/^./,m=>m.toUpperCase()),'Items','items.js','ITEMART.draw',[k,'items'],
+ Object.keys(ITEMART.D).filter(k=>!['parcel','ax','chest','coins'].includes(k)).forEach(k=>(V[k]||[k]).forEach(id=>add('item-'+id,id.replace(/-/g,' ').replace(/^./,m=>m.toUpperCase()),'Items','items.js','ITEMART.draw',/^(potato|produce)$/.test(k)?['food','items']:[k,'items'],
   (c,S)=>id.startsWith('coin-')?ITEMART.coin(c,S/2,S/2,S*.36,{metal:id.slice(5)}):ITEMART.draw(c,id,S/2,S*.9,S*.8,{seed:3}))))}
 /* research: entries by id and alias */
-let LIB=[];const entryFor=a=>{for(const r of a.res){const e=LIB.find(e=>e.id===r)||LIB.find(e=>(e.aliases||[]).includes(r));if(e)return e}return null};
+let LIB=[];/* ---------- how the art is organised (25 Nov 2026; README "How the art is organised") ----------
+   Two things, the way asset libraries and libraries of books do it:
+   1. One BRANCH: where a piece lives, like a taxonomy or the Dewey system. It is the research tree: the top level is the
+      kind of thing (Living things, Made things, Materials, Patterns and surfaces), then each entry's parents, down to the
+      piece. A piece with no research entry of its own hangs under its nearest entry (or under its category's branch).
+   2. FACETS: tags in named groups, so a piece can be found by any trait (faceted classification): where it is used
+      (indoor / outdoor / both), its use (consumable, permanent, wardrobe, environment, tool, container, currency),
+      the rooms it appears in, what it is made of, and the projects that use it.
+   Facets come from the category below, with per-piece changes in TAGS_BY. */
+const TOP={subject:'Living things',object:'Made things',material:'Materials',pattern:'Patterns and surfaces',technique:'How to draw'};
+const FACETS=[['setting','Where'],['use','Use'],['room','Rooms'],['material','Made of'],['project','Projects']];
+const TAGS_CAT={
+ Plants:{setting:['both'],use:['environment','harvest'],room:['greenhouse','garden'],material:['plant'],project:['Euclid game','Planting Guide']},
+ Containers:{setting:['both'],use:['container','permanent'],room:['corridor','library','bedroom','greenhouse'],material:['wood','metal'],project:['Euclid game']},
+ Tools:{setting:['both'],use:['tool','permanent'],room:['front doors'],material:['metal','wood'],project:['Euclid game']},
+ Vines:{setting:['both'],use:['environment'],room:['front doors','corridor','library','bedroom','greenhouse'],material:['plant'],project:['Euclid game']},
+ Furniture:{setting:['indoor'],use:['environment'],room:['library'],material:['wood','fabric'],project:['Euclid game']},
+ Bedroom:{setting:['indoor'],use:['environment'],room:['bedroom'],material:['wood','fabric'],project:['Euclid game']},
+ Floors:{setting:['indoor'],use:['environment'],room:['corridor','library','bedroom'],material:['stone'],project:['Euclid game']},
+ Garden:{setting:['outdoor'],use:['environment'],room:['garden'],material:['stone','metal'],project:['Euclid game']},
+ Items:{setting:['both'],use:['permanent'],room:['corridor','library','bedroom','greenhouse'],material:['metal'],project:['Euclid game']}};
+const TAGS_BY=[ /* [test on the piece id, changes] */
+ [/^plant-(pothos|snake_plant|monstera|peace_lily|spider_plant)/,{setting:['indoor'],use:['environment'],room:['bedroom','library']}],
+ [/^plant-(apple|pear|peach|fig)/,{setting:['outdoor'],room:['garden']}],
+ [/^floor-wood/,{material:['wood']}],[/^floor-carpet/,{material:['fabric']}],
+ [/^nightlight|^mobile/,{material:['glass','metal']}],[/^side-table/,{material:['wood','glass']}],
+ [/^item-scroll/,{use:['consumable'],room:['library','corridor','bedroom'],material:['paper']}],
+ [/^item-(boots|cape|gloves|shirt|pants|crown|necklace|ring)/,{use:['wardrobe'],room:['bedroom','corridor'],material:['fabric']}],
+ [/^item-boots/,{material:['leather','metal']}],[/^item-(crown|necklace|ring)/,{material:['metal']}],
+ [/^item-potion/,{use:['consumable'],room:['greenhouse','corridor'],material:['glass']}],
+ [/^item-coin/,{use:['currency'],material:['metal']}],
+ [/^item-potato|^item-produce/,{use:['consumable','harvest'],room:['greenhouse'],material:['food']}],
+ [/^item-soil/,{use:['consumable'],room:['greenhouse'],material:['soil']}],
+ [/^item-(tile|amphora|bust)/,{material:['stone']}],[/^item-(map)/,{material:['paper']}],[/^item-(lyre|straightedge)/,{material:['wood']}],[/^item-hourglass/,{material:['glass','wood']}],
+ [/^item-sword|^item-compass|^item-astrolabe|^item-chalice|^item-lamp/,{material:['metal']}]];
+const CATPATH={Garden:['Made things','Garden features'],Bedroom:['Made things','Furniture'],Items:['Made things','Items'],Floors:['Patterns and surfaces','Floors'],Tools:['Made things','Tools'],Vines:['Living things','Plants'],Plants:['Living things','Plants'],Furniture:['Made things','Furniture'],Containers:['Made things','Containers']};
+function tagsOf(a){if(a._tags)return a._tags;const t=JSON.parse(JSON.stringify(TAGS_CAT[a.cat]||{}));for(const[re,ch]of TAGS_BY)if(re.test(a.id))Object.assign(t,ch);return a._tags=t}
+const tagList=a=>{const t=tagsOf(a);return FACETS.flatMap(([k])=>(t[k]||[]).map(v=>[k,v]))};
+/* the research chain, root first */
+function chainOf(e){const out=[];let x=e;const seen=new Set();while(x&&!seen.has(x.id)){seen.add(x.id);out.unshift(x);x=x.parent&&x.parent!=='none'?LIB.find(y=>y.id===x.parent):null}return out}
+const ownEntry=a=>{const r=a.res[0];return LIB.find(e=>e.id===r||(e.aliases||[]).includes(r))||null};
+function branchOf(a){const e=entryFor(a);if(!e)return[...(CATPATH[a.cat]||[a.cat]),a.name];const ch=chainOf(e),top=TOP[ch[0].kind]||ch[0].kind,names=ch.map(x=>x.title.replace(/ \(.*\)$/,''));
+  const p=[top,...names];if(a.cat==='Garden'||(a.cat==='Bedroom'&&!ownEntry(a)&&!/^bed-|^nightstand/.test(a.id)))return[...(CATPATH[a.cat]||[]),a.name];
+  if(!ownEntry(a)||e.title.toLowerCase()!==a.name.toLowerCase())p.push(a.name);return p}
+const entryFor=a=>{for(const r of a.res){const e=LIB.find(e=>e.id===r)||LIB.find(e=>(e.aliases||[]).includes(r));if(e)return e}return null};
 function paint(cv,a,S){const c=cv.getContext('2d');c.clearRect(0,0,S,S);try{a.draw(c,S)}catch(e){c.fillStyle='#a33';c.font='12px system-ui';c.fillText('Could not draw: '+e.message,8,20)}}
 let cat='All';const CATS=['All',...new Set(A.map(a=>a.cat))];
 function renderCats(){$('cats').innerHTML=CATS.map(c=>`<button type="button" aria-pressed="${c===cat}">${esc(c)}</button>`).join('');$('cats').querySelectorAll('button').forEach(b=>b.onclick=()=>{cat=b.textContent;renderCats();render()})}
-function matches(a,q){if(cat!=='All'&&a.cat!==cat)return false;if(!q)return true;const e=entryFor(a);return[a.name,a.cat,a.file,a.fn,a.id,...a.res,e&&e.title,...((e&&e.aliases)||[])].join(' ').toLowerCase().includes(q)}
+function matches(a,q){if(cat!=='All'&&a.cat!==cat)return false;if(!q)return true;
+ const m=q.match(/^(in|setting|use|room|material|project):(.+)$/);if(m){const v=m[2].trim();if(m[1]==='in')return LIB.length&&branchOf(a).some(b=>b.toLowerCase()===v);return(tagsOf(a)[m[1]]||[]).some(x=>x.toLowerCase()===v)}
+ const e=entryFor(a);return[a.name,a.cat,a.file,a.fn,a.id,...a.res,e&&e.title,...((e&&e.aliases)||[]),...tagList(a).map(x=>x[1]),...(LIB.length?branchOf(a):[])].join(' ').toLowerCase().includes(q)}
+function setQ(v){$('q').value=v;cat='All';renderCats();render();if(ORG)renderOrg();scrollTo(0,0)}
 function render(){const q=$('q').value.toLowerCase().trim(),L=A.filter(a=>matches(a,q));$('n').textContent=`${L.length} of ${A.length}`;
  $('grid').innerHTML=L.map(a=>`<button type="button" class="card" data-id="${esc(a.id)}"><canvas width="240" height="240"></canvas><b>${esc(a.name)}</b><small>${esc(a.cat)}</small></button>`).join('')||'<p>Nothing matches. <a href="'+RB+'">Make it as new art</a>.</p>';
  const cards=[...$('grid').querySelectorAll('.card')];cards.forEach(b=>b.onclick=()=>openCard(b.dataset.id));
  let i=0;(function step(){const t=performance.now();while(i<cards.length&&performance.now()-t<30){const b=cards[i++];paint(b.querySelector('canvas'),A.find(a=>a.id===b.dataset.id),240)}if(i<cards.length)requestAnimationFrame(step)})()}
-function openCard(id){const a=A.find(x=>x.id===id);if(!a)return;paint($('big'),a,600);const e=entryFor(a);history.replaceState(null,'','#'+id);
- $('det').innerHTML=`<h2>${esc(a.name)}</h2><dl><dt>Category</dt><dd>${esc(a.cat)}</dd><dt>Drawn by</dt><dd><a href="${GH+a.file}">${esc(a.file)}</a> · <code>${esc(a.fn)}</code></dd>
-  ${e?`<dt>Research</dt><dd><a href="${GH+e.file}">${esc(e.title)}</a> (${esc(e.depth)})</dd><dt>Also called</dt><dd>${esc((e.aliases||[]).join(', ')||'—')}</dd><dt>Gaps</dt><dd>${esc((e.gaps||[]).join(', ')||'none listed')}</dd><dt>Used by</dt><dd>${esc((e.used_by||[]).join(', ')||'—')}</dd>`:`<dt>Research</dt><dd>no entry yet</dd>`}</dl>
+function openCard(id){const a=A.find(x=>x.id===id);if(!a)return;paint($('big'),a,600);const e=entryFor(a),own=ownEntry(a),br=branchOf(a),T=tagsOf(a);history.replaceState(null,'','#'+id);
+ $('det').innerHTML=`<h2>${esc(a.name)}</h2><p class="branch" aria-label="Where it lives">${br.map((b,i)=>`<button type="button" data-q="in:${esc(b)}">${esc(b)}</button>`).join('<span>›</span>')}</p>
+  <dl><dt>Drawn by</dt><dd><a href="${GH+a.file}">${esc(a.file)}</a> · <code>${esc(a.fn)}</code></dd>
+  ${FACETS.map(([k,l])=>(T[k]||[]).length?`<dt>${esc(l)}</dt><dd class="tags">${T[k].map(v=>`<button type="button" data-q="${k}:${esc(v)}">${esc(v)}</button>`).join('')}</dd>`:'').join('')}
+  ${e?`<dt>Research</dt><dd><a href="${GH+e.file}">${esc(e.title)}</a> (${esc(e.depth)})${own?'':' <small>(its nearest entry: this piece has none of its own yet)</small>'}</dd><dt>Also called</dt><dd>${esc((e.aliases||[]).join(', ')||'—')}</dd><dt>Gaps</dt><dd>${esc((e.gaps||[]).join(', ')||'none listed')}</dd>`:`<dt>Research</dt><dd>no entry yet</dd>`}</dl>
   <div class="acts"><button type="button" class="btn" id="edit">Edit this art</button><button type="button" class="btn ghost" id="close">Close</button></div>
-  <p style="color:var(--sub);font-size:13px">Edit opens the Request Builder with an "Improve" ticket for this art, this picture attached to it.</p>`;
- $('info').style.display='flex';$("close").onclick=closeCard;
+  <p style="color:var(--sub);font-size:13px">Edit opens the Request Builder with an "Improve" ticket for this art: this picture, where it lives, its tags and its research entry go with it. Tap a tag or a branch to see everything filed there.</p>`;
+ $('info').style.display='flex';$("close").onclick=closeCard;$('det').querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>{closeCard();setQ(b.dataset.q)});
  $('edit').onclick=()=>{const t=document.createElement('canvas');t.width=t.height=320;t.getContext('2d').fillStyle='#f1ece2';t.getContext('2d').fillRect(0,0,320,320);paint2(t,a);
-  location.href=`${RB}?improve=${encodeURIComponent(e?e.id:a.id)}&title=${encodeURIComponent(a.name)}&from=${encodeURIComponent(SITE+'#'+a.id)}#img=${encodeURIComponent(t.toDataURL('image/png'))}`}}
+  const q=new URLSearchParams({improve:own?own.id:a.id,title:a.name,from:SITE+'#'+a.id,branch:br.join(' › '),tags:tagList(a).map(([k,v])=>k+':'+v).join('; '),drawn:a.file+' '+a.fn});
+  if(own)q.set('entry',own.id);else if(e)q.set('parent',e.id);
+  location.href=`${RB}?${q}#img=${encodeURIComponent(t.toDataURL('image/png'))}`}}
 function paint2(cv,a){const c=cv.getContext('2d');try{a.draw(c,cv.width)}catch(e){}}
 function closeCard(){$('info').style.display='none';history.replaceState(null,'',location.pathname)}
 $('info').onclick=e=>{if(e.target===$("info"))closeCard()};addEventListener('keydown',e=>{if(e.key==="Escape")closeCard()});
 $('q').addEventListener('input',render);
+/* "How it's organised": the branches (the research tree, with how many pieces live under each) and the facets */
+let ORG=false;$('orgb').onclick=()=>{ORG=!ORG;$('orgb').setAttribute('aria-expanded',ORG);$('org').hidden=!ORG;if(ORG)renderOrg()};
+function renderOrg(){const tree={};A.forEach(a=>{let n=tree;for(const b of branchOf(a)){n[b]=n[b]||{_n:0};n[b]._n++;n=n[b]}});
+ const walk=(n,d)=>Object.keys(n).filter(k=>k!=='_n'&&Object.keys(n[k]).length>1).sort().map(k=>{const kids=Object.keys(n[k]).filter(x=>x!=='_n').length;return`<li><button type="button" data-q="in:${esc(k)}">${esc(k)}</button> <small>${n[k]._n}</small>${kids&&d<3?`<ul>${walk(n[k],d+1)}</ul>`:''}</li>`}).join('');
+ const counts=k=>{const c={};A.forEach(a=>(tagsOf(a)[k]||[]).forEach(v=>c[v]=(c[v]||0)+1));return Object.entries(c).sort((x,y)=>y[1]-x[1])};
+ $('org').innerHTML=`<div class="orgcol"><h2>Where it lives: one branch each</h2><p>Like a taxonomy or the Dewey system: every piece has one place, found by kind of thing, then family, then the piece. The branches are the research library's tree (research/), so the art sits beside what is known about it. A piece with no research entry of its own hangs under its nearest one. Tap a branch to see the pieces in it.</p><ul class="tree">${walk(tree,0)}</ul></div>
+  <div class="orgcol"><h2>Tags: find it by any trait</h2><p>Facets cut across the branches, the way game asset stores add tags to categories: a piece carries a tag in each group, and any tag lists everything that shares it.</p>${FACETS.map(([k,l])=>`<h3>${esc(l)}</h3><p class="tags">${counts(k).map(([v,n])=>`<button type="button" data-q="${k}:${esc(v)}">${esc(v)} <small>${n}</small></button>`).join('')}</p>`).join('')}
+  <p class="note">Filter by typing too: <code>room:greenhouse</code>, <code>use:consumable</code>, <code>material:glass</code>, <code>in:Nightshade family</code>. Rules for adding a piece: README, "How the art is organised".</p></div>`;
+ $('org').querySelectorAll('[data-q]').forEach(b=>b.onclick=()=>setQ(b.dataset.q))}
 renderCats();render();
 fetch('research/index.json').then(r=>r.json()).then(d=>{LIB=d;if(location.hash.length>1)openCard(decodeURIComponent(location.hash.slice(1)))}).catch(()=>{if(location.hash.length>1)openCard(location.hash.slice(1))});
 </script>
