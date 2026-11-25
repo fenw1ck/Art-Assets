@@ -367,6 +367,74 @@
   "merged": {}
  },
  {
+  "id": "bed",
+  "title": "Bed",
+  "kind": "object",
+  "class": null,
+  "parent": "furniture",
+  "aliases": [
+   "canopy bed",
+   "four-poster",
+   "tree of life bed",
+   "art deco bed",
+   "bunk bed",
+   "futon",
+   "shikibuton"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "sleigh and panel beds",
+   "real tree-of-life carved headboards",
+   "bedding patterns"
+  ],
+  "used_by": [
+   "bedroom.js bed"
+  ],
+  "file": "research/objects/furniture/bed.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "nightstand",
+  "title": "Nightstand, nightlight and mobile",
+  "kind": "object",
+  "class": null,
+  "parent": "furniture",
+  "aliases": [
+   "bedside table",
+   "night table",
+   "nightlight",
+   "firefly jar",
+   "mobile",
+   "crib mobile"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "photos of real nursery mobiles",
+   "lamp bases"
+  ],
+  "used_by": [
+   "bedroom.js nightstand",
+   "nightlight",
+   "mobile"
+  ],
+  "file": "research/objects/furniture/nightstand.md",
+  "sections": [
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",
@@ -499,7 +567,7 @@
   "used_by": [
    "garden.js render wild"
   ],
-  "file": "research/patterns/floors.md",
+  "file": "research/patterns/floors/_floors.md",
   "sections": [
    "Distinguishing features",
    "Rendering notes",
@@ -507,6 +575,129 @@
    "Sources"
   ],
   "sources": 8,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "indoor-floors",
+  "title": "Indoor floors",
+  "kind": "pattern",
+  "class": null,
+  "parent": "floors",
+  "aliases": [
+   "interior floors",
+   "room floors"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "tile and terrazzo",
+   "parquet and herringbone",
+   "wear paths by room use"
+  ],
+  "used_by": [
+   "floors.js",
+   "euclid game.html (corridor",
+   "library",
+   "bedroom)"
+  ],
+  "file": "research/patterns/floors/indoor/_indoor-floors.md",
+  "sections": [
+   "Parts",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "carpet",
+  "title": "Carpet (rug)",
+  "kind": "pattern",
+  "class": null,
+  "parent": "indoor-floors",
+  "aliases": [
+   "rug",
+   "runner",
+   "area rug"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "real rug design references by region",
+   "wall-to-wall pile textures"
+  ],
+  "used_by": [
+   "floors.js carpet"
+  ],
+  "file": "research/patterns/floors/indoor/carpet.md",
+  "sections": [
+   "Distinguishing features",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "stone-floor",
+  "title": "Stone floor (flagstones)",
+  "kind": "pattern",
+  "class": null,
+  "parent": "indoor-floors",
+  "aliases": [
+   "flagstone floor",
+   "ashlar floor",
+   "slate floor",
+   "limestone floor"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "measured flagstone sizes",
+   "worn hollows on stairs and thresholds"
+  ],
+  "used_by": [
+   "floors.js stone"
+  ],
+  "file": "research/patterns/floors/indoor/stone-floor.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "wood-floor",
+  "title": "Wood floor (planks)",
+  "kind": "pattern",
+  "class": null,
+  "parent": "indoor-floors",
+  "aliases": [
+   "hardwood floor",
+   "plank floor",
+   "floorboards"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "parquet",
+   "herringbone",
+   "finish sheen by species"
+  ],
+  "used_by": [
+   "floors.js wood"
+  ],
+  "file": "research/patterns/floors/indoor/wood-floor.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "Sources"
+  ],
+  "sources": 3,
   "traits": {},
   "merged": {}
  },
