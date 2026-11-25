@@ -334,6 +334,39 @@
   }
  },
  {
+  "id": "furniture",
+  "title": "Furniture",
+  "kind": "object",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "room furniture",
+   "library furniture"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "bedroom",
+   "kitchen",
+   "pantry and bathroom pieces",
+   "photos of period furniture",
+   "wood finishes"
+  ],
+  "used_by": [
+   "furniture.js"
+  ],
+  "file": "research/objects/furniture/_furniture.md",
+  "sections": [
+   "Parts",
+   "Distinguishing features",
+   "Log",
+   "Sources"
+  ],
+  "sources": 4,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "tools",
   "title": "Hand tools",
   "kind": "object",
