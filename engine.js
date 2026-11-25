@@ -44,13 +44,13 @@ const locks={BASE_SEC:120,PER_STEP_SEC:25,COOLDOWN_MIN:90,DAMAGE:10,
   left:(S,n)=>S.cool&&S.cool[n]?Math.max(0,S.cool[n]-clock.now(S)):0};
 
 /* ---------- moving: jumping, climbing, falling ---------- */
-const moves={JUMP_H:.9,JUMP_T:.62,CLIMB_T:.9,STEP_UP:.35,FALL_SAFE:1.2,FALL_DMG_PER_M:22,
+const moves={JUMP_H:.9,JUMP_T:.62,CLIMB_T:.9,STEP_UP:.35,FALL_SAFE:.9,FALL_DMG_PER_M:30,
   /* height of a jump t seconds after take-off (a parabola), 0 when landed */
   jumpY:t=>t<0||t>moves.JUMP_T?0:4*moves.JUMP_H*(t/moves.JUMP_T)*(1-t/moves.JUMP_T),
   /* a ledge can be jumped onto if it is no higher than the jump; higher ones are climbed */
   canJumpOnto:h=>h<=moves.JUMP_H*.95,
   fallDamage:h=>h<=moves.FALL_SAFE?0:Math.round((h-moves.FALL_SAFE)*moves.FALL_DMG_PER_M+4),
-  LEDGE_HEIGHTS:[.7,1.7],LEDGE_CHANCE:.35,LEDGE_ITEM_CHANCE:.85};
+  LEDGE_HEIGHTS:[.6,1.2],LEDGE_CHANCE:.35,LEDGE_ITEM_CHANCE:.85};
 
 /* ---------- traps ---------- */
 const traps={PLATE_DMG:12,PLATE_RESET_SEC:3,PLATE_CHANCE:.3,BACKTRACK_DMG:15,PATH_CHANCE:.18,KINDS:['flame','spikes','fog'],
@@ -127,7 +127,7 @@ const parts=[
  {id:'health',name:'Health',what:'100 health. Combat, traps and falls take it away; food and time give it back (2 an hour). At 0 you faint and wake at the front doors with 50, a tenth of your coins dropped.',params:()=>({MAX:health.MAX,REGEN_PER_HOUR:health.REGEN_PER_HOUR,WAKE_HP:health.WAKE_HP,FAINT_COIN_LOSS:health.FAINT_COIN_LOSS})},
  {id:'keys',name:'Keys and UI',what:'The usual PC layout: M map, I bag, WASD walk, Space jump, C climb, F attack, E use, Esc back, H keys. A minimap sits in the corner, the clock and the health bar at the top.',params:()=>Object.fromEntries(keys.list().map(([a,l,k])=>[l,k.join(' / ')]))},
  {id:'locks',name:'Lock timers',what:'Every unsolved lock is timed: 2 minutes plus 25 seconds a step. Run out and it seals for 90 game minutes and the snap costs 10 health.',params:()=>({BASE_SEC:locks.BASE_SEC,PER_STEP_SEC:locks.PER_STEP_SEC,COOLDOWN_MIN:locks.COOLDOWN_MIN,DAMAGE:locks.DAMAGE})},
- {id:'moves',name:'Jumping, climbing, ledges',what:'Jump 0.9 m (Space); climb higher ledges (C). Stone ledges line some rooms, usually with an item on top. Stepping off anything over 1.2 m hurts: 22 health a metre above that, plus 4.',params:()=>({JUMP_H:moves.JUMP_H,FALL_SAFE:moves.FALL_SAFE,FALL_DMG_PER_M:moves.FALL_DMG_PER_M,LEDGE_HEIGHTS:moves.LEDGE_HEIGHTS.join(', '),LEDGE_CHANCE:moves.LEDGE_CHANCE})},
+ {id:'moves',name:'Jumping, climbing, ledges',what:'Jump 0.9 m (Space); climb higher ledges (C). Stone ledges line some rooms, usually with an item on top. Stepping off anything over 0.9 m hurts: 30 health a metre above that, plus 4.',params:()=>({JUMP_H:moves.JUMP_H,FALL_SAFE:moves.FALL_SAFE,FALL_DMG_PER_M:moves.FALL_DMG_PER_M,LEDGE_HEIGHTS:moves.LEDGE_HEIGHTS.join(', '),LEDGE_CHANCE:moves.LEDGE_CHANCE})},
  {id:'traps',name:'Traps',what:'Pressure plates spring spikes (jump over them). Timed locks seal. Path rooms have points and edges on the floor: walk every edge once without going back over one (an Euler trail); backtracking fires flame throwers, spikes or poison fog.',params:()=>({PLATE_DMG:traps.PLATE_DMG,BACKTRACK_DMG:traps.BACKTRACK_DMG,PLATE_CHANCE:traps.PLATE_CHANCE,PATH_CHANCE:traps.PATH_CHANCE})},
  {id:'combat',name:'Combat',what:'Knife (fast, short), sword (strong), staff (long reach), each in bronze, iron or starmetal. Weapons wear out: perfect, damaged, broken. Harpies, basilisks, minotaurs, manticores and hydras live in deeper halls; some are friendly until struck.',params:()=>({creatures:Object.values(combat.CREATURES).map(c=>`${c.name} ${c.hp}hp/${c.dmg}dmg from hall ${c.from}`).join('; '),weapons:combat.allWeapons().map(w=>{const x=combat.weapon(w);return`${x.name} ${x.dmg}dmg ${x.dur}uses`}).join('; ')})},
  {id:'cook',name:'Cooking',what:'Ingredients (food that must be cooked) go in a kitchen oven, or in a cauldron over a greenhouse campfire (2 firewood a dish). A timing check per ingredient: stop the sweeping marker inside the lit range. Miss and it burns.',params:()=>({WOOD_PER_UNIT:cook.WOOD_PER_UNIT,recipes:cook.RECIPES.map(r=>`${r.name} (${r.needs.join(' + ')})`).join('; ')})},
