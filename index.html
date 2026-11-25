@@ -49,7 +49,7 @@ if(window.BEDROOM){BEDROOM.BEDS.forEach((t,i)=>add('bed-'+t,'Bed: '+t.replace(/-
  BEDROOM.MOBILES.forEach((m,i)=>add('mobile-'+m,'Mobile: '+m,'Bedroom','bedroom.js','BEDROOM.mobile',['bed'],(c,S)=>BEDROOM.mobile(c,S/2,S*.02,S*1.05,m,i+1,1)))}
 if(window.FLOORS)[['stone','Stone floor','stone-floor'],['wood','Wood floor','wood-floor'],['carpet','Carpet','carpet']].forEach(([k,n,r])=>add('floor-'+k,n,'Floors','floors.js','FLOORS.'+k,[r],(c,S)=>fitImg(c,FLOORS[k](3,3,60,1),S)));
 if(window.GARDEN)[['fountain','Fountain'],['lantern','Lantern'],['pedestal','Pedestal'],['gate','Gate']].forEach(([k,n])=>add('garden-'+k,n,'Garden','garden.js','GARDEN.'+k,['plants'],(c,S)=>GARDEN[k](c,S/2,S/2,S*(k==='lantern'?.7:.28),1)));
-if(window.ITEMART){const V={boots:['boots-sandals','boots-wayfarer','boots-winged','boots-greaves'],potion:['potion-weak','potion-strong','potion-strongest'],coin:['coin-gold','coin-silver','coin-bronze'],scroll:['scroll-circles','scroll-lines']};
+if(window.ITEMART){const V={boots:['boots-sandals','boots-wayfarer','boots-winged','boots-greaves'],potion:['potion-weak','potion-strong','potion-strongest'],coin:['coin-gold','coin-silver','coin-bronze'],scroll:['scroll-circles','scroll-lines'],potato:['potato-red','potato-purple','potato-brown','potato-baked'],produce:['produce-tomato_cherry','produce-carrot','produce-lettuce','produce-sunflower']};
  Object.keys(ITEMART.D).filter(k=>!['parcel','ax','chest','coins'].includes(k)).forEach(k=>(V[k]||[k]).forEach(id=>add('item-'+id,id.replace(/-/g,' ').replace(/^./,m=>m.toUpperCase()),'Items','items.js','ITEMART.draw',[k,'items'],
   (c,S)=>id.startsWith('coin-')?ITEMART.coin(c,S/2,S/2,S*.36,{metal:id.slice(5)}):ITEMART.draw(c,id,S/2,S*.9,S*.8,{seed:3}))))}
 /* research: entries by id and alias */

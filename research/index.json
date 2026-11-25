@@ -578,6 +578,41 @@
   "merged": {}
  },
  {
+  "id": "food",
+  "title": "Food",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "food item",
+   "produce",
+   "harvest",
+   "crops",
+   "vegetables",
+   "potato item",
+   "baked potato"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "cooked versions of other produce",
+   "a cooking pot or fire as a station",
+   "what eating does"
+  ],
+  "used_by": [
+   "items.js potato",
+   "items.js produce; plants.js harvest"
+  ],
+  "file": "research/objects/items/food/_food.md",
+  "sections": [
+   "Parts",
+   "Log"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "potions",
   "title": "Potions",
   "kind": "object",
@@ -1604,6 +1639,75 @@
   }
  },
  {
+  "id": "potato",
+  "title": "Potato",
+  "kind": "subject",
+  "class": "plant",
+  "parent": "solanaceae",
+  "aliases": [
+   "Solanum tuberosum",
+   "potato plant",
+   "potatoes",
+   "spud",
+   "tuber"
+  ],
+  "depth": "standard",
+  "updated": "2026-11-25",
+  "gaps": [
+   "tuber shapes by variety (fingerling",
+   "round",
+   "long)",
+   "stolons drawn in a cut-away view",
+   "a flowering close-up from photos"
+  ],
+  "used_by": [
+   "plants.js drawPotato",
+   "plants.js tuber",
+   "plants.js harvest",
+   "items.js potato"
+  ],
+  "file": "research/subjects/plants/potato.md",
+  "sections": [
+   "Distinguishing features",
+   "Sources"
+  ],
+  "sources": 6,
+  "traits": {
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "matte",
+   "branching": "repeated-fork",
+   "repeats": "repeated-fork",
+   "inflorescence": "cluster",
+   "flower_colour": "#cdb6e6",
+   "fruit": "berry",
+   "foliage_colour": "#4f8a40"
+  },
+  "merged": {
+   "climbing": "none",
+   "states": [
+    "seedling",
+    "immature",
+    "mature",
+    "declining",
+    "dead"
+   ],
+   "stem": "round-green",
+   "arrangement": "alternate",
+   "leaf": "pinnate",
+   "leaf_shape": "ovate",
+   "margin": "entire",
+   "surface": "matte",
+   "branching": "repeated-fork",
+   "repeats": "repeated-fork",
+   "inflorescence": "cluster",
+   "flower_colour": "#cdb6e6",
+   "fruit": "berry",
+   "foliage_colour": "#4f8a40"
+  }
+ },
+ {
   "id": "solanaceae",
   "title": "Nightshade family (Solanaceae)",
   "kind": "subject",
@@ -1613,12 +1717,15 @@
    "nightshade family"
   ],
   "depth": "outline",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "gaps": [
-   "potato structure",
    "family-level flower details"
   ],
-  "used_by": [],
+  "used_by": [
+   "plants.js drawTomato",
+   "drawPepper",
+   "drawPotato"
+  ],
   "file": "research/subjects/plants/solanaceae.md",
   "sections": [
    "Parts",

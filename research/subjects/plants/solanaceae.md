@@ -5,9 +5,9 @@ kind: subject
 parent: plants
 aliases: [nightshade family]
 depth: outline
-updated: 2026-11-24
-gaps: [potato structure, family-level flower details]
-used_by: []
+updated: 2026-11-25
+gaps: [family-level flower details]
+used_by: [plants.js drawTomato, drawPepper, drawPotato]
 traits:
   arrangement: alternate
 ---
@@ -22,3 +22,4 @@ traits:
 ## Log
 
 - 2026-11-24: created as the parent of tomato and pepper.
+- 2026-11-25: potato added (its own entry).
