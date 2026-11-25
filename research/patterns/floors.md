@@ -7,7 +7,7 @@ aliases: [floor, paving, opus sectile, opus tessellatum, Cosmatesque, Cosmati, o
 depth: outline
 updated: 2026-11-24
 gaps: [measured examples, borders and bands, running bond and herringbone, photos]
-used_by: []
+used_by: [garden.js render wild]
 ---
 
 # Floor layouts
@@ -25,11 +25,22 @@ used_by: []
 - Seams: grout sits darker and slightly lower than the stone. One edge catches the light and the other shades (occlusion).
 - Avoid visible repeats with seeded variation per stone or with Wang tiles.
 
+## Irregular flagstone (crazy paving) and dirt paths
+
+- **Crazy paving:** natural stones of irregular size and shape laid at random, with mortar, soil or planting in the gaps. Good practice: keep the joints fairly even, avoid long straight continuous joints, and keep the larger stones for the edges. Joints are often planted with moss, creeping thyme or grass, which suits an abandoned greenhouse.
+- **Drawing (garden.js `render(plan, s, {wild:true})`):** each path cell filled with joint colour (moss over soil), then 1–3 irregular six- to eight-sided stones per cell in four grey-buff tones, a lighter top edge (light from above), a few pits; grass tufts and a few small flowers creep in, thickest where the path meets beds. A packed-dirt path (brown with pale and grey pebbles) is the other wild floor.
+
 ## Log
+
+- 2026-11-24: irregular flagstone and dirt paths added, for the Euclid game's greenhouses.
 
 - 2026-11-24: outline, for the Euclid corridors.
 
 ## Sources
+
+- Wikipedia, Crazy paving: https://en.wikipedia.org/wiki/Crazy_paving
+- Designing Buildings Wiki, Crazy paving: https://www.designingbuildings.co.uk/wiki/Crazy_paving
+- Epic Gardening, DIY garden paths (stones and moss): https://www.epicgardening.com/diy-garden-paths/
 
 - Wikipedia, Opus sectile: https://en.wikipedia.org/wiki/Opus_sectile
 - Wikipedia, Cosmatesque: https://en.wikipedia.org/wiki/Cosmatesque

@@ -3,7 +3,8 @@
    Needs plants.js (window.PLANTS) for the plants themselves.
 
    window.GARDEN.plan(seed)            a garden: size (8×16 up to 50×50), theme, paths, beds, plants and props
-   window.GARDEN.render(plan, s)       the still parts (ground, paths, beds, plants, benches, trellises, tools) on a canvas, s px per cell
+   window.GARDEN.render(plan, s, o)    the still parts (ground, paths, beds, plants, benches, trellises, tools) on a canvas, s px per cell;
+                                       o.wild: an abandoned greenhouse floor (irregular flagstone or dirt paths, moss and grass creeping in)
    window.GARDEN.fountain(ctx,x,y,s,t) a working fountain, centre (x,y), s px per cell, t seconds (animated water)
    window.GARDEN.lantern(ctx,x,y,s,t)  a lantern seen from above, lit
    window.GARDEN.chest(ctx,x,y,s,open) a treasure chest
@@ -69,8 +70,23 @@ function tool(g,kind,x,y,s){g.save();g.translate(x*s,y*s);g.fillStyle="rgba(0,0,
  else if(kind==="can"){g.fillStyle="#5b8a8f";g.beginPath();g.ellipse(0,0,s*.22,s*.18,0,0,7);g.fill();g.strokeStyle="#5b8a8f";g.lineWidth=3;g.beginPath();g.moveTo(s*.15,-s*.05);g.lineTo(s*.48,-s*.22);g.stroke();g.fillStyle="#7fb0b5";g.beginPath();g.ellipse(-s*.05,-s*.05,s*.12,s*.08,0,0,7);g.fill()}
  else{g.strokeStyle="#7a5232";g.lineWidth=2.4;g.beginPath();g.moveTo(-s*.6,s*.1);g.lineTo(s*.4,-s*.05);g.stroke();g.fillStyle="#777";if(kind==="rake"){g.fillRect(s*.38,-s*.22,s*.06,s*.36);for(let i=0;i<5;i++)g.fillRect(s*.44,-s*.2+i*s*.08,s*.08,2)}else{g.beginPath();g.moveTo(s*.38,-s*.14);g.lineTo(s*.62,-s*.1);g.lineTo(s*.6,s*.06);g.lineTo(s*.38,s*.04);g.closePath();g.fill()}}
  g.restore()}
-function render(P,s){const c=document.createElement("canvas");c.width=Math.ceil(P.w*s);c.height=Math.ceil(P.h*s);const g=c.getContext("2d"),r=rng(P.seed^0x5eed),stone=P.theme==="flower"||P.theme==="fruit";
- grass(g,P.w,P.h,s,r);for(let y=0;y<P.h;y++)for(let x=0;x<P.w;x++){const v=P.cell[y*P.w+x];if(v===1)pathTile(g,x,y,s,r,stone);else if(v===2)bedTile(g,x,y,s,r)}
+/* wild floors (an abandoned greenhouse): paths of irregular flagstones with moss in the joints, or packed dirt;
+   grass creeping in from the edges. Research: research/patterns/floors.md (irregular flagstone). */
+function flagTile(g,x,y,s,r){const X=x*s,Y=y*s;g.fillStyle="#4f6a35";g.fillRect(X,Y,s,s); /* the joint: soil and moss */
+ for(let i=0;i<s*.5;i++){g.fillStyle=r()<.5?"rgba(110,150,70,.6)":"rgba(60,45,30,.4)";g.fillRect(X+r()*s,Y+r()*s,1.5,1.5)}
+ const n=1+Math.floor(r()*3),cells=n===1?[[0,0,1,1]]:n===2?(r()<.5?[[0,0,.5,1],[.5,0,.5,1]]:[[0,0,1,.5],[0,.5,1,.5]]):[[0,0,.55,.55],[.55,0,.45,.55],[0,.55,1,.45]];
+ for(const[a,b,w,h]of cells){const cx=X+(a+w/2)*s,cy=Y+(b+h/2)*s,k=6+Math.floor(r()*3),base=["#a9a194","#9c9486","#b5ab98","#8f8a80"][Math.floor(r()*4)];g.beginPath();
+  for(let i=0;i<k;i++){const t=i/k*Math.PI*2+r()*.4,rx=w*s*(.4+r()*.08),ry=h*s*(.4+r()*.08);g.lineTo(cx+Math.cos(t)*rx,cy+Math.sin(t)*ry)}g.closePath();
+  g.fillStyle=base;g.fill();g.strokeStyle="rgba(50,45,38,.45)";g.lineWidth=1;g.stroke();g.save();g.clip();g.fillStyle="rgba(255,250,235,.18)";g.fillRect(cx-w*s/2,cy-h*s/2,w*s,h*s*.3); /* lit from above-left */
+  for(let i=0;i<4;i++){g.fillStyle="rgba(60,55,45,.25)";g.fillRect(cx+(r()-.5)*w*s*.7,cy+(r()-.5)*h*s*.7,1.5,1)}g.restore()}}
+function dirtTile(g,x,y,s,r){const X=x*s,Y=y*s;g.fillStyle="#8a6b48";g.fillRect(X,Y,s,s);for(let i=0;i<s*.8;i++){g.fillStyle=r()<.4?"rgba(60,42,25,.4)":r()<.7?"rgba(180,150,110,.4)":"rgba(140,135,125,.7)";g.beginPath();g.arc(X+r()*s,Y+r()*s,.5+r()*1.2,0,7);g.fill()}}
+function tufts(g,P,s,r){const at=(x,y)=>x<0||y<0||x>=P.w||y>=P.h?-1:P.cell[y*P.w+x];
+ for(let y=0;y<P.h;y++)for(let x=0;x<P.w;x++){const v=at(x,y);if(v!==1)continue;const edge=[at(x-1,y),at(x+1,y),at(x,y-1),at(x,y+1)].some(q=>q!==1),n=edge?5:r()<.35?2:0;
+  for(let i=0;i<n;i++){const px=(x+r())*s,py=(y+r())*s,h=s*(.12+r()*.18);g.strokeStyle=r()<.5?"#6f9a48":"#4f7a35";g.lineWidth=1;for(let k=-1;k<=1;k++){g.beginPath();g.moveTo(px,py);g.lineTo(px+k*h*.5,py-h);g.stroke()}
+   if(r()<.15){g.fillStyle=["#f2e7a0","#e9b7d6","#ffffff"][Math.floor(r()*3)];g.beginPath();g.arc(px,py-h,1.6,0,7);g.fill()}}}}
+function render(P,s,o){o=o||{};const c=document.createElement("canvas");c.width=Math.ceil(P.w*s);c.height=Math.ceil(P.h*s);const g=c.getContext("2d"),r=rng(P.seed^0x5eed),stone=P.theme==="flower"||P.theme==="fruit",wild=o.wild?(rng(P.seed^0xf1a9)()<.6?"flag":"dirt"):null;
+ grass(g,P.w,P.h,s,r);for(let y=0;y<P.h;y++)for(let x=0;x<P.w;x++){const v=P.cell[y*P.w+x];if(v===1)(wild==="flag"?flagTile(g,x,y,s,r):wild==="dirt"?dirtTile(g,x,y,s,r):pathTile(g,x,y,s,r,stone));else if(v===2)bedTile(g,x,y,s,r)}
+ if(wild)tufts(g,P,s,r);
  for(const b of P.beds)bedEdge(g,b,s);for(const q of P.props)if(q.t==="trellis")trellis(g,q,s,r);
  /* plants, back to front, standing on their cell */
  const L=P.plants.slice().sort((a,b)=>a.y-b.y);if(window.PLANTS)for(const q of L){const p=PLANTS.byId[q.id];if(p)PLANTS.drawFit(g,p,q.x*s,q.y*s-s*.12,s*q.s*.95,"mature",q.seed)}
