@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Art Assets: the game engine</title>
+<style>
+:root{--bg:#f7f8f7;--ink:#18211f;--sub:#5b6663;--line:#d9dfdd;--acc:#1d7380}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}
+header{padding:20px 20px 8px;max-width:1200px;margin:0 auto}h1{margin:0 0 4px;font-size:26px}header p{margin:0;color:var(--sub)}
+nav.tabs{display:flex;gap:6px;margin:12px 0 0}nav.tabs a{padding:6px 14px;border-radius:20px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:#fff}nav.tabs a[aria-current=page]{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{max-width:1200px;margin:0 auto;padding:12px 20px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:14px}
+.part{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.part h2{margin:0;font-size:19px}.part p{margin:0}.part table{border-collapse:collapse;font-size:13px;width:100%}.part td{border-top:1px solid var(--line);padding:3px 6px;vertical-align:top}.part td:first-child{color:var(--sub);white-space:nowrap}
+.demo{background:#f1ece2;border-radius:10px;padding:8px;min-height:60px}.demo canvas{width:100%;display:block}
+.btn{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border-radius:10px;background:var(--acc);color:#fff;text-decoration:none;font-weight:600;border:0;font-size:14px;cursor:pointer;align-self:flex-start}
+.btn.ghost{background:#fff;color:var(--acc);border:1px solid var(--acc)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.bar{height:14px;border-radius:7px;background:#d9d2c4;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(#e05a4a,#b83a2a)}
+kbd{display:inline-block;min-width:1.4em;padding:0 6px;border:1px solid #b8b0a0;border-bottom-width:2px;border-radius:5px;background:#fff;font:600 12px system-ui;text-align:center}
+small{color:var(--sub)}select{font:inherit;padding:6px;border-radius:8px;border:1px solid var(--line)}
+</style>
+</head><body>
+<header><h1>Art Assets</h1><p>The game engine: how the games behave, kept apart from how they look (<a href="https://github.com/fenw1ck/Art-Assets/blob/main/engine.js">engine.js</a>). Any project can load it; each part below runs live from that file. Edit a part and the Request Builder opens with a ticket about it.</p>
+<nav class="tabs"><a href="index.html">Art library</a><a href="engine.html" aria-current="page">Game engine</a></nav></header>
+<main id="parts"></main>
+<script src="core.js"></script><script src="plants.js"></script><script src="items.js"></script><script src="creatures.js"></script><script src="kitchen.js"></script><script src="traps.js"></script><script src="engine.js"></script>
+<script>
+/* The engine tab (25 Nov 2026): one card per ENGINE.parts entry, with its rules (read live from engine.js), a small live
+   demo, and "Edit this part", which opens the Request Builder with ?engine=<part> (the same prefilled-form idea as the art
+   library's Edit this art). */
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RB='https://fenw1ck.github.io/Claude-API-Optimization/',E=window.ENGINE,TAU=Math.PI*2;
+const DEMO={};
+$('parts').innerHTML=E.parts.map(p=>{const P=p.params();return`<section class="part" id="${p.id}"><h2>${esc(p.name)}</h2><p>${esc(p.what)}</p>
+ <div class="demo" id="demo-${p.id}"></div>
+ <table>${Object.entries(P).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join('')}</table>
+ <div class="row"><button class="btn" data-edit="${p.id}">Edit this part</button><small>engine.js · ENGINE.${p.id}</small></div></section>`}).join('');
+document.querySelectorAll('[data-edit]').forEach(b=>b.onclick=()=>{const p=E.parts.find(x=>x.id===b.dataset.edit),P=p.params();
+ const q=new URLSearchParams({engine:p.id,name:p.name,what:p.what,params:Object.entries(P).map(([k,v])=>`${k}: ${v}`).join('\n'),from:location.href.split('#')[0]+'#'+p.id});location.href=RB+'?'+q});
+const cv=(id,h)=>{const d=$('demo-'+id),c=document.createElement('canvas');c.width=680;c.height=h;c.style.height=h/2+'px';d.appendChild(c);return c.getContext('2d')};
+/* time: a running clock (sped up 60x here) and the daylight curve */
+{const g=cv('clock',140),S={time:E.clock.START};DEMO.clock=dt=>{E.clock.tick(S,dt*60);g.clearRect(0,0,680,140);g.fillStyle='#18211f';g.font='600 30px system-ui';g.fillText(E.clock.fmt(S.time),16,44);
+  g.strokeStyle='#c9a24a';g.lineWidth=3;g.beginPath();for(let x=0;x<=640;x++){const t=x/640*1440,y=125-E.clock.daylight(t)*60;x?g.lineTo(20+x,y):g.moveTo(20,y)}g.stroke();const x=20+(S.time%1440)/1440*640;g.fillStyle=E.clock.isNight(S.time)?'#3a4a7a':'#e0a020';g.beginPath();g.arc(x,125-E.clock.daylight(S.time)*60,8,0,TAU);g.fill();g.fillStyle='#5b6663';g.font='20px system-ui';g.fillText('daylight; 1 s here = 1 game hour',330,40)}}
+/* health: a bar to poke */
+{const d=$('demo-health'),S={hp:100,coins:40};d.innerHTML=`<div class="bar"><i id="hpb" style="width:100%"></i></div><div class="row" style="margin-top:8px"><button class="btn ghost" id="h1">Hit (−15)</button><button class="btn ghost" id="h2">Eat stew (+34)</button><span id="hpt"></span></div>`;
+ const show=m=>{$('hpb').style.width=E.health.hp(S)+'%';$('hpt').textContent=`${Math.round(E.health.hp(S))} / ${E.health.MAX} · ${S.coins} coins ${m||''}`};$('h1').onclick=()=>{if(E.health.damage(S,15)){const r=E.health.faint(S);show(`· fainted: woke at the doors, dropped ${r.lost} coins`)}else show()};$('h2').onclick=()=>{E.health.heal(S,34);show()};show()}
+/* keys */
+$('demo-keys').innerHTML='<table>'+E.keys.list().map(([a,l,k])=>`<tr><td>${k.map(x=>`<kbd>${esc(x)}</kbd>`).join(' ')}</td><td>${esc(l)}</td></tr>`).join('')+'</table><p style="margin-top:6px"><small>Press a key here to see what it does: </small><b id="keyout"></b></p>';
+addEventListener('keydown',e=>{const a=E.keys.action(e.key);if(a&&$('keyout'))$('keyout').textContent=E.keys.LABEL[a]});
+/* lock timers */
+{const d=$('demo-locks');d.innerHTML=`<div class="row"><select id="lsteps">${[3,6,10,15].map(n=>`<option>${n}</option>`).join('')}</select><small>steps in the lock →</small><b id="lt"></b></div><div class="bar" style="margin-top:8px"><i id="lb" style="width:100%;background:linear-gradient(#e0b040,#c08020)"></i></div>`;
+ let t0=performance.now();const upd=()=>{const L=E.locks.limit(+$('lsteps').value),el=(performance.now()-t0)/1000*20,left=Math.max(0,L-el);$('lt').textContent=`${Math.ceil(left)} s of ${L} s (shown 20x fast)${left<=0?` · sealed for ${E.locks.COOLDOWN_MIN} game minutes, −${E.locks.DAMAGE} health`:''}`;$('lb').style.width=left/L*100+'%';if(left<=0&&el>L+3)t0=performance.now()};$('lsteps').onchange=()=>t0=performance.now();DEMO.locks=upd}
+/* moves: the jump arc against two ledges */
+{const g=cv('moves',180);DEMO.moves=()=>{g.clearRect(0,0,680,180);const k=90,base=165;g.fillStyle='#8a8070';g.fillRect(0,base,680,4);E.moves.LEDGE_HEIGHTS.forEach((h,i)=>{g.fillStyle=i?'#7a6a5a':'#9a8a72';g.fillRect(380+i*160,base-h*k,120,h*k);g.fillStyle='#18211f';g.font='18px system-ui';g.fillText(`${h} m: ${E.moves.canJumpOnto(h)?'jump on':'climb (C)'}, off −${E.moves.fallDamage(h)}`,i?380:250,i?14:base-h*k-10)});
+  g.strokeStyle='#1d7380';g.lineWidth=3;g.beginPath();for(let i=0;i<=40;i++){const t=i/40*E.moves.JUMP_T,x=40+i*7,y=base-E.moves.jumpY(t)*k;i?g.lineTo(x,y):g.moveTo(x,y)}g.stroke();g.fillStyle='#5b6663';g.font='18px system-ui';g.fillText(`jump ${E.moves.JUMP_H} m`,90,base-E.moves.JUMP_H*k-10)}}
+/* traps: a playable path trap */
+{const d=$('demo-traps');const g=cv('traps',300);const G=E.traps.pathGraph(7,4,3,9);let at=G.start,walked=[],bad=null,msg='Tap points to walk the edges: every edge once, none twice.';
+ const pos=i=>[110+G.nodes[i].c*150,60+G.nodes[i].r*90];const info=document.createElement('p');d.appendChild(info);
+ const draw=()=>{g.clearRect(0,0,680,300);G.edges.forEach(([a,b])=>{const k=a<b?a+'-'+b:b+'-'+a;TRAPS.edge(g,pos(a),pos(b),5,{walked:walked.includes(k),bad:bad===k})});[...G.used].forEach(i=>TRAPS.stud(g,...pos(i),14,{lit:walked.some(k=>k.split('-').map(Number).includes(i)),here:i===at}));info.textContent=msg};
+ g.canvas.onclick=e=>{const r=g.canvas.getBoundingClientRect(),x=(e.clientX-r.left)*680/r.width,y=(e.clientY-r.top)*300/r.height;const i=[...G.used].find(j=>Math.hypot(pos(j)[0]-x,pos(j)[1]-y)<26);if(i==null)return;
+  const s=E.traps.step(G,walked,at,i);if(!s.edge){msg='No edge there: walk along the lines.';draw();return}if(s.backtrack){bad=at<i?at+'-'+i:i+'-'+at;msg=`Backtracked! ${E.traps.KIND_LABEL[E.traps.kindFor(7)]}: −${E.traps.BACKTRACK_DMG} health.`}else{bad=null;msg=s.done?'Every edge once: the trap disarms.':`${walked.length} of ${G.edges.length} edges.`}at=i;draw()};
+ const rb=document.createElement('button');rb.className='btn ghost';rb.textContent='Start again';rb.onclick=()=>{at=G.start;walked=[];bad=null;msg='Tap points to walk the edges: every edge once, none twice.';draw()};d.appendChild(rb);draw()}
+/* combat: the creatures and the weapons */
+{const g=cv('combat',330);const ks=CREATURES.LIST;ks.forEach((k,i)=>{CREATURES.draw(g,k,70+i*135,150,120,'threatening',{seed:i+1});const C=E.combat.CREATURES[k];g.fillStyle='#18211f';g.font='12px system-ui';g.fillText(`${C.name}: ${C.hp} hp`,20+i*135,170)});
+ E.combat.allWeapons().forEach((w,i)=>{ITEMART.draw(g,w,40+i*72,300,70,{});const W=E.combat.weapon(w);g.fillStyle='#5b6663';g.font='11px system-ui';g.fillText(`${W.dmg}·${W.dur}`,22+i*72,322)})}
+/* cooking: the oven check, playable */
+{const d=$('demo-cook');d.innerHTML=`<div class="row"><select id="crec">${E.cook.RECIPES.map((r,i)=>`<option value="${i}">${esc(r.name)} (${r.needs.length})</option>`).join('')}</select><button class="btn" id="cgo">Cook</button><small>Space or click to stop the marker</small></div>`;const g=cv('cook',120);let run=null;
+ const start=()=>{const r=E.cook.RECIPES[+$('crec').value];run={r,checks:E.cook.checks(r,Date.now()%1000),i:0,t0:performance.now(),hits:0,res:null}};
+ const stop=()=>{if(!run||run.res)return;const c=run.checks[run.i],x=E.cook.marker((performance.now()-run.t0)/1000,c.speed);const ok=E.cook.hit(c,x);c.ok=ok;if(!ok){run.res=`Burnt! (the ${c.label} check missed)`;return}run.i++;run.t0=performance.now();if(run.i>=run.checks.length)run.res=`${run.r.name}: cooked (+${run.r.hp} health)`};
+ $('cgo').onclick=start;g.canvas.onclick=stop;addEventListener('keydown',e=>{if(e.key===' '&&run&&!run.res&&document.activeElement.tagName!=='SELECT'){e.preventDefault();stop()}});
+ DEMO.cook=()=>{g.clearRect(0,0,680,120);if(!run){g.fillStyle='#5b6663';g.font='14px system-ui';g.fillText('Choose a dish and press Cook.',16,60);return}run.checks.forEach((c,i)=>{const y=14+i*26,W=520;g.fillStyle='#d9d2c4';g.fillRect(120,y,W,18);g.fillStyle=c.ok===false?'#d85a4a':c.ok?'#6ab04a':i===run.i?'#8fd46a':'#b8d8a8';g.fillRect(120+c.lo*W,y,(c.hi-c.lo)*W,18);
+  g.fillStyle='#18211f';g.font='12px system-ui';g.fillText(c.label,10,y+14);if(i===run.i&&!run.res){const x=E.cook.marker((performance.now()-run.t0)/1000,c.speed);g.fillStyle='#18211f';g.fillRect(118+x*W,y-3,4,24)}});if(run.res){g.font='600 14px system-ui';g.fillText(run.res,120,112)}}}
+/* fuel */
+{const d=$('demo-fuel');const S={kindling:0,wood:0};d.innerHTML=`<div class="row"><button class="btn ghost" id="f1">Chop vines (+1 kindling)</button><button class="btn ghost" id="f2">Fell a tree (+${E.fuel.WOOD_PER_TREE} wood)</button><button class="btn ghost" id="f3">Cook in the cauldron (−${E.cook.WOOD_PER_UNIT})</button></div><p id="ft"></p>`;
+ const show=m=>$('ft').textContent=`Firewood ${S.wood} · kindling ${S.kindling} → ${E.fuel.wood(S)} usable ${m||''}`;$('f1').onclick=()=>{S.kindling++;show()};$('f2').onclick=()=>{S.wood+=E.fuel.WOOD_PER_TREE;show()};$('f3').onclick=()=>show(E.fuel.pay(S,E.cook.WOOD_PER_UNIT)?'· cooked':'· not enough fuel');show()}
+let last=performance.now();(function loop(t){const dt=Math.min(.1,(t-last)/1000);last=t;for(const k in DEMO)DEMO[k](dt);requestAnimationFrame(loop)})(last);
+if(location.hash)setTimeout(()=>{const el=document.querySelector(location.hash);if(el)el.scrollIntoView()},100);
+</script>
+</body></html>
