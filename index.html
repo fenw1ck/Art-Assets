@@ -25,16 +25,18 @@ main{max-width:1200px;margin:0 auto;padding:16px 20px 40px;display:grid;grid-tem
 .tags{display:flex;flex-wrap:wrap;gap:4px}.tags small,.tree small{color:var(--sub)}
 #org{max-width:1200px;margin:0 auto;padding:12px 20px;display:grid;grid-template-columns:1fr 1fr;gap:24px;border-bottom:1px solid var(--line)}#org[hidden]{display:none}@media(max-width:760px){#org{grid-template-columns:1fr}}
 #org h2{font-size:18px;margin:6px 0}#org h3{font-size:14px;margin:12px 0 4px;color:var(--sub)}#org p{margin:4px 0}.tree{list-style:none;padding-left:0;margin:6px 0}.tree ul{list-style:none;padding-left:18px;border-left:1px solid var(--line);margin:4px 0 4px 8px}.tree li{margin:3px 0}.note{color:var(--sub);font-size:13px}
+nav.tabs{display:flex;gap:6px;margin:12px 0 0}nav.tabs a{padding:6px 14px;border-radius:20px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:#fff}nav.tabs a[aria-current=page]{background:var(--acc);color:#fff;border-color:var(--acc)}
 </style>
 </head><body>
-<header><h1>Art Assets</h1><p>Every piece of art the projects can draw, drawn live from this repo's code. Tap one for its card and to edit it; new art starts in the Request Builder.</p></header>
+<header><h1>Art Assets</h1><p>Every piece of art the projects can draw, drawn live from this repo's code. Tap one for its card and to edit it; new art starts in the Request Builder.</p>
+<nav class="tabs"><a href="index.html" aria-current="page">Art library</a><a href="engine.html">Game engine</a></nav></header>
 <div class="bar"><input id="q" type="search" placeholder="Search: chest, tomato, ivy, bed…" aria-label="Search the art"><span id="n"></span>
  <button type="button" class="btn ghost" id="orgb" aria-expanded="false">How it's organised</button><a class="btn" href="https://fenw1ck.github.io/Claude-API-Optimization/">Make new art</a><div class="cats" id="cats"></div></div>
 <section id="org" hidden></section>
 <main id="grid"></main>
 <div id="info" role="dialog" aria-modal="true"><div class="box"><canvas id="big" width="600" height="600"></canvas><div id="det"></div></div></div>
 <script src="core.js"></script><script src="plants.js"></script><script src="containers.js"></script><script src="tools.js"></script><script src="vines.js"></script>
-<script src="furniture.js"></script><script src="floors.js"></script><script src="bedroom.js"></script><script src="garden.js"></script><script src="items.js" onerror="this.remove()"></script>
+<script src="furniture.js"></script><script src="floors.js"></script><script src="bedroom.js"></script><script src="garden.js"></script><script src="items.js" onerror="this.remove()"></script><script src="creatures.js"></script><script src="kitchen.js"></script><script src="traps.js"></script><script src="engine.js"></script>
 <script>
 /* The library (25 Nov 2026): one card per piece of art the modules can draw. Each card knows its file, function and
    research entry; "Edit this art" opens the Request Builder with an improve ticket and this picture attached. */
@@ -55,9 +57,19 @@ if(window.BEDROOM){BEDROOM.BEDS.forEach((t,i)=>add('bed-'+t,'Bed: '+t.replace(/-
  BEDROOM.MOBILES.forEach((m,i)=>add('mobile-'+m,'Mobile: '+m,'Bedroom','bedroom.js','BEDROOM.mobile',['furniture'],(c,S)=>BEDROOM.mobile(c,S/2,S*.02,S*1.05,m,i+1,1)))}
 if(window.FLOORS)[['stone','Stone floor','stone-floor'],['wood','Wood floor','wood-floor'],['carpet','Carpet','carpet']].forEach(([k,n,r])=>add('floor-'+k,n,'Floors','floors.js','FLOORS.'+k,[r],(c,S)=>fitImg(c,FLOORS[k](3,3,60,1),S)));
 if(window.GARDEN)[['fountain','Fountain'],['lantern','Lantern'],['pedestal','Pedestal'],['gate','Gate']].forEach(([k,n])=>add('garden-'+k,n,'Garden','garden.js','GARDEN.'+k,['garden'],(c,S)=>GARDEN[k](c,S/2,S/2,S*(k==='lantern'?.7:.28),1)));
-if(window.ITEMART){const V={boots:['boots-sandals','boots-wayfarer','boots-winged','boots-greaves'],potion:['potion-weak','potion-strong','potion-strongest'],coin:['coin-gold','coin-silver','coin-bronze'],scroll:['scroll-circles','scroll-lines'],potato:['potato-red','potato-purple','potato-brown','potato-baked'],produce:['produce-tomato_cherry','produce-carrot','produce-lettuce','produce-sunflower']};
- Object.keys(ITEMART.D).filter(k=>!['parcel','ax','chest','coins'].includes(k)).forEach(k=>(V[k]||[k]).forEach(id=>add('item-'+id,id.replace(/-/g,' ').replace(/^./,m=>m.toUpperCase()),'Items','items.js','ITEMART.draw',/^(potato|produce)$/.test(k)?['food','items']:[k,'items'],
-  (c,S)=>id.startsWith('coin-')?ITEMART.coin(c,S/2,S/2,S*.36,{metal:id.slice(5)}):ITEMART.draw(c,id,S/2,S*.9,S*.8,{seed:3}))))}
+const ENGINE_W=()=>window.ENGINE?ENGINE.combat.allWeapons().concat(['weapon-sword-iron:damaged','weapon-sword-iron:broken','weapon-staff-starmetal:damaged','weapon-knife-bronze:broken']):[];
+if(window.ITEMART){const V={boots:['boots-sandals','boots-wayfarer','boots-winged','boots-greaves'],potion:['potion-weak','potion-strong','potion-strongest'],coin:['coin-gold','coin-silver','coin-bronze'],scroll:['scroll-circles','scroll-lines'],potato:['potato-red','potato-purple','potato-brown','potato-baked'],produce:window.PLANTS?PLANTS.list.filter(p=>{const H=PLANTS.harvest(p);return H&&p.id!=='potato'}).map(p=>'produce-'+p.id):[], /* a food item for every food plant */
+  weapon:ENGINE_W(),dish:['dish-potato-soup','dish-ratatouille','dish-bean-stew','dish-squash-roast','dish-rhubarb-crumble','cooked-eggplant','cooked-bean_bush','burnt']};
+ const nameOf=id=>{const[i,st]=id.split(':'),P=window.PLANTS&&PLANTS.byId[i.replace(/^(produce|cooked)-/,'')];if(/^produce-/.test(i)&&P)return P.common_name;if(/^cooked-/.test(i)&&P)return'Cooked '+P.common_name.toLowerCase();const w=window.ENGINE&&ENGINE.combat.weapon(i);if(w)return w.name+(st?' ('+st+')':'');return i.replace(/^dish-/,'').replace(/-/g,' ').replace(/^./,m=>m.toUpperCase())};
+ Object.keys(ITEMART.D).filter(k=>!['parcel','ax','chest','coins'].includes(k)).forEach(k=>(V[k]||[k]).forEach(id=>add('item-'+id.replace(':','-'),nameOf(id),'Items','items.js','ITEMART.draw',/^(potato|produce|dish)$/.test(k)?['food','items']:k==='weapon'?['weapons','items']:/^(firewood|kindling|cauldron)$/.test(k)?['cooking-fire','items']:[k,'items'],
+  (c,S)=>{const[i,st]=id.split(':');return i.startsWith('coin-')?ITEMART.coin(c,S/2,S/2,S*.36,{metal:i.slice(5)}):ITEMART.draw(c,i,S/2,S*.9,S*.8,{seed:3,state:st})})))}
+if(window.CREATURES)CREATURES.LIST.forEach((k,i)=>CREATURES.STATES.forEach(st=>add(`creature-${k}-${st}`,`${k[0].toUpperCase()+k.slice(1)} (${st})`,'Creatures','creatures.js','CREATURES.draw',[k,'creatures'],(c,S)=>CREATURES.draw(c,k,S/2,S*.92,S*.8,st,{seed:i+1}))));
+if(window.KITCHEN){[['stove','Kitchen range (stove and oven)',(c,S)=>KITCHEN.stove(c,S/2,S*.95,S*.42,1,{t:1})],['table','Kitchen table',(c,S)=>KITCHEN.table(c,S/2,S*.85,S*.5,1)],['island','Kitchen island',(c,S)=>KITCHEN.island(c,S/2,S*.92,S*.45,2,{rack:true})],['shelf','Kitchen shelf',(c,S)=>KITCHEN.shelf(c,S/2,S*.55,S*.7,1)]].forEach(([k,n,d])=>add('kitchen-'+k,n,'Kitchen','kitchen.js','KITCHEN.'+k,['kitchen'],d));
+ add('campfire','Campfire','Kitchen','kitchen.js','KITCHEN.campfire',['cooking-fire'],(c,S)=>KITCHEN.campfire(c,S/2,S*.85,S*.55,1,{}));add('campfire-cauldron','Cauldron over a campfire','Kitchen','kitchen.js','KITCHEN.cauldron',['cooking-fire'],(c,S)=>{KITCHEN.campfire(c,S/2,S*.92,S*.5,1,{});KITCHEN.cauldron(c,S/2,S*.92,S*.5,1,{fill:'#c8a050',bubbling:true})})}
+if(window.TRAPS){add('trap-plate','Pressure plate and spikes','Traps','traps.js','TRAPS.plate, TRAPS.spikes',['traps'],(c,S)=>{TRAPS.plate(c,[[S*.2,S*.62],[S*.8,S*.62],[S*.92,S*.82],[S*.08,S*.82]],{down:true});TRAPS.spikes(c,S/2,S*.74,S*.7,S*.35,1)});
+ add('trap-flame','Flame thrower','Traps','traps.js','TRAPS.nozzle, TRAPS.flame',['traps'],(c,S)=>{c.fillStyle='#6a5e50';c.fillRect(0,0,S*.18,S);TRAPS.nozzle(c,S*.14,S*.45,S*.08);TRAPS.flame(c,S*.2,S*.45,S*.95,S*.5,S*.16,1,1)});
+ add('trap-fog','Poison fog','Traps','traps.js','TRAPS.fog',['traps'],(c,S)=>TRAPS.fog(c,S/2,S*.55,S*.4,1,1));
+ add('trap-path','Path trap (points and edges)','Traps','traps.js','TRAPS.stud, TRAPS.edge',['traps'],(c,S)=>{const P=[[.2,.4],[.5,.25],[.8,.42],[.62,.75],[.3,.72]].map(([x,y])=>[x*S,y*S]);[[0,1,{walked:1}],[1,2,{walked:1}],[2,3,{}],[3,4,{bad:1}],[4,0,{}],[1,3,{}]].forEach(([a,b,o])=>TRAPS.edge(c,P[a],P[b],S*.02,o));P.forEach((p,i)=>TRAPS.stud(c,p[0],p[1],S*.045,{lit:i<3,here:i===2}))})}
 /* research: entries by id and alias */
 let LIB=[];/* ---------- how the art is organised (25 Nov 2026; README "How the art is organised") ----------
    Two things, the way asset libraries and libraries of books do it:
@@ -79,6 +91,9 @@ const TAGS_CAT={
  Bedroom:{setting:['indoor'],use:['environment'],room:['bedroom'],material:['wood','fabric'],project:['Euclid game']},
  Floors:{setting:['indoor'],use:['environment'],room:['corridor','library','bedroom'],material:['stone'],project:['Euclid game']},
  Garden:{setting:['outdoor'],use:['environment'],room:['garden'],material:['stone','metal'],project:['Euclid game']},
+ Creatures:{setting:['both'],use:['enemy'],room:['corridor','library','bedroom','greenhouse'],material:['creature'],project:['Euclid game']},
+ Kitchen:{setting:['indoor'],use:['cooking','environment'],room:['kitchen'],material:['wood','metal'],project:['Euclid game']},
+ Traps:{setting:['indoor'],use:['trap','environment'],room:['corridor','library','bedroom'],material:['metal','stone'],project:['Euclid game']},
  Items:{setting:['both'],use:['permanent'],room:['corridor','library','bedroom','greenhouse'],material:['metal'],project:['Euclid game']}};
 const TAGS_BY=[ /* [test on the piece id, changes] */
  [/^plant-(pothos|snake_plant|monstera|peace_lily|spider_plant)/,{setting:['indoor'],use:['environment'],room:['bedroom','library']}],
@@ -91,11 +106,16 @@ const TAGS_BY=[ /* [test on the piece id, changes] */
  [/^item-potion/,{use:['consumable'],room:['greenhouse','corridor'],material:['glass']}],
  [/^item-coin/,{use:['currency'],material:['metal']}],
  [/^item-potato|^item-produce/,{use:['consumable','harvest'],room:['greenhouse'],material:['food']}],
+ [/^item-weapon/,{use:['weapon','consumable'],material:['metal','wood']}],[/^item-(firewood|kindling)/,{use:['fuel','consumable'],room:['greenhouse','front doors'],material:['wood']}],[/^item-cauldron/,{use:['cooking','permanent'],room:['greenhouse'],material:['metal']}],
+ [/^item-(dish|cooked|burnt)/,{use:['consumable'],room:['kitchen','greenhouse'],material:['food']}],[/^campfire/,{setting:['both'],room:['greenhouse'],material:['stone','wood']}],
  [/^item-soil/,{use:['consumable'],room:['greenhouse'],material:['soil']}],
  [/^item-(tile|amphora|bust)/,{material:['stone']}],[/^item-(map)/,{material:['paper']}],[/^item-(lyre|straightedge)/,{material:['wood']}],[/^item-hourglass/,{material:['glass','wood']}],
  [/^item-sword|^item-compass|^item-astrolabe|^item-chalice|^item-lamp/,{material:['metal']}]];
-const CATPATH={Garden:['Made things','Garden features'],Bedroom:['Made things','Furniture'],Items:['Made things','Items'],Floors:['Patterns and surfaces','Floors'],Tools:['Made things','Tools'],Vines:['Living things','Plants'],Plants:['Living things','Plants'],Furniture:['Made things','Furniture'],Containers:['Made things','Containers']};
-function tagsOf(a){if(a._tags)return a._tags;const t=JSON.parse(JSON.stringify(TAGS_CAT[a.cat]||{}));for(const[re,ch]of TAGS_BY)if(re.test(a.id))Object.assign(t,ch);return a._tags=t}
+const CATPATH={Creatures:['Living things','Creatures of myth'],Kitchen:['Made things','Furniture','Kitchen'],Traps:['Made things','Traps'],Garden:['Made things','Garden features'],Bedroom:['Made things','Furniture'],Items:['Made things','Items'],Floors:['Patterns and surfaces','Floors'],Tools:['Made things','Tools'],Vines:['Living things','Plants'],Plants:['Living things','Plants'],Furniture:['Made things','Furniture'],Containers:['Made things','Containers']};
+function tagsOf(a){if(a._tags)return a._tags;const t=JSON.parse(JSON.stringify(TAGS_CAT[a.cat]||{}));for(const[re,ch]of TAGS_BY)if(re.test(a.id))Object.assign(t,ch);
+ /* Ingredient: food that must be cooked (in an oven or a cauldron) before it can be eaten: PLANTS.harvest says which */
+ const m=a.id.match(/^item-(produce-(.+)|potato-(red|purple|brown))$/);if(m&&window.PLANTS){const H=PLANTS.harvest(PLANTS.byId[m[2]||'potato']);if(H&&H.ingredient)t.use=['ingredient','harvest'];else if(H&&!H.food){t.use=['harvest','permanent'];t.material=['plant']}}
+ return a._tags=t}
 const tagList=a=>{const t=tagsOf(a);return FACETS.flatMap(([k])=>(t[k]||[]).map(v=>[k,v]))};
 /* the research chain, root first */
 function chainOf(e){const out=[];let x=e;const seen=new Set();while(x&&!seen.has(x.id)){seen.add(x.id);out.unshift(x);x=x.parent&&x.parent!=='none'?LIB.find(y=>y.id===x.parent):null}return out}

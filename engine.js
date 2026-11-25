@@ -34,7 +34,7 @@ const keys={MAP:{map:['m'],bag:['i','b','tab'],jump:[' '],climb:['c'],attack:['f
     up:['w','arrowup'],down:['s','arrowdown'],left:['a','arrowleft'],right:['d','arrowright']},
   LABEL:{map:'Map',bag:'Bag (inventory)',jump:'Jump',climb:'Climb a ledge',attack:'Attack with your weapon',interact:'Use, open, pick up, talk',close:'Close / back',help:'Keys',up:'Walk forward',down:'Walk back',left:'Step left',right:'Step right'},
   action(k){k=String(k||'').toLowerCase();for(const a in keys.MAP)if(keys.MAP[a].includes(k))return a;return null},
-  list:()=>Object.keys(keys.MAP).map(a=>[a,keys.LABEL[a],keys.MAP[a].map(k=>k===' '?'Space':k.length===1?k.toUpperCase():k[0].toUpperCase()+k.slice(1))])};
+  list:()=>Object.keys(keys.MAP).map(a=>[a,keys.LABEL[a],keys.MAP[a].map(k=>({' ':'Space',arrowup:'↑',arrowdown:'↓',arrowleft:'←',arrowright:'→',escape:'Esc'})[k]||(k.length===1?k.toUpperCase():k[0].toUpperCase()+k.slice(1)))])};
 
 /* ---------- lock timers: each unsolved lock gives you a time limit; run out and it seals for a while ---------- */
 const locks={BASE_SEC:120,PER_STEP_SEC:25,COOLDOWN_MIN:90,DAMAGE:10,

@@ -30,9 +30,9 @@ Decided 25 Nov 2026, after looking at how asset libraries are organised (digital
 - **One branch: where a piece lives** (like animal taxonomy or the Dewey system). The branches are the research tree in `research/`: kind of thing (Living things, Made things, Materials, Patterns and surfaces), then each entry's parents, down to the piece. Examples: Living things › Plants › Nightshade family › Potato; Made things › Items › Food › Potato red. A piece with no research entry of its own hangs under its nearest one, so giving it an entry later moves it to the right place.
 - **Tags (facets): find it by any trait.** Five groups, each piece carrying one or more tags in each:
   - Where: indoor, outdoor, both.
-  - Use: consumable, permanent, wardrobe, environment, harvest, tool, container, currency.
-  - Rooms: greenhouse, garden, corridor, library, bedroom, front doors.
-  - Made of: plant, wood, stone, metal, fabric, glass, paper, leather, food, soil.
+  - Use: consumable, **ingredient** (food that must be cooked in an oven or cauldron before it can be eaten; set from `PLANTS.harvest(p).ingredient`), permanent, wardrobe, environment, harvest, tool, container, currency, weapon, enemy, trap, cooking, fuel.
+  - Rooms: greenhouse, garden, corridor, library, bedroom, kitchen, front doors.
+  - Made of: plant, wood, stone, metal, fabric, glass, paper, leather, food, soil, creature.
   - Projects: Euclid game, Planting Guide.
 - **Where this lives in the code:** `index.html`. `TAGS_CAT` gives each library category its default tags, `TAGS_BY` changes them per piece, `CATPATH` gives the branch for pieces with no research entry, and each card's `res` list names its research entry (first) and fallbacks.
 - **On the page:** **How it's organised** shows the branch tree and every tag with its count. A card shows its branch and its tags, and tapping either lists everything filed there. You can also filter by typing, for example `room:greenhouse`, `use:consumable` or `in:Nightshade family`.
