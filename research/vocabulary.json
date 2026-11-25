@@ -309,6 +309,29 @@
   "foliage_colour": {
    "type": "colour"
   },
+  "climbing": {
+   "type": "enum",
+   "options": [
+    "none",
+    "aerial-roots",
+    "tendrils",
+    "adhesive-tendrils",
+    "twining"
+   ],
+   "default": "none",
+   "ask": "How does it climb?",
+   "help": "aerial-roots = rootlets along the stem (ivy); adhesive-tendrils = tendrils tipped with sticky discs (Virginia creeper); twining = the stem itself winds round a support (wisteria)"
+  },
+  "bark_colour": {
+   "type": "colour",
+   "ask": "Colour of the woody stems"
+  },
+  "leaf_cm": {
+   "type": "number",
+   "min": 0.2,
+   "max": 100,
+   "ask": "Typical leaf length in cm (sets the leaf's size against a door or wall)"
+  },
   "states": {
    "type": "list",
    "default": [
@@ -317,6 +340,56 @@
     "mature",
     "declining",
     "dead"
+   ]
+  }
+ },
+ "tool": {
+  "head_shape": {
+   "type": "enum",
+   "options": [
+    "flared",
+    "single-bit",
+    "bearded"
+   ],
+   "default": "single-bit",
+   "ask": "What shape is the ax head?",
+   "help": "flared = a small cast head widening to the edge; bearded = the lower corner drops well below the head"
+  },
+  "head_metal": {
+   "type": "text",
+   "default": "wrought iron",
+   "ask": "What is the head made of? (an entry under materials/metal)"
+  },
+  "head_colour": {
+   "type": "colour",
+   "default": "#6d7177"
+  },
+  "haft_wood": {
+   "type": "text",
+   "default": "hickory",
+   "ask": "What wood is the handle?"
+  },
+  "haft_colour": {
+   "type": "colour",
+   "default": "#b07c45"
+  },
+  "lugs": {
+   "type": "bool",
+   "default": true,
+   "help": "bulges above and below the eye"
+  },
+  "strikes": {
+   "type": "number",
+   "min": 1,
+   "max": 20,
+   "default": 10,
+   "ask": "How many blows does it take to cut a door's vines back?"
+  },
+  "states": {
+   "type": "list",
+   "default": [
+    "held",
+    "swing"
    ]
   }
  }

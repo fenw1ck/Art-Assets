@@ -5,8 +5,10 @@
 <script src="../core.js"></script>
 <script src="../plants.js"></script>
 <script src="../containers.js"></script>
+<script src="../tools.js"></script>
+<script src="../vines.js"></script>
 <script>
-/* Opened by tools/contact-sheet.py. ?sheet=plants|ladder|core|containers &bg=light|dark */
+/* Opened by tools/contact-sheet.py. ?sheet=plants|ladder|core|containers|tools|vines &bg=light|dark */
 const Q=new URLSearchParams(location.search),sheet=Q.get('sheet')||'plants',dark=Q.get('bg')==='dark';
 const BG=dark?'#1d2126':'#f4efe2',BG2=dark?'#252a30':'#efe8d6',INK=dark?'#e8e4da':'#333',SUB=dark?'#9aa0a8':'#777',GOOD=dark?'#8fd49a':'#1d6a2a';
 const c=document.getElementById('c'),ctx=c.getContext('2d');
@@ -34,6 +36,26 @@ if(sheet==='plants'){
   label('seeds 1–5 (same traits)',pad,600,INK,'bold 12px system-ui');for(let i=0;i<5;i++)cell(i,760,T,'closed',150,{},'seed '+(i+1),i+1);
   label('size ladder',pad,840,INK,'bold 12px system-ui');let x=pad;for(const s of[16,24,48,96,200,400]){C.drawChest(ctx,T,x+s/2+10,1290,s,'closed',7,{});label(s+'px',x,1310,SUB);x+=s+40}
   label('silhouettes (closed, open)',pad,1350,INK,'bold 12px system-ui');for(const[i,st]of[[0,'closed'],[1,'open']]){const off=document.createElement('canvas');off.width=cw;off.height=140;const o2=off.getContext('2d');C.drawChest(o2,T,cw/2,125,110,st,7,{});o2.globalCompositeOperation='source-in';o2.fillStyle=INK;o2.fillRect(0,0,cw,140);ctx.drawImage(off,pad+i*cw,1355)}
+}else if(sheet==='tools'){
+  const T=TOOLS,pad=20,cw=240;c.width=pad+3*cw+40;c.height=1420;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  label('Axes (research/objects/tools/axe.md): basic, improved, best',pad,22,INK,'bold 13px system-ui');
+  T.AXES.forEach((a,i)=>{const x=pad+i*cw+cw*.35;T.drawAx(ctx,i,x,390,340,0);label(a.name+' · '+a.strikes+' strikes',pad+i*cw+10,415,INK,'bold 12px system-ui');label(a.metal+' head, '+a.wood+' haft',pad+i*cw+10,431,SUB)});
+  label('swing (u = 0 … 1; the strike lands at u = '+T.HIT+')',pad,470,INK,'bold 12px system-ui');
+  for(let k=0;k<=8;k++){const u=k/8,s=T.swing(u),x=pad+120+k*72,y=690;T.drawAx(ctx,1,x,y-s.lift*400,150,s.angle,{mirror:true,glint:Math.abs(u-T.HIT)<.07?1:0});const b=T.bitPoint(1,150,s.angle);ctx.fillStyle='#d33';ctx.fillRect(x+b[0]-2,y+b[1]-2,4,4);label('u '+u.toFixed(2),x-14,716,SUB)}
+  label('size ladder (icon at 32 and 48 px)',pad,1040,INK,'bold 12px system-ui');let x=pad;for(const s of[32,48,96,200]){T.AXES.forEach((a,i)=>T.drawAx(ctx,i,x+i*s*.32+s*.15,1060+s*1.0,s,.6));label(s+'px',x,1400,SUB);x+=s*1.1+40}
+  label('silhouettes',pad,800,INK,'bold 12px system-ui');T.AXES.forEach((a,i)=>{const off=document.createElement('canvas');off.width=200;off.height=210;const o2=off.getContext('2d');T.drawAx(o2,i,70,200,190,0);o2.globalCompositeOperation='source-in';o2.fillStyle=INK;o2.fillRect(0,0,200,210);ctx.drawImage(off,pad+i*200,805)});
+}else if(sheet==='vines'){
+  const V=VINES,pad=16,dw=150,dh=320,cw=dw+24,rows=V.LIST.length;c.width=pad+6*cw;c.height=40+rows*(dh+56)+420;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  const door=(x,y,w,h)=>{ctx.fillStyle=dark?'#4a3020':'#6a4428';ctx.fillRect(x,y,w,h);ctx.strokeStyle='#a77a3a';ctx.lineWidth=3;ctx.strokeRect(x+w*.05,y+h*.03,w*.9,h*.94);const r=w*.18;ctx.fillStyle='#b8873e';ctx.beginPath();ctx.arc(x+w*.5,y+h*.53,r,0,7);ctx.fill()};
+  const cols=[['full',0,'none'],['damaged .3',.3,'none'],['damaged .7',.7,'none'],['cut back',1,'none'],['flowers','f','flowers'],['fruit / autumn','f','x']];
+  cols.forEach((cc,i)=>label(cc[0],pad+i*cw,24,INK,'bold 12px system-ui'));
+  V.LIST.forEach((k,r)=>{const K=V.KINDS[k],y0=40+r*(dh+56);label(K.title+' ('+K.latin+')',pad,y0+dh+18,INK,'bold 12px system-ui');
+    cols.forEach((cc,i)=>{const x=pad+i*cw;door(x,y0,dw,dh);let bl=cc[2];if(bl==='x')bl=k==='virginia-creeper'?'autumn':'fruit';if(bl==='flowers'&&!K.blooms.includes('flowers'))bl=k==='virginia-creeper'?'fruit':'fruit';
+      ctx.save();ctx.translate(x,y0);try{V.render(ctx,k,dw,dh,{seed:5+r,damage:cc[1]==='f'?0:cc[1],state:cc[1]===1?'cut':undefined,bloom:bl})}catch(e){label('ERR '+e.message,4,40,'red')}ctx.restore();label(bl,x,y0+dh+34,SUB)})});
+  const y1=40+rows*(dh+56);label('seeds 1–4 (english ivy, then wisteria), and a big door (detail)',pad,y1+4,INK,'bold 12px system-ui');
+  for(let i=0;i<4;i++){const x=pad+i*cw*.62;door(x,y1+14,90,190);ctx.save();ctx.translate(x,y1+14);V.render(ctx,i<2?'english-ivy':'wisteria',90,190,{seed:i+1,bloom:i===3?'flowers':'none'});ctx.restore()}
+  door(pad+4*cw*.62,y1+14,180,390);ctx.save();ctx.translate(pad+4*cw*.62,y1+14);V.render(ctx,'muscadine',180,390,{seed:3,bloom:'fruit'});ctx.restore();
+  ctx.save();ctx.translate(pad+4*cw*.62+200,y1+14);door(0,0,180,390);V.render(ctx,'virginia-creeper',180,390,{seed:4,bloom:'fruit'});ctx.restore();
 }else{ /* core.js: ramps, noise, warp, a marble test and Voronoi stones */
   const A=ART_CORE,S=180,pad=24;c.width=pad+4*(S+pad);c.height=760;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   label('ramp(base, 7): hue-shifted, dark to light; base in the middle',pad,20,INK,'bold 12px system-ui');
