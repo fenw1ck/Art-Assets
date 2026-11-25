@@ -312,7 +312,7 @@ function drawPotato(ctx,p,x,y,w,h,stage,seed,o){o=o||{};const R=rng(seed||7),hil
    item: the produce id ("produce-<plant id>", or "potato"); cook: must be cooked before it can be eaten. A potato
    gives 3 tubers, plus 2 for each time it was hilled (up to 3 times): 3, 5, 7, 9. */
 const PART={fruit:/^(tomato|pepper|eggplant|corn|bean|pea|squash|cucumber|strawberry|raspberry|blueberry|apple|pear|peach|fig|lemon)/,root:/^(potato|carrot|beet|radish|onion|garlic)/,flower:/^(broccoli|marigold|nasturtium|sunflower|zinnia|lavender)/};
-const COOK=/^(potato|eggplant|corn|bean|squash_winter|asparagus|rhubarb)/;
+const COOK=/^potato/; /* only the potato must be cooked for now (it has the baked art); add others with their cooked art */
 function harvest(p,o){o=o||{};if(!p)return null;const id=p.id,part=PART.fruit.test(id)?'fruit':PART.root.test(id)?'root':PART.flower.test(id)?'flower':'leaf';
   if(/^(pothos|snake_plant|monstera|peace_lily|spider_plant)/.test(id))return null; /* houseplants: nothing to eat */
   const potato=id==='potato',hill=Math.max(0,Math.min(3,o.hill||0));return{part,item:potato?'potato':'produce-'+id,name:p.common_name,cook:COOK.test(id),count:potato?3+2*hill:1+(o.seed||0)%3,tuber:potato}}
