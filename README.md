@@ -17,7 +17,8 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 
   `garden.js` needs `plants.js` loaded first.
 - `research/`: the research library: living things (plants, birds), made things (containers), materials (stone, wood, metal), floor layouts, and how to render them (light and shadow, colour, textures, wear, readability). Entries carry `traits` in the vocabulary of `research/traits.yaml`, which the drawing programs read. See `research/README.md`. It replaces PLANT_ART.md.
-- `index.html`: the Art Asset Builder (fenw1ck.github.io/Art-Assets): intake, library lookup, a live preview when the engine can already draw it, and the brief.
+- `index.html`: redirects to the [Request Builder](https://fenw1ck.github.io/Claude-API-Optimization/), where art requests are made now (its art card asks the old builder's questions, checks this research library and previews what the engine can already draw).
+- `builder-archive.html`: the retired Art Asset Builder (intake, library lookup, live preview, research library and gallery tabs), kept working in case it is needed again; also tagged `art-builder-archive` in git.
 
 ## Tools
 
@@ -26,7 +27,7 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 
 ## Making new art
 
-1. Answer the intake questions.
+1. Answer the intake questions in the Request Builder's art card.
 2. Look up the research and choose: use it as it is, fill its gaps, or search deeper.
 3. Build.
 4. Check with the contact sheets.
