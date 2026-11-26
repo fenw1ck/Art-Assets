@@ -303,6 +303,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -609,6 +631,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -915,6 +959,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -1214,6 +1280,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -1509,6 +1597,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -1807,6 +1917,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -2104,6 +2236,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -2396,6 +2550,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -2673,6 +2849,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -2997,6 +3195,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -3310,6 +3530,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -3608,6 +3850,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -3901,6 +4165,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -4143,6 +4429,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -4385,6 +4693,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -4627,6 +4957,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -4869,6 +5221,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -5111,6 +5485,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -5353,6 +5749,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -5592,6 +6010,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -5834,6 +6274,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -6076,6 +6538,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -6295,6 +6779,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -6514,6 +7020,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -6756,6 +7284,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -6997,6 +7547,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -7252,6 +7824,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -7490,6 +8084,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -7728,6 +8344,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -7966,6 +8604,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -8200,6 +8860,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -8464,6 +9146,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -8725,6 +9429,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -8967,6 +9693,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -9208,6 +9956,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -9450,6 +10220,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -9692,6 +10484,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -9923,6 +10737,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -10154,6 +10990,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -10382,6 +11240,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -10607,6 +11487,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -10832,6 +11734,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -11058,6 +11982,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -11281,6 +12227,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -11523,6 +12491,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -11765,6 +12755,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -12008,6 +13020,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -12250,6 +13284,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -12493,6 +13549,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -12734,6 +13812,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -12975,6 +14075,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -13217,6 +14339,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -13459,6 +14603,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -13702,6 +14868,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -13944,6 +15132,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -14168,6 +15378,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   },
   {
@@ -14411,6 +15643,28 @@
         "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
         "provenance": "Trait-specific references supporting the value or variant"
       }
+    },
+    "form_model": {
+      "main_form": {
+        "source": "research_data and morphology",
+        "editable_by_user": false,
+        "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+      },
+      "alternate_forms": [],
+      "alternate_form_schema": {
+        "creator": "user",
+        "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+        "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+        "research_status": "user_defined_not_botanically_verified",
+        "may_be_added_edited_or_removed_by_user": true,
+        "changes_main_form": false
+      }
+    },
+    "form_model_schema": {
+      "version": 1,
+      "main_form_is_research_only": true,
+      "alternate_forms_are_user_authored": true,
+      "alternate_forms_are_not_botanical_evidence": true
     }
   }
 ]
