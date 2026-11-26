@@ -19,7 +19,7 @@ All the art for fenw1ck's projects (the Euclid game, the Planting Guide and any 
 - `creatures.js`: `CREATURES.draw` for the harpy, basilisk, minotaur, manticore and hydra in four states (friendly, threatening, wounded, dead), in the house style: bodies from `ENGINE.skeleton`, painted by `ART_CORE.house`, cached per pose. Needs core.js and engine.js. Contact sheet: `--sheet creatures`.
 - `kitchen.js`: `KITCHEN.stove` (cast-iron range with an oven), `.table`, `.island`, `.shelf`, `.campfire` and `.cauldron`. Contact sheet: `--sheet kitchen`.
 - `traps.js`: `TRAPS.plate`, `.spikes`, `.nozzle`, `.flame`, `.fog`, `.stud` and `.edge` (the parts a room draws in its own perspective). Contact sheet: `--sheet traps`.
-- `plants.js`: `drawPlant` and the 51 plant symbols (name, silhouette, colours, mature size). The potato has its own botanical drawing (`drawPotato`: pinnate smooth-edged leaves, forked stems, star flowers, tubers showing a third above the soil when mature; `o.hill` 0–3 for earthing up, `o.skin` red/purple/brown, otherwise seeded), plus `PLANTS.tuber` (one potato at any scale) and `PLANTS.harvest(p,{hill})` (what any plant gives when harvested: fruit, root, flower or leaf, the item id, whether it must be cooked, how many). `draw`, `drawFit` and `drawRaw` take an optional last argument `o` passed to the plant's drawing. Contact sheet: `--sheet potato`.
+- `plants.js`: mint has its own drawing (`drawMint`: stolons, quilted serrate leaves, whorled flower spikes; seedling, young, mature, past/declining and dead; `immature` and `declining` are accepted as stage names). `drawPlant` and the 51 plant symbols (name, silhouette, colours, mature size). The potato has its own botanical drawing (`drawPotato`: pinnate smooth-edged leaves, forked stems, star flowers, tubers showing a third above the soil when mature; `o.hill` 0–3 for earthing up, `o.skin` red/purple/brown, otherwise seeded), plus `PLANTS.tuber` (one potato at any scale) and `PLANTS.harvest(p,{hill})` (what any plant gives when harvested: fruit, root, flower or leaf, the item id, whether it must be cooked, how many). `draw`, `drawFit` and `drawRaw` take an optional last argument `o` passed to the plant's drawing. Contact sheet: `--sheet potato`.
 - `garden.js`: `window.GARDEN`, the garden generator and its shared pieces:
   - `plan(seed)` lays out a walled garden 8–50 cells wide and 16–50 tall, themed herb, vegetable, fruit, flower or mixed: paths, beds planted at each plant's spread, trellises, lanterns, benches, tools, a fountain, lock spots, a treasure spot and the gate.
   - `render(plan, s, o)` draws the still parts onto a canvas at `s` px per cell; `o.wild` gives an abandoned greenhouse floor (irregular flagstone or packed-dirt paths, moss and grass creeping in).
@@ -54,9 +54,22 @@ Decided 25 Nov 2026, after looking at how asset libraries are organised (digital
 - `python3 tools/research.py lookup <name>`: what the library already knows, level by level. Also `traits`, `map`, `check` and `index`.
 - `python3 tools/contact-sheet.py`: every plant in every state, the size ladder, the chests, the axes, the vines and core.js's test swatches, on light and dark backgrounds, written to `contact/`. With `--compare <folder>` it reports which pixels changed; `--sheet vines` renders one sheet.
 
-## The house style (decided 25 Nov 2026)
+## The Euclid style guide (25 Nov 2026)
 
-**All new art: accurate proportions, back-lit silhouette lighting.** The subject is one dark shape lit from behind; only its outer edge catches a cool rim, hair breaks the edge, faint inner contours keep the parts readable, and the eyes glow. Bodies come from `ENGINE.skeleton` (anatomical proportions); painting is `ART_CORE.house` in `core.js`. Rules: `research/rendering/house-style.md`; read it before drawing anything. Done so far: the creatures. Older pieces (plants, rooms, items, vines) move over when they are next worked on.
+Every new piece of art follows the style for its category. Read the rules before drawing: `research/rendering/crafted-style.md` (the first three) and `research/rendering/house-style.md` (creatures).
+
+| What | Style | Reference |
+|---|---|---|
+| Architecture (rooms, halls, doors, the temple) | **9 · The sublime: monumental halls**: vast colonnades in golden mist, soaring arches, great steps, light shafts, grandeur | `drafts/manticore-crafted.html` #9 |
+| Objects (furniture, items, chests, tools) | **2 · Tree of Life, carved and inlaid**: warm wood relief, grain, carved bevel light, organic branching ornament | the tree-of-life bed; drafts #2 |
+| Plants | **1 · Naturalist's plate**: exact botany, crisp shapes, soft light, a thin same-colour edge, fine true detail | the mint (`drawMint`); drafts #1 |
+| Mythical creatures | **The shadow style** (black and white): back-lit silhouettes on `ENGINE.skeleton` (below). Leave them alone. | `creatures.js` |
+
+Existing art moves over when it is next worked on: the plants mostly match already; the rooms and objects don't yet.
+
+## The shadow style for mythical creatures (decided 25 Nov 2026; called the "house style" in the code)
+
+**Mythical creatures: accurate proportions, back-lit silhouette lighting.** The subject is one dark shape lit from behind; only its outer edge catches a cool rim, hair breaks the edge, faint inner contours keep the parts readable, and the eyes glow. Bodies come from `ENGINE.skeleton` (anatomical proportions); painting is `ART_CORE.house` in `core.js`. Rules: `research/rendering/house-style.md`; read it before drawing anything. Done so far: the creatures. Older pieces (plants, rooms, items, vines) move over when they are next worked on.
 
 ## Making new art
 

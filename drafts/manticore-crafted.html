@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Manticore: ten crafted-style studies</title></head><body style="margin:0;background:#22201e;font-family:system-ui,sans-serif"><div id=g style="display:grid;grid-template-columns:repeat(2,640px);gap:12px;padding:12px"></div>
+<script src="manticore-rig.js"></script><script src="manticore-crafted.js"></script><script>
+const W=616,H=440,box=document.getElementById('g');
+for(const st of STYB){const d=document.createElement('div');d.style.cssText='background:#f6f3ee;padding:12px;border-radius:8px';d.innerHTML=`<div style="font:700 20px system-ui">${st.title}</div><div style="font:14px system-ui;color:#555;margin:2px 0 8px">${st.sub}</div>`;
+ const c=document.createElement('canvas');c.width=W;c.height=H;c.style.borderRadius='6px';d.appendChild(c);box.appendChild(d);try{st.fn(c.getContext('2d'),W,H)}catch(e){d.append(' ERR '+e.message)}}
+document.title='done'</script></body></html>

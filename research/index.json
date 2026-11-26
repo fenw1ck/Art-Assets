@@ -1216,6 +1216,50 @@
   "merged": {}
  },
  {
+  "id": "crafted-style",
+  "title": "The crafted style (everything but the mythical creatures)",
+  "kind": "technique",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "crafted style",
+   "clean style",
+   "romantic style",
+   "storybook realism",
+   "botanical illustration",
+   "art deco",
+   "art nouveau",
+   "tree of life",
+   "eyvind earle",
+   "sleeping beauty",
+   "sublime",
+   "grandeur",
+   "monumental"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "which of the ten manticore drafts (or which mix) the user picks",
+   "rooms redrawn in it (lofty",
+   "monumental)",
+   "a palette per room type"
+  ],
+  "used_by": [
+   "plants.js (the mint is the reference)",
+   "bedroom.js (tree-of-life and art deco beds)",
+   "drafts/manticore-crafted.html"
+  ],
+  "file": "research/rendering/crafted-style.md",
+  "sections": [
+   "Parts",
+   "Log",
+   "Sources"
+  ],
+  "sources": 3,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "house-style",
   "title": "The house style (all new art)",
   "kind": "technique",
@@ -1868,15 +1912,17 @@
    "Thymus"
   ],
   "depth": "standard",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "gaps": [
-   "lavender (drawn generically today)",
+   "lavender",
    "oregano",
-   "rosemary",
-   "sage"
+   "rosemary and sage have research below but no drawing of their own yet (lavender is drawn generically)",
+   "photos per state for mint"
   ],
   "used_by": [
-   "plants.js drawMintFamily"
+   "plants.js drawMintFamily (basil",
+   "thyme)",
+   "plants.js drawMint (mint)"
   ],
   "file": "research/subjects/plants/lamiaceae.md",
   "sections": [
@@ -1885,7 +1931,7 @@
    "Log",
    "Sources"
   ],
-  "sources": 2,
+  "sources": 6,
   "traits": {
    "arrangement": "decussate",
    "leaf": "simple",
