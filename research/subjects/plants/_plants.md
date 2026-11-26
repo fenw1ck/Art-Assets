@@ -146,6 +146,15 @@ The following records document botanical construction evidence for the Botanical
 - [Okra](okra.md)
 - [White eggplant](eggplant_white.md)
 
+## Broader plant-lineage infocards
+
+The catalogue now extends beyond flowering plants into bryophytes, lycophytes, ferns and horsetails, gymnosperms, grasses and broadleaf trees. Research-only infocards are stored in [infocards-expanded.json](../../../plant-art/infocards-expanded.json) and are deliberately not rendered.
+
+- [Nonvascular and spore-bearing plants](nonvascular-and-spore-plants.md): common haircap moss, peat moss (*Sphagnum*, genus-level), running clubmoss, bracken fern, northern maidenhair fern, field horsetail, and Kentucky bluegrass.
+- [Woody plants](woody-plants.md): eastern white pine, red maple, white oak, water oak, and black willow.
+
+The taxonomy index identifies the exact lineage and profile scope. Some entries are species-level; the *Sphagnum* card is explicitly genus-level, and the bracken/maidenhair fern records retain species-specific research gaps rather than treating general fern traits as complete species evidence.
+
 ## References and evidence policy
 
 See [Botanical research references](_references.md) for taxonomy databases, morphology sources, specimen/image resources, cultivar references, evidence hierarchy and citation rules.
