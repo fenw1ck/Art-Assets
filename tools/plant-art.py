@@ -93,12 +93,70 @@ PROFILES = {
     "lavender": ("Lamiaceae", "woody aromatic subshrub", "narrow grey-green opposite leaves on woody stems; terminal spikes of bilabiate flowers", "narrow-linear", "lavender-spike", "none"),
 }
 
+def load_infocard_index():
+    """Load the canonical botanical catalogue without modifying its records."""
+    if not INFOCARDS.is_file():
+        return {}
+    try:
+        records = json.loads(INFOCARDS.read_text(encoding="utf-8"))
+    except (ValueError, TypeError) as exc:
+        raise SystemExit(f"Could not safely read botanical infocards: {INFOCARDS}") from exc
+    if not isinstance(records, list):
+        raise SystemExit(f"Botanical infocards must be a JSON list: {INFOCARDS}")
+    index = {}
+    for item in records:
+        if not isinstance(item, dict) or not item.get("id"):
+            raise SystemExit(f"Invalid botanical infocard record in {INFOCARDS}")
+        if item["id"] in index:
+            raise SystemExit(f"Duplicate botanical infocard ID: {item['id']}")
+        index[item["id"]] = item
+    return index
+
+
+def botanical_data(plant, infocard=None):
+    """Normalized, research-first data interface for future constructors."""
+    card = infocard or {}
+    user_data = card.get("user_data") or {}
+    taxonomy = ("kingdom", "division", "class", "order", "family", "genus",
+                "species", "scientific_name", "accepted_name")
+    morphology = (
+        "species_dimensions", "species_morphology", "construction_notes",
+        "leaf_arrangement", "leaf_architecture", "leaf_type", "leaf_shape",
+        "leaf_margin", "leaf_venation", "branching_pattern", "stem_or_root",
+        "diagnostic_reproductive", "flower_placement_inflorescence",
+        "fruit_structure", "habitat"
+    )
+    return {
+        "taxonomy": {k: card.get(k) or user_data.get(k)
+                     for k in taxonomy if card.get(k) or user_data.get(k)},
+        "morphology": {k: card.get(k) if card.get(k) is not None else user_data.get(k)
+                       for k in morphology
+                       if card.get(k) is not None or user_data.get(k) is not None},
+        "provenance": {
+            "user_data": dict(card.get("user_data_provenance") or {}),
+            "research_record": card.get("research_record"),
+            "research_sources": list(card.get("research_sources") or []),
+            "research_status": card.get("research_status"),
+            "research_gaps": list(card.get("research_gaps") or []),
+        },
+        "catalogue": {k: card.get(k) for k in
+                      ("catalogue_type", "coverage_group", "growth_habit")
+                      if card.get(k) is not None},
+    }
+
+
 def plant_list():
     source = SOURCE.read_text(encoding="utf-8")
-    match = re.search(r"const LIST=(\[.*?\]);\s*window\.PLANTS", source, re.S)
+    match = re.search(r"const LIST=(\\[.*?\\]);\\s*window\\.PLANTS", source, re.S)
     if not match:
         raise RuntimeError("Could not read PLANTS.list from plants.js")
-    return json.loads(match.group(1))
+    plants = json.loads(match.group(1))
+    cards = load_infocard_index()
+    for plant in plants:
+        card = cards.get(plant["id"], {})
+        plant["botanical_data"] = botanical_data(plant, card)
+        plant["infocard"] = card
+    return plants
 
 def font(size):
     for name in ("DejaVuSans.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
@@ -554,16 +612,23 @@ def card_record(p, previous=None):
         "research_status": "profile-only record; botanical research still needed",
         "artwork_status": "no artwork generated"
     }
-    # Preserve researched user-data fields and provenance when the renderer is run later.
+    # Preserve every pre-existing research, taxonomy, provenance, and workflow
+    # field. Only renderer-owned presentation/profile fields are regenerated.
     if previous:
         record["user_data"].update(previous.get("user_data", {}))
         record["user_data_provenance"].update(previous.get("user_data_provenance", {}))
         record["populated_user_data_fields"] = list(record["user_data"])
         record["populated_user_data_count"] = len(record["user_data"])
-        for key in ("research_status", "research_record", "research_sources",
-                    "research_gaps", "artwork_status", "image"):
-            if key in previous:
-                record[key] = previous[key]
+        renderer_owned = {
+            "id", "name", "family", "growth_habit", "diagnostic_botany",
+            "leaf_construction", "flower_construction", "fruit_or_harvest",
+            "source_record", "renderer", "style", "style_terms", "user_data",
+            "user_data_provenance", "populated_user_data_fields",
+            "populated_user_data_count"
+        }
+        for key, value in previous.items():
+            if key not in renderer_owned:
+                record[key] = value
     else:
         image = ROOT / "plant-art" / f"{p['id']}.png"
         if image.is_file():
