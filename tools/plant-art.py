@@ -683,6 +683,12 @@ def draw_graminoid_architecture(plant, size=768, seed=7):
 
 def draw_plant(plant, size=768, seed=7):
     pid = plant["id"]
+    group = (plant.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
+             or plant.get("coverage_group"))
+    if group == "fern":
+        return draw_fern_architecture(plant, size, seed)
+    if group == "graminoid":
+        return draw_graminoid_architecture(plant, size, seed)
     if pid in FLOWER_IDS:
         return draw_flower_plant(plant, size, seed)
     profile = PROFILES.get(pid)
