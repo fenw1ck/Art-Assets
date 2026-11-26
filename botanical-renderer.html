@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Botanical Renderer · Fenwick Art Assets</title>
+<style>
+:root{--bg:#f7f8f7;--paper:#fff;--ink:#18211f;--sub:#5b6663;--line:#d9dfdd;--acc:#1d7380;--soft:#edf4f3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,sans-serif}
+header,.wrap{max-width:1080px;margin:auto;padding:18px 20px}header{padding-bottom:8px}h1{font-size:27px;margin:0}h2{font-size:19px;margin:0 0 10px}h3{font-size:15px;margin:16px 0 5px}
+header p{color:var(--sub);margin:4px 0 10px;max-width:780px}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}nav a{padding:6px 14px;border-radius:20px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:#fff}nav a[aria-current=page]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.intro{background:var(--soft);border:1px solid #d4e5e2;border-radius:12px;padding:14px 16px;margin:12px 0 16px}
+form{display:grid;gap:14px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:4px}.wide{grid-column:1/-1}
+label{font-weight:600;font-size:13px}small,.hint{color:var(--sub);font-size:12px}
+input,select,textarea{font:inherit;color:inherit;border:1px solid #cbd4d1;border-radius:8px;background:#fff;padding:9px 10px;width:100%;min-width:0}
+textarea{min-height:76px;resize:vertical}input[type=file]{padding:7px}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.btn{border:0;border-radius:9px;background:var(--acc);color:white;padding:10px 15px;font:600 14px system-ui;cursor:pointer}.btn.secondary{background:#fff;color:var(--acc);border:1px solid var(--acc)}.btn.light{background:#edf2f1;color:var(--ink)}
+#preview{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}.thumb{width:100px}.thumb img{width:100px;height:90px;object-fit:contain;background:#f1ece2;border:1px solid var(--line);border-radius:8px}.thumb small{display:block;overflow-wrap:anywhere}
+.status{color:var(--sub);font-size:13px;min-height:20px}
+details{border-top:1px solid var(--line);padding-top:10px;margin-top:8px}summary{cursor:pointer;font-weight:600}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}}
+</style>
+</head>
+<body>
+<header>
+<h1>Botanical Renderer</h1>
+<p>A research intake workspace for building botanically accurate Fenwick plant artwork while preserving the quality and visual identity of existing approved art.</p>
+<nav><a href="index.html">Art library</a><a href="engine.html">Game engine</a><a href="botanical-renderer.html" aria-current="page">Botanical Renderer</a></nav>
+</header>
+<div class="wrap">
+<div class="intro"><strong>How this works</strong><br>
+Enter what you know. Leave unknown fields blank or choose “Research needed.” Add source links and photographs if you have them. The brief separates supplied information from questions still requiring research. Export it as JSON to hand to the renderer or a research pass. Existing artwork is treated as the starting reference and must never be overwritten.</div>
+<form id="brief">
+<section class="panel">
+<h2>1. Plant identity and existing artwork</h2>
+<div class="grid">
+<div class="field"><label for="common">Common name *</label><input id="common" name="common_name" required placeholder="e.g. Cherry tomato"></div>
+<div class="field"><label for="scientific">Scientific name</label><input id="scientific" name="scientific_name" placeholder="e.g. Solanum lycopersicum"></div>
+<div class="field"><label for="cultivar">Variety or cultivar</label><input id="cultivar" name="cultivar" placeholder="e.g. Sungold F1"></div>
+<div class="field"><label for="family">Plant family</label><input id="family" name="family" placeholder="If known"></div>
+<div class="field"><label for="asset">Existing Fenwick artwork / asset path</label><input id="asset" name="source_artwork_path" placeholder="e.g. plants.js · tomato_cherry"></div>
+<div class="field"><label for="assetStatus">Starting artwork status</label><select id="assetStatus" name="source_artwork_status"><option value="find existing artwork first">Find existing artwork first</option><option value="existing artwork supplied">I am supplying an image</option><option value="no existing artwork known">No existing artwork known</option><option value="use approved library artwork unchanged">Reuse approved artwork unchanged</option></select></div>
+<div class="field wide"><label for="photos">Reference photographs or existing artwork</label><input id="photos" type="file" accept="image/*" multiple><small>Images are embedded in the exported JSON. Use clear views of the whole plant, leaves, stems, flowers and fruit where possible.</small><div id="preview"></div></div>
+</div>
+</section>
+<section class="panel">
+<h2>2. Growth habit and architecture</h2>
+<p class="hint">Describe how the plant is built. Plain-language observations are useful; botanical terminology is optional.</p>
+<div class="grid">
+<div class="field"><label for="habit">Overall growth habit</label><select id="habit" name="growth_habit"><option value="">Not supplied — research needed</option><option>upright herb</option><option>branched bush</option><option>rosette</option><option>clumping / tufted</option><option>trailing</option><option>climbing / twining vine</option><option>sprawling / prostrate</option><option>woody shrub</option><option>tree</option><option>cane-forming</option><option>bulb / corm / rhizome</option><option>grass-like</option><option>other / uncertain</option></select></div>
+<div class="field"><label for="architecture">Main structure / growth architecture</label><textarea id="architecture" name="growth_architecture" placeholder="e.g. One main upright stem with side shoots from leaf axils; or several basal crowns."></textarea></div>
+<div class="field"><label for="branching">Branching pattern</label><textarea id="branching" name="branching_architecture" placeholder="Where branches begin, how they divide, whether they trail or climb."></textarea></div>
+<div class="field"><label for="nodes">Node spacing and stem details</label><textarea id="nodes" name="node_spacing_stem_details" placeholder="Close or widely spaced nodes, internode length, stem shape, texture, thickness."></textarea></div>
+<div class="field"><label for="dimensions">Mature height and spread</label><input id="dimensions" name="mature_dimensions" placeholder="e.g. 60–90 cm tall, 45 cm spread"></div>
+<div class="field"><label for="support">Support or direction of growth</label><input id="support" name="support_growth_direction" placeholder="Self-supporting, needs staking, twines clockwise, trails, etc."></div>
+</div>
+</section>
+<section class="panel">
+<h2>3. Leaf construction</h2>
+<div class="grid">
+<div class="field"><label for="arrangement">Leaf arrangement on stem</label><select id="arrangement" name="leaf_arrangement"><option value="">Not supplied — research needed</option><option>alternate</option><option>opposite</option><option>whorled</option><option>basal rosette</option><option>clustered at nodes</option><option>mixed / other</option></select></div>
+<div class="field"><label for="type">Leaf type and shape</label><input id="type" name="leaf_morphology" placeholder="Simple, compound, lobed, needle-like, heart-shaped…"></div>
+<div class="field"><label for="petiole">Petioles / leaf attachment</label><input id="petiole" name="petiole_attachment" placeholder="Long petioles, sessile, sheathing, winged…"></div>
+<div class="field"><label for="veins">Veins and surface</label><input id="veins" name="venation_surface" placeholder="Pinnate, palmate, netted, hairy, waxy, glossy…"></div>
+<div class="field"><label for="margin">Leaf margin and texture</label><input id="margin" name="leaf_margin_texture" placeholder="Serrated, entire, wavy, deeply cut…"></div>
+<div class="field"><label for="color">Foliage colour and variation</label><input id="color" name="foliage_colour" placeholder="Upper/lower surface, variegation, seasonal changes"></div>
+<div class="field wide"><label for="leafnotes">Additional leaf observations</label><textarea id="leafnotes" name="leaf_notes" placeholder="Leaf size progression, juvenile vs mature leaves, how leaves overlap, distinctive details."></textarea></div>
+</div>
+</section>
+<section class="panel">
+<h2>4. Flowers, fruit and harvest structures</h2>
+<div class="grid">
+<div class="field"><label for="flowering">Flower location and arrangement</label><input id="flowering" name="flower_placement_inflorescence" placeholder="Terminal, axillary, truss, raceme, spike, solitary…"></div>
+<div class="field"><label for="flower">Flower structure and appearance</label><textarea id="flower" name="flower_morphology" placeholder="Petal count, shape, symmetry, colour, size, distinctive parts."></textarea></div>
+<div class="field"><label for="fruitplace">Fruit / seed placement</label><input id="fruitplace" name="fruit_placement" placeholder="Where fruit forms relative to leaves and stems."></div>
+<div class="field"><label for="fruit">Fruit / seed structure</label><textarea id="fruit" name="fruit_morphology" placeholder="Berry, pod, capsule, nut, tuber, seed head; size, shape, colour."></textarea></div>
+<div class="field"><label for="harvest">Harvested or useful parts</label><input id="harvest" name="harvest_organs" placeholder="Leaves, roots, tubers, fruit, flowers, pods…"></div>
+<div class="field"><label for="season">Flowering / fruiting season</label><input id="season" name="seasonal_timing" placeholder="If known; include climate or region if relevant"></div>
+</div>
+</section>
+<section class="panel">
+<h2>5. Life stages and rendering requirements</h2>
+<div class="grid">
+<div class="field"><label for="stages">Stages to illustrate</label><select id="stages" name="stages" multiple size="6"><option>seedling</option><option>young / vegetative</option><option>mature vegetative</option><option>flowering</option><option>fruiting / harvest</option><option>past / senescent</option><option>dormant</option></select><small>Use Ctrl / Command to select more than one.</small></div>
+<div class="field"><label for="style">Art direction</label><select id="style" name="style"><option>Match approved Fenwick botanical plate artwork</option><option>Preserve supplied source artwork style</option><option>Research and propose a style match</option></select><label for="details">Details that must not be lost</label><textarea id="details" name="must_preserve" placeholder="Distinctive leaf shapes, branching, colour, silhouette, existing artwork details…"></textarea></div>
+<div class="field wide"><label for="purpose">Intended use / desired result</label><textarea id="purpose" name="rendering_goal" placeholder="e.g. A mature potted plant plus seedling, flowering and fruiting variants."></textarea></div>
+</div>
+</section>
+<section class="panel">
+<h2>6. Research supplied by the user</h2>
+<div class="grid">
+<div class="field wide"><label for="sources">Source links (one URL per line)</label><textarea id="sources" name="source_urls" placeholder="University extension pages, botanical gardens, herbarium pages, field guides, scientific papers, trusted photo references…"></textarea></div>
+<div class="field wide"><label for="research">Research notes / facts you already know</label><textarea id="research" name="user_research_notes" placeholder="Paste notes, measurements, observations, cultivar-specific facts, or excerpts in your own words."></textarea></div>
+<div class="field wide"><label for="unknowns">Questions or details you want the renderer to research</label><textarea id="unknowns" name="open_research_questions" placeholder="e.g. Confirm leaf arrangement and whether this cultivar has determinate or indeterminate growth."></textarea></div>
+<div class="field wide"><label for="region">Growing region or conditions (optional)</label><input id="region" name="region_context" placeholder="e.g. cool short-season garden, greenhouse, container-grown"></div>
+</div>
+<details><summary>What if I do not know the botanical terms?</summary><p class="hint">Leave the field blank. The renderer should treat it as a research question, not guess. Photos and ordinary observations such as “the leaves come in pairs” or “fruit hangs below the flower” are useful evidence.</p></details>
+</section>
+<section class="panel">
+<h2>7. Review and export</h2>
+<p class="hint">The exported record keeps user-supplied facts separate from unanswered research. It is a handoff brief; this static website does not itself browse sources or execute the Python renderer.</p>
+<div class="actions"><button class="btn" type="submit">Export research brief (.json)</button><button class="btn secondary" type="button" id="copy">Copy brief</button><button class="btn light" type="reset">Clear form</button></div>
+<p class="status" id="status" role="status"></p>
+</section>
+</form>
+</div>
+<script>
+const form=document.getElementById('brief'),files=document.getElementById('photos'),preview=document.getElementById('preview'),status=document.getElementById('status');
+let photoData=[];
+files.addEventListener('change',async()=>{photoData=[];preview.innerHTML='';for(const f of files.files){if(!f.type.startsWith('image/'))continue;const data=await new Promise((ok,no)=>{const r=new FileReader();r.onload=()=>ok(r.result);r.onerror=no;r.readAsDataURL(f)});photoData.push({filename:f.name,mime_type:f.type,data_url:data});const d=document.createElement('div');d.className='thumb';const im=document.createElement('img');im.src=data;im.alt=f.name;const sm=document.createElement('small');sm.textContent=f.name;d.append(im,sm);preview.append(d)}});
+function makeBrief(){const out={schema:'fenwick.botanical-renderer.intake.v1',created_at:new Date().toISOString(),project:'Fenwick Art Assets',workflow:{preserve_original_artwork:true,duplicate_before_editing:true,compare_output_to_source:true,unknown_fields_require_research:true},plant:{},supplied_research:{source_urls:[],notes:'',open_questions:'',region_context:''},reference_images:photoData};
+ for(const el of form.elements){if(!el.name)continue;let v;if(el.tagName==='SELECT'&&el.multiple)v=[...el.selectedOptions].map(o=>o.value);else v=el.value.trim();if(!v||Array.isArray(v)&&!v.length)continue;if(['source_urls','user_research_notes','open_research_questions','region_context'].includes(el.name)){const k={source_urls:'source_urls',user_research_notes:'notes',open_research_questions:'open_questions',region_context:'region_context'}[el.name];out.supplied_research[k]=el.name==='source_urls'?v.split(/\r?\n/).map(x=>x.trim()).filter(Boolean):v}else out.plant[el.name]=v}
+ out.research_tasks=[];const tasks={growth_habit:'Confirm the plant growth habit and overall architecture.',branching_architecture:'Document branching pattern and where branches originate.',node_spacing_stem_details:'Verify node arrangement, internode spacing and stem anatomy.',leaf_arrangement:'Verify leaf arrangement.',leaf_morphology:'Document accurate leaf shape and whether leaves are simple or compound.',petiole_attachment:'Verify petiole and leaf attachment.',venation_surface:'Document venation and leaf surface.',flower_placement_inflorescence:'Verify flower placement and inflorescence.',flower_morphology:'Document flower anatomy and appearance.',fruit_placement:'Verify fruit placement.',fruit_morphology:'Document fruit or seed anatomy.'};
+ for(const [k,v] of Object.entries(tasks))if(!out.plant[k])out.research_tasks.push({field:k,task:v,status:'research_needed'});
+ if(!out.plant.source_artwork_path)out.research_tasks.push({field:'source_artwork_path',task:'Find and duplicate the best existing approved Fenwick artwork for this plant.',status:'locate_existing_artwork'});
+ out.rendering_brief={style:out.plant.style||'Match approved Fenwick botanical plate artwork',quality_gate:['Preserve source silhouette, palette, linework and botanical detail.','Use species-specific leaf morphology, branching, node spacing and petioles.','Place flowers and fruit according to verified species anatomy.','Do not replace a superior approved source image with a weaker procedural redraw.','Keep the source image unchanged and record all derived outputs separately.']};
+ return out}
+form.addEventListener('submit',e=>{e.preventDefault();const data=makeBrief(),blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=(data.plant.common_name||'plant').toLowerCase().replace(/[^a-z0-9]+/g,'-')+'-botanical-brief.json';a.click();URL.revokeObjectURL(url);status.textContent='Research brief exported. Attach this JSON to the Botanical Renderer work request.'});
+document.getElementById('copy').addEventListener('click',async()=>{const txt=JSON.stringify(makeBrief(),null,2);try{await navigator.clipboard.writeText(txt);status.textContent='Brief copied to clipboard.'}catch(e){status.textContent='Clipboard access unavailable. Use Export research brief instead.'}});
+form.addEventListener('reset',()=>{photoData=[];preview.innerHTML='';status.textContent=''});
+</script>
+</body></html>
