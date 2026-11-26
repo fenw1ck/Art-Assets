@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nasturtium botanical study</title>
+<style>
+:root{color-scheme:light;background:#f3eddf;color:#283727;font-family:Georgia,serif}
+body{margin:0;padding:20px;max-width:980px;margin:auto}
+h1{font-weight:normal;letter-spacing:.03em;margin:.2em 0}
+p{line-height:1.45}
+.panel{background:#fff9ec;border:1px solid #cfc4a8;border-radius:12px;padding:12px}
+canvas{width:100%;height:auto;display:block;background:linear-gradient(#f7f0df,#e8dfc9);border-radius:8px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+button,select{font:inherit;background:#fff9ec;border:1px solid #8d987d;border-radius:6px;padding:8px;color:#283727}
+small{color:#66715e}
+</style>
+<body>
+<h1><i>Tropaeolum majus</i> · Nasturtium</h1>
+<p>Botanical plate / code-art prototype. Rounded peltate leaves with radiating veins, long succulent trailing stems, and spurred five-petaled flowers.</p>
+<div class="panel">
+<div class="controls">
+<label>Life stage <select id="stage"><option>seedling</option><option>young</option><option selected>mature</option><option>declining</option><option>dead</option></select></label>
+<label>Form <select id="form"><option selected>container cascade</option><option>ground-sprawl</option><option>climbing</option></select></label>
+<label>Seed <input id="seed" type="number" value="17" style="width:70px"></label>
+<button id="redraw">Redraw</button>
+<button id="harvest">Harvest leaves & flowers</button>
+</div>
+<canvas id="art" width="900" height="680"></canvas>
+<small>Palette is intentionally stable per plant; seeded structure changes between instances. Harvest is a visual state toggle.</small>
+</div>
+<script>
+const c=document.querySelector('#art'),ctx=c.getContext('2d');
+let harvested=false;
+const randgen=s=>()=>{s=(s*1664525+1013904223)>>>0;return s/4294967296};
+const mix=(a,b,t)=>{let A=a.match(/\w\w/g).map(x=>parseInt(x,16)),B=b.match(/\w\w/g).map(x=>parseInt(x,16));return '#'+A.map((x,i)=>Math.round(x+(B[i]-x)*t).toString(16).padStart(2,'0')).join('')};
+function leaf(x,y,r,ang,shade,seed){ctx.save();ctx.translate(x,y);ctx.rotate(ang);let color=shade;
+ctx.beginPath();ctx.moveTo(0,0);ctx.bezierCurveTo(-r*.9,-r*.48,-r*.96,-r*1.08,0,-r);ctx.bezierCurveTo(r*.95,-r*1.08,r*.95,-r*.48,0,0);
+let g=ctx.createRadialGradient(-r*.32,-r*.6,r*.05,0,-r*.55,r*1.2);g.addColorStop(0,mix(color,'#e1e9a8',.34));g.addColorStop(.55,color);g.addColorStop(1,mix(color,'#24452c',.33));ctx.fillStyle=g;ctx.fill();ctx.strokeStyle=mix(color,'#24432a',.42);ctx.lineWidth=1.2;ctx.stroke();
+// veins: radiating from peltate attachment at leaf base-ish near center
+ctx.lineCap='round';ctx.strokeStyle='rgba(221,232,171,.75)';ctx.lineWidth=Math.max(1,r*.018);
+ctx.beginPath();ctx.moveTo(0,-r*.48);ctx.lineTo(0,-r*.94);ctx.stroke();
+for(let i=-4;i<=4;i++){if(!i)continue;let t=Math.abs(i)/5, yy=-r*(.44+t*.28),xx=i*r*.13;ctx.beginPath();ctx.moveTo(0,-r*.48);ctx.quadraticCurveTo(xx*.55,yy-r*.08,xx*1.7,-r*(.7+t*.22));ctx.stroke()}
+ctx.restore()}
+function flower(x,y,scale,angle,col){
+ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.scale(scale,scale);
+// rear 2 petals, the front 3 petals with distinct lobed form
+function petal(points,fill){ctx.beginPath();ctx.moveTo(points[0][0],points[0][1]);for(let i=1;i<points.length;i++){let p=points[i];ctx.quadraticCurveTo(p[0],p[1],p[2],p[3])}ctx.closePath();ctx.fillStyle=fill;ctx.fill();ctx.strokeStyle=mix(fill,'#743e26',.26);ctx.lineWidth=1.3;ctx.stroke()}
+petal([[-8,0],[-24,-24,-16,-44],[-5,-46,0,-32],[7,-46,16,-39],[21,-21,8,0]],mix(col,'#f7cb65',.18));
+petal([[1,0],[12,-27,24,-42],[34,-43,36,-28],[37,-10,12,0]],mix(col,'#fff0ae',.16));
+petal([[-9,0],[-22,10,-24,26],[-15,34,-6,23],[0,34,4,23]],col);
+petal([[0,0],[4,18,10,30],[18,38,26,26],[28,17,12,0]],mix(col,'#ffdb73',.13));
+petal([[-4,0],[-14,16,-12,30],[-5,42,2,30],[8,20,4,0]],mix(col,'#e89c3c',.1));
+// dark throat and stamen
+ctx.fillStyle='#70421f';ctx.beginPath();ctx.ellipse(1,2,5,7,0,0,Math.PI*2);ctx.fill();
+ctx.strokeStyle='#f7e7a4';ctx.lineWidth=1.5;for(let k=0;k<5;k++){ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo((k-2)*2,-14-k%2*3);ctx.stroke()}
+ctx.restore();
+}
+function stemPath(points,col,width){ctx.beginPath();ctx.moveTo(points[0][0],points[0][1]);for(let i=1;i<points.length;i++)ctx.quadraticCurveTo(points[i][0],points[i][1],points[i][2],points[i][3]);ctx.strokeStyle=col;ctx.lineWidth=width;ctx.lineCap='round';ctx.stroke();ctx.strokeStyle='rgba(205,232,155,.45)';ctx.lineWidth=width*.22;ctx.stroke()}
+function pot(){let x=450,y=390,w=190,h=130;ctx.fillStyle='#8e4f32';ctx.beginPath();ctx.moveTo(x-w/2,y);ctx.lineTo(x+w/2,y);ctx.lineTo(x+w*.38,y+h);ctx.lineTo(x-w*.38,y+h);ctx.closePath();let gr=ctx.createLinearGradient(x-w/2,0,x+w/2,0);gr.addColorStop(0,'#773b27');gr.addColorStop(.4,'#c57849');gr.addColorStop(1,'#87442c');ctx.fillStyle=gr;ctx.fill();ctx.strokeStyle='#643520';ctx.stroke();ctx.fillStyle='#b66c43';ctx.fillRect(x-w/2-7,y-10,w+14,18);ctx.fillStyle='#51402c';ctx.beginPath();ctx.ellipse(x,y,87,15,0,0,Math.PI*2);ctx.fill()}
+function draw(){
+let R=randgen(+(document.querySelector('#seed').value||1));ctx.clearRect(0,0,900,680);harvested=false;
+let stage=document.querySelector('#stage').value,form=document.querySelector('#form').value;
+let count={seedling:4,young:9,mature:22,declining:16,dead:6}[stage];
+if(stage==='seedling'||stage==='young'){pot();}else if(form==='container cascade')pot();
+let topY=stage==='seedling'?365:360;
+let branches=[];
+for(let b=0;b<(form==='climbing'?4:7);b++){
+let startX=form==='climbing'?300+b*75:390+(R()-.5)*100,startY=topY+(R()-.5)*25;
+let direction=(R()-.5)*2;
+let length=stage==='seedling'?120:stage==='young'?220:430+R()*120;
+let endX=startX+direction*length*.7,endY=stage==='seedling'?startY-length*.65:Math.min(620,startY+length*.45);
+let midX=(startX+endX)/2+(R()-.5)*70,midY=(startY+endY)/2+(R()-.5)*100;
+branches.push([[startX,startY],[midX,midY,endX,endY]]);
+}
+if(form==='climbing'){ctx.strokeStyle='#a68b62';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(650,520);ctx.lineTo(650,120);ctx.stroke()}
+for(let b of branches)stemPath(b[0], '#609454', stage==='dead'?3:5);
+let leafColors=['#4c8547','#61994e','#75a85b','#3e7540']; 
+for(let i=0;i<count;i++){
+let b=branches[i%branches.length],t=.18+R()*.78,p0=b[0],p1=b[1];
+let x=p0[0]+(p1[2]-p0[0])*t+(R()-.5)*45,y=p0[1]+(p1[3]-p0[1])*t+(R()-.5)*45;
+if(stage==='dead'){leaf(x,y,22+R()*12,R()*6,'#a78d62');continue}
+let size=stage==='seedling'?13+R()*8:25+R()*18;
+if(stage==='declining')size*=.8;
+leaf(x,y,size,R()*6,leafColors[Math.floor(R()*leafColors.length)]);
+if(stage!=='seedling'&&stage!=='young'&&R()>.42){let col=['#e97522','#f3b82e','#d64b27','#ef8d37'][Math.floor(R()*4)];flower(x+(R()-.5)*28,y-15-R()*20, .55+R()*.55,R()*.5,col)}
+}
+if(stage==='seedling'){
+for(let i=0;i<2;i++){leaf(450+(i?1:-1)*14,355,24,i?1:-1,['#8ebd62','#78a64e'][i])}
+}
+if(stage==='declining'){ctx.fillStyle='rgba(192,166,90,.16)';ctx.fillRect(0,0,900,680)}
+if(stage==='dead'){ctx.strokeStyle='#8e7654';ctx.lineWidth=3;for(let b of branches)stemPath(b[0],'#8e7654',3)}
+ctx.fillStyle='#3b5034';ctx.font='20px Georgia';ctx.fillText(stage.toUpperCase(),26,38);ctx.font='14px Georgia';ctx.fillText('peltate leaves · radiating veins · trailing stems · spurred flowers',26,61);
+}
+draw();document.querySelector('#redraw').onclick=draw;document.querySelector('#stage').onchange=draw;document.querySelector('#form').onchange=draw;document.querySelector('#harvest').onclick=()=>{harvested=!harvested;draw();if(harvested){ctx.fillStyle='#fff9ec';ctx.fillRect(20,575,860,70);ctx.fillStyle='#344632';ctx.font='18px Georgia';ctx.fillText('Harvest: peppery leaves and flowers (edible; roots excluded).',38,614)}};
+</script></body></html>
