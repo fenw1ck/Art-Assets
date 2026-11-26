@@ -41,3 +41,9 @@ Stem path, then suckers (behind), then the stem stroke, then leaves at the nodes
 ## Log
 
 - 2026-11-24: moved from PLANT_ART.md. The original sources were not recorded, so they are listed as a gap.
+
+
+## Sources
+
+- Kew, Plants of the World Online, *Solanum lycopersicum* (accepted name, habit and Flora of Iraq morphological description): https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information
+- NC State Extension, Plant Toolbox, *Solanum lycopersicum* (cultivated tomato identification and horticultural morphology): https://plants.ces.ncsu.edu/plants/solanum-lycopersicum/
