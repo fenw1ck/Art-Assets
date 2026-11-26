@@ -6,7 +6,7 @@ parent: none
 aliases: [crafted style, clean style, romantic style, storybook realism, botanical illustration, art deco, art nouveau, tree of life, eyvind earle, sleeping beauty, sublime, grandeur, monumental]
 depth: outline
 updated: 2026-11-25
-gaps: [which of the ten manticore drafts (or which mix) the user picks, rooms redrawn in it (lofty, monumental), a palette per room type]
+gaps: [rooms redrawn in style 9 (only the draft exists), objects and furniture redrawn in style 2, a palette per room type]
 used_by: [plants.js (the mint is the reference), bedroom.js (tree-of-life and art deco beds), drafts/manticore-crafted.html]
 ---
 
@@ -17,6 +17,17 @@ The user's own description (25 Nov 2026), with the mint, the tree-of-life bed an
 **Which style where:**
 - **The mythical creatures keep the shadow style.** That is the back-lit silhouette (`house-style.md`), which the user likes for them.
 - **Everything else is drawn in this crafted style:** plants, rooms, furniture, items, architecture.
+
+## The Euclid style guide (decided 25 Nov 2026)
+
+| What | Style | In short |
+|---|---|---|
+| **Architecture** (rooms, halls, corridors, doors, the temple) | **9 · The sublime: monumental halls** | Vast colonnades receding into golden mist, soaring arches, great steps, warm light shafts from far away, atmospheric depth (distant forms paler and warmer). Grandeur and awe: lofty, breathtaking, a place you want to stay. |
+| **Objects** (furniture, items, chests, tools, the bag) | **2 · Tree of Life, carved and inlaid** | Warm wood relief: grain in every surface, a carved bevel (a lit edge up-left, a dark edge down-right), organic branching ornament (the tree of life) under arches, inlay in lighter wood. The tree-of-life bed is the reference. |
+| **Plants** | **1 · Naturalist's plate** | The mint standard: exact botany, crisp shapes, soft light from the upper left, a thin edge in the plant's own darker colour, fine true detail (teeth, sunken veins), no black outline. |
+| **Mythical creatures** | **The shadow style** (black and white) | Back-lit silhouettes on `ENGINE.skeleton`: one dark shape, a cool rim on the outer edge, hair on the edge, glowing eyes (`house-style.md`). Leave them alone. |
+
+The parts below are shared by the three crafted styles (architecture, objects, plants).
 
 ## Parts (what the examples share)
 
@@ -43,11 +54,12 @@ All ten share draft 1's accurate lion anatomy; only the treatment changes:
 9. the sublime: monumental halls
 10. classic hand-drawn film
 
-The user's pick is still to come. These are style studies for the look of the world; the creatures themselves stay in the shadow style.
+Picked: 9 for architecture, 2 for objects, 1 for plants (see the style guide above). The creatures themselves stay in the shadow style.
 
 ## Log
 
 - 2026-11-25: created from the "Improve the Mint art" request. The mint was redrawn to the same standard (its own `drawMint`).
+- 2026-11-25: the user picked per category: architecture 9, objects 2, plants 1, mythical creatures the shadow style.
 
 ## Sources
 

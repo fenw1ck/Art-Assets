@@ -54,12 +54,20 @@ Decided 25 Nov 2026, after looking at how asset libraries are organised (digital
 - `python3 tools/research.py lookup <name>`: what the library already knows, level by level. Also `traits`, `map`, `check` and `index`.
 - `python3 tools/contact-sheet.py`: every plant in every state, the size ladder, the chests, the axes, the vines and core.js's test swatches, on light and dark backgrounds, written to `contact/`. With `--compare <folder>` it reports which pixels changed; `--sheet vines` renders one sheet.
 
-## Two styles (25 Nov 2026)
+## The Euclid style guide (25 Nov 2026)
 
-- **Mythical creatures: the shadow style** (the "house style" below: back-lit silhouettes). The user likes it for them; leave them alone.
-- **Everything else: the crafted style**, the user's preferred, proportional look. Accurate structure, crisp clean shapes, soft directional light, a thin edge in the shape's own darker colour, fine true detail, ornament from craft traditions (tree of life, Art Deco, Art Nouveau), and settings with grandeur (lofty, monumental, Eyvind Earle's *Sleeping Beauty*). The mint (`drawMint`) and the tree-of-life and art deco beds are the reference pieces. Rules: `research/rendering/crafted-style.md`. Ten manticore studies in it: `drafts/manticore-crafted.html` (the user's pick is still to come).
+Every new piece of art follows the style for its category. Read the rules before drawing: `research/rendering/crafted-style.md` (the first three) and `research/rendering/house-style.md` (creatures).
 
-## The house style (decided 25 Nov 2026)
+| What | Style | Reference |
+|---|---|---|
+| Architecture (rooms, halls, doors, the temple) | **9 · The sublime: monumental halls**: vast colonnades in golden mist, soaring arches, great steps, light shafts, grandeur | `drafts/manticore-crafted.html` #9 |
+| Objects (furniture, items, chests, tools) | **2 · Tree of Life, carved and inlaid**: warm wood relief, grain, carved bevel light, organic branching ornament | the tree-of-life bed; drafts #2 |
+| Plants | **1 · Naturalist's plate**: exact botany, crisp shapes, soft light, a thin same-colour edge, fine true detail | the mint (`drawMint`); drafts #1 |
+| Mythical creatures | **The shadow style** (black and white): back-lit silhouettes on `ENGINE.skeleton` (below). Leave them alone. | `creatures.js` |
+
+Existing art moves over when it is next worked on: the plants mostly match already; the rooms and objects don't yet.
+
+## The shadow style for mythical creatures (decided 25 Nov 2026; called the "house style" in the code)
 
 **Mythical creatures: accurate proportions, back-lit silhouette lighting.** The subject is one dark shape lit from behind; only its outer edge catches a cool rim, hair breaks the edge, faint inner contours keep the parts readable, and the eyes glow. Bodies come from `ENGINE.skeleton` (anatomical proportions); painting is `ART_CORE.house` in `core.js`. Rules: `research/rendering/house-style.md`; read it before drawing anything. Done so far: the creatures. Older pieces (plants, rooms, items, vines) move over when they are next worked on.
 
