@@ -4562,7 +4562,7 @@
     "stem_or_root": "upright stem with spreading and pendent branches; no true roots",
     "diagnostic_reproductive": "sporophyte capsule elevated on pseudopodium; spores released through capsule opening",
     "habitat": "terrestrial wetland; water-retentive shoots",
-    "construction_notes": "Show capitulum, stem, branch fascicles, spreading and pendent branches; magnify hyaline/chlorophyllose cell pattern separately.",
+    "construction_notes": "Prioritize the Sphagnum capitulum and branch fascicles; include pendent branchlets and a microscopic hyaline/chlorophyllose cell inset. Sporophyte capsule is carried on a pseudopodium, not a conventional seta.",
     "user_data": {
       "scientific_name": "Sphagnum palustre",
       "family": "Sphagnaceae",
@@ -4574,7 +4574,9 @@
       "stem_or_root": "upright stem with spreading and pendent branches; no true roots",
       "diagnostic_reproductive": "sporophyte capsule elevated on pseudopodium; spores released through capsule opening",
       "habitat": "terrestrial wetland; water-retentive shoots",
-      "construction_notes": "Show capitulum, stem, branch fascicles, spreading and pendent branches; magnify hyaline/chlorophyllose cell pattern separately."
+      "construction_notes": "Prioritize the Sphagnum capitulum and branch fascicles; include pendent branchlets and a microscopic hyaline/chlorophyllose cell inset. Sporophyte capsule is carried on a pseudopodium, not a conventional seta.",
+      "species_dimensions": "Stem leaves to 1.7 × 1 mm; branch leaves about 2.2 × 1.3 mm; spores 24–33 µm; branch fascicles commonly 2 spreading + 2 pendent branches.",
+      "species_morphology": "Robust peat moss in carpets or hummocks; erect stem with compact capitulum; fascicles of tapering branches, typically two spreading and two pendent; stem and branch leaves with hyaline water-storage cells alternating with chlorophyllose cells; dioicous; spherical capsule on gametophyte-derived pseudopodium, no long seta."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4587,23 +4589,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
       "https://research.fs.usda.gov/feis/species-reviews/marpol",
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local color and hummock form",
+      "species-confirmed macro photographs of capitulum and reproductive state"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Stem leaves to 1.7 × 1 mm; branch leaves about 2.2 × 1.3 mm; spores 24–33 µm; branch fascicles commonly 2 spreading + 2 pendent branches.",
+    "species_morphology": "Robust peat moss in carpets or hummocks; erect stem with compact capitulum; fascicles of tapering branches, typically two spreading and two pendent; stem and branch leaves with hyaline water-storage cells alternating with chlorophyllose cells; dioicous; spherical capsule on gametophyte-derived pseudopodium, no long seta."
   },
   {
     "id": "polytrichum_commune",
@@ -4621,7 +4626,7 @@
     "stem_or_root": "erect leafy shoots anchored by rhizoids",
     "diagnostic_reproductive": "seta and capsule; hairy calyptra; peristome teeth",
     "habitat": "terrestrial; moist soil and woodland",
-    "construction_notes": "Use erect shoots rather than a creeping mat; show leaf tips and capsule with calyptra; lamellae belong in a magnified inset.",
+    "construction_notes": "Build upright tuft, sheathing leaf bases and long stout seta; capsule is four-angled and inclined. Lamellae are microscopic upper-surface structures, best shown in an inset, not oversized external ribs.",
     "user_data": {
       "scientific_name": "Polytrichum commune",
       "family": "Polytrichaceae",
@@ -4633,7 +4638,9 @@
       "stem_or_root": "erect leafy shoots anchored by rhizoids",
       "diagnostic_reproductive": "seta and capsule; hairy calyptra; peristome teeth",
       "habitat": "terrestrial; moist soil and woodland",
-      "construction_notes": "Use erect shoots rather than a creeping mat; show leaf tips and capsule with calyptra; lamellae belong in a magnified inset."
+      "construction_notes": "Build upright tuft, sheathing leaf bases and long stout seta; capsule is four-angled and inclined. Lamellae are microscopic upper-surface structures, best shown in an inset, not oversized external ribs.",
+      "species_dimensions": "Stems typically 5–10 cm (reported 2–70 cm); leaves 6–8(–12) mm; seta 5–9 cm; capsule 3–6 mm; spores 5–8(–12) µm.",
+      "species_morphology": "Tall tuft-forming moss with stiff mostly simple erect stems; leaves with clasping golden tubular sheath narrowing to lanceolate blade, strong excurrent costa and 5–9-cell-high photosynthetic lamellae; dioicous; stout seta, four-winged short rectangular/cubic capsule and enclosing golden-brown calyptra."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4646,23 +4653,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
       "https://research.fs.usda.gov/feis/species-reviews/marpol",
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local stature and sporophyte frequency",
+      "macro reference of leaf lamellae and mature capsule"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Stems typically 5–10 cm (reported 2–70 cm); leaves 6–8(–12) mm; seta 5–9 cm; capsule 3–6 mm; spores 5–8(–12) µm.",
+    "species_morphology": "Tall tuft-forming moss with stiff mostly simple erect stems; leaves with clasping golden tubular sheath narrowing to lanceolate blade, strong excurrent costa and 5–9-cell-high photosynthetic lamellae; dioicous; stout seta, four-winged short rectangular/cubic capsule and enclosing golden-brown calyptra."
   },
   {
     "id": "hypnum_cupressiforme",
@@ -4680,7 +4690,7 @@
     "stem_or_root": "creeping, irregularly pinnate shoots; rhizoids anchor mat",
     "diagnostic_reproductive": "curved capsules on setae",
     "habitat": "terrestrial or epiphytic; forms mats",
-    "construction_notes": "Emphasize prostrate branching mat and curved capsules; do not give it the erect Polytrichum shoot habit.",
+    "construction_notes": "Use a prostrate feather-branched mat and small overlapping leaves curved in one direction; avoid erect tuft habit. Show capsule only as an attached sporophyte when documented.",
     "user_data": {
       "scientific_name": "Hypnum cupressiforme",
       "family": "Hypnaceae",
@@ -4692,7 +4702,9 @@
       "stem_or_root": "creeping, irregularly pinnate shoots; rhizoids anchor mat",
       "diagnostic_reproductive": "curved capsules on setae",
       "habitat": "terrestrial or epiphytic; forms mats",
-      "construction_notes": "Emphasize prostrate branching mat and curved capsules; do not give it the erect Polytrichum shoot habit."
+      "construction_notes": "Use a prostrate feather-branched mat and small overlapping leaves curved in one direction; avoid erect tuft habit. Show capsule only as an attached sporophyte when documented.",
+      "species_dimensions": "Stems 1–8+ cm; branches 1–3 cm; leaves 1.5–2 × 0.5–0.8 mm; median cells 60–80 × 3–4(–5) µm.",
+      "species_morphology": "Creeping pleurocarpous moss forming a laterally spreading mat; stems irregularly pinnate to nearly unbranched; leaves densely overlapping, usually falcate-secund and ovate to oblong-lanceolate with slender tapering tips; margins serrulate distally; double short or obscure costa; distinct alar cell group; inclined red-brown oblong-cylindric capsules."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4705,23 +4717,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
       "https://research.fs.usda.gov/feis/species-reviews/marpol",
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "variety-level identity for any particular specimen",
+      "local color, habitat form and sporophyte occurrence"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Stems 1–8+ cm; branches 1–3 cm; leaves 1.5–2 × 0.5–0.8 mm; median cells 60–80 × 3–4(–5) µm.",
+    "species_morphology": "Creeping pleurocarpous moss forming a laterally spreading mat; stems irregularly pinnate to nearly unbranched; leaves densely overlapping, usually falcate-secund and ovate to oblong-lanceolate with slender tapering tips; margins serrulate distally; double short or obscure costa; distinct alar cell group; inclined red-brown oblong-cylindric capsules."
   },
   {
     "id": "marchantia_polymorpha",
@@ -4739,7 +4754,7 @@
     "stem_or_root": "ventral rhizoids; no true roots, stems, or leaves",
     "diagnostic_reproductive": "stalked archegoniophores and antheridiophores; gemma cups",
     "habitat": "terrestrial on moist soil and disturbed wet substrates",
-    "construction_notes": "Build a flat branching thallus; include gemma cups and stalked reproductive receptacles as separate structures; avoid leafy shoots.",
+    "construction_notes": "No leafy stems. Draw a flat ribbon thallus with dorsal gemma cups and air pores, ventral scales/rhizoids in inset, and separate male and female stalked reproductive forms.",
     "user_data": {
       "scientific_name": "Marchantia polymorpha",
       "family": "Marchantiaceae",
@@ -4751,7 +4766,9 @@
       "stem_or_root": "ventral rhizoids; no true roots, stems, or leaves",
       "diagnostic_reproductive": "stalked archegoniophores and antheridiophores; gemma cups",
       "habitat": "terrestrial on moist soil and disturbed wet substrates",
-      "construction_notes": "Build a flat branching thallus; include gemma cups and stalked reproductive receptacles as separate structures; avoid leafy shoots."
+      "construction_notes": "No leafy stems. Draw a flat ribbon thallus with dorsal gemma cups and air pores, ventral scales/rhizoids in inset, and separate male and female stalked reproductive forms.",
+      "species_dimensions": "Thallus commonly 2–10 cm long and 7–20 mm wide; dichotomously branched; gemma cups about 2–5 mm across in common field accounts.",
+      "species_morphology": "Dorsiventral flat thalloid liverwort with dichotomous branches and apical notches; dorsal polygonal air-chamber pattern, pores and gemma cups; ventral scales and smooth/tuberculate rhizoids; dioicous, with separate stalked male disc-like antheridiophores and female umbrella/rayed archegoniophores; sporophytes develop beneath female rays and release spores with hygroscopic elaters."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4764,23 +4781,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://research.fs.usda.gov/feis/species-reviews/marpol",
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "subspecies/taxonomic concept and regional phenology",
+      "local reference photographs showing both sexes and mature sporophytes"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Thallus commonly 2–10 cm long and 7–20 mm wide; dichotomously branched; gemma cups about 2–5 mm across in common field accounts.",
+    "species_morphology": "Dorsiventral flat thalloid liverwort with dichotomous branches and apical notches; dorsal polygonal air-chamber pattern, pores and gemma cups; ventral scales and smooth/tuberculate rhizoids; dioicous, with separate stalked male disc-like antheridiophores and female umbrella/rayed archegoniophores; sporophytes develop beneath female rays and release spores with hygroscopic elaters."
   },
   {
     "id": "riccia_fluitans",
@@ -4798,7 +4818,7 @@
     "stem_or_root": "no true roots; rhizoids on ventral surface",
     "diagnostic_reproductive": "sexual organs embedded in thallus; sporophyte often inconspicuous",
     "habitat": "free-floating or amphibious",
-    "construction_notes": "Depict fine branching floating thalli; do not construct a vascular stem or leafy frond; distinguish aquatic form from compact terrestrial rosette.",
+    "construction_notes": "Render a fine floating forked ribbon mat, not a vascular plant. Omit visible sporophytes by default; use a separate microscopic inset for embedded sporangia and spores only when depicting reproductive state.",
     "user_data": {
       "scientific_name": "Riccia fluitans",
       "family": "Ricciaceae",
@@ -4810,7 +4830,9 @@
       "stem_or_root": "no true roots; rhizoids on ventral surface",
       "diagnostic_reproductive": "sexual organs embedded in thallus; sporophyte often inconspicuous",
       "habitat": "free-floating or amphibious",
-      "construction_notes": "Depict fine branching floating thalli; do not construct a vascular stem or leafy frond; distinguish aquatic form from compact terrestrial rosette."
+      "construction_notes": "Render a fine floating forked ribbon mat, not a vascular plant. Omit visible sporophytes by default; use a separate microscopic inset for embedded sporangia and spores only when depicting reproductive state.",
+      "species_dimensions": "Thallus ribbons commonly 0.5–1 mm wide; spores 60–90 µm; floating thalli often form mats below the water surface.",
+      "species_morphology": "Aquatic or stranded thalloid liverwort; flattened ribbon-like green strands, repeatedly dichotomous and notched at apices; no stem or leaves; no functional roots and few or absent rhizoids when floating; usually sterile; rare sporangia embedded in thallus and mature structures protruding ventrally."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4823,10 +4845,12 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://powo.science.kew.org/",
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
@@ -4834,13 +4858,14 @@
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local aquatic versus stranded morph and thallus width",
+      "reproductive structures are rare; do not infer a routine sporophyte stage"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Thallus ribbons commonly 0.5–1 mm wide; spores 60–90 µm; floating thalli often form mats below the water surface.",
+    "species_morphology": "Aquatic or stranded thalloid liverwort; flattened ribbon-like green strands, repeatedly dichotomous and notched at apices; no stem or leaves; no functional roots and few or absent rhizoids when floating; usually sterile; rare sporangia embedded in thallus and mature structures protruding ventrally."
   },
   {
     "id": "frullania_tamarisci",
@@ -4858,7 +4883,7 @@
     "stem_or_root": "flattened branching stems; single-celled rhizoids",
     "diagnostic_reproductive": "small sporophytes on short-lived seta; perianth protects developing sporophyte",
     "habitat": "epiphytic or lithophytic; moist bark and rock",
-    "construction_notes": "Show the flattened leafy shoot and two-ranked leaves with underleaves; magnify bilobed leaf and water-sac lobule.",
+    "construction_notes": "Treat as a microscopic leafy mat. Paired leaf lobes and inflated helmet-like lobule are diagnostic; include underleaves and a high-magnification inset. Never depict large fern-like leaves.",
     "user_data": {
       "scientific_name": "Frullania tamarisci",
       "family": "Frullaniaceae",
@@ -4870,7 +4895,9 @@
       "stem_or_root": "flattened branching stems; single-celled rhizoids",
       "diagnostic_reproductive": "small sporophytes on short-lived seta; perianth protects developing sporophyte",
       "habitat": "epiphytic or lithophytic; moist bark and rock",
-      "construction_notes": "Show the flattened leafy shoot and two-ranked leaves with underleaves; magnify bilobed leaf and water-sac lobule."
+      "construction_notes": "Treat as a microscopic leafy mat. Paired leaf lobes and inflated helmet-like lobule are diagnostic; include underleaves and a high-magnification inset. Never depict large fern-like leaves.",
+      "species_dimensions": "Shoot width 0.9–1.5 mm; stem 180–200 µm; dorsal leaf lobe 0.8–0.9 mm; lobule 240–300 × 100–180 µm; underleaves 0.5 × 0.4–0.5 mm; perianth 2.1 × 0.9 mm.",
+      "species_morphology": "Tiny leafy liverwort in appressed prostrate/ascending shoots; leaves deeply bilobed with broad dorsal lobe and smaller inflated sac-like ventral lobule; orbicular shallowly bifid underleaves; scattered or short-line ocelli; dioicous, female structures on short lateral branches, oblong perianth with short beak."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/bryophytes.md",
@@ -4883,10 +4910,12 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/bryophytes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/bryophytes.md",
       "habitat": "botanical references listed in research/subjects/plants/bryophytes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/bryophytes.md"
+      "construction_notes": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/bryophyte-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/bryophyte-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/bryophytes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; local variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/bryophyte-species-dossiers.md",
     "research_sources": [
       "https://www.cclmportal.ca/sites/default/files/2019-12/BRI-Field-Guide-Mosses-Liverworts-Alberta-Peatlands.pdf",
       "https://bryology.eeb.uconn.edu/na-moss-checklist/",
@@ -4894,13 +4923,14 @@
       "https://mdc.mo.gov/discover-nature/field-guide/liverworts"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local ecotype, color and substrate-specific branching",
+      "specimen-backed macro photographs of lobules and reproductive structures"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Shoot width 0.9–1.5 mm; stem 180–200 µm; dorsal leaf lobe 0.8–0.9 mm; lobule 240–300 × 100–180 µm; underleaves 0.5 × 0.4–0.5 mm; perianth 2.1 × 0.9 mm.",
+    "species_morphology": "Tiny leafy liverwort in appressed prostrate/ascending shoots; leaves deeply bilobed with broad dorsal lobe and smaller inflated sac-like ventral lobule; orbicular shallowly bifid underleaves; scattered or short-line ocelli; dioicous, female structures on short lateral branches, oblong perianth with short beak."
   },
   {
     "id": "carex_aquatilis",
