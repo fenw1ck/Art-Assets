@@ -544,6 +544,43 @@
   "merged": {}
  },
  {
+  "id": "backpack",
+  "title": "Backpack",
+  "kind": "object",
+  "class": null,
+  "parent": "items",
+  "aliases": [
+   "bag",
+   "pack",
+   "rucksack",
+   "satchel",
+   "inventory size",
+   "backpack-satchel",
+   "backpack-rucksack",
+   "backpack-expedition"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "back and side views",
+   "a worn-on-the-back drawing for a player figure"
+  ],
+  "used_by": [
+   "items.js backpack; euclid game.html (bagSize",
+   "shop)"
+  ],
+  "file": "research/objects/items/backpack.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "Log",
+   "Sources"
+  ],
+  "sources": 2,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "clothing",
   "title": "Clothing",
   "kind": "object",
@@ -704,12 +741,13 @@
   "depth": "outline",
   "updated": "2026-11-25",
   "gaps": [
-   "other potions besides weed killer",
    "a pouring animation",
    "empty flasks as items"
   ],
   "used_by": [
-   "items.js potion; euclid game.html (weed killer)"
+   "items.js potion",
+   "health; euclid game.html (weed killer",
+   "health potions)"
   ],
   "file": "research/objects/items/potions/_potions.md",
   "sections": [
@@ -717,6 +755,43 @@
    "Log"
   ],
   "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
+  "id": "health-potion",
+  "title": "Health potion",
+  "kind": "object",
+  "class": null,
+  "parent": "potions",
+  "aliases": [
+   "healing potion",
+   "health-minor",
+   "health-greater",
+   "health-supreme",
+   "red potion",
+   "caduceus potion"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "a drinking animation",
+   "an empty-flask item"
+  ],
+  "used_by": [
+   {
+    "items.js health; euclid game.html (useItem": "Drink; shop; rooms)"
+   }
+  ],
+  "file": "research/objects/items/potions/health-potion.md",
+  "sections": [
+   "Distinguishing features",
+   "Construction order",
+   "States",
+   "Log",
+   "Sources"
+  ],
+  "sources": 5,
   "traits": {},
   "merged": {}
  },
