@@ -4059,7 +4059,14 @@
       "leaf_construction": "lanceolate",
       "flower_construction": "spathe-spadix",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#2f6a3a"
+      "foliage_colour": "#2f6a3a",
+      "scientific_name": "Spathiphyllum wallisii (species reference; cultivated hybrids vary)",
+      "growth_architecture_detail": "Evergreen rhizomatous herb forming a dense basal clump.",
+      "leaf_morphology_detail": "Glossy dark-green simple lanceolate to oblong-elliptic leaves with long petioles, pointed tips and prominent midrib; leaves arise from crown.",
+      "branching_architecture": "Short basal rhizome; individual petioles emerge from crown. Flowering stalks rise separately from foliage and may exceed leaf height.",
+      "flower_placement_and_inflorescence": "A single white or cream spathe (modified bract) encloses a short upright cream spadix covered in tiny flowers; spathe greens with age.",
+      "fruit_or_harvest_morphology": "Fruit not usually a visible ornamental feature; species-level fruit details are not required for standard houseplant image.",
+      "renderer_construction_rules": "Build a basal clump of long-petioled lanceolate leaves. Each flower stalk carries one white spathe around one central spadix. Do not depict a daisy-like flower or a many-flowered branched inflorescence."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4069,7 +4076,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/peace_lily.md",
+      "growth_architecture_detail": "research/subjects/plants/peace_lily.md",
+      "leaf_morphology_detail": "research/subjects/plants/peace_lily.md",
+      "branching_architecture": "research/subjects/plants/peace_lily.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/peace_lily.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/peace_lily.md",
+      "renderer_construction_rules": "research/subjects/plants/peace_lily.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4079,13 +4093,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.nparks.gov.sg/florafaunaweb/flora/2/4/2465",
+      "https://www.worldfloraonline.org/taxon/wfo-0000312060"
+    ],
+    "research_gaps": [
+      "Cultivar/hybrid and flower size",
+      "Exact leaf count and clump maturity for target image"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Spathiphyllum wallisii (species reference; cultivated hybrids vary)",
+    "research_record": "research/subjects/plants/peace_lily.md"
   },
   {
     "id": "spider_plant",
@@ -4118,7 +4147,14 @@
       "leaf_construction": "strap",
       "flower_construction": "white-star",
       "fruit_or_harvest": "plantlets",
-      "foliage_colour": "#7fb85a"
+      "foliage_colour": "#7fb85a",
+      "scientific_name": "Chlorophytum comosum",
+      "growth_architecture_detail": "Tufted perennial herb forming a basal rosette; long arching to pendulous inflorescence stolons carry flowers and plantlets.",
+      "leaf_morphology_detail": "Narrow linear to linear-lanceolate strap leaves, arching or recurved, smooth, with parallel veins; green or longitudinally variegated by cultivar.",
+      "branching_architecture": "Short rhizome and basal crown; multiple leaves emerge from rosette. Long slender stalks arch outward and branch or carry plantlets at nodes/bracts.",
+      "flower_placement_and_inflorescence": "Small white star-shaped flowers along lax arching inflorescence, borne in small clusters.",
+      "fruit_or_harvest_morphology": "Small three-angled capsule; vegetative plantlets commonly form along the inflorescence and root when they touch soil.",
+      "renderer_construction_rules": "Make a fountain-like basal rosette of narrow arching leaves. Add long thin arching runners/inflorescence stems extending beyond foliage; place tiny white flowers and daughter plantlets along them. Plantlets are not berries or flowers."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4128,7 +4164,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/spider_plant.md",
+      "growth_architecture_detail": "research/subjects/plants/spider_plant.md",
+      "leaf_morphology_detail": "research/subjects/plants/spider_plant.md",
+      "branching_architecture": "research/subjects/plants/spider_plant.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/spider_plant.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/spider_plant.md",
+      "renderer_construction_rules": "research/subjects/plants/spider_plant.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4138,13 +4181,29 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://pza.sanbi.org/chlorophytum-comosum",
+      "https://vicflora.rbg.vic.gov.au/flora/taxon/4c3ae8e2-4f99-468d-8b6e-0bc49385fc33",
+      "https://hort.ifas.ufl.edu/database/documents/pdf/shrub_fact_sheets/chlcoma.pdf"
+    ],
+    "research_gaps": [
+      "Cultivar variegation pattern",
+      "Plantlet density and arching-stolon length for target specimen"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Chlorophytum comosum",
+    "research_record": "research/subjects/plants/spider_plant.md"
   },
   {
     "id": "apple",
@@ -4177,7 +4236,14 @@
       "leaf_construction": "serrate-oval",
       "flower_construction": "apple-blossom",
       "fruit_or_harvest": "pome",
-      "foliage_colour": "#4a8a3c"
+      "foliage_colour": "#4a8a3c",
+      "scientific_name": "Malus domestica",
+      "growth_architecture_detail": "Small to medium deciduous tree trained to a central leader; semi-dwarf size is determined mainly by rootstock and pruning.",
+      "leaf_morphology_detail": "Alternate simple elliptic-ovate leaves with irregular saw-toothed margins; often hairy beneath; petioles moderate length.",
+      "branching_architecture": "Woody trunk with scaffold branches and short fruiting spurs. Flower buds develop at tips of spurs; spurs are short, knobbly shoots distinct from long vegetative shoots.",
+      "flower_placement_and_inflorescence": "Clusters of about 4–6 five-petalled flowers at spur tips, white to pink; central king bloom often opens first.",
+      "fruit_or_harvest_morphology": "Pome develops from flowers on spurs; persistent calyx may remain at distal end. Fruit colour varies by cultivar.",
+      "renderer_construction_rules": "Build a woody central leader and scaffold branches before foliage. Distribute alternate serrate leaves along shoots; place short spur shoots on older wood and blossom clusters at their tips. Fruit should occupy the same spur positions as flowers, not hang from every leaf node."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4187,7 +4253,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/apple.md",
+      "growth_architecture_detail": "research/subjects/plants/apple.md",
+      "leaf_morphology_detail": "research/subjects/plants/apple.md",
+      "branching_architecture": "research/subjects/plants/apple.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/apple.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/apple.md",
+      "renderer_construction_rules": "research/subjects/plants/apple.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4197,13 +4270,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://inspection.canada.ca/en/plant-varieties/plants-novel-traits/applicants/directive-94-08/biology-documents/malus-domestica"
+    ],
+    "research_gaps": [
+      "Semi-dwarf rootstock and training/pruning form",
+      "Apple cultivar, fruit colour and spur density"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Malus domestica",
+    "research_record": "research/subjects/plants/apple.md"
   },
   {
     "id": "pear",
@@ -4236,7 +4323,14 @@
       "leaf_construction": "oval",
       "flower_construction": "white-five",
       "fruit_or_harvest": "pear",
-      "foliage_colour": "#4f8f45"
+      "foliage_colour": "#4f8f45",
+      "scientific_name": "Pyrus communis",
+      "growth_architecture_detail": "Deciduous fruit tree; dwarf form is maintained by rootstock and pruning. Commonly upright central leader with scaffold branches.",
+      "leaf_morphology_detail": "Alternate simple glossy ovate to round-ovate leaves, tapering to a point; margins subtly toothed to crenate; petioles distinct.",
+      "branching_architecture": "Woody trunk and upright scaffold branches; numerous short fruiting spurs on older wood. Branches often more upright than apple depending on cultivar and training.",
+      "flower_placement_and_inflorescence": "White five-petalled blossoms in clusters (corymbs) on short spurs; bloom early in spring.",
+      "fruit_or_harvest_morphology": "Pome, characteristically pear-shaped with a narrow neck and broader lower portion; green to yellow-brown, sometimes blushed.",
+      "renderer_construction_rules": "Build a woody central leader with upright scaffold branches and short fruit spurs. Keep leaves simple and glossy, not compound. Put white blossom clusters and later pears on short spurs. Avoid apple's round fruit silhouette."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4246,7 +4340,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/pear.md",
+      "growth_architecture_detail": "research/subjects/plants/pear.md",
+      "leaf_morphology_detail": "research/subjects/plants/pear.md",
+      "branching_architecture": "research/subjects/plants/pear.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/pear.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/pear.md",
+      "renderer_construction_rules": "research/subjects/plants/pear.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4256,13 +4357,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://extension.usu.edu/treebrowser/catalog/pear-common"
+    ],
+    "research_gaps": [
+      "Specific dwarf rootstock and cultivar",
+      "Cultivar-specific fruit outline, skin colour and branching habit"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Pyrus communis",
+    "research_record": "research/subjects/plants/pear.md"
   },
   {
     "id": "peach",
@@ -4295,7 +4410,14 @@
       "leaf_construction": "lanceolate",
       "flower_construction": "pink-five",
       "fruit_or_harvest": "peach",
-      "foliage_colour": "#5a9a45"
+      "foliage_colour": "#5a9a45",
+      "scientific_name": "Prunus persica",
+      "growth_architecture_detail": "Deciduous fruit tree commonly trained open-vase with several main scaffold limbs and an open centre.",
+      "leaf_morphology_detail": "Alternate simple narrow lanceolate to elliptic-lanceolate leaves with long pointed tips, fine serrated margins and pinnate venation; short petioles may bear glands.",
+      "branching_architecture": "Slender reddish or green current-year shoots; fruiting wood is primarily one-year-old shoots. Branching should create an open vase, not a single dense central leader.",
+      "flower_placement_and_inflorescence": "Pink flowers, usually solitary or in pairs, often appearing before leaves emerge; short pedicels on previous-season wood.",
+      "fruit_or_harvest_morphology": "Fuzzy-skinned fleshy drupe with a hard central stone; nectarine cultivars are smooth-skinned.",
+      "renderer_construction_rules": "Construct an open-vase tree with multiple outward scaffold limbs. Place pink flowers singly or in pairs directly on bare one-year wood before leaf-out. Later show narrow serrated leaves and peaches on current-season growth arising from that wood. Do not use apple-like spur clusters."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4305,7 +4427,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/peach.md",
+      "growth_architecture_detail": "research/subjects/plants/peach.md",
+      "leaf_morphology_detail": "research/subjects/plants/peach.md",
+      "branching_architecture": "research/subjects/plants/peach.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/peach.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/peach.md",
+      "renderer_construction_rules": "research/subjects/plants/peach.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4315,13 +4444,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.worldfloraonline.org/taxon/wfo-0001005418",
+      "https://plants.ces.ncsu.edu/plants/prunus-persica/"
+    ],
+    "research_gaps": [
+      "Cultivar, freestone/clingstone and fruit colour",
+      "Exact vase training and pruning system"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Prunus persica",
+    "research_record": "research/subjects/plants/peach.md"
   },
   {
     "id": "fig",
@@ -4354,7 +4498,14 @@
       "leaf_construction": "palmate-lobed",
       "flower_construction": "none",
       "fruit_or_harvest": "fig",
-      "foliage_colour": "#4f8040"
+      "foliage_colour": "#4f8040",
+      "scientific_name": "Ficus carica",
+      "growth_architecture_detail": "Broad branching deciduous tree or large shrub, often multi-stemmed; branches contain milky latex.",
+      "leaf_morphology_detail": "Large alternate simple leaves, usually 3–5 deep palm-shaped lobes, rough upper surface, long petiole and palmate venation.",
+      "branching_architecture": "Woody branching framework with stout shoots and broad irregular canopy. Leaves and syconia occur at nodes along current growth.",
+      "flower_placement_and_inflorescence": "Flowers are tiny and enclosed inside a hollow fleshy receptacle (syconium); no showy external petals are visible.",
+      "fruit_or_harvest_morphology": "The fig is a syconium, an enclosed inflorescence that matures as a fleshy hollow structure, often pear-shaped, borne singly or in pairs in leaf axils.",
+      "renderer_construction_rules": "Use large rough deeply lobed leaves with palmate veins. Place figs in leaf axils on shoots, not as berries in exposed clusters. Never draw visible daisy-like flowers; the flowers are inside the syconium. Branching is woody and broad."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4364,7 +4515,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/fig.md",
+      "growth_architecture_detail": "research/subjects/plants/fig.md",
+      "leaf_morphology_detail": "research/subjects/plants/fig.md",
+      "branching_architecture": "research/subjects/plants/fig.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/fig.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/fig.md",
+      "renderer_construction_rules": "research/subjects/plants/fig.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4374,13 +4532,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.kew.org/plants/fig",
+      "https://profiles.ala.org.au/opus/foa/profile/Ficus"
+    ],
+    "research_gaps": [
+      "Cultivar and leaf-lobe variability",
+      "Breba versus main crop timing and fruit colour"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Ficus carica",
+    "research_record": "research/subjects/plants/fig.md"
   },
   {
     "id": "lemon_meyer",
@@ -4413,7 +4586,14 @@
       "leaf_construction": "elliptical",
       "flower_construction": "citrus",
       "fruit_or_harvest": "lemon",
-      "foliage_colour": "#2f7a3a"
+      "foliage_colour": "#2f7a3a",
+      "scientific_name": "Citrus × meyeri",
+      "growth_architecture_detail": "Small evergreen broadleaf tree or shrub with compact, bushy to spreading crown; branches may bear short spines.",
+      "leaf_morphology_detail": "Alternate simple elliptic to ovate glossy aromatic leaves; citrus leaves often have a winged petiole, though Meyer lemon cultivar descriptions report reduced or absent wings.",
+      "branching_architecture": "Woody branching stems, sometimes spiny; new flush may be reddish before turning green. Leaves persist through the year.",
+      "flower_placement_and_inflorescence": "Fragrant white flowers, often with purplish exterior, solitary or in small axillary clusters; buds may be reddish.",
+      "fruit_or_harvest_morphology": "Broadly ovoid yellow to yellow-orange citrus hesperidium with aromatic rind; fruits may occur with flowers and buds simultaneously.",
+      "renderer_construction_rules": "Render an evergreen woody shrub with glossy alternate leaves and a fine branch framework. Treat petiole winging as a cultivar-level variable, not a guaranteed large wing. Put fragrant white/purple flowers in leaf axils and oval yellow fruit on short stalks; multiple stages can coexist."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4423,7 +4603,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/lemon_meyer.md",
+      "growth_architecture_detail": "research/subjects/plants/lemon_meyer.md",
+      "leaf_morphology_detail": "research/subjects/plants/lemon_meyer.md",
+      "branching_architecture": "research/subjects/plants/lemon_meyer.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/lemon_meyer.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/lemon_meyer.md",
+      "renderer_construction_rules": "research/subjects/plants/lemon_meyer.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4433,13 +4620,29 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.rhs.org.uk/plants/112976/citrus-%C3%97-meyeri/details",
+      "https://ask.ifas.ufl.edu/publication/hs402",
+      "https://plants.ces.ncsu.edu/plants/citrus-x-limon-meyer/"
+    ],
+    "research_gaps": [
+      "Meyer clone/cultivar and petiole wing expression",
+      "Fruit load, ripening colour and indoor/outdoor pruning form"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Citrus × meyeri",
+    "research_record": "research/subjects/plants/lemon_meyer.md"
   },
   {
     "id": "sunflower",
@@ -4472,7 +4675,14 @@
       "leaf_construction": "cordate-rough",
       "flower_construction": "sunflower",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#5a9a3a"
+      "foliage_colour": "#5a9a3a",
+      "scientific_name": "Helianthus annuus",
+      "growth_architecture_detail": "Coarse erect annual, usually with one dominant upright stem; some cultivars branch and carry multiple heads.",
+      "leaf_morphology_detail": "Lower leaves may be opposite; upper leaves alternate. Simple broad ovate to cordate blades, rough/hispid on both surfaces, toothed margins, long petioles and prominent basal veins.",
+      "branching_architecture": "Stout rough-hairy stem; typically one large terminal head in single-stem cultivars, with branches and smaller heads in branching cultivars.",
+      "flower_placement_and_inflorescence": "Large terminal capitulum: outer yellow ray florets surround a central disc of numerous small tubular fertile florets; surrounded by green involucral bracts.",
+      "fruit_or_harvest_morphology": "Dry achenes (sunflower seeds) develop from disc florets across the central receptacle; not a fleshy fruit.",
+      "renderer_construction_rules": "Build a stout upright stem with broad rough alternate leaves (lower opposite leaves may be shown). Place the main head at the apex. Construct a ring of ray florets around a dense disc with visible spiral seed pattern as it matures. Branching is cultivar-dependent."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4482,7 +4692,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/sunflower.md",
+      "growth_architecture_detail": "research/subjects/plants/sunflower.md",
+      "leaf_morphology_detail": "research/subjects/plants/sunflower.md",
+      "branching_architecture": "research/subjects/plants/sunflower.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/sunflower.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/sunflower.md",
+      "renderer_construction_rules": "research/subjects/plants/sunflower.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -4492,13 +4709,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:119003-2/general-information",
+      "https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Helianthus+annuus"
+    ],
+    "research_gaps": [
+      "Single-head versus branching cultivar",
+      "Head diameter, plant height and seed/centre colour for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Helianthus annuus",
+    "research_record": "research/subjects/plants/sunflower.md"
   },
   {
     "id": "zinnia",
