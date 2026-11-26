@@ -34,6 +34,10 @@ jobs:
           assert len(cards) == 57, f"Expected 57 infocards, found {len(cards)}"
           assert len({card["id"] for card in cards}) == 57, "Duplicate plant IDs"
           assert min(card.get("populated_user_data_count", 0) for card in cards) >= 4
+          for card in cards:
+              research_path = card.get("research_record")
+              assert research_path and Path(research_path).is_file(), f"Missing research record for {card['id']}: {research_path}"
+              assert card.get("user_data_provenance"), f"Missing field provenance for {card['id']}"
           assert sum(bool(card.get("image")) for card in cards) == 8, "Unexpected image references; this job must not render"
-          print(f"Validated {len(cards)} infocards; minimum populated user-data fields: {min(card['populated_user_data_count'] for card in cards)}")
+          print(f"Validated {len(cards)} infocards and all linked research records; minimum populated user-data fields: {min(card['populated_user_data_count'] for card in cards)}")
           PY
