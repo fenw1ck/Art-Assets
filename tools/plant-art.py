@@ -681,6 +681,209 @@ def draw_graminoid_architecture(plant, size=768, seed=7):
     return im
 
 
+
+def draw_bryophyte_architecture(plant, size=768, seed=7):
+    """Nonvascular gametophyte-first construction for mosses and liverworts."""
+    pid=plant["id"]
+    im,d,rng=_plate_canvas(size,seed+sum(map(ord,pid)))
+    green=(91,132,82); light=(142,169,111); dark=(65,96,65)
+    cx=size*.5; base=size*.78
+    if pid in ("marchantia_polymorpha","riccia_fluitans"):
+        # Flat dichotomous thallus; no vascular stems or leaf blades.
+        for i in range(9):
+            x=cx+(i-4)*size*.012
+            y=base+(rng.random()-.5)*size*.04
+            direction=-1 if i%2 else 1
+            for j in range(4):
+                ex=x+direction*size*(.035+j*.012)
+                ey=y-size*(.08+j*.035)
+                d.line([(x,y),(ex,ey)],fill=green,width=max(3,int(size*.018)))
+                d.line([(ex,ey),(ex+direction*size*.07,ey-size*.055)],
+                       fill=light,width=max(2,int(size*.014)))
+                d.line([(ex,ey),(ex-direction*size*.055,ey-size*.065)],
+                       fill=green,width=max(2,int(size*.013)))
+                # Air-chamber markings are subtle dorsal polygons.
+                for k in range(4):
+                    px=ex+direction*size*(.012+k*.009)
+                    py=ey-size*(.01+k*.004)
+                    rr=size*.004
+                    d.ellipse((px-rr,py-rr,px+rr,py+rr),fill=light)
+        if pid=="marchantia_polymorpha":
+            # Gemma cups on dorsal thallus and stalked female/male receptacles.
+            for i in range(5):
+                x=cx+(i-2)*size*.10;y=base-size*.20
+                d.ellipse((x-size*.025,y-size*.012,x+size*.025,y+size*.012),
+                          fill=(111,145,82),outline=dark)
+                d.ellipse((x-size*.012,y-size*.008,x+size*.012,y+size*.008),
+                          fill=(74,111,67))
+                d.line([(x,y-size*.01),(x,y-size*.18)],fill=green,
+                       width=max(2,int(size*.006)))
+                d.ellipse((x-size*.04,y-size*.22,x+size*.04,y-size*.16),
+                          fill=light,outline=dark)
+        return im
+    if pid=="frullania_tamarisci":
+        # Appressed leafy liverwort shoots; paired bilobed leaves with tiny lobules.
+        for row in range(7):
+            y=base-size*(.08+row*.055)
+            x0=cx-size*.27
+            d.line([(x0,y),(cx+size*.28,y-size*.035)],fill=dark,
+                   width=max(2,int(size*.006)))
+            for j in range(17):
+                x=x0+j*size*.034
+                for side in (-1,1):
+                    d.ellipse((x-size*.012,y-size*.025,x+size*.012,y+size*.008),
+                              fill=light,outline=dark)
+                    d.ellipse((x+side*size*.009,y-size*.012,
+                               x+side*size*.020,y+size*.009),
+                              fill=green,outline=dark)
+        return im
+    # Mosses: upright acrocarpous tuft or creeping pleurocarpous mat.
+    creeping=pid=="hypnum_cupressiforme"
+    for shoot in range(15 if creeping else 11):
+        x=cx+(rng.random()-.5)*size*(.55 if creeping else .32)
+        y=base
+        length=size*(.24+rng.random()*.13)
+        endx=x+(rng.random()-.5)*size*(.10 if creeping else .035)
+        endy=y-length
+        d.line([(x,y),((x+endx)/2,y-length*.52),(endx,endy)],
+               fill=dark,width=max(2,int(size*.005)))
+        count=13
+        for j in range(count):
+            t=(j+1)/(count+1)
+            px=x+(endx-x)*t;py=y+(endy-y)*t
+            ll=size*(.035 if creeping else .045)*(1-.35*t)
+            for side in (-1,1):
+                ex=px+side*ll*.72;ey=py-ll*.40
+                d.polygon([(px,py),(ex-size*.006,ey),(ex,ey-ll*.5),
+                           (px+side*size*.004,py-size*.008)],
+                          fill=light,outline=dark)
+        if pid=="sphagnum_palustre":
+            # Capitulum with spreading and pendent fascicle branches.
+            d.ellipse((endx-size*.035,endy-size*.025,endx+size*.035,endy+size*.025),
+                      fill=light,outline=dark)
+            for j in range(4):
+                bx=endx+(j-1.5)*size*.018
+                d.line([(endx,endy),(bx,endy-size*.10)],fill=green,
+                       width=max(2,int(size*.007)))
+                d.line([(endx,endy),(bx,endy+size*.075)],fill=dark,
+                       width=max(2,int(size*.006)))
+        elif pid=="polytrichum_commune":
+            # Long seta and four-angled capsule above the leafy gametophyte.
+            sx=endx+size*.012
+            d.line([(sx,endy),(sx-size*.01,endy-size*.16)],fill=(126,91,54),
+                   width=max(2,int(size*.004)))
+            d.polygon([(sx-size*.012,endy-size*.20),(sx+size*.012,endy-size*.20),
+                       (sx+size*.016,endy-size*.16),(sx-size*.016,endy-size*.16)],
+                      fill=(145,111,68),outline=dark)
+    return im
+
+
+def draw_aquatic_architecture(plant, size=768, seed=7):
+    """Aquatic growth forms: floating, submerged, emergent and rooted."""
+    pid=plant["id"]
+    im,d,rng=_plate_canvas(size,seed+sum(map(ord,pid)))
+    green=(83,132,91); light=(144,177,125); dark=(60,94,69)
+    water_y=size*.59; cx=size*.5
+    d.line([(size*.05,water_y),(size*.95,water_y)],fill=(133,177,193),
+           width=max(2,int(size*.003)))
+    if pid=="lemna_minor":
+        # Discrete free-floating fronds, each with one simple root.
+        for i in range(24):
+            x=size*(.12+rng.random()*.76);y=water_y-size*(.015+rng.random()*.025)
+            rx=size*(.012+rng.random()*.009)
+            d.ellipse((x-rx,y-rx*.55,x+rx,y+rx*.55),fill=light,outline=dark)
+            d.line([(x,y+rx*.45),(x+size*.004,y+rx*2.2)],
+                   fill=(111,127,91),width=max(1,int(size*.002)))
+        return im
+    if pid=="elodea_canadensis":
+        # Submerged nodal shoots with three-leaf whorls.
+        for i in range(7):
+            x=size*(.18+i*.105)
+            d.line([(x,water_y+size*.25),(x+size*.02,water_y-size*.30)],
+                   fill=green,width=max(2,int(size*.004)))
+            for j in range(7):
+                y=water_y+size*.18-j*size*.065
+                for k in range(3):
+                    a=k*math.tau/3
+                    ex=x+size*.055*math.cos(a);ey=y-size*.025
+                    d.ellipse((ex-size*.012,ey-size*.028,ex+size*.012,ey+size*.028),
+                              fill=light,outline=dark)
+        return im
+    if pid=="vallisneria_americana":
+        for i in range(11):
+            x=cx+(i-5)*size*.018
+            d.line([(cx,water_y+size*.25),(x+size*(i-5)*.018,water_y-size*(.18+rng.random()*.30))],
+                   fill=green,width=max(2,int(size*.012)))
+        return im
+    if pid=="typha_latifolia":
+        for i in range(7):
+            x=cx+(i-3)*size*.035
+            d.line([(x,water_y+size*.25),(x, size*.16)],fill=green,
+                   width=max(3,int(size*.009)))
+            for side in (-1,1):
+                d.polygon([(x,water_y+size*.10),(x+side*size*.12,size*.42),
+                           (x+side*size*.018,water_y+size*.10)],fill=light)
+            if i in (2,3,4):
+                d.line([(x,size*.16),(x,size*.19)],fill=(113,83,52),
+                       width=max(8,int(size*.025)))
+                d.line([(x,size*.20),(x,size*.29)],fill=(85,66,46),
+                       width=max(9,int(size*.028)))
+        return im
+    if pid=="pistia_stratiotes":
+        # Buoyant rosette with ribbed leaves and hanging fibrous root curtain.
+        for i in range(9):
+            a=i*math.tau/9
+            x=cx+math.cos(a)*size*.11;y=water_y+math.sin(a)*size*.045
+            ex=cx+math.cos(a)*size*.25;ey=water_y-size*.10+math.sin(a)*size*.11
+            d.polygon([(cx,water_y),(x,y),(ex,ey),(cx+math.cos(a+.25)*size*.02,water_y)],
+                      fill=light,outline=dark)
+            d.line([(cx,water_y),(ex,ey)],fill=(203,211,166),width=2)
+        for i in range(25):
+            x=cx+(rng.random()-.5)*size*.20
+            d.line([(x,water_y),(x+(rng.random()-.5)*size*.08,
+                   water_y+size*(.10+rng.random()*.20))],
+                   fill=(119,103,79),width=1)
+        return im
+    if pid in ("nymphaea_odorata","nuphar_variegata","nelumbo_lutea"):
+        # Rhizome below substrate, petioles crossing water plane, diagnostic blades.
+        substrate=water_y+size*.17
+        d.line([(size*.22,substrate),(size*.78,substrate)],fill=(126,104,76),
+               width=max(3,int(size*.012)))
+        for i in range(4):
+            x=cx+(i-1.5)*size*.035
+            d.line([(cx,substrate),(x,water_y-size*.06)],fill=green,
+                   width=max(2,int(size*.006)))
+        for i in range(3):
+            x=cx+(i-1)*size*.22;y=water_y-size*.08
+            if pid=="nelumbo_lutea":
+                d.ellipse((x-size*.09,y-size*.035,x+size*.09,y+size*.035),
+                          fill=light,outline=dark,width=2)
+                d.ellipse((x-size*.012,y-size*.035,x+size*.012,y+size*.035),fill=dark)
+            else:
+                d.pieslice((x-size*.10,y-size*.09,x+size*.10,y+size*.09),
+                           35,325,fill=light,outline=dark)
+                d.line([(x,y),(x+size*.07,y-size*.05)],fill=dark,width=2)
+        if pid=="nelumbo_lutea":
+            d.ellipse((cx-size*.045,water_y-size*.31,cx+size*.045,water_y-size*.22),
+                      fill=(229,213,137),outline=dark)
+            d.ellipse((cx-size*.035,water_y-size*.20,cx+size*.035,water_y-size*.16),
+                      fill=(149,129,74),outline=dark)
+        else:
+            d.ellipse((cx-size*.04,water_y-size*.18,cx+size*.04,water_y-size*.10),
+                      fill=(239,207,91),outline=dark)
+        return im
+    if pid=="sagittaria_latifolia":
+        for i in range(5):
+            x=cx+(i-2)*size*.045
+            top=size*(.24+rng.random()*.12)
+            d.line([(x,water_y),(x,top)],fill=green,width=max(2,int(size*.006)))
+            d.polygon([(x,top),(x-size*.09,top+size*.16),
+                       (x,top+size*.09),(x+size*.09,top+size*.16)],
+                      fill=light,outline=dark)
+        return im
+    return im
+
+
 def draw_plant(plant, size=768, seed=7):
     pid = plant["id"]
     group = (plant.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
@@ -689,6 +892,10 @@ def draw_plant(plant, size=768, seed=7):
         return draw_fern_architecture(plant, size, seed)
     if group == "graminoid":
         return draw_graminoid_architecture(plant, size, seed)
+    if group == "bryophyte":
+        return draw_bryophyte_architecture(plant, size, seed)
+    if group == "aquatic":
+        return draw_aquatic_architecture(plant, size, seed)
     if pid in FLOWER_IDS:
         return draw_flower_plant(plant, size, seed)
     profile = PROFILES.get(pid)
