@@ -70,6 +70,14 @@ used_by: [plant-art/infocards.json, research/subjects/plants/*.md, tools/plant-a
 - Distinguish species-level facts from cultivar-specific, growth-form-specific and developmental-stage variation. Record supported variants and their sources rather than collapsing them into a single unsupported default.
 - Guide inclusion alone does not authorize artwork generation. Catalogue and research work may proceed while the protected rendering gate remains in force.
 
+## Canonical and user-created forms
+
+- Each plant has one **main form**: the canonical baseline for the species or documented profile. Its taxonomy and factual botanical traits are populated from botanical/horticultural research with trait-level provenance. Users cannot create, replace, or directly edit this main form.
+- Users may create, rename, edit and remove **alternate forms** for their own customizations, hypothetical variants, or personally selected cultivar/growth-form interpretations.
+- Alternate forms must be stored separately from the main form and clearly labelled user-authored and not botanically verified unless independently researched. They must never overwrite or silently modify the main form, taxonomy, morphology, or research fields.
+- A user may request research into an alternate form. Only after suitable sources support its botanical claims may those claims be promoted into a documented, sourced research variant; the user's original alternate form remains distinguishable from the research record.
+- The main form remains available as the stable research-backed reference even when users create multiple alternate forms.
+
 ## Project scope and rendering gate
 
 The 57 existing plant infocards are the protected first cohort. They remain research-only until their source records and user-supplied cultivar/stage choices are reviewed and the user explicitly authorizes rendering. New plant profiles may be researched and added beyond this cohort, but their artwork must not cause the protected 57 to be rendered prematurely.
