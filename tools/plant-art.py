@@ -580,6 +580,28 @@ def card_record(p, previous=None):
             }
         },
         "morphology": morphology,
+        "form_model": {
+            "main_form": {
+                "source": "research_data and morphology",
+                "editable_by_user": False,
+                "policy": "Canonical baseline; factual traits are research-backed and cannot be overwritten by user-authored values."
+            },
+            "alternate_forms": [],
+            "alternate_form_schema": {
+                "creator": "user",
+                "purpose": "User-authored, non-canonical customization or hypothetical cultivar/growth-form variant.",
+                "fields": "User-defined labels and visual/customization parameters; do not merge these values into research_data, morphology, taxonomy, or the main form.",
+                "research_status": "user_defined_not_botanically_verified",
+                "may_be_added_edited_or_removed_by_user": True,
+                "changes_main_form": False
+            }
+        },
+        "form_model_schema": {
+            "version": 1,
+            "main_form_is_research_only": True,
+            "alternate_forms_are_user_authored": True,
+            "alternate_forms_are_not_botanical_evidence": True
+        },
         "morphology_schema": {
             "version": 1,
             "trait_record": {
@@ -622,6 +644,11 @@ def card_record(p, previous=None):
                 record[key] = previous[key]
         if previous.get("morphology_schema"):
             record["morphology_schema"] = previous["morphology_schema"]
+        # Preserve user-created alternate forms, but never allow them to replace
+        # the research-backed canonical main form.
+        old_forms = previous.get("form_model", {})
+        if isinstance(old_forms, dict):
+            record["form_model"]["alternate_forms"] = old_forms.get("alternate_forms", [])
     else:
         image = ROOT / "plant-art" / f"{p['id']}.png"
         if image.is_file():
