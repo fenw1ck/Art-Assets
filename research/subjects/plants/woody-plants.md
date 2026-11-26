@@ -49,3 +49,39 @@ updated: 2026-11-25
 - Tree architecture must reflect species habit and age. Whorled pine branches, opposite maple branching and oak branching are not interchangeable.
 - Oak leaf shape is species-specific. In particular, *Quercus nigra* has variable spatulate leaves and should not be generalized from white oak.
 - Keep juvenile and adult leaf forms distinct when sources document ontogenetic variation.
+
+## Douglas-fir — *Pseudotsuga menziesii*
+
+- **Architecture:** large evergreen conifer. Open-grown young trees retain low branches; old forest trees develop tall clear boles and narrow crowns.
+- **Leaves:** yellow-green needles arranged singly in a spiral around branchlets.
+- **Cones:** pendent oblong seed cones, commonly 2–4 inches, with distinctive three-pointed bracts. This diagnostic feature distinguishes Douglas-fir from true firs.
+- **References:** USDA Forest Service FEIS, [Coast Douglas-fir](https://research.fs.usda.gov/feis/species-reviews/psemenm), supports crown, bark, foliage and cone position; UC ANR, [Douglas-fir](https://ucanr.edu/site/forest-research-and-outreach/douglas-fir-pseudotsuga-menziesii), documents spiral needles and three-pointed bracts.
+
+## Bald cypress — *Taxodium distichum*
+
+- **Architecture:** deciduous conifer; young crown pyramidal, mature crown broad and spreading. Wet-site trees may develop woody knees from roots.
+- **Leaves:** small, flat, linear leaves on feathery deciduous branchlets; foliage turns coppery before dropping.
+- **Cones:** rounded woody seed cones; male and female reproductive structures are separate but occur on the same tree.
+- **References:** UF/IFAS, [Baldcypress](https://ask.ifas.ufl.edu/publication/ST620), supports leaf arrangement, type, margin, shape, cones, crown and knees; UF Gardening Solutions, [Bald Cypress](https://gardeningsolutions.ifas.ufl.edu/mastergardener/resources/plantid/ornamentals/bald-cypress/), corroborates branchlet, bark and buttress features.
+
+## Bur oak — *Quercus macrocarpa*
+
+- **Architecture:** large deciduous tree with broad rounded crown; may be shrubby near range margins. Branchlets commonly have corky wings.
+- **Leaves:** alternate, simple, fiddle-shaped and obovate; lower half has several deep lobes while the upper half has fewer shallow lobes.
+- **Reproduction:** monoecious catkins; large acorns with a thick, fringed cup covering roughly one-half to three-quarters of the nut. Acorns mature in the first year.
+- **Variation:** USDA NRCS recognizes multiple varieties with differences in stature and cup size; preserve this variation rather than treating every tree as identical.
+- **References:** USDA NRCS, [Bur Oak Plant Guide](https://plants.sc.egov.usda.gov/DocumentLibrary/plantguide/pdf/pg_quma2.pdf), supports morphology, reproductive structures and intraspecific variation.
+
+## Southern live oak — *Quercus virginiana*
+
+- **Architecture:** massive evergreen to semi-evergreen oak, often wider than tall, with low, broad, winding and drooping limbs.
+- **Leaves:** alternate/spiral, simple, stiff and leathery, elliptic to ovate; margins revolute and usually entire, though new growth may be toothed or shallowly lobed.
+- **Reproduction:** male yellow-green catkins and small female spikes; acorns with a shallow cup.
+- **References:** UF/IFAS, [Shade-tree identification key](https://ask.ifas.ufl.edu/publication/EP510), documents leaf variation, bark, flowers and acorns; UF Gardening Solutions, [Live Oak](https://gardeningsolutions.ifas.ufl.edu/mastergardener/resources/plantid/ornamentals/live-oak/), documents evergreen habit, branch architecture and reproductive structures.
+
+## Paper birch — *Betula papyrifera*
+
+- **Architecture:** deciduous tree with an open crown; mature bark is thin, white and papery, peeling in sheets. Sapling bark is reddish brown.
+- **Reproduction:** monoecious, with separate pendulous male and female catkins. Male catkins overwinter; female catkins emerge in spring. Fruits are tiny winged nutlets.
+- **Evidence limit:** the cited USDA account strongly supports bark, roots, catkins and fruit; leaf outline and serration need an additional taxon-specific flora source before the card is considered complete.
+- **References:** USDA Forest Service FEIS, [Paper birch](https://research.fs.usda.gov/feis/species-reviews/betpap).
