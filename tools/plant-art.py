@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import html
 import math
 import random
 import re
@@ -283,6 +284,44 @@ def card_record(p):
                         "terracotta nursery pot", "seeded natural variation"],
         "image": f"plant-art/{p['id']}.png"
     }
+
+def write_page(records):
+    cards = []
+    for item in records:
+        cards.append(
+            '<article class="card">'
+            f'<img src="{html.escape(Path(item["image"]).name)}" alt="{html.escape(item["name"])} botanical illustration">'
+            f'<h2>{html.escape(item["name"])}</h2>'
+            f'<p class="family">{html.escape(item["family"])} · {html.escape(item["growth_habit"])}</p>'
+            f'<p>{html.escape(item["diagnostic_botany"])}</p>'
+            f'<dl><dt>Leaves</dt><dd>{html.escape(item["leaf_construction"])}</dd>'
+            f'<dt>Flowers</dt><dd>{html.escape(item["flower_construction"])}</dd>'
+            f'<dt>Harvest</dt><dd>{html.escape(item["fruit_or_harvest"])}</dd></dl>'
+            f'<p class="terms">{html.escape(", ".join(item["style_terms"]))}</p>'
+            '</article>'
+        )
+    page = """<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fenwick · Plant Art Library</title>
+<style>
+:root{color-scheme:light;--paper:#f9f6e7;--ink:#34372d;--line:#d9d2bd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.5 Georgia,serif}
+header{max-width:1200px;margin:auto;padding:28px 20px 12px}h1{font-size:30px;margin:0}
+header p{max-width:760px;margin:6px 0;color:#656451}
+main{max-width:1200px;margin:auto;padding:16px 20px 40px;display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:16px}
+.card{background:#fffdf5;border:1px solid var(--line);padding:12px;box-shadow:0 2px 8px #5a482012}
+.card img{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:var(--paper)}
+h2{font-size:19px;margin:10px 0 2px}.family{font-size:13px;color:#6d684f;margin:0 0 8px}
+p{margin:7px 0}dl{display:grid;grid-template-columns:70px 1fr;gap:3px 8px;font-size:13px}
+dt{color:#77705b}dd{margin:0}.terms{font-size:11px;color:#77705b;border-top:1px solid var(--line);padding-top:7px}
+</style></head><body><header><h1>Plant Art Library</h1>
+<p>Species-specific botanical constructions in the Naturalist's Plate style. Growth habit, leaf architecture, flowers and harvest structures are recorded with each illustration. Artwork is generated reproducibly by tools/plant-art.py.</p></header>
+<main>
+""" + "\\n".join(cards) + """
+</main></body></html>
+"""
+    (OUT / "index.html").write_text(page, encoding="utf-8")
+
 
 def main():
     ap = argparse.ArgumentParser()
