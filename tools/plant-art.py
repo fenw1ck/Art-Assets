@@ -899,6 +899,195 @@ def draw_aquatic_architecture(plant, size=768, seed=7):
     return im
 
 
+def draw_tree_architecture(plant, size=768, seed=7):
+    """Species-keyed tree plates: branching, foliage insertion and reproductive cues."""
+    pid = plant["id"]
+    im, d, rng = _plate_canvas(size, seed + sum(map(ord, pid)))
+    dark = (66, 88, 61)
+    bark = (112, 91, 73)
+    leaf = (91, 132, 82)
+    pale = (151, 174, 112)
+    ground = size * .82
+    cx = size * .50
+    d.line([(size*.12, ground), (size*.88, ground)],
+           fill=(166, 151, 124), width=max(1, size//420))
+
+    # Architecture parameters are explicit per species, not inferred from taxonomy.
+    specs = {
+        "betula_papyrifera": ("multi", .31, .34, .72, "birch"),
+        "acer_saccharum": ("rounded", .42, .28, .55, "maple"),
+        "salix_discolor": ("arching", .24, .25, .78, "willow"),
+        "quercus_alba": ("broad", .50, .25, .48, "oak"),
+        "pinus_strobus": ("pine", .34, .20, .55, "pine"),
+        "picea_glauca": ("spire", .27, .16, .66, "spruce"),
+        "populus_tremuloides": ("columnar", .30, .22, .66, "aspen"),
+        "alnus_incana": ("multi", .25, .33, .72, "alder"),
+        "tsuga_canadensis": ("drooping", .34, .22, .75, "hemlock"),
+        "larix_laricina": ("open_conifer", .35, .24, .62, "larch"),
+    }
+    if pid not in specs:
+        raise KeyError(f"No researched tree architecture for {pid}")
+    form, crown_w, crown_top, crown_bottom, foliage = specs[pid]
+    trunk_top = size * (crown_top + .10)
+    trunk_base = ground
+    trunk_x = cx
+    if form == "multi":
+        trunks = [cx-size*.07, cx+size*.035, cx+size*.10]
+    else:
+        trunks = [cx]
+    for ti, tx in enumerate(trunks):
+        top_x = tx + (ti-1)*size*.025
+        d.line([(tx, trunk_base), (top_x, trunk_top)],
+               fill=bark, width=max(3, int(size*(.018 if len(trunks)==1 else .012))))
+        # Bark traits used as restrained diagnostic marks.
+        if pid == "betula_papyrifera":
+            for yy in [ground-size*.10, ground-size*.18, ground-size*.27]:
+                d.arc((tx-size*.012, yy, tx+size*.012, yy+size*.045),
+                      185, 350, fill=(218, 211, 188), width=max(2,size//300))
+        elif pid == "populus_tremuloides":
+            for yy in [ground-size*.12, ground-size*.24, ground-size*.34]:
+                d.line([(tx-size*.008,yy),(tx+size*.008,yy-size*.006)],
+                       fill=(211,207,185),width=max(1,size//420))
+
+    # Primary scaffold branches. Branch placement varies by growth form.
+    scaffold = []
+    for side in (-1, 1):
+        for j in range(4):
+            t = .28 + j*.16
+            sy = ground - size*t
+            if form == "spire":
+                reach = size*(.10 + t*.24)
+                ey = sy - size*(.08 + t*.04)
+            elif form == "pine":
+                reach = size*(.11 + t*.18)
+                ey = sy - size*(.035 + t*.02)
+            elif form in ("drooping", "arching"):
+                reach = size*(.13 + t*.16)
+                ey = sy + size*(.025 + t*.055)
+            elif form == "columnar":
+                reach = size*(.10 + t*.12)
+                ey = sy - size*.035
+            else:
+                reach = size*(.10 + t*.22)
+                ey = sy - size*(.055 + t*.035)
+            ex = cx + side*reach
+            if form == "multi":
+                ex += side*size*.025
+            mid = ((cx+ex)*.5, (sy+ey)*.5 - size*(.025 if side == 1 else .018))
+            width = max(2, int(size*(.010 - j*.0012)))
+            curve(d, [(cx, sy), mid, (ex, ey)], bark, width)
+            scaffold.append(((ex,ey), side, j, sy))
+
+    # Secondary twigs and leaves/needles follow the documented insertion pattern.
+    for (ex,ey), side,j,sy in scaffold:
+        for k in range(3):
+            t = .28 + k*.29
+            px = cx + (ex-cx)*t
+            py = sy + (ey-sy)*t
+            twig_end = (px + side*size*(.045 if foliage not in ("pine","spruce","hemlock","larch") else .035),
+                        py - size*(.025 if foliage not in ("willow","hemlock") else -.012))
+            curve(d, [(px,py), ((px+twig_end[0])*.5,py-size*.012),twig_end],
+                  bark, max(1,size//420))
+            if foliage in ("pine","spruce","hemlock","larch"):
+                count = 5 if foliage == "pine" else (7 if foliage == "larch" else 6)
+                for n in range(count):
+                    u = n/(count-1)
+                    nx = px + (twig_end[0]-px)*u
+                    ny = py + (twig_end[1]-py)*u
+                    if foliage == "pine":
+                        # White pine: five slender needles per fascicle.
+                        for q in range(5):
+                            a = (q-2)*.17 + side*.35
+                            d.line([(nx,ny),(nx+size*.055*math.cos(a),
+                                             ny-size*.055*math.sin(a))],
+                                   fill=leaf,width=max(1,size//420))
+                    elif foliage == "spruce":
+                        for q in (-1,1):
+                            d.line([(nx,ny),(nx+q*size*.018,ny-size*.025)],
+                                   fill=(69,112,77),width=max(1,size//420))
+                    elif foliage == "hemlock":
+                        for q in (-1,1):
+                            d.line([(nx,ny),(nx+q*size*.025,ny+size*.008)],
+                                   fill=(93,139,99),width=max(1,size//420))
+                    else:
+                        # Tamarack needles in small radiating clusters on short shoots.
+                        for q in range(8):
+                            a = q*math.tau/8
+                            d.line([(nx,ny),(nx+size*.022*math.cos(a),
+                                             ny+size*.022*math.sin(a))],
+                                   fill=(119,151,91),width=max(1,size//420))
+            else:
+                for q in range(2 if pid == "acer_saccharum" else 3):
+                    lx = twig_end[0] + side*(q-1)*size*.027
+                    ly = twig_end[1] + (q-1)*size*.018
+                    rw = size*(.018 if foliage in ("willow","aspen") else .025)
+                    rh = size*(.038 if foliage == "willow" else .030)
+                    if foliage == "maple":
+                        pts=[(lx,ly-rh),(lx-rw*.35,ly-rh*.25),(lx-rw,ly-rh*.1),
+                             (lx-rw*.42,ly+rh*.15),(lx-rw*.55,ly+rh),
+                             (lx,ly+rh*.48),(lx+rw*.55,ly+rh),
+                             (lx+rw*.42,ly+rh*.15),(lx+rw,ly-rh*.1),
+                             (lx+rw*.35,ly-rh*.25)]
+                        d.polygon(pts,fill=leaf,outline=dark)
+                        d.line([(lx,ly+rh*.35),(lx,ly-rh*.7)],fill=pale,width=1)
+                    elif foliage == "oak":
+                        pts=[(lx,ly-rh),(lx-rw*.55,ly-rh*.55),(lx-rw,ly-rh*.35),
+                             (lx-rw*.55,ly),(lx-rw,ly+rh*.45),(lx-rw*.25,ly+rh*.35),
+                             (lx,ly+rh),(lx+rw*.25,ly+rh*.35),(lx+rw,ly+rh*.45),
+                             (lx+rw*.55,ly),(lx+rw,ly-rh*.35),(lx+rw*.55,ly-rh*.55)]
+                        d.polygon(pts,fill=leaf,outline=dark)
+                    elif foliage == "willow":
+                        d.ellipse((lx-rw*.42,ly-rh,lx+rw*.42,ly+rh),
+                                  fill=leaf,outline=dark)
+                    elif foliage == "aspen":
+                        d.ellipse((lx-rw,ly-rh*.75,lx+rw,ly+rh*.75),
+                                  fill=leaf,outline=dark)
+                    else:
+                        d.polygon([(lx,ly-rh),(lx-rw,ly-rh*.2),
+                                   (lx-rw*.72,ly+rh*.65),(lx,ly+rh*.42),
+                                   (lx+rw,ly+rh*.65),(lx+rw*.72,ly-rh*.2)],
+                                  fill=leaf,outline=dark)
+                    d.line([(lx,ly),(lx,ly+rh*.55)],fill=pale,width=1)
+
+    # Diagnostic reproductive structures, placed on the appropriate twig/crown.
+    if pid in ("betula_papyrifera","salix_discolor","alnus_incana"):
+        for n in range(5):
+            x = cx + (n-2)*size*.075
+            y = size*(.27 + (n%2)*.045)
+            if pid == "salix_discolor":
+                d.ellipse((x-size*.009,y-size*.035,x+size*.009,y+size*.035),
+                          fill=(190,177,158),outline=(132,119,102))
+            elif pid == "alnus_incana":
+                d.ellipse((x-size*.007,y-size*.035,x+size*.007,y+size*.035),
+                          fill=(119,91,63),outline=bark)
+                d.ellipse((x-size*.012,y+size*.025,x+size*.012,y+size*.055),
+                          fill=(117,84,53),outline=bark)
+            else:
+                d.ellipse((x-size*.006,y-size*.032,x+size*.006,y+size*.032),
+                          fill=(143,104,69),outline=bark)
+    elif pid == "quercus_alba":
+        for n in range(4):
+            x=cx+(n-1.5)*size*.085;y=size*(.38+(n%2)*.05)
+            d.ellipse((x-size*.012,y-size*.025,x+size*.012,y+size*.025),
+                      fill=(126,86,48),outline=(82,61,42))
+            d.arc((x-size*.016,y-size*.033,x+size*.016,y-size*.008),
+                  180,360,fill=(91,75,48),width=max(2,size//350))
+    elif pid in ("pinus_strobus","picea_glauca","tsuga_canadensis","larix_laricina"):
+        for n in range(3):
+            x=cx+(n-1)*size*.11;y=size*(.38+(n%2)*.04)
+            if pid == "pinus_strobus":
+                # Long, pendulous pine cone.
+                d.ellipse((x-size*.012,y,x+size*.012,y+size*.065),
+                          fill=(132,99,64),outline=(84,66,46))
+            elif pid == "larix_laricina":
+                d.ellipse((x-size*.014,y-size*.018,x+size*.014,y+size*.018),
+                          fill=(145,105,64),outline=(84,66,46))
+            else:
+                d.ellipse((x-size*.012,y,x+size*.012,y+size*.035),
+                          fill=(139,105,68),outline=(84,66,46))
+    return im
+
+
 def draw_plant(plant, size=768, seed=7):
     pid = plant["id"]
     group = (plant.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
@@ -911,6 +1100,8 @@ def draw_plant(plant, size=768, seed=7):
         return draw_bryophyte_architecture(plant, size, seed)
     if group == "aquatic":
         return draw_aquatic_architecture(plant, size, seed)
+    if group == "tree":
+        return draw_tree_architecture(plant, size, seed)
     if pid in FLOWER_IDS:
         return draw_flower_plant(plant, size, seed)
     profile = PROFILES.get(pid)
@@ -1139,7 +1330,7 @@ def main():
         architecture_checks = 0
         for card in catalogue.values():
             group = card.get("coverage_group")
-            if group not in ("fern", "graminoid", "bryophyte", "aquatic"):
+            if group not in ("fern", "graminoid", "bryophyte", "aquatic", "tree"):
                 continue
             probe = {
                 "id": card["id"],
@@ -1150,6 +1341,7 @@ def main():
                 "graminoid": draw_graminoid_architecture,
                 "bryophyte": draw_bryophyte_architecture,
                 "aquatic": draw_aquatic_architecture,
+                "tree": draw_tree_architecture,
             }
             preview = constructors[group](probe, size=192, seed=7)
             if preview.size != (192, 192):
