@@ -169,7 +169,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "tomato_indeterminate",
@@ -341,7 +411,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "tomato_determinate",
@@ -513,7 +653,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "pepper_bell",
@@ -686,7 +896,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "eggplant",
@@ -847,7 +1127,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "corn_sweet",
@@ -1019,7 +1369,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Poaceae"
+    "taxonomic_parent": "family:Poaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "bean_bush",
@@ -1190,7 +1610,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Fabaceae"
+    "taxonomic_parent": "family:Fabaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "bean_pole",
@@ -1356,7 +1846,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Fabaceae"
+    "taxonomic_parent": "family:Fabaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "pea",
@@ -1523,7 +2083,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Fabaceae"
+    "taxonomic_parent": "family:Fabaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "potato",
@@ -1713,7 +2343,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "squash_summer",
@@ -1884,7 +2584,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Cucurbitaceae"
+    "taxonomic_parent": "family:Cucurbitaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "squash_winter",
@@ -2056,7 +2826,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Cucurbitaceae"
+    "taxonomic_parent": "family:Cucurbitaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "cucumber",
@@ -2223,7 +3063,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Cucurbitaceae"
+    "taxonomic_parent": "family:Cucurbitaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "lettuce",
@@ -2395,7 +3305,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "spinach",
@@ -2567,7 +3547,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaranthaceae"
+    "taxonomic_parent": "family:Amaranthaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "kale",
@@ -2739,7 +3789,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Brassicaceae"
+    "taxonomic_parent": "family:Brassicaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "cabbage",
@@ -2911,7 +4031,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Brassicaceae"
+    "taxonomic_parent": "family:Brassicaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "broccoli",
@@ -3083,7 +4273,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Brassicaceae"
+    "taxonomic_parent": "family:Brassicaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "chard",
@@ -3255,7 +4515,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaranthaceae"
+    "taxonomic_parent": "family:Amaranthaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "carrot",
@@ -3424,7 +4754,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Apiaceae"
+    "taxonomic_parent": "family:Apiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "beet",
@@ -3596,7 +4996,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaranthaceae"
+    "taxonomic_parent": "family:Amaranthaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "radish",
@@ -3768,7 +5238,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Brassicaceae"
+    "taxonomic_parent": "family:Brassicaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "onion",
@@ -3917,7 +5457,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaryllidaceae"
+    "taxonomic_parent": "family:Amaryllidaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "garlic",
@@ -4066,7 +5676,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaryllidaceae"
+    "taxonomic_parent": "family:Amaryllidaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "asparagus",
@@ -4238,7 +5918,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asparagaceae"
+    "taxonomic_parent": "family:Asparagaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "rhubarb",
@@ -4409,7 +6159,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Polygonaceae"
+    "taxonomic_parent": "family:Polygonaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "basil",
@@ -4594,7 +6414,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Lamiaceae"
+    "taxonomic_parent": "family:Lamiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "cilantro",
@@ -4762,7 +6652,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Apiaceae"
+    "taxonomic_parent": "family:Apiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "parsley",
@@ -4930,7 +6890,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Apiaceae"
+    "taxonomic_parent": "family:Apiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "dill",
@@ -5098,7 +7128,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Apiaceae"
+    "taxonomic_parent": "family:Apiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "chives",
@@ -5262,7 +7362,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Amaryllidaceae"
+    "taxonomic_parent": "family:Amaryllidaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "mint",
@@ -5456,7 +7626,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Lamiaceae"
+    "taxonomic_parent": "family:Lamiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "thyme",
@@ -5647,7 +7887,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Lamiaceae"
+    "taxonomic_parent": "family:Lamiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "strawberry",
@@ -5819,7 +8129,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rosaceae"
+    "taxonomic_parent": "family:Rosaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "raspberry",
@@ -5990,7 +8370,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rosaceae"
+    "taxonomic_parent": "family:Rosaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "blueberry",
@@ -6162,7 +8612,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Ericaceae"
+    "taxonomic_parent": "family:Ericaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "marigold_french",
@@ -6334,7 +8854,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "nasturtium",
@@ -6495,7 +9085,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Tropaeolaceae"
+    "taxonomic_parent": "family:Tropaeolaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "calendula",
@@ -6656,7 +9316,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "pansy",
@@ -6814,7 +9544,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Violaceae"
+    "taxonomic_parent": "family:Violaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "sweet_pea",
@@ -6969,7 +9769,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Fabaceae"
+    "taxonomic_parent": "family:Fabaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "cosmos",
@@ -7124,7 +9994,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "petunia",
@@ -7280,7 +10220,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Solanaceae"
+    "taxonomic_parent": "family:Solanaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "fuchsia",
@@ -7433,7 +10443,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Onagraceae"
+    "taxonomic_parent": "family:Onagraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "pothos",
@@ -7605,7 +10685,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Araceae"
+    "taxonomic_parent": "family:Araceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "snake_plant",
@@ -7777,7 +10927,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asparagaceae"
+    "taxonomic_parent": "family:Asparagaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "monstera",
@@ -7950,7 +11170,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Araceae"
+    "taxonomic_parent": "family:Araceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "peace_lily",
@@ -8122,7 +11412,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Araceae"
+    "taxonomic_parent": "family:Araceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "spider_plant",
@@ -8295,7 +11655,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asparagaceae"
+    "taxonomic_parent": "family:Asparagaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "apple",
@@ -8466,7 +11896,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rosaceae"
+    "taxonomic_parent": "family:Rosaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "pear",
@@ -8637,7 +12137,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rosaceae"
+    "taxonomic_parent": "family:Rosaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "peach",
@@ -8809,7 +12379,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rosaceae"
+    "taxonomic_parent": "family:Rosaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "fig",
@@ -8981,7 +12621,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Moraceae"
+    "taxonomic_parent": "family:Moraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "lemon_meyer",
@@ -9154,7 +12864,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Rutaceae"
+    "taxonomic_parent": "family:Rutaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "sunflower",
@@ -9326,7 +13106,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "zinnia",
@@ -9480,7 +13330,77 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Asteraceae"
+    "taxonomic_parent": "family:Asteraceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   },
   {
     "id": "lavender",
@@ -9653,6 +13573,76 @@
       "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
       "verification_status": "provisional; taxon-level accepted-name audit pending"
     },
-    "taxonomic_parent": "family:Lamiaceae"
+    "taxonomic_parent": "family:Lamiaceae",
+    "morphology": {
+      "leaf_arrangement": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_type": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_shape": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_margin": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_venation": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "leaf_attachment": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "stem_growth": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "branching_pattern": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      },
+      "growth_habit": {
+        "status": "unknown",
+        "values": [],
+        "variants": [],
+        "provenance": []
+      }
+    },
+    "morphology_schema": {
+      "version": 1,
+      "trait_record": {
+        "status": [
+          "documented",
+          "variable",
+          "unknown",
+          "not_applicable"
+        ],
+        "values": "One or more researched values; empty unless documented",
+        "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+        "provenance": "Trait-specific references supporting the value or variant"
+      }
+    }
   }
 ]
