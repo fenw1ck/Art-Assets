@@ -522,21 +522,46 @@ def draw_plant(plant, size=768, seed=7):
 
 def card_record(p, previous=None):
     family, habit, anatomy, leaf_shape, bloom, fruit = PROFILES[p["id"]]
+    user_data = {
+        "common_name": p["common_name"],
+        "botanical_family": family,
+        "growth_habit": habit,
+        "diagnostic_botany": anatomy,
+        "leaf_construction": leaf_shape,
+        "flower_construction": bloom,
+        "fruit_or_harvest": fruit,
+        "foliage_colour": p.get("foliage_color")
+    }
+    provenance = {
+        key: ("plants.js" if key in ("common_name", "foliage_colour")
+              else "tools/plant-art.py PROFILES")
+        for key in user_data
+    }
     record = {
         "id": p["id"], "name": p["common_name"], "family": family,
         "growth_habit": habit, "diagnostic_botany": anatomy,
         "leaf_construction": leaf_shape, "flower_construction": bloom,
         "fruit_or_harvest": fruit, "source_record": "plants.js + tools/plant-art.py PROFILES",
         "renderer": "tools/plant-art.py", "style": "Naturalist's Plate",
-        "style_terms": ["botanical naturalist plate", "species-specific growth architecture",
-                        "accurate leaf and reproductive morphology", "warm ivory paper",
-                        "terracotta nursery pot", "seeded natural variation"]
+        "style_terms": ["botanical naturalist plate", "accurate species architecture",
+                        "crisp closed leaf shapes", "fine visible midribs and lateral veins",
+                        "soft upper-left light", "thin same-hue edge", "warm ivory paper",
+                        "terracotta nursery pot", "seeded natural variation"],
+        "user_data": user_data,
+        "user_data_provenance": provenance,
+        "populated_user_data_fields": list(user_data),
+        "populated_user_data_count": len(user_data),
+        "research_status": "profile-only record; botanical research still needed",
+        "artwork_status": "no artwork generated"
     }
     # Preserve researched user-data fields and provenance when the renderer is run later.
     if previous:
-        for key in ("user_data", "user_data_provenance", "populated_user_data_fields",
-                    "populated_user_data_count", "research_status", "research_record",
-                    "research_sources", "research_gaps", "artwork_status", "image"):
+        record["user_data"].update(previous.get("user_data", {}))
+        record["user_data_provenance"].update(previous.get("user_data_provenance", {}))
+        record["populated_user_data_fields"] = list(record["user_data"])
+        record["populated_user_data_count"] = len(record["user_data"])
+        for key in ("research_status", "research_record", "research_sources",
+                    "research_gaps", "artwork_status", "image"):
             if key in previous:
                 record[key] = previous[key]
     else:
