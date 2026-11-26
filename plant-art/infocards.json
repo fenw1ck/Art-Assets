@@ -4948,7 +4948,7 @@
     "stem_or_root": "commonly solid triangular culm",
     "diagnostic_reproductive": "spikelets with separate staminate/pistillate flowers; perigynia; trigonous achene",
     "habitat": "wet meadow, marsh, shallow water margins",
-    "construction_notes": "Show solid culm cross-section, leaf sheaths and perigynia in inset; spikelets are not grass-like open panicles.",
+    "construction_notes": "Preserve sedge spike order: pistillate lateral/proximal spikes below terminal staminate spikes; leaflike lowest bract exceeds inflorescence. Include close-up of perigynium around achene.",
     "user_data": {
       "scientific_name": "Carex aquatilis",
       "family": "Cyperaceae",
@@ -4960,7 +4960,9 @@
       "stem_or_root": "commonly solid triangular culm",
       "diagnostic_reproductive": "spikelets with separate staminate/pistillate flowers; perigynia; trigonous achene",
       "habitat": "wet meadow, marsh, shallow water margins",
-      "construction_notes": "Show solid culm cross-section, leaf sheaths and perigynia in inset; spikelets are not grass-like open panicles."
+      "construction_notes": "Preserve sedge spike order: pistillate lateral/proximal spikes below terminal staminate spikes; leaflike lowest bract exceeds inflorescence. Include close-up of perigynium around achene.",
+      "species_dimensions": "Culms 20–150 cm; leaf blades 2.5–8 mm wide; pistillate spikes 1–10 cm × 3–7 mm; perigynia 2–3.6 × 1.3–2.3 mm; beak ≤0.2 mm.",
+      "species_morphology": "Rhizomatous, usually not densely tufted sedge; angled culms and long-tapering flat leaves; basal sheaths reddish-brown; erect inflorescence with 2–6 proximal pistillate spikes and 1–4 terminal staminate spikes; long leaflike lowest bract; flattened ascending perigynia enclosing lenticular achenes."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -4973,23 +4975,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://www.efloras.org/florataxon.aspx?flora_id=1&key_no=6&taxon_id=105644",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "variety-level identity; North American varieties intergrade",
+      "local perigynium, culm and seasonal variation"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 20–150 cm; leaf blades 2.5–8 mm wide; pistillate spikes 1–10 cm × 3–7 mm; perigynia 2–3.6 × 1.3–2.3 mm; beak ≤0.2 mm.",
+    "species_morphology": "Rhizomatous, usually not densely tufted sedge; angled culms and long-tapering flat leaves; basal sheaths reddish-brown; erect inflorescence with 2–6 proximal pistillate spikes and 1–4 terminal staminate spikes; long leaflike lowest bract; flattened ascending perigynia enclosing lenticular achenes."
   },
   {
     "id": "cyperus_esculentus",
@@ -5007,7 +5012,7 @@
     "stem_or_root": "solid triangular culm; slender rhizomes with terminal tubers",
     "diagnostic_reproductive": "compound umbel-like cluster of spikelets; two-ranked scales",
     "habitat": "wet ground and disturbed moist soils",
-    "construction_notes": "Include underground slender rhizomes and small tubers; inflorescence is a cluster of spikelets with leaf-like involucral bracts.",
+    "construction_notes": "Show triangular culm, basal leaf fan, open umbrella-like inflorescence and underground stolons ending in distinct tubers. Tubers are attached to stolons, not clustered at crown or drawn as roots.",
     "user_data": {
       "scientific_name": "Cyperus esculentus",
       "family": "Cyperaceae",
@@ -5019,7 +5024,9 @@
       "stem_or_root": "solid triangular culm; slender rhizomes with terminal tubers",
       "diagnostic_reproductive": "compound umbel-like cluster of spikelets; two-ranked scales",
       "habitat": "wet ground and disturbed moist soils",
-      "construction_notes": "Include underground slender rhizomes and small tubers; inflorescence is a cluster of spikelets with leaf-like involucral bracts."
+      "construction_notes": "Show triangular culm, basal leaf fan, open umbrella-like inflorescence and underground stolons ending in distinct tubers. Tubers are attached to stolons, not clustered at crown or drawn as roots.",
+      "species_dimensions": "Culms 15–60(–100) cm; leaves (6–)20–40(–80) cm × 2–4(–6.5) mm; stolons 2–8(–15) cm; tubers 3–11 mm diameter; spikelets 5–20(–55) mm long.",
+      "species_morphology": "Perennial stoloniferous sedge with trigonous culms, 3–7 basal flat to V-shaped leaves; soft flexible stolons end in tubers; usually simple anthela with 3–10 primary rays and 3–7 leaflike bracts; narrow yellowish- to dark-brown spikelets in loose clusters; trigonous grey nutlets."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -5032,23 +5039,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&key_no=6&taxon_id=105644",
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "tuber number/size and shoot architecture under local soil conditions",
+      "regional ecotype and flowering-stage reference imagery"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 15–60(–100) cm; leaves (6–)20–40(–80) cm × 2–4(–6.5) mm; stolons 2–8(–15) cm; tubers 3–11 mm diameter; spikelets 5–20(–55) mm long.",
+    "species_morphology": "Perennial stoloniferous sedge with trigonous culms, 3–7 basal flat to V-shaped leaves; soft flexible stolons end in tubers; usually simple anthela with 3–10 primary rays and 3–7 leaflike bracts; narrow yellowish- to dark-brown spikelets in loose clusters; trigonous grey nutlets."
   },
   {
     "id": "juncus_effusus",
@@ -5066,7 +5076,7 @@
     "stem_or_root": "fibrous roots; short rhizomes",
     "diagnostic_reproductive": "open branched inflorescence appears lateral because of a continuing involucral bract; capsule",
     "habitat": "wet soils, marshes and pond margins",
-    "construction_notes": "Build a dense clump of round pithy culms; show apparently lateral flower cluster and long bract continuing the culm line.",
+    "construction_notes": "Use smooth round pithy culms with bladeless basal sheaths. Position the inflorescence apparently to the side below the erect bract, so it looks lateral rather than terminal.",
     "user_data": {
       "scientific_name": "Juncus effusus",
       "family": "Juncaceae",
@@ -5078,7 +5088,9 @@
       "stem_or_root": "fibrous roots; short rhizomes",
       "diagnostic_reproductive": "open branched inflorescence appears lateral because of a continuing involucral bract; capsule",
       "habitat": "wet soils, marshes and pond margins",
-      "construction_notes": "Build a dense clump of round pithy culms; show apparently lateral flower cluster and long bract continuing the culm line."
+      "construction_notes": "Use smooth round pithy culms with bladeless basal sheaths. Position the inflorescence apparently to the side below the erect bract, so it looks lateral rather than terminal.",
+      "species_dimensions": "Culms 25–90 cm or taller, 1–3(–4) mm diameter; tepals 1.9–3.5 mm; capsules 1.5–3.2 mm; seeds 0.4–0.5 mm.",
+      "species_morphology": "Densely tufted perennial with short-branched rhizomes; smooth cylindrical green culms with continuous pith; true leaf blades absent, basal reddish/chestnut sheaths only; many-flowered compound dichasium appears lateral beneath a long erect culm-like involucral bract; three-loculed capsule."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -5091,23 +5103,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&key_no=6&taxon_id=105644"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional subspecies/aggregate identity",
+      "local culm and inflorescence variation with habitat"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 25–90 cm or taller, 1–3(–4) mm diameter; tepals 1.9–3.5 mm; capsules 1.5–3.2 mm; seeds 0.4–0.5 mm.",
+    "species_morphology": "Densely tufted perennial with short-branched rhizomes; smooth cylindrical green culms with continuous pith; true leaf blades absent, basal reddish/chestnut sheaths only; many-flowered compound dichasium appears lateral beneath a long erect culm-like involucral bract; three-loculed capsule."
   },
   {
     "id": "eriophorum_vaginatum",
@@ -5125,7 +5140,7 @@
     "stem_or_root": "solid culms arise from dense tussocks",
     "diagnostic_reproductive": "single terminal spikelet; long white bristles form cottony fruiting tuft",
     "habitat": "peatlands, bogs and tundra",
-    "construction_notes": "Show the dense tussock and single cottony head; the white tuft is elongated perianth bristles, not petals or a flower head.",
+    "construction_notes": "Build dense tussock with very narrow basal leaves and one terminal cottony head per flowering culm. Cotton is perianth bristles around a single spikelet, not a multi-spikelet plume.",
     "user_data": {
       "scientific_name": "Eriophorum vaginatum",
       "family": "Cyperaceae",
@@ -5137,7 +5152,9 @@
       "stem_or_root": "solid culms arise from dense tussocks",
       "diagnostic_reproductive": "single terminal spikelet; long white bristles form cottony fruiting tuft",
       "habitat": "peatlands, bogs and tundra",
-      "construction_notes": "Show the dense tussock and single cottony head; the white tuft is elongated perianth bristles, not petals or a flower head."
+      "construction_notes": "Build dense tussock with very narrow basal leaves and one terminal cottony head per flowering culm. Cotton is perianth bristles around a single spikelet, not a multi-spikelet plume.",
+      "species_dimensions": "Culms 10–60 cm; filiform trigonous leaf blades ≤1 mm wide; solitary spikelet 10–20 mm in flower and to 50 mm in fruit; perianth bristles 10–18 mm; achenes 1.9–3.5 mm.",
+      "species_morphology": "Densely tussock-forming perennial; brown basal sheaths, narrow filiform basal leaves and 1–3 bladeless sheaths per culm; each flowering culm bears one solitary erect terminal spikelet; more than ten white (rarely reddish/brown) perianth bristles elongate into cottony tuft around fruit."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -5150,10 +5167,12 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://cnhp.colostate.edu/wp-content/uploads/download/documents/misc/wetlandplantid_2018_web.pdf",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
@@ -5161,13 +5180,14 @@
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "subspecies cannot be assigned confidently without specimen characters",
+      "local tussock height and fruiting season"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 10–60 cm; filiform trigonous leaf blades ≤1 mm wide; solitary spikelet 10–20 mm in flower and to 50 mm in fruit; perianth bristles 10–18 mm; achenes 1.9–3.5 mm.",
+    "species_morphology": "Densely tussock-forming perennial; brown basal sheaths, narrow filiform basal leaves and 1–3 bladeless sheaths per culm; each flowering culm bears one solitary erect terminal spikelet; more than ten white (rarely reddish/brown) perianth bristles elongate into cottony tuft around fruit."
   },
   {
     "id": "schoenoplectus_tabernaemontani",
@@ -5185,7 +5205,7 @@
     "stem_or_root": "creeping rhizome; fibrous roots",
     "diagnostic_reproductive": "clustered spikelets near culm tip; long bract may make cluster appear lateral",
     "habitat": "shallow water and saturated margins",
-    "construction_notes": "Use nearly leafless stout culms and a terminal spikelet cluster subtended by an apparent culm-continuing bract.",
+    "construction_notes": "Use tall round soft culms, reduced basal leaves and an apparently lateral open umbel beneath an erect culm-like bract. Avoid triangular culms or dense terminal plume.",
     "user_data": {
       "scientific_name": "Schoenoplectus tabernaemontani",
       "family": "Cyperaceae",
@@ -5197,7 +5217,9 @@
       "stem_or_root": "creeping rhizome; fibrous roots",
       "diagnostic_reproductive": "clustered spikelets near culm tip; long bract may make cluster appear lateral",
       "habitat": "shallow water and saturated margins",
-      "construction_notes": "Use nearly leafless stout culms and a terminal spikelet cluster subtended by an apparent culm-continuing bract."
+      "construction_notes": "Use tall round soft culms, reduced basal leaves and an apparently lateral open umbel beneath an erect culm-like bract. Avoid triangular culms or dense terminal plume.",
+      "species_dimensions": "Culms 0.5–3 m × 2–10 mm; rhizomes 3–10 mm diameter; inflorescence branches to 15(–25) cm; 15–200 spikelets, 3–17 × 2.5–4 mm; achenes 1.5–2.8 mm.",
+      "species_morphology": "Robust rhizomatous emergent sedge; smooth soft cylindrical pithy culms; 3–4 basal sheaths and only 1–2 short blades; open lateral anthela branched 2–4 times, subtended by erect culm-like bract; brown spikelets solitary or clustered; six retrorsely barbed brown perianth bristles; plano-convex achenes."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -5210,23 +5232,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&key_no=6&taxon_id=105644",
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local culm height, bract length and inflorescence density",
+      "regional population photographs in flower and fruit"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 0.5–3 m × 2–10 mm; rhizomes 3–10 mm diameter; inflorescence branches to 15(–25) cm; 15–200 spikelets, 3–17 × 2.5–4 mm; achenes 1.5–2.8 mm.",
+    "species_morphology": "Robust rhizomatous emergent sedge; smooth soft cylindrical pithy culms; 3–4 basal sheaths and only 1–2 short blades; open lateral anthela branched 2–4 times, subtended by erect culm-like bract; brown spikelets solitary or clustered; six retrorsely barbed brown perianth bristles; plano-convex achenes."
   },
   {
     "id": "luzula_multiflora",
@@ -5244,7 +5269,7 @@
     "stem_or_root": "short rhizome; tufted stems",
     "diagnostic_reproductive": "branched cymose inflorescence with small flowers; capsule",
     "habitat": "woodland, heath and grassland",
-    "construction_notes": "Differentiate from Juncus with flat grass-like leaves and often hairy margins; inflorescence is cymose rather than a simple rush head.",
+    "construction_notes": "Show visibly hairy leaf margins and multiple discrete flower clusters on unequal peduncles; do not render a single dense terminal spike. Capsules are globose and enclosed by persistent tepals.",
     "user_data": {
       "scientific_name": "Luzula multiflora",
       "family": "Juncaceae",
@@ -5256,7 +5281,9 @@
       "stem_or_root": "short rhizome; tufted stems",
       "diagnostic_reproductive": "branched cymose inflorescence with small flowers; capsule",
       "habitat": "woodland, heath and grassland",
-      "construction_notes": "Differentiate from Juncus with flat grass-like leaves and often hairy margins; inflorescence is cymose rather than a simple rush head."
+      "construction_notes": "Show visibly hairy leaf margins and multiple discrete flower clusters on unequal peduncles; do not render a single dense terminal spike. Capsules are globose and enclosed by persistent tepals.",
+      "species_dimensions": "Culms 10–40 cm; basal leaves 3.5–12 cm × 2–6 mm; 3–16 flower clusters with 8–16 flowers each; tepals 2–4 mm; seeds 1.1–1.7 mm.",
+      "species_morphology": "Tufted rush with basal and cauline flat leaves, margins fringed by long pale hairs; inflorescence of 3–16 mostly cylindrical glomerules, one or two nearly sessile and others pedunculate; six pointed pale-brown to dark tepals; globose capsule shorter than or about equaling tepals."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
@@ -5269,23 +5296,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
       "habitat": "botanical references listed in research/subjects/plants/sedges-and-rushes.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/sedges-and-rushes.md"
+      "construction_notes": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/sedge-rush-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/sedge-rush-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/sedges-and-rushes.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/sedge-rush-species-dossiers.md",
     "research_sources": [
       "https://bsapubs.onlinelibrary.wiley.com/doi/abs/10.1002/ajb2.70166",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=10246",
       "https://www.efloras.org/florataxon.aspx?flora_id=1&key_no=6&taxon_id=105644"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional subspecies/variety treatment",
+      "local cluster counts and flowering-stage reference imagery"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Culms 10–40 cm; basal leaves 3.5–12 cm × 2–6 mm; 3–16 flower clusters with 8–16 flowers each; tepals 2–4 mm; seeds 1.1–1.7 mm.",
+    "species_morphology": "Tufted rush with basal and cauline flat leaves, margins fringed by long pale hairs; inflorescence of 3–16 mostly cylindrical glomerules, one or two nearly sessile and others pedunculate; six pointed pale-brown to dark tepals; globose capsule shorter than or about equaling tepals."
   },
   {
     "id": "osmunda_regalis",
