@@ -59,6 +59,17 @@ used_by: [plant-art/infocards.json, research/subjects/plants/*.md, tools/plant-a
 - Missing exact dimensions: use a documented range where available; otherwise omit dimensions and retain the uncertainty.
 - Missing decline/death states: model only documented senescence features and label any generic seasonal decay as an illustrative state, not a diagnostic botanical fact.
 
+## Guide-driven catalogue intake
+
+- Treat every newly consulted botanical, horticultural or plant-identification guide as a catalogue-expansion opportunity. Extract **all distinct plant entries** in that guide, not only entries already identified as gaps or members of a fixed cohort.
+- Reconcile each extracted entry against the existing taxonomy index, research records and infocards. Update an existing record when it is the same plant/profile; add a new taxon or horticultural profile when it is genuinely distinct. Preserve multiple cultivar or growth-form infocards linked to one species taxon where appropriate.
+- Repeat this reconciliation for each guide. Catalogue completeness is cumulative across guides; do not treat the current gap list as a closed or exhaustive target.
+- Every factual infocard field must be populated from appropriate botanical or horticultural evidence. User-provided preferences, selections or descriptions may identify which cultivar, growth form or developmental stage to research, but they are **not evidence** for botanical traits and must not be used to fill factual fields.
+- For every populated field, retain trait-level provenance identifying the exact source and the claim it supports. Prefer primary botanical sources, regional floras, peer-reviewed treatments, verified specimens, botanical gardens and university extension publications according to the evidence hierarchy above.
+- Do not infer a missing value from taxonomy, family resemblance, a generic guide summary or another species' profile. If adequate evidence is not found, retain `unknown` and record the research gap. Use `not_applicable` only when the field genuinely does not apply.
+- Distinguish species-level facts from cultivar-specific, growth-form-specific and developmental-stage variation. Record supported variants and their sources rather than collapsing them into a single unsupported default.
+- Guide inclusion alone does not authorize artwork generation. Catalogue and research work may proceed while the protected rendering gate remains in force.
+
 ## Project scope and rendering gate
 
 The 57 existing plant infocards are the protected first cohort. They remain research-only until their source records and user-supplied cultivar/stage choices are reviewed and the user explicitly authorizes rendering. New plant profiles may be researched and added beyond this cohort, but their artwork must not cause the protected 57 to be rendered prematurely.
