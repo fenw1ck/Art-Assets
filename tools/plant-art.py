@@ -1121,21 +1121,24 @@ def main():
         architecture_checks = 0
         for card in catalogue.values():
             group = card.get("coverage_group")
-            if group not in ("fern", "graminoid"):
+            if group not in ("fern", "graminoid", "bryophyte", "aquatic"):
                 continue
             probe = {
                 "id": card["id"],
                 "botanical_data": botanical_data({}, card),
             }
-            if group == "fern":
-                preview = draw_fern_architecture(probe, size=192, seed=7)
-            else:
-                preview = draw_graminoid_architecture(probe, size=192, seed=7)
+            constructors = {
+                "fern": draw_fern_architecture,
+                "graminoid": draw_graminoid_architecture,
+                "bryophyte": draw_bryophyte_architecture,
+                "aquatic": draw_aquatic_architecture,
+            }
+            preview = constructors[group](probe, size=192, seed=7)
             if preview.size != (192, 192):
                 raise SystemExit(f"Architecture constructor returned invalid image size: {card['id']}")
             architecture_checks += 1
         print(f"OK: {len(plants)} legacy profiles; lossless infocard preservation; "
-              f"{architecture_checks} fern/graminoid architecture previews passed in memory.")
+              f"{architecture_checks} lineage-specific architecture previews passed in memory.")
         return
     existing_cards = {}
     if INFOCARDS.is_file():
