@@ -32,3 +32,10 @@ traits:
 ## Log
 
 - 2026-11-24: moved from PLANT_ART.md. The original sources were not recorded.
+
+
+## Sources
+
+- Burke Herbarium Image Collection, *Daucus carota* (biennial habit, dissected leaves, compound umbels, rays and identified images): https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Daucus+carota
+- Kew, Plants of the World Online, *Daucus carota* (growth stages, leaf dissection, inflorescence and fruit morphology): https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1/general-information
+- Flora of North America treatment for *Daucus carota*, as reproduced by Burke Herbarium (rays 7–30+, umbel and flower characters): https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Daucus+carota
