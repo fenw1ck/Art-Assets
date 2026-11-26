@@ -49,3 +49,59 @@ Sources: Burke Herbarium / Flora of North America treatment (frond and root meas
 ## Method note
 
 The three records above have species-specific morphology and quantitative characters. Dimensions are intentionally ranges and are not interchangeable among species. The research does not yet establish population-specific seasonal distributions or a single canonical photographic reference set; those remain explicit gaps rather than guessed values.
+
+
+## *Nelumbo lutea* — American lotus
+
+- **Taxonomy:** Nelumbonaceae; Proteales; accepted name *Nelumbo lutea* (Willd.) Pers.
+- **Habit and attachment:** rooted emergent aquatic perennial; rhizomes extend through sediment. Long petioles arise from the submerged rhizome.
+- **Leaf construction:** peltate, nearly circular blades; petiole attaches near the center of the blade, not at a basal notch. Petioles can exceed 2 m and blades can exceed 60 cm in diameter. Leaves may be held above the water rather than floating flat.
+- **Reproductive construction:** large pale-yellow flowers held above the water; persistent receptacle expands into a flattened, broad-topped structure with embedded achenes, to about 10 cm across. Fruits are globose, approximately 10–16 × 8–13 mm.
+- **Renderer constraints:** emphasize central peltate petiole insertion and emergent leaf planes; distinguish the mature flat-topped receptacle from the floral center of a water lily.
+- **Remaining gap:** source-backed local flowering dates and life-stage photographs are still needed.
+
+Sources: World Flora Online, drawing on Flora of North America (petiole, blade, tepal, fruit and receptacle dimensions), https://worldfloraonline.org/taxon/wfo-0000382419 ; Flora of North America taxon record, https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=222000241 .
+
+## *Elodea canadensis* — Canadian waterweed
+
+- **Taxonomy:** Hydrocharitaceae; Alismatales; accepted name *Elodea canadensis* Michx.
+- **Habit and attachment:** submerged perennial freshwater herb; slender shoots are commonly 20–100 cm long, with fibrous or slender roots; shoots branch at nodes and may form tangled underwater masses.
+- **Leaf construction:** stem leaves are chiefly in whorls of three; the lowest leaves may be opposite. Blades are broadly lanceolate to oblong, rounded at the tip, minutely toothed, approximately 6–17 mm long and 1–5 mm wide. Whorls may be more crowded toward shoot tips.
+- **Reproductive construction:** small unisexual flowers on long slender stalks; three sepals and three white petals. Female flowers are carried toward the surface; male flowers may detach and float.
+- **Renderer constraints:** all vegetative shoots remain submerged; use repeated three-leaf whorls and node branching, with no emergent broad leaves. Show a surface-reaching flower stalk only as a separate reproductive detail.
+- **Remaining gap:** local shoot density and seasonal overwintering-bud form need regional confirmation; avoid fixing a single shoot length.
+
+Sources: USGS Nonindigenous Aquatic Species species profile (shoot, leaf and flower measurements), https://nas.er.usgs.gov/queries/FactSheet.aspx?speciesID=2843 ; E-Flora BC / Illustrated Flora of British Columbia (leaf, flower and fruit morphology), https://linnet.geog.ubc.ca/Atlas/Atlas.aspx?noTransfer=1&sciname=Elodea+canadensis ; Alaska Center for Conservation Science species profile, https://accs.uaa.alaska.edu/wp-content/uploads/Elodea_canadensis_BIO_ELCA7.pdf .
+
+## *Vallisneria americana* — wild celery / tapegrass
+
+- **Taxonomy:** Hydrocharitaceae; Alismatales; accepted name *Vallisneria americana* Michx.
+- **Habit and attachment:** submerged dioecious perennial arising in tufts from short stems and creeping rhizomes; rooted in sediment, often forming underwater meadows.
+- **Leaf construction:** long, flat, ribbon-like blades with a prominent central midrib and parallel venation; tips blunt. Regional flora records 1–5 dm long and 3–10 mm wide; other aquatic-plant guides record leaves to 3 m in suitable conditions, so length is strongly habitat-dependent.
+- **Reproductive construction:** male flowers are tiny and released to float at the surface; female flowers are solitary and reach the surface on long slender stalks (up to 3 m) that coil after pollination. Fruit is a narrow cylindrical capsule with many seeds.
+- **Renderer constraints:** basal tuft and ribbon leaves stay submerged; depict the coiled female flower stalk as a specialized reproductive structure, not as a tendril or ordinary branch.
+- **Remaining gap:** local leaf length and flowering window should be tied to the selected population; preserve the known range rather than choosing one fixed mature length.
+
+Sources: Washington State Department of Ecology Aquatic Plant Identification Manual (leaf and flower-stalk dimensions, pollination and fruit), https://fortress.wa.gov/ecy/gisresources/lakes/AquaticPlantGuide/descriptions/valame.html ; Burke Herbarium / Flora of North America (tufted leaves and dioecious flower morphology), https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Vallisneria+americana .
+
+## *Sagittaria latifolia* — broadleaf arrowhead / wapato
+
+- **Taxonomy:** Alismataceae; Alismatales; accepted name *Sagittaria latifolia* Willd.
+- **Habit and attachment:** emergent shoreline perennial; produces stolons and corms/tubers rather than a conspicuous aerial woody stem. Vegetative form varies with water depth; the mature aerial leaves are characteristically sagittate.
+- **Leaf construction:** erect to ascending triangular petioles; emergent arrowhead blades commonly 5–45 cm long in regional field descriptions. Flora of North America records blade dimensions up to approximately 30.5 × 17 cm, with basal lobes equal to or shorter than the central blade portion.
+- **Reproductive construction:** erect emergent raceme, usually with 3–9 whorls; each flower has three white petals and three green sepals, flowers up to about 4 cm across. Fruiting pedicels spread; achenes are small and beaked.
+- **Renderer constraints:** show basal rosette-like leaf emergence, angular petioles, true arrowhead blade geometry and a separate upright flowering scape with whorled flowers. Include stolons/tubers in a below-ground detail if the plate supports it.
+- **Remaining gap:** submerged and floating juvenile leaf morphs and regional tuber size require separate reference study; do not assume all leaves are arrow-shaped at every growth stage.
+
+Sources: Burke Herbarium / Flora of North America (dimensions, inflorescence and achene characters), https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Sagittaria+latifolia ; Washington State Department of Ecology Aquatic Plant Identification Manual (growth form, leaf variation, tubers and flower whorls), https://fortress.wa.gov/ecy/gisresources/lakes/AquaticPlantGuide/descriptions/sag.html ; World Flora Online, https://worldfloraonline.org/taxon/wfo-0000736839 .
+
+## *Typha latifolia* — broadleaf cattail
+
+- **Taxonomy:** Typhaceae; Poales; accepted name *Typha latifolia* L.
+- **Habit and attachment:** robust emergent perennial forming colonies from creeping rhizomes in saturated soil or shallow water; erect shoots arise from the rhizome.
+- **Leaf construction:** long, flat, linear, glaucous blades with sheathing bases; leaves can reach about 2 m long and are commonly 8–18 mm wide in regional floras. The sheath-to-blade junction is rounded to auriculate.
+- **Reproductive construction:** terminal dense cylindrical inflorescence with contiguous or nearly contiguous male and female portions. Male spike above; female spike below, green at first and becoming dark sepia-brown to nearly black. The female spike commonly reaches 13–16 cm long (sometimes longer); male spike about 8–12 cm long.
+- **Renderer constraints:** preserve the continuous paired spike silhouette: male portion above and female portion below with little or no gap. Use broad flat leaves with sheathing bases and a rhizomatous emergent clump; do not substitute narrow-leaved cattail proportions.
+- **Remaining gap:** regional flowering dates, plant height and leaf width vary; retain local range data when selecting a population.
+
+Sources: Kew Plants of the World Online (leaf and inflorescence dimensions), https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:836870-1/general-information ; Montana Field Guide (diagnostic width and male/female spike arrangement), https://prd.fieldguide.mt.gov/speciesDetail.aspx?elcode=PMTYP01040 .
