@@ -348,6 +348,7 @@ def main():
         records.append(card_record(p))
         thumbs.append((p, image.copy()))
     (OUT / "infocards.json").write_text(json.dumps(records, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+    write_page(records)
     cols = 7
     cell_w, cell_h = 180, 220
     rows = math.ceil(len(thumbs)/cols)
