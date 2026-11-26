@@ -39,14 +39,14 @@ Every plant is a botanical subject, not a generic green silhouette with a flower
 
 ## Renderer and infocard contract
 
-\`tools/plant-art.py\` reads the canonical 57-item list from \`plants.js\`. \`PROFILES\` is deliberately explicit: every plant ID must have one growth habit, family, diagnostic anatomy, leaf construction, flower construction and fruit/harvest description. \`--check\` fails if any plant is missing or if a profile no longer matches the source list.
+`tools/plant-art.py` reads the canonical 57-item list from `plants.js`. `PROFILES` is deliberately explicit: every plant ID must have one growth habit, family, diagnostic anatomy, leaf construction, flower construction and fruit/harvest description. `--check` fails if any plant is missing or if a profile no longer matches the source list.
 
 The renderer writes:
-- \`plant-art/<id>.png\`: one isolated specimen per species.
-- \`plant-art/infocards.json\`: the same botanical profile in structured form, with the renderer name and reusable style terms.
-- \`plant-art/contact-sheet.png\`: all selected species in a consistent seven-column overview.
+- `plant-art/<id>.png`: one isolated specimen per species.
+- `plant-art/infocards.json`: the same botanical profile in structured form, with the renderer name and reusable style terms.
+- `plant-art/contact-sheet.png`: all selected species in a consistent seven-column overview.
 
-The infocard's \`diagnostic_botany\` field is the species-specific construction brief. \`style_terms\` is the reusable visual brief. Future renderers should consume the same fields rather than inventing new descriptions for the same species.
+The infocard's `diagnostic_botany` field is the species-specific construction brief. `style_terms` is the reusable visual brief. Future renderers should consume the same fields rather than inventing new descriptions for the same species.
 
 ## Research discipline
 
@@ -67,4 +67,4 @@ The infocard's \`diagnostic_botany\` field is the species-specific construction 
 
 ## Log
 
-- 2026-11-25: established a Python renderer and a one-profile-per-species contract for all 57 entries in \`PLANTS.list\`. The first pass is an architectural renderer; the listed gaps remain open until each species is checked against photos and species-level sources.
+- 2026-11-25: established a Python renderer and a one-profile-per-species contract for all 57 entries in `PLANTS.list`. The first pass is an architectural renderer; the listed gaps remain open until each species is checked against photos and species-level sources.
