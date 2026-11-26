@@ -537,6 +537,20 @@ def card_record(p, previous=None):
               else "tools/plant-art.py PROFILES")
         for key in user_data
     }
+    morphology_traits = (
+        "leaf_arrangement", "leaf_type", "leaf_shape", "leaf_margin",
+        "leaf_venation", "leaf_attachment", "stem_growth",
+        "branching_pattern", "growth_habit"
+    )
+    morphology = {
+        key: {
+            "status": "unknown",
+            "values": [],
+            "variants": [],
+            "provenance": []
+        }
+        for key in morphology_traits
+    }
     record = {
         "id": p["id"], "name": p["common_name"], "family": family,
         "growth_habit": habit, "diagnostic_botany": anatomy,
@@ -549,6 +563,16 @@ def card_record(p, previous=None):
                         "terracotta nursery pot", "seeded natural variation"],
         "user_data": user_data,
         "user_data_provenance": provenance,
+        "morphology": morphology,
+        "morphology_schema": {
+            "version": 1,
+            "trait_record": {
+                "status": ["documented", "variable", "unknown", "not_applicable"],
+                "values": "One or more researched values; empty unless documented",
+                "variants": "Conditional values keyed by cultivar, developmental stage, or other stated condition",
+                "provenance": "Trait-specific references supporting the value or variant"
+            }
+        },
         "populated_user_data_fields": list(user_data),
         "populated_user_data_count": len(user_data),
         "research_status": "profile-only record; botanical research still needed",
@@ -558,6 +582,13 @@ def card_record(p, previous=None):
     if previous:
         record["user_data"].update(previous.get("user_data", {}))
         record["user_data_provenance"].update(previous.get("user_data_provenance", {}))
+        # Preserve researched morphology verbatim; never infer a trait from taxonomy.
+        old_morphology = previous.get("morphology", {})
+        for trait, trait_record in old_morphology.items():
+            if trait in record["morphology"]:
+                record["morphology"][trait] = trait_record
+            else:
+                record["morphology"][trait] = trait_record
         record["populated_user_data_fields"] = list(record["user_data"])
         record["populated_user_data_count"] = len(record["user_data"])
         for key in ("research_status", "research_record", "research_sources",
