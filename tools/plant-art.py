@@ -146,7 +146,7 @@ def botanical_data(plant, infocard=None):
     }
 
 
-def plant_list():
+def plant_list(include_catalogue=False):
     source = SOURCE.read_text(encoding="utf-8")
     match = re.search(r"const LIST=(\[.*?\]);\s*window\.PLANTS", source, re.S)
     if not match:
@@ -157,6 +157,21 @@ def plant_list():
         card = cards.get(plant["id"], {})
         plant["botanical_data"] = botanical_data(plant, card)
         plant["infocard"] = card
+    if include_catalogue:
+        known = {plant["id"] for plant in plants}
+        for card in cards.values():
+            if card["id"] in known:
+                continue
+            plant = {
+                "id": card["id"],
+                "common_name": card.get("name") or card.get("common_name") or card["id"],
+                "name": card.get("name") or card.get("common_name") or card["id"],
+                "foliage_color": card.get("foliage_color") or "#66885a",
+                "accent_color": card.get("accent_color") or "#d9c8a2",
+                "botanical_data": botanical_data({}, card),
+                "infocard": card,
+            }
+            plants.append(plant)
     return plants
 
 def font(size):
@@ -1082,6 +1097,8 @@ dt{color:#77705b}dd{margin:0}.terms{font-size:11px;color:#77705b;border-top:1px 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--catalogue", action="store_true",
+                    help="Select from all canonical infocards instead of only the legacy 57.")
     ap.add_argument("--size", type=int, default=768)
     ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--source-image", action="append", default=[], metavar="PLANT_ID=PATH",
@@ -1092,11 +1109,12 @@ def main():
     ap.add_argument("--infocards-only", action="store_true",
                     help="Refresh all botanical infocards without drawing or rendering any images.")
     args = ap.parse_args()
-    plants = plant_list()
-    missing = [p["id"] for p in plants if p["id"] not in PROFILES]
-    extra = sorted(set(PROFILES)-{p["id"] for p in plants})
-    if missing or extra:
-        raise SystemExit(f"Profile mismatch. Missing: {missing}; unused: {extra}")
+    plants = plant_list(include_catalogue=args.catalogue)
+    if not args.catalogue:
+        missing = [p["id"] for p in plants if p["id"] not in PROFILES]
+        extra = sorted(set(PROFILES)-{p["id"] for p in plants})
+        if missing or extra:
+            raise SystemExit(f"Profile mismatch. Missing: {missing}; unused: {extra}")
     if args.check:
         cards = load_infocard_index()
         for plant in plants:
@@ -1161,8 +1179,23 @@ def main():
         INFOCARDS.write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         print(f"Updated {len(records)} botanical infocards ({len(plants)} rendered-plant profiles and {len(supplemental_cards)} diverse-lineage profiles); no images were rendered.")
         return
-    selected = [p for p in plants if not args.only or p["id"] in args.only]
     known_ids = {p["id"] for p in plants}
+    unknown_ids = sorted(set(args.only or []) - known_ids)
+    if unknown_ids:
+        raise SystemExit(f"Unknown plant IDs: {unknown_ids}")
+    selected = [p for p in plants if not args.only or p["id"] in args.only]
+    unsupported = [
+        p["id"] for p in selected
+        if p["id"] not in PROFILES and
+        p.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
+        not in ("fern", "graminoid", "bryophyte", "aquatic")
+    ]
+    if unsupported:
+        raise SystemExit(
+            "No species-specific renderer is implemented yet for selected catalogue records: "
+            + ", ".join(unsupported)
+            + ". No files were written. Select supported IDs with --only, or add the missing architecture first."
+        )
     source_images = {}
     for item in args.source_image:
         if "=" not in item:
