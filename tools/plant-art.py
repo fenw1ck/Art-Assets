@@ -1380,7 +1380,7 @@ def main():
         p["id"] for p in selected
         if p["id"] not in PROFILES and
         p.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
-        not in ("fern", "graminoid", "bryophyte", "aquatic")
+        not in ("fern", "graminoid", "bryophyte", "aquatic", "tree")
     ]
     if unsupported:
         raise SystemExit(
