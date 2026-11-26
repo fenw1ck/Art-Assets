@@ -138,7 +138,7 @@
     "stem_or_root": "large rhizome in sediment; long petioles",
     "diagnostic_reproductive": "large emergent flower; flat-topped receptacle with embedded achenes",
     "habitat": "rooted; leaves and flowers emerge above water",
-    "construction_notes": "Show the centrally attached petiole and raised peltate leaves; the flower receptacle is a diagnostic flat disk, not a water-lily stigma.",
+    "construction_notes": "Emphasize centrally peltate petiole insertion and leaves held above the water; mature receptacle is a broad flat-topped disk, not a water-lily stigma or petal center.",
     "user_data": {
       "scientific_name": "Nelumbo lutea",
       "family": "Nelumbonaceae",
@@ -150,7 +150,9 @@
       "stem_or_root": "large rhizome in sediment; long petioles",
       "diagnostic_reproductive": "large emergent flower; flat-topped receptacle with embedded achenes",
       "habitat": "rooted; leaves and flowers emerge above water",
-      "construction_notes": "Show the centrally attached petiole and raised peltate leaves; the flower receptacle is a diagnostic flat disk, not a water-lily stigma."
+      "construction_notes": "Emphasize centrally peltate petiole insertion and leaves held above the water; mature receptacle is a broad flat-topped disk, not a water-lily stigma or petal center.",
+      "species_dimensions": "Petiole to 2 m or more; blade to 60 cm or more; mature receptacle to about 10 cm diameter; fruits approximately 10–16 × 8–13 mm.",
+      "species_morphology": "Rooted emergent perennial with rhizomes in sediment; peltate circular blades with petiole attached near the center, often held above water; pale-yellow flowers emergent; mature receptacle broad, flattened-topped and embedded with achenes."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -163,23 +165,25 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://powo.science.kew.org/",
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local flowering dates and life-stage reference photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Petiole to 2 m or more; blade to 60 cm or more; mature receptacle to about 10 cm diameter; fruits approximately 10–16 × 8–13 mm.",
+    "species_morphology": "Rooted emergent perennial with rhizomes in sediment; peltate circular blades with petiole attached near the center, often held above water; pale-yellow flowers emergent; mature receptacle broad, flattened-topped and embedded with achenes."
   },
   {
     "id": "lemna_minor",
@@ -325,7 +329,7 @@
     "stem_or_root": "slender branching submerged stems; roots at nodes",
     "diagnostic_reproductive": "small unisexual flowers on slender stalks reaching surface",
     "habitat": "submerged; flowers may reach water surface",
-    "construction_notes": "Use long flexible submerged shoots with repeated leaf whorls; do not depict floating broad leaves or an emergent canopy.",
+    "construction_notes": "Keep vegetative shoots submerged; repeat three-leaf whorls at nodes, with lower opposite leaves allowed; do not add floating broad leaves or an emergent canopy.",
     "user_data": {
       "scientific_name": "Elodea canadensis",
       "family": "Hydrocharitaceae",
@@ -337,7 +341,9 @@
       "stem_or_root": "slender branching submerged stems; roots at nodes",
       "diagnostic_reproductive": "small unisexual flowers on slender stalks reaching surface",
       "habitat": "submerged; flowers may reach water surface",
-      "construction_notes": "Use long flexible submerged shoots with repeated leaf whorls; do not depict floating broad leaves or an emergent canopy."
+      "construction_notes": "Keep vegetative shoots submerged; repeat three-leaf whorls at nodes, with lower opposite leaves allowed; do not add floating broad leaves or an emergent canopy.",
+      "species_dimensions": "Shoots commonly 20–100 cm; leaves 6–17 mm long and 1–5 mm wide; average plant height about 1.2 m, with reported maximum around 2.5 m.",
+      "species_morphology": "Submerged freshwater perennial with slender nodally branched shoots and fibrous roots; leaves chiefly in whorls of three, occasionally opposite near the base; blades broadly lanceolate to oblong, rounded at tip and minutely toothed; small unisexual flowers on slender stalks reaching the surface."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -350,23 +356,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional shoot density and overwintering-bud form",
+      "population-specific seasonal dimensions and verified photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Shoots commonly 20–100 cm; leaves 6–17 mm long and 1–5 mm wide; average plant height about 1.2 m, with reported maximum around 2.5 m.",
+    "species_morphology": "Submerged freshwater perennial with slender nodally branched shoots and fibrous roots; leaves chiefly in whorls of three, occasionally opposite near the base; blades broadly lanceolate to oblong, rounded at tip and minutely toothed; small unisexual flowers on slender stalks reaching the surface."
   },
   {
     "id": "vallisneria_americana",
@@ -384,7 +393,7 @@
     "stem_or_root": "short rhizome; runners form daughter rosettes",
     "diagnostic_reproductive": "female flowers reach surface on long coiled stalks; male flowers detach and float",
     "habitat": "submerged; flowers at surface",
-    "construction_notes": "Construct a basal ribbon-leaf rosette; female flowering stalks coil and extend to the water surface.",
+    "construction_notes": "Build a basal tuft of submerged ribbon leaves; show the female flower stalk as a specialized long coiling structure, not a tendril or ordinary branch. Keep dimensions habitat-dependent.",
     "user_data": {
       "scientific_name": "Vallisneria americana",
       "family": "Hydrocharitaceae",
@@ -396,7 +405,9 @@
       "stem_or_root": "short rhizome; runners form daughter rosettes",
       "diagnostic_reproductive": "female flowers reach surface on long coiled stalks; male flowers detach and float",
       "habitat": "submerged; flowers at surface",
-      "construction_notes": "Construct a basal ribbon-leaf rosette; female flowering stalks coil and extend to the water surface."
+      "construction_notes": "Build a basal tuft of submerged ribbon leaves; show the female flower stalk as a specialized long coiling structure, not a tendril or ordinary branch. Keep dimensions habitat-dependent.",
+      "species_dimensions": "Leaves commonly 10–50 cm long and 3–10 mm wide in regional flora; other guides report leaves to 3 m and female flower stalks to 3 m in suitable conditions.",
+      "species_morphology": "Submerged dioecious perennial arising in tufts from short stems and creeping rhizomes; long flat ribbon leaves with prominent central midrib and parallel venation, blunt tips; tiny male flowers detach and float; solitary female flowers reach surface on long coiling stalks; narrow many-seeded capsule."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -409,23 +420,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "population-specific leaf length and flowering window",
+      "verified vegetative and reproductive reference photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Leaves commonly 10–50 cm long and 3–10 mm wide in regional flora; other guides report leaves to 3 m and female flower stalks to 3 m in suitable conditions.",
+    "species_morphology": "Submerged dioecious perennial arising in tufts from short stems and creeping rhizomes; long flat ribbon leaves with prominent central midrib and parallel venation, blunt tips; tiny male flowers detach and float; solitary female flowers reach surface on long coiling stalks; narrow many-seeded capsule."
   },
   {
     "id": "sagittaria_latifolia",
@@ -443,7 +457,7 @@
     "stem_or_root": "rhizomes and tubers; long petioles",
     "diagnostic_reproductive": "whorled flowers on erect scape; separate male and female flowers",
     "habitat": "rooted in shallow water; leaves emergent",
-    "construction_notes": "Show arrow-shaped aerial leaves and a separate upright flowering scape; do not assume all submerged leaves have the same shape.",
+    "construction_notes": "Show basal emergence, angular petioles, true arrowhead blade geometry and a separate upright scape with whorled flowers; represent stolons/tubers below ground only in a dedicated detail.",
     "user_data": {
       "scientific_name": "Sagittaria latifolia",
       "family": "Alismataceae",
@@ -455,7 +469,9 @@
       "stem_or_root": "rhizomes and tubers; long petioles",
       "diagnostic_reproductive": "whorled flowers on erect scape; separate male and female flowers",
       "habitat": "rooted in shallow water; leaves emergent",
-      "construction_notes": "Show arrow-shaped aerial leaves and a separate upright flowering scape; do not assume all submerged leaves have the same shape."
+      "construction_notes": "Show basal emergence, angular petioles, true arrowhead blade geometry and a separate upright scape with whorled flowers; represent stolons/tubers below ground only in a dedicated detail.",
+      "species_dimensions": "Emergent blades commonly 5–45 cm long; petioles 6.5–51 cm; inflorescence with 3–9 whorls; flowers up to about 4 cm diameter.",
+      "species_morphology": "Emergent shoreline perennial producing stolons and corms/tubers; triangular erect-to-ascending petioles; mature blades sagittate with basal lobes equal to or shorter than central blade; erect raceme with 3–9 whorls of three-petaled white flowers; spreading fruiting pedicels and small beaked achenes."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -468,23 +484,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "submerged and floating juvenile leaf morphs",
+      "regional tuber size and local seasonal variation"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Emergent blades commonly 5–45 cm long; petioles 6.5–51 cm; inflorescence with 3–9 whorls; flowers up to about 4 cm diameter.",
+    "species_morphology": "Emergent shoreline perennial producing stolons and corms/tubers; triangular erect-to-ascending petioles; mature blades sagittate with basal lobes equal to or shorter than central blade; erect raceme with 3–9 whorls of three-petaled white flowers; spreading fruiting pedicels and small beaked achenes."
   },
   {
     "id": "typha_latifolia",
@@ -502,7 +521,7 @@
     "stem_or_root": "stout creeping rhizomes; erect unbranched flowering stalk",
     "diagnostic_reproductive": "dense terminal cylindrical inflorescence with male portion above female portion",
     "habitat": "rooted in saturated sediment; leaves and inflorescence emergent",
-    "construction_notes": "Build a vertical culm and basal leaf fans; keep male and female spike portions contiguous but distinct, with male above female.",
+    "construction_notes": "Preserve the paired continuous spike silhouette with male portion above and female portion below, with little or no gap; use broad flat leaves and a rhizomatous emergent clump, not narrow-leaved cattail proportions.",
     "user_data": {
       "scientific_name": "Typha latifolia",
       "family": "Typhaceae",
@@ -514,7 +533,9 @@
       "stem_or_root": "stout creeping rhizomes; erect unbranched flowering stalk",
       "diagnostic_reproductive": "dense terminal cylindrical inflorescence with male portion above female portion",
       "habitat": "rooted in saturated sediment; leaves and inflorescence emergent",
-      "construction_notes": "Build a vertical culm and basal leaf fans; keep male and female spike portions contiguous but distinct, with male above female."
+      "construction_notes": "Preserve the paired continuous spike silhouette with male portion above and female portion below, with little or no gap; use broad flat leaves and a rhizomatous emergent clump, not narrow-leaved cattail proportions.",
+      "species_dimensions": "Leaves to about 2 m long and commonly 8–18 mm wide; male spike about 8–12 cm long; female spike commonly 13–16 cm, sometimes longer.",
+      "species_morphology": "Robust emergent rhizomatous perennial; erect shoots with flat linear glaucous blades and sheathing bases; terminal dense cylindrical inflorescence with male spike above and female spike below, contiguous or nearly contiguous; female spike green then dark sepia-brown to nearly black."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -527,23 +548,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional flowering dates, plant height and leaf-width variation",
+      "verified seasonal reference photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Leaves to about 2 m long and commonly 8–18 mm wide; male spike about 8–12 cm long; female spike commonly 13–16 cm, sometimes longer.",
+    "species_morphology": "Robust emergent rhizomatous perennial; erect shoots with flat linear glaucous blades and sheathing bases; terminal dense cylindrical inflorescence with male spike above and female spike below, contiguous or nearly contiguous; female spike green then dark sepia-brown to nearly black."
   },
   {
     "id": "sphagnum_palustre",
