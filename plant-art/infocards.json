@@ -1091,18 +1091,10 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "documented",
-        "values": [
-          "alternate"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "Kew Plants of the World Online — Capsicum annuum",
-            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
-            "supports": "Leaves are described along branches; species phyllotaxy is alternate in the taxon description."
-          }
-        ]
+        "provenance": []
       },
       "leaf_type": {
         "status": "documented",
@@ -1720,18 +1712,10 @@
         ]
       },
       "leaf_shape": {
-        "status": "documented",
-        "values": [
-          "linear to lanceolate blade"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
-            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
-            "supports": "Broad grass leaf blades are described; shape is represented as linear grass blade."
-          }
-        ]
+        "provenance": []
       },
       "leaf_margin": {
         "status": "unknown",
@@ -2582,18 +2566,10 @@
     "taxonomic_parent": "family:Fabaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "documented",
-        "values": [
-          "alternate"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "Flora of China — Pisum (eFloras)",
-            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
-            "supports": "The leaf-bearing stem nodes are described in the species morphology as alternate in standard species descriptions; the genus description confirms pinnate leaves."
-          }
-        ]
+        "provenance": []
       },
       "leaf_type": {
         "status": "documented",
@@ -2644,18 +2620,10 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "documented",
-        "values": [
-          "petiolate"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "Flora of China — Pisum (eFloras)",
-            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
-            "supports": "The leaf rachis and stipules are described as attached to stem nodes; precise petiole morphology not detailed."
-          }
-        ]
+        "provenance": []
       },
       "stem_growth": {
         "status": "documented",
@@ -3615,18 +3583,10 @@
         ]
       },
       "branching_pattern": {
-        "status": "documented",
-        "values": [
-          "branched tendrilled vine"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
-            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
-            "supports": "Cucurbita maxima is described as a vine with tendrils; branch pattern not specified in the NC State species record."
-          }
-        ]
+        "provenance": []
       },
       "growth_habit": {
         "status": "unknown",
@@ -3818,18 +3778,10 @@
     "taxonomic_parent": "family:Cucurbitaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "documented",
-        "values": [
-          "alternate"
-        ],
+        "status": "unknown",
+        "values": [],
         "variants": [],
-        "provenance": [
-          {
-            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
-            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
-            "supports": "Leaves are alternate in the species description."
-          }
-        ]
+        "provenance": []
       },
       "leaf_type": {
         "status": "documented",
