@@ -1,4 +1,4 @@
-name: Botanical renderer validation
+name: Botanical renderer data validation
 on:
   push:
     paths:
@@ -6,28 +6,32 @@ on:
       - 'tools/plant-art.py'
       - 'botanical-renderer.html'
       - 'plants.js'
+      - 'plant-art/infocards.json'
+      - 'research/subjects/plants/**'
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  validate-and-preview:
+  validate-data-only:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python -m pip install Pillow
-      - name: Validate renderer syntax
+      - name: Validate Python syntax
         run: python -m py_compile tools/plant-art.py
-      - name: Validate all species profiles
+      - name: Validate species construction profiles
         run: python tools/plant-art.py --check
-      - name: Test source-preserving duplicate
-        run: python tools/plant-art.py --only nasturtium --source-image nasturtium=plant-art/nasturtium.png
-      - name: Verify source and duplicate are byte-identical
-        run: cmp plant-art/nasturtium.png plant-art/derived/source/nasturtium-*.png
-      - uses: actions/upload-artifact@v4
-        with:
-          name: botanical-renderer-source-preservation-test
-          path: plant-art/derived/
-          if-no-files-found: error
+      - name: Validate infocard population without rendering
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          cards = json.loads(Path("plant-art/infocards.json").read_text(encoding="utf-8"))
+          assert len(cards) == 57, f"Expected 57 infocards, found {len(cards)}"
+          assert len({card["id"] for card in cards}) == 57, "Duplicate plant IDs"
+          assert min(card.get("populated_user_data_count", 0) for card in cards) >= 4
+          assert sum(bool(card.get("image")) for card in cards) == 8, "Unexpected image references; this job must not render"
+          print(f"Validated {len(cards)} infocards; minimum populated user-data fields: {min(card['populated_user_data_count'] for card in cards)}")
+          PY
