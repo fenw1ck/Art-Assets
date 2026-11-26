@@ -76,9 +76,11 @@
     "populated_user_data_count": 15,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/tomato.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+      "https://plants.ces.ncsu.edu/plants/solanum-lycopersicum/"
+    ],
     "research_gaps": [
-      "sources not recorded for the original research",
       "seedling true-leaf shape",
       "decline photos"
     ],
@@ -135,10 +137,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded for the original research",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "seedling true-leaf shape",
           "handling": "Do not infer an unspecified cultivar or state. Retain as a selectable variant; use the species-level default and record the assumption."
         },
@@ -146,7 +144,8 @@
           "item": "decline photos",
           "handling": "Use herbarium or botanical-garden image references as visual evidence; do not treat occurrence records as morphology."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -228,9 +227,11 @@
     "populated_user_data_count": 15,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/tomato.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+      "https://plants.ces.ncsu.edu/plants/solanum-lycopersicum/"
+    ],
     "research_gaps": [
-      "sources not recorded for the original research",
       "seedling true-leaf shape",
       "decline photos"
     ],
@@ -287,10 +288,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded for the original research",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "seedling true-leaf shape",
           "handling": "Do not infer an unspecified cultivar or state. Retain as a selectable variant; use the species-level default and record the assumption."
         },
@@ -298,7 +295,8 @@
           "item": "decline photos",
           "handling": "Use herbarium or botanical-garden image references as visual evidence; do not treat occurrence records as morphology."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -380,9 +378,11 @@
     "populated_user_data_count": 15,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/tomato.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+      "https://plants.ces.ncsu.edu/plants/solanum-lycopersicum/"
+    ],
     "research_gaps": [
-      "sources not recorded for the original research",
       "seedling true-leaf shape",
       "decline photos"
     ],
@@ -439,10 +439,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded for the original research",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "seedling true-leaf shape",
           "handling": "Do not infer an unspecified cultivar or state. Retain as a selectable variant; use the species-level default and record the assumption."
         },
@@ -450,7 +446,8 @@
           "item": "decline photos",
           "handling": "Use herbarium or botanical-garden image references as visual evidence; do not treat occurrence records as morphology."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -2935,9 +2932,11 @@
     "populated_user_data_count": 14,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/apiaceae.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://burkeherbarium.org/imagecollection/taxon.php?Taxon=Daucus+carota",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1/general-information"
+    ],
     "research_gaps": [
-      "sources not recorded",
       "carrot (drawn generically today)",
       "umbel ray counts"
     ],
@@ -2994,10 +2993,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "carrot (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         },
@@ -3005,7 +3000,8 @@
           "item": "umbel ray counts",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -3371,9 +3367,11 @@
     "populated_user_data_count": 9,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/allium.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=101086",
+      "https://gobotany.nativeplanttrust.org/dkey/allium/"
+    ],
     "research_gaps": [
-      "sources",
       "onion and garlic bulbs (drawn generically today)"
     ],
     "artwork_status": "no artwork generated",
@@ -3429,14 +3427,11 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "onion and garlic bulbs (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -3500,9 +3495,11 @@
     "populated_user_data_count": 9,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/allium.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=101086",
+      "https://gobotany.nativeplanttrust.org/dkey/allium/"
+    ],
     "research_gaps": [
-      "sources",
       "onion and garlic bulbs (drawn generically today)"
     ],
     "artwork_status": "no artwork generated",
@@ -3558,14 +3555,11 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "onion and garlic bulbs (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -4109,9 +4103,10 @@
     "populated_user_data_count": 14,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/apiaceae.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1/general-information"
+    ],
     "research_gaps": [
-      "sources not recorded",
       "carrot (drawn generically today)",
       "umbel ray counts"
     ],
@@ -4168,10 +4163,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "carrot (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         },
@@ -4179,7 +4170,8 @@
           "item": "umbel ray counts",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -4258,9 +4250,10 @@
     "populated_user_data_count": 14,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/apiaceae.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1/general-information"
+    ],
     "research_gaps": [
-      "sources not recorded",
       "carrot (drawn generically today)",
       "umbel ray counts"
     ],
@@ -4317,10 +4310,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "carrot (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         },
@@ -4328,7 +4317,8 @@
           "item": "umbel ray counts",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
@@ -4407,9 +4397,10 @@
     "populated_user_data_count": 14,
     "research_status": "existing Fenwick research record; external source gap noted",
     "research_record": "research/subjects/plants/apiaceae.md",
-    "research_sources": [],
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:841063-1/general-information"
+    ],
     "research_gaps": [
-      "sources not recorded",
       "carrot (drawn generically today)",
       "umbel ray counts"
     ],
@@ -4466,10 +4457,6 @@
       "resolved_method": "Taxonomy and species morphology are cross-checkable against the reference databases listed in references. Horticultural cultivar traits require a named cultivar or a clearly labelled representative cultivar.",
       "remaining": [
         {
-          "item": "sources not recorded",
-          "handling": "Replace with cited primary botanical/flora/horticultural reference before rendering."
-        },
-        {
           "item": "carrot (drawn generically today)",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         },
@@ -4477,7 +4464,8 @@
           "item": "umbel ray counts",
           "handling": "Use the species-level morphology already documented; retain this as a narrower evidence gap if exact measurements are unavailable."
         }
-      ]
+      ],
+      "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
     "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
