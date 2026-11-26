@@ -84,3 +84,41 @@ New flowering-plant work follows `flower-rendering-workflow.md`: species-specifi
 - `zinnia.md`: bushy opposite-leaved growth and solitary terminal composite heads.
 - `petunia.md`: trailing/spreading branches and solitary axillary trumpet flowers.
 - `fuchsia.md`: shrub habit with pendent axillary flowers, tubular calyx and four sepals/four petals.
+
+
+## Species-specific research records
+
+The following records document botanical construction evidence for the Botanical Renderer. Each entry includes growth architecture, leaf form, branching, reproductive structures, rendering rules, sources and unresolved cultivar/stage questions. These are research briefs, not rendered assets.
+
+- [Sweet corn](corn_sweet.md)
+- [Bush bean](bean_bush.md)
+- [Pole bean](bean_pole.md)
+- [Garden pea](pea.md)
+- [Summer squash / zucchini](squash_summer.md)
+- [Winter squash](squash_winter.md)
+- [Cucumber](cucumber.md)
+- [Leaf lettuce](lettuce.md)
+- [Spinach](spinach.md)
+- [Kale](kale.md)
+- [Cabbage](cabbage.md)
+- [Broccoli](broccoli.md)
+- [Swiss chard](chard.md)
+- [Garden beet](beet.md)
+- [Radish](radish.md)
+- [Asparagus](asparagus.md)
+- [Rhubarb](rhubarb.md)
+- [Garden strawberry](strawberry.md)
+- [Red raspberry](raspberry.md)
+- [Highbush blueberry](blueberry.md)
+- [French marigold](marigold_french.md)
+- [Pothos](pothos.md)
+- [Snake plant](snake_plant.md)
+- [Monstera](monstera.md)
+- [Peace lily](peace_lily.md)
+- [Spider plant](spider_plant.md)
+- [Apple](apple.md)
+- [European pear](pear.md)
+- [Peach](peach.md)
+- [Fig](fig.md)
+- [Meyer lemon](lemon_meyer.md)
+- [Sunflower](sunflower.md)
