@@ -2161,7 +2161,14 @@
       "leaf_construction": "huge-cordate",
       "flower_construction": "panicle",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#3f7f3a"
+      "foliage_colour": "#3f7f3a",
+      "scientific_name": "Rheum rhabarbarum",
+      "growth_architecture_detail": "Large perennial crown forming a broad basal clump; flowering stem rises well above the foliage.",
+      "leaf_morphology_detail": "Very large triangular-ovate to broadly cordate leaves with 5–7 basal veins, crinkled or wavy margins, dark upper surface and sometimes reddish underside; long stout fleshy petioles.",
+      "branching_architecture": "Short thick crown with leaves on individual long petioles; mature plant sends up a tall, stout, branched panicle.",
+      "flower_placement_and_inflorescence": "Small greenish-white or yellowish-white flowers in a large branched panicle, not large solitary blooms.",
+      "fruit_or_harvest_morphology": "Small winged triangular nutlet (achene) after flowering; edible harvest is the fleshy petiole, not the leaf blade or fruit.",
+      "renderer_construction_rules": "Build a broad low crown of oversized blades, each on its own thick, often red petiole. Leaves are not arranged on a tall leafy stem. Flowering stage adds a central tall panicle. Keep the petiole scale conspicuously thicker than ordinary leaf stalks."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2171,7 +2178,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/rhubarb.md",
+      "growth_architecture_detail": "research/subjects/plants/rhubarb.md",
+      "leaf_morphology_detail": "research/subjects/plants/rhubarb.md",
+      "branching_architecture": "research/subjects/plants/rhubarb.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/rhubarb.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/rhubarb.md",
+      "renderer_construction_rules": "research/subjects/plants/rhubarb.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -2181,13 +2195,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.worldfloraonline.org/taxon/wfo-0000404478"
+    ],
+    "research_gaps": [
+      "Cultivar petiole colour and leaf dimensions",
+      "Whether a mature flowering specimen or harvest-stage plant is the target"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Rheum rhabarbarum",
+    "research_record": "research/subjects/plants/rhubarb.md"
   },
   {
     "id": "basil",
@@ -2841,7 +2869,14 @@
       "leaf_construction": "trifoliate",
       "flower_construction": "white-five",
       "fruit_or_harvest": "strawberry",
-      "foliage_colour": "#3f8f3f"
+      "foliage_colour": "#3f8f3f",
+      "scientific_name": "Fragaria × ananassa",
+      "growth_architecture_detail": "Low perennial crown with basal rosette; spreads laterally by long stolons that root and form daughter rosettes.",
+      "leaf_morphology_detail": "Alternate trifoliate compound leaves; three serrated leaflets, often softly hairy, on long petioles.",
+      "branching_architecture": "Very short compressed crown; runners (stolons) extend horizontally and produce plantlets at nodes. Flower stalks arise separately from crown.",
+      "flower_placement_and_inflorescence": "Small clusters of white five-petalled flowers with yellow centres; numerous stamens and many separate carpels on a raised receptacle.",
+      "fruit_or_harvest_morphology": "Accessory aggregate fruit: fleshy enlarged receptacle with many dry achenes embedded on its outer surface.",
+      "renderer_construction_rules": "Build a compact low crown, not a branched upright stem. Show three serrated leaflets per leaf. Add thin horizontal runners with daughter rosettes at their nodes. Place white flower clusters on separate stalks from crown; red berries carry visible surface achenes."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2851,7 +2886,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/strawberry.md",
+      "growth_architecture_detail": "research/subjects/plants/strawberry.md",
+      "leaf_morphology_detail": "research/subjects/plants/strawberry.md",
+      "branching_architecture": "research/subjects/plants/strawberry.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/strawberry.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/strawberry.md",
+      "renderer_construction_rules": "research/subjects/plants/strawberry.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -2861,13 +2903,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.kew.org/plants/garden-strawberry",
+      "https://dhcrop.bsmrau.net/strawberry-2/"
+    ],
+    "research_gaps": [
+      "Cultivar and runner production habit",
+      "Fruit shape, size and flower-stalk architecture for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Fragaria × ananassa",
+    "research_record": "research/subjects/plants/strawberry.md"
   },
   {
     "id": "raspberry",
@@ -2900,7 +2957,14 @@
       "leaf_construction": "pinnate",
       "flower_construction": "white-five",
       "fruit_or_harvest": "raspberry",
-      "foliage_colour": "#4f8a40"
+      "foliage_colour": "#4f8a40",
+      "scientific_name": "Rubus idaeus",
+      "growth_architecture_detail": "Perennial rootstock producing biennial canes; first-year primocanes are vegetative, second-year floricanes fruit and then die.",
+      "leaf_morphology_detail": "Alternate compound leaves, usually 3–5 leaflets; serrated margins, pale or whitish hairy undersides; terminal leaflet often larger.",
+      "branching_architecture": "Multiple upright to arching canes from crown/root suckers. Floricanes develop lateral fruiting branches from leaf axils; canes are prickly in many cultivars.",
+      "flower_placement_and_inflorescence": "Small white five-petalled flowers in clusters on lateral branches of floricanes.",
+      "fruit_or_harvest_morphology": "Aggregate of many drupelets, each containing a tiny stone; ripe fruit separates from the receptacle, leaving a hollow centre.",
+      "renderer_construction_rules": "Show both cane ages only when illustrating a mature planting: tall first-year leafy primocanes and older floricanes with lateral fruiting branches. Attach pinnate leaves alternately. Fruit clusters occur on floricane laterals, not uniformly along every cane."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2910,7 +2974,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/raspberry.md",
+      "growth_architecture_detail": "research/subjects/plants/raspberry.md",
+      "leaf_morphology_detail": "research/subjects/plants/raspberry.md",
+      "branching_architecture": "research/subjects/plants/raspberry.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/raspberry.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/raspberry.md",
+      "renderer_construction_rules": "research/subjects/plants/raspberry.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -2920,13 +2991,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://research.fs.usda.gov/feis/species-reviews/rubida"
+    ],
+    "research_gaps": [
+      "Cultivar (summer-bearing vs primocane-fruiting)",
+      "Prickle density, cane colour and fruit colour for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Rubus idaeus",
+    "research_record": "research/subjects/plants/raspberry.md"
   },
   {
     "id": "blueberry",
@@ -2959,7 +3044,14 @@
       "leaf_construction": "elliptical",
       "flower_construction": "urn",
       "fruit_or_harvest": "blueberry",
-      "foliage_colour": "#3f6f4f"
+      "foliage_colour": "#3f6f4f",
+      "scientific_name": "Vaccinium corymbosum",
+      "growth_architecture_detail": "Woody, multi-stemmed deciduous shrub with upright and arching branches.",
+      "leaf_morphology_detail": "Alternate simple elliptical leaves, entire to finely serrated; green above, often paler or slightly hairy beneath; fine venation visible.",
+      "branching_architecture": "Several woody stems arise from crown; young twigs may be green or reddish and slightly zigzag. Flower buds are rounded and plumper than vegetative buds.",
+      "flower_placement_and_inflorescence": "Small urn- or bell-shaped white to pinkish flowers in drooping clusters (corymbs) on short lateral shoots.",
+      "fruit_or_harvest_morphology": "Round blue berries with a conspicuous powdery wax bloom; persistent calyx at distal end.",
+      "renderer_construction_rules": "Construct a woody multi-stem shrub with fine twig branching, not a herbaceous bush. Place flower clusters and fruit clusters on short lateral shoots. Use alternate elliptical leaves and preserve the blue-grey bloom on ripe berries."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2969,7 +3061,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/blueberry.md",
+      "growth_architecture_detail": "research/subjects/plants/blueberry.md",
+      "leaf_morphology_detail": "research/subjects/plants/blueberry.md",
+      "branching_architecture": "research/subjects/plants/blueberry.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/blueberry.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/blueberry.md",
+      "renderer_construction_rules": "research/subjects/plants/blueberry.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -2979,13 +3078,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://web.uri.edu/wp-content/uploads/sites/2078/Vaccinium-corymbosum.pdf",
+      "https://harvest.cals.ncsu.edu/plantguidedb/index.cfm?ViewPlantID=10767"
+    ],
+    "research_gaps": [
+      "Highbush cultivar and mature shrub size",
+      "Berry size, cluster density and autumn foliage colour for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Vaccinium corymbosum",
+    "research_record": "research/subjects/plants/blueberry.md"
   },
   {
     "id": "marigold_french",
@@ -3018,7 +3132,14 @@
       "leaf_construction": "pinnatisect",
       "flower_construction": "marigold",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#3f7f3a"
+      "foliage_colour": "#3f7f3a",
+      "scientific_name": "Tagetes patula",
+      "growth_architecture_detail": "Compact, erect, aromatic annual, usually branching from lower and middle stem nodes.",
+      "leaf_morphology_detail": "Opposite lower leaves (upper may be alternate), pinnately divided into narrow elliptic or lanceolate leaflets with toothed margins and visible oil glands.",
+      "branching_architecture": "Many short erect or spreading branches; flower heads terminate long peduncles, often solitary at branch tips.",
+      "flower_placement_and_inflorescence": "Asteraceae capitulum with outer ray florets (yellow, orange, red-brown or bicoloured) around many small disc florets; involucre forms a short cylinder below head.",
+      "fruit_or_harvest_morphology": "Dark narrow achene with a small pappus of scales/bristles.",
+      "renderer_construction_rules": "Use finely divided aromatic foliage, not broad simple leaves. Keep branching compact and repeated from nodes. Each flower is one composite head on a distinct peduncle; show rays around a central disc, and retain the involucre beneath. Cultivar may be single or densely double."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3028,7 +3149,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/marigold_french.md",
+      "growth_architecture_detail": "research/subjects/plants/marigold_french.md",
+      "leaf_morphology_detail": "research/subjects/plants/marigold_french.md",
+      "branching_architecture": "research/subjects/plants/marigold_french.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/marigold_french.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/marigold_french.md",
+      "renderer_construction_rules": "research/subjects/plants/marigold_french.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -3038,13 +3166,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.nzflora.info/factsheet/Taxon/Tagetes-patula.html",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:252092-1/general-information"
+    ],
+    "research_gaps": [
+      "French marigold cultivar and single/double flower form",
+      "Specific head size and ray colour pattern"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Tagetes patula",
+    "research_record": "research/subjects/plants/marigold_french.md"
   },
   {
     "id": "nasturtium",
@@ -3651,7 +3794,14 @@
       "leaf_construction": "heart",
       "flower_construction": "none",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#4f9a3a"
+      "foliage_colour": "#4f9a3a",
+      "scientific_name": "Epipremnum aureum",
+      "growth_architecture_detail": "Climbing or trailing evergreen hemiepiphyte; juvenile indoor stems trail, while mature plants climb supports and develop much larger leaves.",
+      "leaf_morphology_detail": "Alternate simple leaves; juvenile blades entire, waxy and heart-shaped. Mature blades become much larger and may develop deep lobes or divisions; variegation is cultivar-dependent.",
+      "branching_architecture": "Long jointed stems with conspicuous nodes and long internodes; aerial roots emerge at nodes and attach to support. Branching sparse; stems may trail or climb.",
+      "flower_placement_and_inflorescence": "Araceae spathe-and-spadix inflorescence is rarely produced in cultivation; not a feature of typical juvenile houseplant rendering.",
+      "fruit_or_harvest_morphology": "If pollinated, berry-like fruits form along the spadix; generally absent in houseplant specimens.",
+      "renderer_construction_rules": "Choose juvenile houseplant form unless a mature climbing specimen is explicitly requested. Juvenile leaves remain entire and heart-shaped; do not add Monstera fenestrations. Show node spacing and occasional aerial roots. A mature wild-type stage may enlarge and divide leaves."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3661,7 +3811,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/pothos.md",
+      "growth_architecture_detail": "research/subjects/plants/pothos.md",
+      "leaf_morphology_detail": "research/subjects/plants/pothos.md",
+      "branching_architecture": "research/subjects/plants/pothos.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/pothos.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/pothos.md",
+      "renderer_construction_rules": "research/subjects/plants/pothos.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -3671,13 +3828,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.nparks.gov.sg/florafaunaweb/flora/1/3/1390",
+      "https://www.worldfloraonline.org/taxon/wfo-0000952367"
+    ],
+    "research_gaps": [
+      "Cultivar and variegation pattern",
+      "Whether target is juvenile trailing houseplant or mature climbing plant"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Epipremnum aureum",
+    "research_record": "research/subjects/plants/pothos.md"
   },
   {
     "id": "snake_plant",
@@ -3710,7 +3882,14 @@
       "leaf_construction": "sword",
       "flower_construction": "none",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#3f6f3f"
+      "foliage_colour": "#3f6f3f",
+      "scientific_name": "Dracaena trifasciata (syn. Sansevieria trifasciata)",
+      "growth_architecture_detail": "Rhizomatous evergreen succulent herb forming upright fans or clumps of sword-like leaves.",
+      "leaf_morphology_detail": "Thick, stiff, erect linear-lanceolate leaves with sharp tips; transversely banded dark and pale green; margins may be yellow in some cultivars.",
+      "branching_architecture": "Very short stem at soil level; fleshy creeping rhizome connects separate leaf fans and produces offsets. Leaves arise in small clusters from rhizome.",
+      "flower_placement_and_inflorescence": "Tall erect raceme with small clusters of greenish-white fragrant tubular flowers; flowering is occasional indoors.",
+      "fruit_or_harvest_morphology": "Small orange berries after flowering.",
+      "renderer_construction_rules": "Construct individual stiff blades rising directly from the basal rhizome in distinct fans; taper each blade to a point and show transverse banding. Do not draw a branched woody stem or broad leaf canopy. Offsets arise from underground rhizome."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3720,7 +3899,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/snake_plant.md",
+      "growth_architecture_detail": "research/subjects/plants/snake_plant.md",
+      "leaf_morphology_detail": "research/subjects/plants/snake_plant.md",
+      "branching_architecture": "research/subjects/plants/snake_plant.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/snake_plant.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/snake_plant.md",
+      "renderer_construction_rules": "research/subjects/plants/snake_plant.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -3730,13 +3916,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77164235-1/general-information",
+      "https://plantnet.rbgsyd.nsw.gov.au/cgi-bin/NSWfl.pl?lvl=sp&name=Dracaena~trifasciata&page=nswfl"
+    ],
+    "research_gaps": [
+      "Cultivar (Laurentii yellow margin vs green form)",
+      "Leaf count, height and band pattern for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Dracaena trifasciata (syn. Sansevieria trifasciata)",
+    "research_record": "research/subjects/plants/snake_plant.md"
   },
   {
     "id": "monstera",
@@ -3769,7 +3970,14 @@
       "leaf_construction": "fenestrated",
       "flower_construction": "none",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#2f6f3a"
+      "foliage_colour": "#2f6f3a",
+      "scientific_name": "Monstera deliciosa",
+      "growth_architecture_detail": "Climbing hemiepiphyte with thick, sparsely branching stem; climbs using long aerial roots.",
+      "leaf_morphology_detail": "Juvenile leaves are small, entire and heart-shaped; mature leaves become very large, leathery, deeply split and perforated (fenestrated), with long thick petioles.",
+      "branching_architecture": "Thick cylindrical stem with prominent leaf scars; long aerial roots emerge at nodes, grow downward and attach to supports or soil. Leaves alternate at nodes.",
+      "flower_placement_and_inflorescence": "Creamy spadix surrounded by a boat-shaped white to cream spathe; typical of Araceae and uncommon on indoor houseplants.",
+      "fruit_or_harvest_morphology": "Elongated compound infructescence of tightly packed berry-like segments; ripens slowly and is rarely produced indoors.",
+      "renderer_construction_rules": "Model leaf ontogeny explicitly: juvenile entire heart leaves first, then progressively larger leaves with splits and internal holes. A mature plant needs a thick climbing stem, long petioles and aerial roots at nodes. Do not make every leaf equally fenestrated on a young plant."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3779,7 +3987,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/monstera.md",
+      "growth_architecture_detail": "research/subjects/plants/monstera.md",
+      "leaf_morphology_detail": "research/subjects/plants/monstera.md",
+      "branching_architecture": "research/subjects/plants/monstera.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/monstera.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/monstera.md",
+      "renderer_construction_rules": "research/subjects/plants/monstera.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -3789,13 +4004,29 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://hort.extension.wisc.edu/articles/monstera-deliciosa/",
+      "https://ask.ifas.ufl.edu/publication/HS311",
+      "https://www.nparks.gov.sg/florafaunaweb/flora/1/4/1453"
+    ],
+    "research_gaps": [
+      "Cultivar (green, albo, Thai constellation)",
+      "Age/stage and intended leaf fenestration progression"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Monstera deliciosa",
+    "research_record": "research/subjects/plants/monstera.md"
   },
   {
     "id": "peace_lily",
