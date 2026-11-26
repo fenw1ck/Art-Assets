@@ -520,22 +520,32 @@ def draw_plant(plant, size=768, seed=7):
     d.ellipse((cx-size*.22,base+pot_h*.23,cx+size*.22,base+pot_h*.29),fill=(231,222,198))
     return im
 
+RESEARCH_FIELDS = (
+    "common_name", "scientific_name", "botanical_family", "taxonomy_order",
+    "taxonomy_family", "taxonomy_genus", "taxonomy_species",
+    "taxonomy_cultivar_or_group", "taxonomy_major_clade", "growth_habit",
+    "diagnostic_botany", "leaf_construction", "leaf_type", "leaf_shape",
+    "leaf_shape_detail", "leaf_margin", "leaf_surface", "leaf_venation",
+    "leaf_arrangement", "leaf_attachment", "petiole_attachment",
+    "stem_structure", "growth_architecture_detail", "branching_pattern",
+    "branching_architecture", "flower_construction", "flower_structure",
+    "flower_placement_inflorescence", "flower_placement_and_inflorescence",
+    "fruit_structure", "fruit_or_harvest", "fruit_or_harvest_morphology",
+    "foliage_colour", "renderer_construction_rules"
+)
+
 def card_record(p, previous=None):
     family, habit, anatomy, leaf_shape, bloom, fruit = PROFILES[p["id"]]
-    user_data = {
-        "common_name": p["common_name"],
-        "botanical_family": family,
-        "growth_habit": habit,
-        "diagnostic_botany": anatomy,
-        "leaf_construction": leaf_shape,
-        "flower_construction": bloom,
-        "fruit_or_harvest": fruit,
-        "foliage_colour": p.get("foliage_color")
-    }
-    provenance = {
-        key: ("plants.js" if key in ("common_name", "foliage_colour")
-              else "tools/plant-art.py PROFILES")
-        for key in user_data
+    renderer_profile = {
+        "family_label": family,
+        "growth_habit_label": habit,
+        "diagnostic_anatomy_hint": anatomy,
+        "leaf_shape_hint": leaf_shape,
+        "flower_type_hint": bloom,
+        "fruit_type_hint": fruit,
+        "foliage_colour_input": p.get("foliage_color"),
+        "source": "plants.js + tools/plant-art.py PROFILES",
+        "evidence_status": "renderer construction input; not botanical research"
     }
     morphology_traits = (
         "leaf_arrangement", "leaf_type", "leaf_shape", "leaf_margin",
@@ -543,26 +553,32 @@ def card_record(p, previous=None):
         "branching_pattern", "growth_habit"
     )
     morphology = {
-        key: {
-            "status": "unknown",
-            "values": [],
-            "variants": [],
-            "provenance": []
-        }
+        key: {"status": "unknown", "values": [], "variants": [], "provenance": []}
         for key in morphology_traits
     }
+    research_data = {
+        key: {"status": "unknown", "values": [], "variants": [], "provenance": []}
+        for key in RESEARCH_FIELDS
+    }
     record = {
-        "id": p["id"], "name": p["common_name"], "family": family,
-        "growth_habit": habit, "diagnostic_botany": anatomy,
-        "leaf_construction": leaf_shape, "flower_construction": bloom,
-        "fruit_or_harvest": fruit, "source_record": "plants.js + tools/plant-art.py PROFILES",
+        "id": p["id"], "name": p["common_name"],
+        "renderer_profile": renderer_profile,
         "renderer": "tools/plant-art.py", "style": "Naturalist's Plate",
         "style_terms": ["botanical naturalist plate", "accurate species architecture",
                         "crisp closed leaf shapes", "fine visible midribs and lateral veins",
                         "soft upper-left light", "thin same-hue edge", "warm ivory paper",
                         "terracotta nursery pot", "seeded natural variation"],
-        "user_data": user_data,
-        "user_data_provenance": provenance,
+        "research_data": research_data,
+        "research_data_schema": {
+            "version": 1,
+            "policy": "Populate only from botanical literature, floras, monographs, institutional species profiles, verified specimens, or other documented botanical sources. Never populate from user input, taxonomy-based inference, renderer profiles, or visual guesswork.",
+            "field_record": {
+                "status": ["documented", "variable", "unknown", "not_applicable"],
+                "values": "Research-supported values only",
+                "variants": "Condition-specific research-supported variants",
+                "provenance": "One or more exact sources and the claim each supports"
+            }
+        },
         "morphology": morphology,
         "morphology_schema": {
             "version": 1,
@@ -573,28 +589,39 @@ def card_record(p, previous=None):
                 "provenance": "Trait-specific references supporting the value or variant"
             }
         },
-        "populated_user_data_fields": list(user_data),
-        "populated_user_data_count": len(user_data),
-        "research_status": "profile-only record; botanical research still needed",
+        "research_status": "research pending; empty fields require botanical-source research",
         "artwork_status": "no artwork generated"
     }
-    # Preserve researched user-data fields and provenance when the renderer is run later.
     if previous:
-        record["user_data"].update(previous.get("user_data", {}))
-        record["user_data_provenance"].update(previous.get("user_data_provenance", {}))
-        # Preserve researched morphology verbatim; never infer a trait from taxonomy.
-        old_morphology = previous.get("morphology", {})
-        for trait, trait_record in old_morphology.items():
-            if trait in record["morphology"]:
-                record["morphology"][trait] = trait_record
-            else:
-                record["morphology"][trait] = trait_record
-        record["populated_user_data_fields"] = list(record["user_data"])
-        record["populated_user_data_count"] = len(record["user_data"])
-        for key in ("research_status", "research_record", "research_sources",
-                    "research_gaps", "artwork_status", "image"):
+        # Keep legacy user_data for compatibility, but never use it to fill research fields.
+        if "user_data" in previous:
+            record["user_data"] = previous["user_data"]
+            record["user_data_provenance"] = previous.get("user_data_provenance", {})
+            record["user_data_policy"] = "legacy field; not an authoritative research source and not used to fill research_data"
+        # Migrate only values with explicit research-record provenance.
+        old_data = previous.get("research_data", {})
+        old_user = previous.get("user_data", {})
+        old_prov = previous.get("user_data_provenance", {})
+        for key in RESEARCH_FIELDS:
+            if key in old_data:
+                research_data[key] = old_data[key]
+            elif key in old_user and str(old_prov.get(key, "")).startswith("research/"):
+                research_data[key] = {
+                    "status": "documented",
+                    "values": [old_user[key]],
+                    "variants": [],
+                    "provenance": [{"source": old_prov[key], "supports": str(old_user[key])}]
+                }
+        for trait, trait_record in previous.get("morphology", {}).items():
+            morphology[trait] = trait_record
+        for key in ("research_record", "research_sources", "research_gaps",
+                    "research_gap_resolution", "references", "references_policy",
+                    "render_gate", "taxonomy", "taxonomic_parent", "artwork_status",
+                    "image", "research_status"):
             if key in previous:
                 record[key] = previous[key]
+        if previous.get("morphology_schema"):
+            record["morphology_schema"] = previous["morphology_schema"]
     else:
         image = ROOT / "plant-art" / f"{p['id']}.png"
         if image.is_file():
