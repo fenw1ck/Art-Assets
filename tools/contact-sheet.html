@@ -30,11 +30,11 @@ if(sheet==='plants'){
     label(p.common_name,6,y0+16,b?GOOD:INK,(b?'bold ':'')+'11px system-ui,sans-serif');label(p.silhouette,6,y0+30,SUB,'10px system-ui');label(b?'botanical':'generic',6,y0+43,SUB,'10px system-ui');
     STAGES.forEach((s,i)=>{try{PLANTS.drawFit(ctx,p,lw+i*cw+cw/2,y0+ch-8,ch-22,s,7)}catch(e){label('ERR '+e.message,lw+i*cw+4,y0+60,'red')}})});
 }else if(sheet==='flowers'){
-  /* Seven species-specific flowering architectures: all six stages, then fifteen deterministic mature seeds. */
-  const ids=['calendula','pansy','sweet_pea','cosmos','zinnia','petunia','fuchsia'];
-  const names=['Calendula','Pansy','Sweet pea','Cosmos','Zinnia','Petunia','Fuchsia'];
+  /* Eight species-specific flowering architectures: all six stages, then fifteen deterministic mature seeds. */
+  const ids=['nasturtium','calendula','pansy','sweet_pea','cosmos','zinnia','petunia','fuchsia'];
+  const names=['Nasturtium','Calendula','Pansy','Sweet pea','Cosmos','Zinnia','Petunia','Fuchsia'];
   const stages=['seedling','young','mature','past','dormant','dead'];
-  const cw=112,ch=145,pad=145;c.width=pad+15*54;c.height=1800;
+  const cw=112,ch=145,pad=145;c.width=pad+15*54;c.height=2100;
   ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   stages.forEach((s,i)=>label(s,pad+i*cw+8,25,INK,'bold 12px system-ui'));
   ids.forEach((id,r)=>{
