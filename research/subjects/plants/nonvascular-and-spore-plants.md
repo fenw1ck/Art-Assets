@@ -61,3 +61,17 @@ These profiles extend the catalogue beyond flowering plants. Mosses are bryophyt
 - Fern fronds are compound organs; their repeated divisions belong to the frond, not to a recursively branching woody stem.
 - Grass blades attach through sheaths to jointed culms; a grass inflorescence is made of spikelets, not daisy-like flowers.
 - Where species-level evidence is incomplete, preserve the gap instead of promoting family-level traits to verified species facts.
+
+## Common liverwort — *Marchantia polymorpha*
+
+- **Body plan:** flattened, dorsiventral thallus forms rosettes or overlapping patches; it has no true leaves, stems, roots or vascular tissue.
+- **Surface anatomy:** dorsal surface bears air pores and gemma cups; ventral surface bears scales and rhizoids.
+- **Reproduction:** male antheridiophores and female archegoniophores are stalked umbrella-like structures. Gemma cups provide asexual reproduction; sporophytes produce spores.
+- **References:** University of Auckland, [*Marchantia polymorpha*](https://www.nzplants.auckland.ac.nz/en/about/liverworts/some-non-leafy-liverworts/Marchantiaceae/Marchantia-polymorpha.html), documents thallus, pores, gemma cups, scales, rhizoids and sex-organ stalks; UF/IFAS, [Biology and Management of Liverwort](https://ask.ifas.ufl.edu/publication/EP542), corroborates flattened branching thalli and gemmae.
+
+## Ostrich fern — *Matteuccia struthiopteris*
+
+- **Architecture:** rhizomatous clump forming a vase-like crown.
+- **Fronds:** dimorphic. Tall sterile fronds are green and once-pinnate; shorter fertile fronds are dark brown, stiff and persist through winter.
+- **Reproduction:** fertile fronds bear sporangia and release spores; rhizomes also spread the plant.
+- **References:** Penn State Extension, [Ostrich fern](https://extension.psu.edu/native-plants-of-pa-ostrich-fern-matteuccia-struthiopteris), documents frond dimorphism and blade features; University of Maine Cooperative Extension, [Ostrich Fern Fiddleheads](https://extension.umaine.edu/publications/2540e/), documents crown, frond sizes, seasonal sequence and rhizomes.
