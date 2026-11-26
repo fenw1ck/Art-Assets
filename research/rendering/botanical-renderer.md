@@ -28,7 +28,7 @@ The website tab `botanical-renderer.html` collects:
 
 Unknown fields are not defaults to guess. They become explicit research tasks in the exported JSON. The form supports users who know only the common name and can attach photographs; it does not require botanical vocabulary.
 
-The form currently exports a portable JSON brief in the browser. It does not itself search the web, submit a server job, or invoke Python. The next integration step is a trusted job handoff that passes the exported brief to research and rendering tools.
+The form currently exports a portable JSON brief in the browser. It does not itself search the web, submit a server job, or invoke Python. Plant cards in the main Art Library now offer a source PNG export so the existing JavaScript canvas drawing can be supplied to the Python workflow. The next integration step is a trusted job handoff that passes the exported brief and exported source art to research and rendering tools.
 
 ## Non-negotiable asset preservation sequence
 
@@ -65,11 +65,11 @@ Treat user notes and references as evidence with provenance. Distinguish observe
 
 ## Technical note: source artwork and Pillow
 
-The canonical live plant drawings currently live in `plants.js` and are drawn to a browser canvas. Pillow can open, duplicate, resize, mask, composite and transform raster images; it does not execute the JavaScript drawing functions or understand plant anatomy in a PNG. Therefore, the current renderer must not pretend that a raster duplicate is an intelligent botanical edit.
+The canonical live plant drawings currently live in `plants.js` and are drawn to a browser canvas. The Art Library's **Download source PNG** action exports that drawing losslessly from the browser canvas. Pillow can open, duplicate, resize, mask, composite and transform raster images; it does not execute the JavaScript drawing functions or understand plant anatomy in a PNG. Therefore, a raster duplicate is a protected starting point, not an intelligent botanical edit.
 
 To use an existing `PLANTS.drawFit` / species drawing as a true source, first export it losslessly from the browser canvas (or port its drawing primitives to a shared renderer), then give that raster to Python as an immutable source. Pillow can then preserve it exactly and support controlled compositing. New growth, altered leaf placement or new life stages still require explicit botanical construction rules or a capable image-editing model; they cannot be safely inferred from pixels alone.
 
-The current Python renderer's generic procedural path is a prototype, not a replacement for the established plant drawing functions. Do not promote its output over approved Fenwick artwork. The next renderer implementation must make source preservation the default and require an explicit derived-output destination.
+The Python renderer now writes only under `plant-art/derived/`; it does not overwrite artwork in `plant-art/`. Pass `--source-image PLANT_ID=PATH` to copy an approved source byte-for-byte into `plant-art/derived/source/` and create an unchanged working copy as the candidate image. Existing derived outputs are protected too; `--replace-derived` is required to replace them and never targets the source folder. The generic procedural path remains a draft, not a replacement for established plant drawing functions. Do not promote its output over approved Fenwick artwork.
 
 ## Quality gate
 
@@ -83,4 +83,4 @@ The current Python renderer's generic procedural path is a prototype, not a repl
 
 ## Log
 
-- 2026-11-25: created the Botanical Renderer branch and website intake tab. The intake exports a structured brief with user evidence and explicit research tasks. Server-side research/render job handoff and browser-canvas source export remain future integration work.
+- 2026-11-25: created the Botanical Renderer branch and website intake tab. The intake exports a structured brief with user evidence and explicit research tasks. Added browser-canvas source PNG export and changed Python output to a protected derived workspace. Server-side research/render job handoff and anatomy-aware editing remain future integration work.
