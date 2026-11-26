@@ -635,11 +635,20 @@ def main():
             existing_cards = {item["id"]: item for item in json.loads(INFOCARDS.read_text(encoding="utf-8"))}
         except (ValueError, KeyError, TypeError):
             raise SystemExit(f"Could not safely read existing infocards: {INFOCARDS}")
+    supplemental_path = ROOT / "plant-art" / "diverse-infocards.json"
+    supplemental_cards = []
+    if supplemental_path.is_file():
+        try:
+            supplemental_cards = json.loads(supplemental_path.read_text(encoding="utf-8"))
+        except (ValueError, TypeError):
+            raise SystemExit(f"Could not safely read supplemental infocards: {supplemental_path}")
     if args.infocards_only:
         records = [card_record(p, existing_cards.get(p["id"])) for p in plants]
+        known = {item["id"] for item in records}
+        records.extend(item for item in supplemental_cards if item.get("id") not in known)
         INFOCARDS.parent.mkdir(parents=True, exist_ok=True)
         INFOCARDS.write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        print(f"Updated {len(records)} botanical infocards; no images were rendered.")
+        print(f"Updated {len(records)} botanical infocards ({len(plants)} rendered-plant profiles and {len(supplemental_cards)} diverse-lineage profiles); no images were rendered.")
         return
     selected = [p for p in plants if not args.only or p["id"] in args.only]
     known_ids = {p["id"] for p in plants}
@@ -702,6 +711,8 @@ def main():
     for item in records:
         merged_cards[item["id"]] = item
     canonical_records = [merged_cards.get(p["id"], card_record(p)) for p in plants]
+    canonical_ids = {item["id"] for item in canonical_records}
+    canonical_records.extend(item for item in supplemental_cards if item.get("id") not in canonical_ids)
     INFOCARDS.write_text(json.dumps(canonical_records, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
     write_page(records)
     cols = 7
