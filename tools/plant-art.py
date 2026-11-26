@@ -953,7 +953,11 @@ def draw_tree_architecture(plant, size=768, seed=7):
     scaffold = []
     for side in (-1, 1):
         for j in range(4):
+            # Sugar maple has opposite branch pairs; broadleaf alternate taxa
+            # are staggered, while conifers retain whorled scaffold levels.
             t = .28 + j*.16
+            if foliage not in ("maple", "pine", "spruce", "hemlock", "larch"):
+                t += (0 if side == -1 else .045)
             sy = ground - size*t
             if form == "spire":
                 reach = size*(.10 + t*.24)
