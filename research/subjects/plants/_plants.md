@@ -408,3 +408,7 @@ Machine-readable model: [taxonomy.json](taxonomy.json). All infocards also carry
 - Keep hybrid markers and infraspecific ranks explicit. Where a card represents multiple species or an unspecified cultivar, mark that ambiguity rather than assigning a false exact taxon.
 - A taxon may have several horticultural infocards (for example, determinate and indeterminate tomato); each infocard points to the same species and uses its own subordinate horticultural label.
 - Research-only profiles remain visible in this index. This organizational change does not authorize rendering.
+
+## Second expansion batch
+
+Additional research-only infocards extend the catalogue with common liverwort, ostrich fern, big bluestem, little bluestem, switchgrass, Douglas-fir, baldcypress, bur oak, southern live oak and paper birch. See [grass species](grass-species.md), [nonvascular and spore-bearing plants](nonvascular-and-spore-plants.md), and [woody plants](woody-plants.md). These entries remain unrendered. Grass flower details and paper birch leaf details retain explicit evidence gaps.
