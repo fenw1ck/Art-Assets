@@ -1216,6 +1216,49 @@
   "merged": {}
  },
  {
+  "id": "house-style",
+  "title": "The house style (all new art)",
+  "kind": "technique",
+  "class": null,
+  "parent": "none",
+  "aliases": [
+   "house style",
+   "art style",
+   "euclid art style",
+   "silhouette",
+   "back-lit",
+   "backlit",
+   "rim light",
+   "rim lighting",
+   "moonlight",
+   "accurate proportions"
+  ],
+  "depth": "outline",
+  "updated": "2026-11-25",
+  "gaps": [
+   "rooms",
+   "plants and items drawn in it (only the creatures are so far)",
+   "how rooms light a silhouette indoors (torches as the back-light)",
+   "animation of the skeleton between poses"
+  ],
+  "used_by": [
+   "core.js ART_CORE.house",
+   "creatures.js",
+   "engine.js ENGINE.skeleton"
+  ],
+  "file": "research/rendering/house-style.md",
+  "sections": [
+   "Parts",
+   "Construction order",
+   "Rendering notes",
+   "Log",
+   "Sources"
+  ],
+  "sources": 0,
+  "traits": {},
+  "merged": {}
+ },
+ {
   "id": "light-and-shadow",
   "title": "Light and shadow",
   "kind": "technique",
@@ -1419,6 +1462,7 @@
   "file": "research/subjects/creatures/_creatures.md",
   "sections": [
    "Parts",
+   "Rendering notes",
    "Sources"
   ],
   "sources": 2,

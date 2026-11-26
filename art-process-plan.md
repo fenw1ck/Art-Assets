@@ -12,6 +12,8 @@ Everything lives in `fenw1ck/art-assets`. Research is kept and added to over tim
 
 ## Decisions so far
 
+- **House style (25 Nov 2026):** accurate proportions (bodies from `ENGINE.skeleton`) with back-lit silhouette lighting (`ART_CORE.house`): one dark shape, a cool rim on the outer edge, hair on the edge, glowing eyes. Rules in `research/rendering/house-style.md`. Not photorealistic, not rounded.
+
 - All art from every repo lives in art-assets. The projects copy what they need at release.
 - PLANT_ART.md now lives only in art-assets, as the plant entries in `research/subjects/plants/`. The copies in Planting-Guide and euclid can be deleted.
 - Decline is realistic: no cartoon rot symbol or flies.
