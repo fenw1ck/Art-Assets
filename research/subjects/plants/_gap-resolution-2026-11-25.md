@@ -640,3 +640,13 @@ These are individual dispositions, not a claim that every gap is closed. Renderi
 - https://www.rhs.org.uk/disease/mint-rust
 - https://blogs.ubc.ca/biol343/lamiaceae/
 - https://www.britannica.com/plant/Lamiaceae
+
+## Follow-up: source-record gaps closed
+
+After the initial 113-entry audit, nine source-record entries were closed with taxon-specific links. These were three tomato cards, four Apiaceae cards (carrot, cilantro, parsley and dill), and two Allium cards (onion and garlic). The linked research records and infocards now carry the sources:
+
+- Tomato: Kew Plants of the World Online, *Solanum lycopersicum*; NC State Extension Plant Toolbox, *Solanum lycopersicum*.
+- Apiaceae: Burke Herbarium Image Collection, *Daucus carota*; Kew Plants of the World Online, *Daucus carota*.
+- Allium: Flora of North America, *Allium*; Native Plant Trust Go Botany, *Allium* identification key.
+
+These references support taxonomic identity and the relevant species/family morphology described in the records. They do not establish unspecified cultivar traits or substitute for state-specific photographs. The corresponding nine “sources not recorded” gap labels were removed from the infocards. The live infocard gap count is now 104. The original table above is retained as the first audit snapshot; this follow-up records the subsequent changes.
