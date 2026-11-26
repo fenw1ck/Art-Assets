@@ -172,28 +172,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "pinnately compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are imparipinnate with leaflet pairs."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to ovate-lanceolate leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflets are ovate to ovate-lanceolate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "incised and serrate to sinuate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflet margins are irregularly and deeply incised and serrate to sinuate."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -202,28 +234,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves have petioles 1.2–7 cm long."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect to procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Habit ranges from erect to procumbent, trailing or straggling."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "spreading or ascending branches; sympodial growth"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Branches spread or ascend; inflorescence placement and sympodial continuation are described."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb; erect, procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Annual herb with multiple stated growth forms."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -414,28 +478,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "pinnately compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are imparipinnate with leaflet pairs."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to ovate-lanceolate leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflets are ovate to ovate-lanceolate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "incised and serrate to sinuate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflet margins are irregularly and deeply incised and serrate to sinuate."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -444,28 +540,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves have petioles 1.2–7 cm long."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect to procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Habit ranges from erect to procumbent, trailing or straggling."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "spreading or ascending branches; sympodial growth"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Branches spread or ascend; inflorescence placement and sympodial continuation are described."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb; erect, procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Annual herb with multiple stated growth forms."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -656,28 +784,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "pinnately compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves are imparipinnate with leaflet pairs."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to ovate-lanceolate leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflets are ovate to ovate-lanceolate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "incised and serrate to sinuate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaflet margins are irregularly and deeply incised and serrate to sinuate."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -686,28 +846,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Leaves have petioles 1.2–7 cm long."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect to procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Habit ranges from erect to procumbent, trailing or straggling."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "spreading or ascending branches; sympodial growth"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Branches spread or ascend; inflorescence placement and sympodial continuation are described."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb; erect, procumbent, trailing or straggling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum lycopersicum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316947-2/general-information",
+            "supports": "Annual herb with multiple stated growth forms."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -899,28 +1091,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Leaves are described along branches; species phyllotaxy is alternate in the taxon description."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Leaves are undivided, described as single blades."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "lanceolate to ovate-lanceolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Leaf blades are lanceolate to ovate-lanceolate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "entire"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Leaf margins are entire."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -929,28 +1153,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Leaves have petioles."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect; woody below"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Stems are erect and woody below."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "much-branched"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "The plant is described as much-branched."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb, subshrub or shrub"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Capsicum annuum",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:316944-2/general-information",
+            "supports": "Kew describes the species as annual, subshrub or shrub."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -1130,28 +1386,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Leaf blades are simple."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Leaf blades are ovate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "lobed"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Leaf margins have rounded lobes."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -1160,28 +1448,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Petiole is 1–10 cm long."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Habit is described as erect."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "sympodial; difoliate sympodial units"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Sympodial structure is explicitly described; units difoliate."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect annual herb"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Solanum melongena",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:820053-1/general-information",
+            "supports": "Habit is an erect annual herb."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -1372,22 +1692,46 @@
     "taxonomic_parent": "family:Poaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "distichous (two-ranked)"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "One leaf develops at each node in two opposite ranks."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Each node bears one undivided leaf blade with sheath."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "linear to lanceolate blade"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Broad grass leaf blades are described; shape is represented as linear grass blade."
+          }
+        ]
       },
       "leaf_margin": {
         "status": "unknown",
@@ -1396,34 +1740,74 @@
         "provenance": []
       },
       "leaf_venation": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "parallel"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Leaf blades possess parallel veins and a prominent midrib."
+          }
+        ]
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "sheathing leaf base"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Each leaf has a sheath surrounding the stalk and an expanded blade."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect culm"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Maize has a single erect stem (culm)."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "usually single culm; occasional basal tillers"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Some cultivars produce elongated lateral branches (tillers) from lower leaf axils."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect annual grass"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Canadian Food Inspection Agency — The biology of Zea mays L. (maize)",
+            "url": "https://inspection.canada.ca/en/plant-health/plant-varieties/novel-traits/applicants/directive-94-08/biology-documents/zea-mays-maize",
+            "supports": "Maize is described as a tall annual grass."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -1613,22 +1997,46 @@
     "taxonomic_parent": "family:Fabaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaves are arranged alternately along the stem."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "trifoliolate compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Each leaf is composed of three leaflets."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to ovate-rhombic leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaflets are ovate or ovate-rhombic."
+          }
+        ]
       },
       "leaf_margin": {
         "status": "unknown",
@@ -1643,28 +2051,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaves are supported by petioles."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "twining or erect"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Common bean occurs in climbing, trailing, or erect forms."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branching; form-dependent"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Species is described as erect and bushy or climbing/trailing; branching is reported for the herb form."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb; climbing, trailing, erect or bushy forms"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Kew explicitly describes these alternate forms."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -1849,22 +2289,46 @@
     "taxonomic_parent": "family:Fabaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaves are arranged alternately along the stem."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "trifoliolate compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Each leaf is composed of three leaflets."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to ovate-rhombic leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaflets are ovate or ovate-rhombic."
+          }
+        ]
       },
       "leaf_margin": {
         "status": "unknown",
@@ -1879,28 +2343,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Leaves are supported by petioles."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "twining or erect"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Common bean occurs in climbing, trailing, or erect forms."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branching; form-dependent"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Species is described as erect and bushy or climbing/trailing; branching is reported for the herb form."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual herb; climbing, trailing, erect or bushy forms"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Kew Plants of the World Online — Phaseolus vulgaris",
+            "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:514191-1/general-information",
+            "supports": "Kew explicitly describes these alternate forms."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -2086,28 +2582,60 @@
     "taxonomic_parent": "family:Fabaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "The leaf-bearing stem nodes are described in the species morphology as alternate in standard species descriptions; the genus description confirms pinnate leaves."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "paripinnate compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "Leaves are paripinnate, with rachis terminating in a tendril."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to elliptic leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "Leaflets are ovate to elliptic."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "entire or dentate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "Leaflet margins are described as entire or dentate."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -2116,22 +2644,46 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "The leaf rachis and stipules are described as attached to stem nodes; precise petiole morphology not detailed."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "climbing by tendrils"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "Stem often climbs by means of tendrils."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "unknown"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "Flora of China — Pisum (eFloras)",
+            "url": "https://www.efloras.org/florataxon.aspx?flora_id=2&taxon_id=125615",
+            "supports": "No clear species-level branching architecture in the cited genus description."
+          }
+        ]
       },
       "growth_habit": {
         "status": "unknown",
@@ -2346,28 +2898,60 @@
     "taxonomic_parent": "family:Solanaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "odd-pinnate compound"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Leaves are imparipinnate with primary leaflets and smaller interstitial leaflets."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "ovate to lanceolate leaflets"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Primary leaflets are ovate to lanceolate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "entire"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Primary leaflet bases are described as cuneate and margins entire."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -2376,28 +2960,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Petiole is 2–4(–12) cm long."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect or sprawling"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Herbs are erect or sprawling."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branched; sympodial"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Stems are branching; inflorescences become lateral with sympodial growth continued by axillary branches."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "erect or sprawling herb"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Solanum tuberosum (Flora of China description)",
+            "url": "https://www.worldfloraonline.org/taxon/wfo-0001031907",
+            "supports": "Flora description states herbs erect or sprawling."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -2587,58 +3203,130 @@
     "taxonomic_parent": "family:Cucurbitaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaves are alternate."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaves are simple."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "broadly ovate to deltoid"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaf blades are broadly ovate to deltoid."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "toothed"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaf margins are toothed."
+          }
+        ]
       },
       "leaf_venation": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "palmate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaves are palmately veined."
+          }
+        ]
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "long-petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Leaves have long petioles."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "trailing or climbing"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Stems are trailing or climbing."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branched"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Stems are described as branching."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "annual trailing or climbing vine"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "University of Michigan — Cucurbita pepo",
+            "url": "https://climbers.lsa.umich.edu/cucurbita-pepo/",
+            "supports": "Species is described as an annual vine."
+          }
+        ]
       }
     },
     "morphology_schema": {
@@ -2829,52 +3517,116 @@
     "taxonomic_parent": "family:Cucurbitaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Leaves are arranged alternately."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Leaves are simple."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "orbicular, reniform or peltate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "NC State lists orbicular, peltate and reniform leaf forms."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "lobed"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Leaves are often palmately lobed, sometimes shallowly."
+          }
+        ]
       },
       "leaf_venation": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "palmate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "NC State describes palmate venation."
+          }
+        ]
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Leaves are borne on long leaf-stalks."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "trailing or climbing"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Cucurbita maxima is described as a trailing vine; related university database records it as a vine/climber."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branched tendrilled vine"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "North Carolina Extension Gardener Plant Toolbox — Cucurbita maxima",
+            "url": "https://plants.ces.ncsu.edu/plants/cucurbita-maxima/",
+            "supports": "Cucurbita maxima is described as a vine with tendrils; branch pattern not specified in the NC State species record."
+          }
+        ]
       },
       "growth_habit": {
         "status": "unknown",
@@ -3066,28 +3818,60 @@
     "taxonomic_parent": "family:Cucurbitaceae",
     "morphology": {
       "leaf_arrangement": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "alternate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Leaves are alternate in the species description."
+          }
+        ]
       },
       "leaf_type": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Leaf blade is a single undivided blade."
+          }
+        ]
       },
       "leaf_shape": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "broadly ovate-cordate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Leaf blade is broadly ovate-cordate."
+          }
+        ]
       },
       "leaf_margin": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "3–5-angular or lobed; dentate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Margin is 3–5-angular or lobed, with dentate lobes."
+          }
+        ]
       },
       "leaf_venation": {
         "status": "unknown",
@@ -3096,28 +3880,60 @@
         "provenance": []
       },
       "leaf_attachment": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "petiolate"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Petiole is 10–16(–20) cm."
+          }
+        ]
       },
       "stem_growth": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "scandent or creeping"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Plants are scandent or creeping."
+          }
+        ]
       },
       "branching_pattern": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "branched; tendrils simple"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Stems and branches are angular; tendrils are slender and simple."
+          }
+        ]
       },
       "growth_habit": {
-        "status": "unknown",
-        "values": [],
+        "status": "documented",
+        "values": [
+          "scandent or creeping vine"
+        ],
         "variants": [],
-        "provenance": []
+        "provenance": [
+          {
+            "source": "World Flora Online — Cucumis sativus (Flora of China description)",
+            "url": "https://worldfloraonline.org/taxon/wfo-0000628992",
+            "supports": "Species description states plants are scandent or creeping."
+          }
+        ]
       }
     },
     "morphology_schema": {
