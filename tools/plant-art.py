@@ -903,7 +903,26 @@ def main():
             for key in ("species_dimensions", "species_morphology", "construction_notes"):
                 if key in card and merged.get(key) != card[key]:
                     raise SystemExit(f"Infocard research preservation failed for {plant['id']}: {key}")
-        print(f"OK: {len(plants)} profiles; botanical data interface and lossless infocard preservation passed.")
+        # Exercise the new lineage constructors in memory only. No files are written.
+        catalogue = load_infocard_index()
+        architecture_checks = 0
+        for card in catalogue.values():
+            group = card.get("coverage_group")
+            if group not in ("fern", "graminoid"):
+                continue
+            probe = {
+                "id": card["id"],
+                "botanical_data": botanical_data({}, card),
+            }
+            if group == "fern":
+                preview = draw_fern_architecture(probe, size=192, seed=7)
+            else:
+                preview = draw_graminoid_architecture(probe, size=192, seed=7)
+            if preview.size != (192, 192):
+                raise SystemExit(f"Architecture constructor returned invalid image size: {card['id']}")
+            architecture_checks += 1
+        print(f"OK: {len(plants)} legacy profiles; lossless infocard preservation; "
+              f"{architecture_checks} fern/graminoid architecture previews passed in memory.")
         return
     existing_cards = {}
     if INFOCARDS.is_file():
