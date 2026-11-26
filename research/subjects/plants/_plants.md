@@ -6,7 +6,7 @@ class: plant
 parent: none
 aliases: [plant, vegetable, herb, flower]
 depth: standard
-updated: 2026-11-24
+updated: 2026-11-25
 gaps: [seedling (cotyledon) shapes by family, decline photos per family, root crops below ground]
 used_by: [plants.js]
 traits:
@@ -71,3 +71,8 @@ Moved here from PLANT_ART.md (Planting-Guide and euclid), which this entry and i
 - UT Austin Biodiversity Center, Botany basics: understanding leaves: https://biodiversity.utexas.edu/news/features/botany-basics-understanding-leaves
 - Cornell Cooperative Extension, Botany language basics for plant ID: https://dlc.cce.cornell.edu/pluginfile.php/452580/mod_page/content/14/Botany%20Language%20Basics%20for%20Plant%20Id.pdf
 - Prusinkiewicz & Lindenmayer, The Algorithmic Beauty of Plants (free online): https://algorithmicbotany.org/papers/abop/abop.pdf
+
+
+## Flower workflow
+
+New flowering-plant work follows `flower-rendering-workflow.md`: species-specific botanical research, growth architecture, separate parts, seeded variation, shared life stages, and rendered contact-sheet inspection before release. The tomato's recursive shoot pattern is used only where the species' actual growth habit supports it.
