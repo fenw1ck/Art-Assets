@@ -451,7 +451,14 @@
       "leaf_construction": "strap",
       "flower_construction": "tassel",
       "fruit_or_harvest": "corn-ear",
-      "foliage_colour": "#5f9a3a"
+      "foliage_colour": "#5f9a3a",
+      "scientific_name": "Zea mays (sweet-corn cultivar group)",
+      "growth_architecture_detail": "Tall, usually single, jointed grass culm; roots include brace roots from lower nodes.",
+      "leaf_morphology_detail": "Alternate two-ranked linear blades with parallel veins, prominent midrib, sheathing bases and ligule; blades arch outward from successive nodes.",
+      "branching_architecture": "One dominant upright culm with distinct nodes and internodes; usually little lateral branching. Female ear shoots arise from upper leaf axils.",
+      "flower_placement_and_inflorescence": "Monoecious: terminal branched tassel is the male inflorescence; one or more lateral axillary ears are female inflorescences, wrapped in husks and bearing long silks.",
+      "fruit_or_harvest_morphology": "Ear is a compact cob with kernels in longitudinal rows; silk emerges from husk tip. Kernels are caryopses, not berries.",
+      "renderer_construction_rules": "Construct a single segmented vertical culm first, then alternate sheathing leaves. Put the tassel only at the apex. Put one or two husked ears on upper axillary nodes, with silks at their tips. Never scatter ears along every node or make the tassel a flower cluster."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -461,7 +468,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/corn_sweet.md",
+      "growth_architecture_detail": "research/subjects/plants/corn_sweet.md",
+      "leaf_morphology_detail": "research/subjects/plants/corn_sweet.md",
+      "branching_architecture": "research/subjects/plants/corn_sweet.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/corn_sweet.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/corn_sweet.md",
+      "renderer_construction_rules": "research/subjects/plants/corn_sweet.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -471,13 +485,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.ogtr.gov.au/sites/default/files/files/2021-07/the_biology_of_zea_mays_l._ssp_mays_maize_or_corn.pdf",
+      "https://plantuse.plantnet.org/en/Zea_mays_%28PROSEA%29"
+    ],
+    "research_gaps": [
+      "Cultivar-specific ear and kernel colour",
+      "Sweet-corn plant height and leaf count for the intended cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Zea mays (sweet-corn cultivar group)",
+    "research_record": "research/subjects/plants/corn_sweet.md"
   },
   {
     "id": "bean_bush",
@@ -510,7 +539,14 @@
       "leaf_construction": "trifoliate",
       "flower_construction": "pea",
       "fruit_or_harvest": "green-pod",
-      "foliage_colour": "#5a9a3f"
+      "foliage_colour": "#5a9a3f",
+      "scientific_name": "Phaseolus vulgaris (bush growth-habit cultivars)",
+      "growth_architecture_detail": "Compact erect or semi-erect herbaceous annual; determinate or semi-determinate branching varies by cultivar.",
+      "leaf_morphology_detail": "Alternate, long-petioled trifoliate leaves. Three broad ovate leaflets; terminal leaflet largest; entire margins, pinnate venation.",
+      "branching_architecture": "Several slender, often slightly hairy stems branch from the lower nodes; no twining axis and no tendrils in the typical bush form.",
+      "flower_placement_and_inflorescence": "Small axillary or terminal racemes; papilionaceous pea-type flowers, often paired or solitary along the rachis; white, pink, lilac or purple.",
+      "fruit_or_harvest_morphology": "Each pollinated flower produces one elongated pod; pods may be round or flattened, straight or curved, and contain several seeds.",
+      "renderer_construction_rules": "Build a low, self-supporting branching bush. Attach each trifoliate leaf to a node on a long petiole, with three distinct leaflets. Place short racemes in leaf axils and pods where flowers occurred. Do not draw climbing coils or pea tendrils."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -520,7 +556,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/bean_bush.md",
+      "growth_architecture_detail": "research/subjects/plants/bean_bush.md",
+      "leaf_morphology_detail": "research/subjects/plants/bean_bush.md",
+      "branching_architecture": "research/subjects/plants/bean_bush.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/bean_bush.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/bean_bush.md",
+      "renderer_construction_rules": "research/subjects/plants/bean_bush.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -530,13 +573,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.feedipedia.org/node/266"
+    ],
+    "research_gaps": [
+      "Exact bush cultivar and mature habit",
+      "Pod colour, shape and orientation for the intended cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Phaseolus vulgaris (bush growth-habit cultivars)",
+    "research_record": "research/subjects/plants/bean_bush.md"
   },
   {
     "id": "bean_pole",
@@ -569,7 +626,14 @@
       "leaf_construction": "trifoliate",
       "flower_construction": "pea",
       "fruit_or_harvest": "green-pod",
-      "foliage_colour": "#5a9a3f"
+      "foliage_colour": "#5a9a3f",
+      "scientific_name": "Phaseolus vulgaris (pole / climbing growth-habit cultivars)",
+      "growth_architecture_detail": "Indeterminate twining climber; long flexible stems wind around a support.",
+      "leaf_morphology_detail": "Alternate, long-petioled trifoliate leaves; three broad ovate leaflets with entire margins and pinnate venation.",
+      "branching_architecture": "A slender twining main stem elongates upward around a stake or trellis; side branches emerge from nodes. Climbing is by stem twining, not pea-like terminal tendrils.",
+      "flower_placement_and_inflorescence": "Axillary or terminal racemes bearing paired or solitary papilionaceous flowers, typically white through pink or purple.",
+      "fruit_or_harvest_morphology": "Elongated pods hang from flower-bearing nodes; pods may be green, yellow, purple, round or flat depending on cultivar.",
+      "renderer_construction_rules": "Construct one or more long spiralling stems around a visible support. Keep leaf insertion alternate and trifoliate. Place racemes at leaf axils; let pods hang from those same reproductive nodes. Do not substitute tendrils for the twining stem."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -579,7 +643,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/bean_pole.md",
+      "growth_architecture_detail": "research/subjects/plants/bean_pole.md",
+      "leaf_morphology_detail": "research/subjects/plants/bean_pole.md",
+      "branching_architecture": "research/subjects/plants/bean_pole.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/bean_pole.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/bean_pole.md",
+      "renderer_construction_rules": "research/subjects/plants/bean_pole.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -589,13 +660,26 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.feedipedia.org/node/266"
+    ],
+    "research_gaps": [
+      "Exact pole-bean cultivar, pod form and flower colour"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Phaseolus vulgaris (pole / climbing growth-habit cultivars)",
+    "research_record": "research/subjects/plants/bean_pole.md"
   },
   {
     "id": "pea",
@@ -628,7 +712,14 @@
       "leaf_construction": "pinnate-tendril",
       "flower_construction": "pea",
       "fruit_or_harvest": "green-pod",
-      "foliage_colour": "#78b057"
+      "foliage_colour": "#78b057",
+      "scientific_name": "Pisum sativum",
+      "growth_architecture_detail": "Scrambling, glaucous annual climber with slender stems.",
+      "leaf_morphology_detail": "Alternate pinnate compound leaves with one to several opposite pairs of ovate leaflets; large leafy stipules at the leaf base; terminal leaflet pair modified into branched tendrils.",
+      "branching_architecture": "Slender stems extend and lean; branched tendrils at the end of each compound leaf grasp supports. This is leaf-derived tendril climbing, not twining stems.",
+      "flower_placement_and_inflorescence": "One to three papilionaceous flowers on short axillary racemes; white to pink or purple; flower stalks arise from leaf axils.",
+      "fruit_or_harvest_morphology": "Elongated legume pod, several seeds arranged in a single row; pods follow the axillary flower positions.",
+      "renderer_construction_rules": "Build a delicate scrambling stem with large stipules at nodes. Each compound leaf carries paired leaflets and ends in a branched tendril; tendrils should visibly coil around supports. Place flowers and pods in axils, not at the tendril tips."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -638,7 +729,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/pea.md",
+      "growth_architecture_detail": "research/subjects/plants/pea.md",
+      "leaf_morphology_detail": "research/subjects/plants/pea.md",
+      "branching_architecture": "research/subjects/plants/pea.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/pea.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/pea.md",
+      "renderer_construction_rules": "research/subjects/plants/pea.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -648,13 +746,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://climbers.lsa.umich.edu/pisum-sativum/",
+      "https://www.nzflora.info/factsheet/taxon/Pisum-sativum.html"
+    ],
+    "research_gaps": [
+      "Cultivar-specific leaflet count, tendril density and pod shape"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Pisum sativum",
+    "research_record": "research/subjects/plants/pea.md"
   },
   {
     "id": "potato",
@@ -781,7 +893,14 @@
       "leaf_construction": "palmate-lobed",
       "flower_construction": "yellow-cup",
       "fruit_or_harvest": "zucchini",
-      "foliage_colour": "#4b8a3c"
+      "foliage_colour": "#4b8a3c",
+      "scientific_name": "Cucurbita pepo (summer-squash cultivars)",
+      "growth_architecture_detail": "Vining or bush-form annual; many zucchini cultivars are compact with short internodes, while trailing forms produce long runners.",
+      "leaf_morphology_detail": "Large alternate simple leaves, broadly ovate to triangular-cordate, palmately veined, commonly 5–7 lobed, toothed and rough-hairy; long stout petioles.",
+      "branching_architecture": "Angular, bristly stems; axillary tendrils commonly branched and coiling. Bush cultivars have short internodes and limited runners; vining cultivars trail.",
+      "flower_placement_and_inflorescence": "Large solitary yellow funnel/bell-shaped flowers in leaf axils. Separate male and female flowers occur on the same plant; female flowers have a conspicuous inferior ovary behind the corolla.",
+      "fruit_or_harvest_morphology": "Pepo develops directly behind the female flower; zucchini is elongated and harvested immature. Fruit stalk is firm and angular.",
+      "renderer_construction_rules": "Determine bush versus vining habit before construction. Use coarse, lobed leaves on long petioles and coiling branched tendrils at nodes. Show male flowers on longer stalks and female flowers with a miniature zucchini-shaped ovary. Do not put fruit at male flowers."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -791,7 +910,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/squash_summer.md",
+      "growth_architecture_detail": "research/subjects/plants/squash_summer.md",
+      "leaf_morphology_detail": "research/subjects/plants/squash_summer.md",
+      "branching_architecture": "research/subjects/plants/squash_summer.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/squash_summer.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/squash_summer.md",
+      "renderer_construction_rules": "research/subjects/plants/squash_summer.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -801,13 +927,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://climbers.lsa.umich.edu/cucurbita-pepo/"
+    ],
+    "research_gaps": [
+      "Specific zucchini cultivar and bush/vining habit",
+      "Fruit colour and shape for the cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Cucurbita pepo (summer-squash cultivars)",
+    "research_record": "research/subjects/plants/squash_summer.md"
   },
   {
     "id": "squash_winter",
@@ -840,7 +980,14 @@
       "leaf_construction": "palmate-lobed",
       "flower_construction": "yellow-cup",
       "fruit_or_harvest": "winter-squash",
-      "foliage_colour": "#4b8a3c"
+      "foliage_colour": "#4b8a3c",
+      "scientific_name": "Cucurbita spp.; profile representative of Cucurbita maxima types",
+      "growth_architecture_detail": "Long trailing annual vine with vigorous runners; some cultivar groups climb or sprawl.",
+      "leaf_morphology_detail": "Large alternate cordate to orbicular-cordate leaves, usually shallowly lobed, rough and hairy on both surfaces; long stout petioles.",
+      "branching_architecture": "Robust prostrate stems with coiling, branched tendrils at nodes. Cucurbita maxima stems can be softer and more rounded than the hard, angled stems of C. pepo.",
+      "flower_placement_and_inflorescence": "Large solitary yellow unisexual flowers; male and female flowers on the same plant. Female flower has a swollen ovary below the corolla.",
+      "fruit_or_harvest_morphology": "Large pepo with highly variable shape, rind and colour; mature fruit is borne at a female-flower node and has a stout, often flared peduncle.",
+      "renderer_construction_rules": "Render as a long ground-spreading vine, not a compact zucchini bush. Give leaves broad, nearly round cordate blades with shallow lobes and pale mottling only if cultivar supports it. Add branched tendrils. Place one or a few large fruits at female-flower nodes."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -850,7 +997,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/squash_winter.md",
+      "growth_architecture_detail": "research/subjects/plants/squash_winter.md",
+      "leaf_morphology_detail": "research/subjects/plants/squash_winter.md",
+      "branching_architecture": "research/subjects/plants/squash_winter.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/squash_winter.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/squash_winter.md",
+      "renderer_construction_rules": "research/subjects/plants/squash_winter.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -860,13 +1014,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://climbers.lsa.umich.edu/cucurbita-maxima/",
+      "https://internationalscholarsjournals.org/articles/pdf/3831997602012020?rev=1710931543000&view=inline"
+    ],
+    "research_gaps": [
+      "Winter-squash species/cultivar not specified; C. maxima is only a representative reference",
+      "Cultivar-specific leaf markings, fruit form and rind colour"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Cucurbita spp.; profile representative of Cucurbita maxima types",
+    "research_record": "research/subjects/plants/squash_winter.md"
   },
   {
     "id": "cucumber",
@@ -899,7 +1068,14 @@
       "leaf_construction": "cordate-lobed",
       "flower_construction": "yellow-cup",
       "fruit_or_harvest": "cucumber",
-      "foliage_colour": "#4b8a3c"
+      "foliage_colour": "#4b8a3c",
+      "scientific_name": "Cucumis sativus",
+      "growth_architecture_detail": "Annual creeping or climbing vine; prostrate stems can climb using tendrils.",
+      "leaf_morphology_detail": "Alternate, simple, broadly triangular-ovate to cordate blades with 3–7 angular lobes, palmate venation, toothed margins and rough/hispid surfaces; long petioles.",
+      "branching_architecture": "Angular, bristly stems; one simple, unbranched tendril at each leaf node, typically arising opposite the leaf. Axillary shoots may branch from nodes.",
+      "flower_placement_and_inflorescence": "Monoecious: male flowers often in small axillary clusters; female flowers usually solitary and show a small prickly inferior ovary behind the yellow corolla.",
+      "fruit_or_harvest_morphology": "Elongated pepo, usually green, often tuberculate or prickly when young; develops from the female ovary and hangs from its pedicel.",
+      "renderer_construction_rules": "Make a trailing or trellised vine with simple tendrils (not branched squash tendrils). Attach one rough cordate-lobed leaf and a tendril at each node. Cluster some male flowers; place solitary female flowers with miniature cucumber ovaries. Fruit only follows female flowers."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -909,7 +1085,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/cucumber.md",
+      "growth_architecture_detail": "research/subjects/plants/cucumber.md",
+      "leaf_morphology_detail": "research/subjects/plants/cucumber.md",
+      "branching_architecture": "research/subjects/plants/cucumber.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/cucumber.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/cucumber.md",
+      "renderer_construction_rules": "research/subjects/plants/cucumber.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -919,13 +1102,27 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://climbers.lsa.umich.edu/cucumis-sativa/",
+      "https://plantuse.plantnet.org/en/Cucumis_sativus_%28PROSEA%29"
+    ],
+    "research_gaps": [
+      "Cultivar-specific fruit length, surface and trellising habit"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Cucumis sativus",
+    "research_record": "research/subjects/plants/cucumber.md"
   },
   {
     "id": "lettuce",
@@ -958,7 +1155,14 @@
       "leaf_construction": "spoon",
       "flower_construction": "composite",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#9ccc5a"
+      "foliage_colour": "#9ccc5a",
+      "scientific_name": "Lactuca sativa (leaf-lettuce cultivars)",
+      "growth_architecture_detail": "Annual or biennial herb forming a low basal rosette; an erect flowering stem develops when bolting.",
+      "leaf_morphology_detail": "Basal leaves are soft, broad, variable from entire to lobed or frilled; lower leaves petiolate, upper stem leaves become smaller and sessile or clasping.",
+      "branching_architecture": "Short compressed stem in vegetative rosette; at bolting, central stem elongates and branches into a many-headed panicle.",
+      "flower_placement_and_inflorescence": "Numerous small yellow Asteraceae capitula in dense corymbiform or paniculate arrays; each head contains multiple florets.",
+      "fruit_or_harvest_morphology": "Small ribbed achene (cypsela) with a slender beak and white pappus; no fleshy fruit.",
+      "renderer_construction_rules": "Vegetative stage is a layered basal rosette with overlapping leaves, not a leafy upright stalk. For bolting, elongate one central stem and branch it into many small yellow heads. Preserve the leaf form of the named leaf cultivar."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -968,7 +1172,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/lettuce.md",
+      "growth_architecture_detail": "research/subjects/plants/lettuce.md",
+      "leaf_morphology_detail": "research/subjects/plants/lettuce.md",
+      "branching_architecture": "research/subjects/plants/lettuce.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/lettuce.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/lettuce.md",
+      "renderer_construction_rules": "research/subjects/plants/lettuce.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -978,13 +1189,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:228239-1/general-information",
+      "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=200024117"
+    ],
+    "research_gaps": [
+      "Exact leaf-lettuce cultivar and blade margin",
+      "Cultivar colour and mature rosette dimensions"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Lactuca sativa (leaf-lettuce cultivars)",
+    "research_record": "research/subjects/plants/lettuce.md"
   },
   {
     "id": "spinach",
