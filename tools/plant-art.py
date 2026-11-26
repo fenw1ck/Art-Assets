@@ -692,7 +692,25 @@ def main():
     if missing or extra:
         raise SystemExit(f"Profile mismatch. Missing: {missing}; unused: {extra}")
     if args.check:
-        print(f"OK: {len(plants)} plants have species-specific construction profiles.")
+        cards = load_infocard_index()
+        for plant in plants:
+            card = cards.get(plant["id"], {})
+            data = botanical_data(plant, card)
+            if not isinstance(data["taxonomy"], dict) or not isinstance(data["morphology"], dict):
+                raise SystemExit(f"Invalid botanical data interface for {plant['id']}")
+            if card:
+                for key in ("species_dimensions", "species_morphology", "construction_notes"):
+                    if key in card and data["morphology"].get(key) != card[key]:
+                        raise SystemExit(f"Research field not passed through for {plant['id']}: {key}")
+            probe = dict(card)
+            probe["preservation_test_marker"] = "must-survive"
+            merged = card_record(plant, probe)
+            if merged.get("preservation_test_marker") != "must-survive":
+                raise SystemExit(f"Infocard preservation test failed for {plant['id']}")
+            for key in ("species_dimensions", "species_morphology", "construction_notes"):
+                if key in card and merged.get(key) != card[key]:
+                    raise SystemExit(f"Infocard research preservation failed for {plant['id']}: {key}")
+        print(f"OK: {len(plants)} profiles; botanical data interface and lossless infocard preservation passed.")
         return
     existing_cards = {}
     if INFOCARDS.is_file():
