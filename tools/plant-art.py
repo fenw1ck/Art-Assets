@@ -658,15 +658,16 @@ def card_record(p, previous=None):
 def write_page(records):
     cards = []
     for item in records:
+        profile = item["renderer_profile"]
         cards.append(
             '<article class="card">'
             f'<img src="{html.escape(Path(item["image"]).name)}" alt="{html.escape(item["name"])} botanical illustration">'
             f'<h2>{html.escape(item["name"])}</h2>'
-            f'<p class="family">{html.escape(item["family"])} · {html.escape(item["growth_habit"])}</p>'
-            f'<p>{html.escape(item["diagnostic_botany"])}</p>'
-            f'<dl><dt>Leaves</dt><dd>{html.escape(item["leaf_construction"])}</dd>'
-            f'<dt>Flowers</dt><dd>{html.escape(item["flower_construction"])}</dd>'
-            f'<dt>Harvest</dt><dd>{html.escape(item["fruit_or_harvest"])}</dd></dl>'
+            f'<p class="family">{html.escape(profile["family_label"])} · {html.escape(profile["growth_habit_label"])}</p>'
+            f'<p>{html.escape(profile["diagnostic_anatomy_hint"])}</p>'
+            f'<dl><dt>Leaves</dt><dd>{html.escape(profile["leaf_shape_hint"])}</dd>'
+            f'<dt>Flowers</dt><dd>{html.escape(profile["flower_type_hint"])}</dd>'
+            f'<dt>Fruit</dt><dd>{html.escape(profile["fruit_type_hint"])}</dd></dl>'
             f'<p class="terms">{html.escape(", ".join(item["style_terms"]))}</p>'
             '</article>'
         )
@@ -685,7 +686,7 @@ h2{font-size:19px;margin:10px 0 2px}.family{font-size:13px;color:#6d684f;margin:
 p{margin:7px 0}dl{display:grid;grid-template-columns:70px 1fr;gap:3px 8px;font-size:13px}
 dt{color:#77705b}dd{margin:0}.terms{font-size:11px;color:#77705b;border-top:1px solid var(--line);padding-top:7px}
 </style></head><body><header><h1>Plant Art Library</h1>
-<p>Species-specific botanical constructions in the Naturalist's Plate style. Growth habit, leaf architecture, flowers and harvest structures are recorded with each illustration. Artwork is generated reproducibly by tools/plant-art.py.</p></header>
+<p>Botanical plate renderings produced from the Fenwick plant construction profiles. Renderer cues are kept distinct from the research-backed botanical infocards.</p></header>
 <main>
 """ + "\n".join(cards) + """
 </main></body></html>
