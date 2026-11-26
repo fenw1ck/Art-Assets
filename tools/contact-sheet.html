@@ -34,7 +34,7 @@ if(sheet==='plants'){
   const ids=['calendula','pansy','sweet_pea','cosmos','zinnia','petunia','fuchsia'];
   const names=['Calendula','Pansy','Sweet pea','Cosmos','Zinnia','Petunia','Fuchsia'];
   const stages=['seedling','young','mature','past','dormant','dead'];
-  const cw=112,ch=145,pad=145;c.width=pad+cw*stages.length;c.height=42+ids.length*ch+ids.length*100;
+  const cw=112,ch=145,pad=145;c.width=pad+15*54;c.height=1800;
   ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   stages.forEach((s,i)=>label(s,pad+i*cw+8,25,INK,'bold 12px system-ui'));
   ids.forEach((id,r)=>{
@@ -50,9 +50,9 @@ if(sheet==='plants'){
     const p=PLANTS.byId[id],yy=v0+18+r*100;
     label(names[r],8,yy+30,INK,'11px system-ui');
     for(let seed=1;seed<=15;seed++){
-      const xx=pad+(seed-1)*((cw*stages.length-8)/15)+20;
-      PLANTS.drawFit(ctx,p,xx,yy+76,68,'mature',seed);
-      if(r===0)label(String(seed),xx-4,yy+91,SUB,'9px system-ui');
+      const xx=pad+(seed-1)*54+27;
+      PLANTS.drawFit(ctx,p,xx,yy+72,46,'mature',seed);
+      if(r===0)label(String(seed),xx-4,yy+89,SUB,'9px system-ui');
     }
   });
 }else if(sheet==='ladder'){
