@@ -6,8 +6,9 @@ Run from the Art-Assets repository:
     python tools/plant-art.py --only tomato_cherry nasturtium --size 768
     python tools/plant-art.py --check
 
-The renderer reads the canonical species list from plants.js. It writes one
-PNG and one botanical infocard record per plant, plus a contact sheet.
+The renderer uses plants.js for the legacy render selection and merges the
+canonical infocard catalogue as its research-first botanical data source. It
+writes one PNG and one infocard record per selected plant, plus a contact sheet.
 Pillow is the only third-party dependency. All variation is seeded.
 """
 from __future__ import annotations
@@ -620,7 +621,7 @@ def card_record(p, previous=None):
         record["populated_user_data_fields"] = list(record["user_data"])
         record["populated_user_data_count"] = len(record["user_data"])
         renderer_owned = {
-            "id", "name", "family", "growth_habit", "diagnostic_botany",
+            "id", "name", "diagnostic_botany",
             "leaf_construction", "flower_construction", "fruit_or_harvest",
             "source_record", "renderer", "style", "style_terms", "user_data",
             "user_data_provenance", "populated_user_data_fields",
