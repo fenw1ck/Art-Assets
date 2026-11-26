@@ -1195,6 +1195,25 @@ def draw_plant(plant, size=768, seed=7):
     return im
 
 def card_record(p, previous=None):
+    if p["id"] not in PROFILES:
+        if not previous:
+            raise KeyError(f"No legacy profile or canonical infocard for {p['id']}")
+        # Catalogue-only taxa retain their researched record. Add only the
+        # display fields required by the contact-sheet page; do not fabricate
+        # a legacy PROFILES record or replace botanical research.
+        record = dict(previous)
+        morphology = p.get("botanical_data", {}).get("morphology", {})
+        record.setdefault("name", p.get("common_name") or p["id"])
+        record.setdefault("family", p.get("infocard", {}).get("family", ""))
+        record.setdefault("growth_habit", p.get("infocard", {}).get("growth_habit", ""))
+        record.setdefault("diagnostic_botany", morphology.get("construction_notes", ""))
+        record.setdefault("leaf_construction", morphology.get("leaf_architecture", ""))
+        record.setdefault("flower_construction", morphology.get("diagnostic_reproductive", ""))
+        record.setdefault("fruit_or_harvest", morphology.get("fruit_structure", ""))
+        record.setdefault("style_terms", ["botanical naturalist plate",
+                                          "species-keyed tree architecture"])
+        record["renderer"] = "tools/plant-art.py"
+        return record
     family, habit, anatomy, leaf_shape, bloom, fruit = PROFILES[p["id"]]
     user_data = {
         "common_name": p["common_name"],
