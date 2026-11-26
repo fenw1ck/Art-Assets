@@ -15,7 +15,9 @@ from __future__ import annotations
 import argparse
 import json
 import html
+import hashlib
 import math
+import shutil
 import random
 import re
 from pathlib import Path
@@ -24,7 +26,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "plants.js"
-OUT = ROOT / "plant-art"
+OUT = ROOT / "plant-art" / "derived"
 PAPER = (249, 246, 231)
 INK = (77, 77, 55)
 
@@ -575,6 +577,10 @@ def main():
     ap.add_argument("--only", nargs="*")
     ap.add_argument("--size", type=int, default=768)
     ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--source-image", action="append", default=[], metavar="PLANT_ID=PATH",
+                    help="Use an existing approved raster artwork as the source; duplicate it unchanged.")
+    ap.add_argument("--replace-derived", action="store_true",
+                    help="Replace files under plant-art/derived only; never changes source artwork.")
     ap.add_argument("--check", action="store_true")
     args = ap.parse_args()
     plants = plant_list()
@@ -586,13 +592,60 @@ def main():
         print(f"OK: {len(plants)} plants have species-specific construction profiles.")
         return
     selected = [p for p in plants if not args.only or p["id"] in args.only]
-    OUT.mkdir(exist_ok=True)
+    known_ids = {p["id"] for p in plants}
+    source_images = {}
+    for item in args.source_image:
+        if "=" not in item:
+            raise SystemExit(f"Invalid --source-image {item!r}; use PLANT_ID=PATH")
+        plant_id, source_path = item.split("=", 1)
+        if plant_id not in known_ids:
+            raise SystemExit(f"Unknown plant ID in --source-image: {plant_id}")
+        if plant_id in source_images:
+            raise SystemExit(f"More than one source image supplied for {plant_id}")
+        source_images[plant_id] = Path(source_path)
+    OUT.mkdir(parents=True, exist_ok=True)
     records = []
     thumbs = []
     for p in selected:
-        image = draw_plant(p, args.size, args.seed)
-        image.save(OUT / f"{p['id']}.png", optimize=True)
-        records.append(card_record(p))
+        pid = p["id"]
+        record = card_record(p)
+        if pid in source_images:
+            src = source_images[pid]
+            if not src.is_absolute():
+                src = ROOT / src
+            if not src.is_file():
+                raise SystemExit(f"Source artwork does not exist: {src}")
+            digest = hashlib.sha256(src.read_bytes()).hexdigest()
+            source_dir = OUT / "source"
+            source_dir.mkdir(parents=True, exist_ok=True)
+            preserved = source_dir / f"{pid}-{digest[:10]}{src.suffix.lower() or '.png'}"
+            if preserved.exists():
+                if hashlib.sha256(preserved.read_bytes()).hexdigest() != digest:
+                    raise SystemExit(f"Refusing to overwrite preserved source: {preserved}")
+            else:
+                shutil.copy2(src, preserved)
+            output = OUT / f"{pid}{src.suffix.lower() or '.png'}"
+            if output.exists():
+                same = hashlib.sha256(output.read_bytes()).hexdigest() == digest
+                if not same and not args.replace_derived:
+                    raise SystemExit(f"Derived output exists and differs: {output}. Use --replace-derived to replace this derived file.")
+            if not output.exists() or args.replace_derived:
+                shutil.copy2(src, output)
+            image = Image.open(output).convert("RGB")
+            record["render_mode"] = "preserved-source-copy"
+            record["source_artwork_path"] = str(src)
+            record["source_sha256"] = digest
+            record["preserved_source_copy"] = preserved.relative_to(ROOT).as_posix()
+            record["image"] = output.relative_to(ROOT).as_posix()
+        else:
+            output = OUT / f"{pid}.png"
+            if output.exists() and not args.replace_derived:
+                raise SystemExit(f"Derived output exists: {output}. Use --replace-derived to replace derived output only.")
+            image = draw_plant(p, args.size, args.seed)
+            image.save(output, optimize=True)
+            record["render_mode"] = "procedural-draft"
+            record["image"] = output.relative_to(ROOT).as_posix()
+        records.append(record)
         thumbs.append((p, image.copy()))
     (OUT / "infocards.json").write_text(json.dumps(records, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
     write_page(records)
@@ -607,7 +660,7 @@ def main():
         sheet.paste(im,(x+(cell_w-im.width)//2,y))
         sd.text((x+8,y+cell_h-27),p["common_name"],font=font(12),fill=INK)
     sheet.save(OUT/"contact-sheet.png", optimize=True)
-    print(f"Rendered {len(selected)} of {len(plants)} plants to {OUT.relative_to(ROOT)}")
+    print(f"Rendered or preserved {len(selected)} of {len(plants)} plants in {OUT.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     main()
