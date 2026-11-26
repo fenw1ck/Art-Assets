@@ -1092,6 +1092,14 @@ def draw_tree_architecture(plant, size=768, seed=7):
     return im
 
 
+TREE_ARCHITECTURE_IDS = {
+    "betula_papyrifera", "acer_saccharum", "salix_discolor",
+    "quercus_alba", "pinus_strobus", "picea_glauca",
+    "populus_tremuloides", "alnus_incana", "tsuga_canadensis",
+    "larix_laricina",
+}
+
+
 def draw_plant(plant, size=768, seed=7):
     pid = plant["id"]
     group = (plant.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
@@ -1370,7 +1378,7 @@ def main():
             if preview.size != (192, 192):
                 raise SystemExit(f"Architecture constructor returned invalid image size: {card['id']}")
             architecture_checks += 1
-        print(f"OK: {len(plants)} legacy profiles; lossless infocard preservation; "
+        print(f"OK: {len(PROFILES)} legacy profiles; lossless infocard preservation; "
               f"{architecture_checks} lineage-specific architecture previews passed in memory.")
         return
     existing_cards = {}
@@ -1401,9 +1409,14 @@ def main():
     selected = [p for p in plants if not args.only or p["id"] in args.only]
     unsupported = [
         p["id"] for p in selected
-        if p["id"] not in PROFILES and
-        p.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
-        not in ("fern", "graminoid", "bryophyte", "aquatic", "tree")
+        if p["id"] not in PROFILES and (
+            p.get("botanical_data", {}).get("catalogue", {}).get("coverage_group")
+            not in ("fern", "graminoid", "bryophyte", "aquatic", "tree")
+            or (
+                p.get("botanical_data", {}).get("catalogue", {}).get("coverage_group") == "tree"
+                and p["id"] not in TREE_ARCHITECTURE_IDS
+            )
+        )
     ]
     if unsupported:
         raise SystemExit(
