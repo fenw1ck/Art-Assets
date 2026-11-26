@@ -27,3 +27,9 @@ traits:
 ## Log
 
 - 2026-11-24: moved from PLANT_ART.md.
+
+
+## Sources
+
+- Flora of North America, *Allium* (bulb, basal leaf, scape, umbel, flower and capsule morphology): https://www.efloras.org/florataxon.aspx?flora_id=1&taxon_id=101086
+- Native Plant Trust Go Botany, *Allium* identification key (species-level leaf cross-sections, bulb and inflorescence characters): https://gobotany.nativeplanttrust.org/dkey/allium/
