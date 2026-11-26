@@ -15,7 +15,7 @@
     "stem_or_root": "branched rhizome; flexible petioles",
     "diagnostic_reproductive": "solitary floating or slightly emergent flowers; many petals and stamens; coiled fruiting peduncle",
     "habitat": "rooted; leaf blades float; flowers at surface",
-    "construction_notes": "Build rhizome below waterline; petioles rise from rhizome and terminate at the surface; preserve the basal sinus and floating blade plane.",
+    "construction_notes": "Keep rhizome below sediment/waterline; flexible terete petioles connect to floating blades; preserve the deep basal sinus and flat water-surface plane. Flower is surface-floating or only slightly emergent, not an upright lotus-like flower.",
     "user_data": {
       "scientific_name": "Nymphaea odorata",
       "family": "Nymphaeaceae",
@@ -27,7 +27,9 @@
       "stem_or_root": "branched rhizome; flexible petioles",
       "diagnostic_reproductive": "solitary floating or slightly emergent flowers; many petals and stamens; coiled fruiting peduncle",
       "habitat": "rooted; leaf blades float; flowers at surface",
-      "construction_notes": "Build rhizome below waterline; petioles rise from rhizome and terminate at the surface; preserve the basal sinus and floating blade plane."
+      "construction_notes": "Keep rhizome below sediment/waterline; flexible terete petioles connect to floating blades; preserve the deep basal sinus and flat water-surface plane. Flower is surface-floating or only slightly emergent, not an upright lotus-like flower.",
+      "species_dimensions": "Floating leaf blades 5–40 cm across in Flora of North America; petioles may reach approximately 2 m and vary with water depth; flowers 6–19 cm across; petals 17–43; stamens 35–120.",
+      "species_morphology": "Rooted perennial with creeping branched rhizome and no stolons; floating orbicular leaves with deep basal cleft, entire margin and radiate venation lacking a central web; upper surface green, lower surface green to purple; solitary fragrant flowers float or rise slightly above surface; 4 sepals, 17–43 white (rarely pink) petals, numerous yellow stamens; fruiting peduncle coils and draws berry-like capsule underwater."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -40,23 +42,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://plants.sc.egov.usda.gov/home.html",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional subspecies or variety and population-specific seasonal phenology",
+      "verified reference photographs for vegetative, flowering and fruiting stages"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Floating leaf blades 5–40 cm across in Flora of North America; petioles may reach approximately 2 m and vary with water depth; flowers 6–19 cm across; petals 17–43; stamens 35–120.",
+    "species_morphology": "Rooted perennial with creeping branched rhizome and no stolons; floating orbicular leaves with deep basal cleft, entire margin and radiate venation lacking a central web; upper surface green, lower surface green to purple; solitary fragrant flowers float or rise slightly above surface; 4 sepals, 17–43 white (rarely pink) petals, numerous yellow stamens; fruiting peduncle coils and draws berry-like capsule underwater."
   },
   {
     "id": "nuphar_variegata",
@@ -192,7 +197,7 @@
     "stem_or_root": "no conventional stem; one simple root commonly hangs from each frond",
     "diagnostic_reproductive": "flowers extremely rare and minute; vegetative budding dominates",
     "habitat": "free-floating; not rooted in substrate",
-    "construction_notes": "Render as a colony of tiny floating fronds with hanging roots; do not invent a stem, rosette, or flower display.",
+    "construction_notes": "Use a magnified colony view or explicit scale cue; depict discrete tiny flat fronds and single simple roots. No stem, soil-rooted base, large rosette or ornamental flower.",
     "user_data": {
       "scientific_name": "Lemna minor",
       "family": "Araceae",
@@ -204,7 +209,9 @@
       "stem_or_root": "no conventional stem; one simple root commonly hangs from each frond",
       "diagnostic_reproductive": "flowers extremely rare and minute; vegetative budding dominates",
       "habitat": "free-floating; not rooted in substrate",
-      "construction_notes": "Render as a colony of tiny floating fronds with hanging roots; do not invent a stem, rosette, or flower display."
+      "construction_notes": "Use a magnified colony view or explicit scale cue; depict discrete tiny flat fronds and single simple roots. No stem, soil-rooted base, large rosette or ornamental flower.",
+      "species_dimensions": "Fronds 1–8 mm long, about 1.3–2 times as long as wide; roots to 15 cm; commonly 1–5 or more connected fronds; 3 (occasionally 5) veins.",
+      "species_morphology": "Minute free-floating plant without conventional stem or leafy shoot; flat entire ovate fronds, scarcely gibbous, coherent in small groups; one simple root per frond, root sheath not winged, root tip usually rounded; flowers minute and uncommon; fruit 0.8–1 mm."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -217,23 +224,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local seasonal frond-size and colony-density variation",
+      "rare flowering and fruiting reference photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds 1–8 mm long, about 1.3–2 times as long as wide; roots to 15 cm; commonly 1–5 or more connected fronds; 3 (occasionally 5) veins.",
+    "species_morphology": "Minute free-floating plant without conventional stem or leafy shoot; flat entire ovate fronds, scarcely gibbous, coherent in small groups; one simple root per frond, root sheath not winged, root tip usually rounded; flowers minute and uncommon; fruit 0.8–1 mm."
   },
   {
     "id": "pistia_stratiotes",
@@ -251,7 +261,7 @@
     "stem_or_root": "short compressed stem; dense fibrous hanging roots",
     "diagnostic_reproductive": "small spadix enclosed by spathe, usually inconspicuous",
     "habitat": "free-floating; roots hang freely",
-    "construction_notes": "Build a buoyant rosette with strongly ribbed, softly hairy leaves and a dense root curtain; avoid a soil-rooted base.",
+    "construction_notes": "Show buoyant open rosette, short compressed/inflated base, ribbed velvety leaves, hanging fibrous root curtain and optional stolons linking daughter rosettes. Inflorescence is tiny and concealed; never draw as a terrestrial rooted plant.",
     "user_data": {
       "scientific_name": "Pistia stratiotes",
       "family": "Araceae",
@@ -263,7 +273,9 @@
       "stem_or_root": "short compressed stem; dense fibrous hanging roots",
       "diagnostic_reproductive": "small spadix enclosed by spathe, usually inconspicuous",
       "habitat": "free-floating; roots hang freely",
-      "construction_notes": "Build a buoyant rosette with strongly ribbed, softly hairy leaves and a dense root curtain; avoid a soil-rooted base."
+      "construction_notes": "Show buoyant open rosette, short compressed/inflated base, ribbed velvety leaves, hanging fibrous root curtain and optional stolons linking daughter rosettes. Inflorescence is tiny and concealed; never draw as a terrestrial rooted plant.",
+      "species_dimensions": "Leaves commonly about 10–20 cm long; rosettes commonly 6–30 cm across; hanging roots around 50 cm in the USGS profile; stolons may reach 70 cm. Dimensions vary with environmental conditions and population density.",
+      "species_morphology": "Free-floating clonal perennial; overlapping obovate to spatulate pale grey-green leaves in open rosettes, spongy near base, densely soft-hairy, with 7–15 prominent parallel ribs; daughter rosettes form on axillary stolons; dense feathery fibrous roots hang below; tiny axillary spathe enclosing a spadix with a single female flower below several male flowers; green many-seeded berry."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -276,23 +288,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions recorded; population-specific seasonal variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531",
       "https://powo.science.kew.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "population-specific size variation and flowering/fruiting season",
+      "verified reference photographs across growth stages"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Leaves commonly about 10–20 cm long; rosettes commonly 6–30 cm across; hanging roots around 50 cm in the USGS profile; stolons may reach 70 cm. Dimensions vary with environmental conditions and population density.",
+    "species_morphology": "Free-floating clonal perennial; overlapping obovate to spatulate pale grey-green leaves in open rosettes, spongy near base, densely soft-hairy, with 7–15 prominent parallel ribs; daughter rosettes form on axillary stolons; dense feathery fibrous roots hang below; tiny axillary spathe enclosing a spadix with a single female flower below several male flowers; green many-seeded berry."
   },
   {
     "id": "elodea_canadensis",
