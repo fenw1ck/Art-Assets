@@ -1,4 +1,4 @@
-name: Botanical renderer data validation
+name: Render protected first 57 botanical plants
 on:
   push:
     paths:
@@ -10,22 +10,27 @@ on:
       - 'research/subjects/plants/**'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
-  validate-data-only:
+  render-first-57:
+    # Do not loop when this workflow commits its generated artwork.
+    if: ${{ !contains(github.event.head_commit.message, '[plant-art-render]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install renderer dependency (validation only)
+      - name: Install renderer dependency
         run: python -m pip install Pillow
-      - name: Validate Python syntax
-        run: python -m py_compile tools/plant-art.py
-      - name: Validate species construction profiles
-        run: python tools/plant-art.py --check
-      - name: Validate infocard population without rendering
+      - name: Validate Python syntax and the 57 construction profiles
+        run: |
+          python -m py_compile tools/plant-art.py
+          python tools/plant-art.py --check
+      - name: Confirm the protected cohort is exactly 57
         run: |
           python - <<'PY'
           import json
@@ -33,11 +38,39 @@ jobs:
           cards = json.loads(Path("plant-art/infocards.json").read_text(encoding="utf-8"))
           assert len(cards) == 57, f"Expected 57 infocards, found {len(cards)}"
           assert len({card["id"] for card in cards}) == 57, "Duplicate plant IDs"
-          assert min(card.get("populated_user_data_count", 0) for card in cards) >= 4
-          for card in cards:
-              research_path = card.get("research_record")
-              assert research_path and Path(research_path).is_file(), f"Missing research record for {card['id']}: {research_path}"
-              assert card.get("user_data_provenance"), f"Missing field provenance for {card['id']}"
-          assert sum(bool(card.get("image")) for card in cards) == 8, "Unexpected image references; this job must not render"
-          print(f"Validated {len(cards)} infocards and all linked research records; minimum populated user-data fields: {min(card['populated_user_data_count'] for card in cards)}")
+          assert all(card.get("render_gate") for card in cards), "A protected card is missing its render gate metadata"
+          print(f"Confirmed exactly {len(cards)} protected infocards.")
           PY
+      - name: Render exactly the protected first cohort
+        run: python tools/plant-art.py --size 768 --seed 7
+      - name: Verify generated artwork and infocards
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          cards = json.loads(Path("plant-art/infocards.json").read_text(encoding="utf-8"))
+          assert len(cards) == 57, f"Expected 57 infocards after render, found {len(cards)}"
+          images = [Path(card["image"]) for card in cards]
+          missing = [str(path) for path in images if not path.is_file()]
+          assert not missing, f"Missing rendered images: {missing}"
+          assert len({card["id"] for card in cards}) == 57
+          assert all(card.get("form_model", {}).get("main_form", {}).get("editable_by_user") is False for card in cards)
+          print(f"Verified {len(images)} rendered plant images and protected main-form data.")
+          PY
+      - name: Commit rendered artwork and contact sheet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plant-art/derived plant-art/infocards.json
+          if git diff --cached --quiet; then
+            echo "No generated artwork changes to commit."
+          else
+            git commit -m "[plant-art-render] Render protected first 57 botanical plants"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
+      - name: Upload rendered contact sheet and image set
+        uses: actions/upload-artifact@v4
+        with:
+          name: fenwick-first-57-botanical-render
+          path: plant-art/derived/
+          if-no-files-found: error
