@@ -48,6 +48,33 @@ The renderer writes:
 
 The infocard's `diagnostic_botany` field is the species-specific construction brief. `style_terms` is the reusable visual brief. Future renderers should consume the same fields rather than inventing new descriptions for the same species.
 
+## Infocard morphology schema
+
+Each plant infocard has a `morphology` object keyed by observable structural traits. Taxonomy remains a separate object and is never used as a substitute for species-level morphological evidence.
+
+Each trait record uses this shape:
+
+```json
+{
+  "status": "unknown",
+  "values": [],
+  "variants": [],
+  "provenance": []
+}
+```
+
+Allowed statuses:
+- `documented`: one or more researched values are supported by the listed references.
+- `variable`: the trait has documented alternatives; record the conditions in `variants`.
+- `unknown`: research has not established the trait. This is not equivalent to absence.
+- `not_applicable`: the trait genuinely does not apply to this plant structure; record the rationale and supporting basis in provenance.
+
+Every value and variant must have trait-specific provenance. A provenance entry should identify the source title, exact URL or publication identifier, the claim it supports, and (where available) page, section, figure, specimen or access date. Do not cite a family or genus page as evidence for a species-specific value unless that source explicitly documents the species.
+
+Variants must preserve their conditions, including cultivar, developmental stage, sex, environment or other relevant scope. Do not flatten conditional variation into a single default value. An unknown trait remains unknown until researched; do not infer it from taxonomy or a related species.
+
+The initial 57 infocards receive empty, explicitly unknown morphology records as schema scaffolding. This is not a claim that those traits have been researched. The first 57 remain on rendering hold.
+
 ## Research discipline
 
 - Use species-level references where available; use family-level references only for traits shared by the family.
