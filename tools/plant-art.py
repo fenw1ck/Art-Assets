@@ -27,6 +27,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "plants.js"
 OUT = ROOT / "plant-art" / "derived"
+INFOCARDS = ROOT / "plant-art" / "infocards.json"
 PAPER = (249, 246, 231)
 INK = (77, 77, 55)
 
@@ -519,20 +520,30 @@ def draw_plant(plant, size=768, seed=7):
     d.ellipse((cx-size*.22,base+pot_h*.23,cx+size*.22,base+pot_h*.29),fill=(231,222,198))
     return im
 
-def card_record(p):
+def card_record(p, previous=None):
     family, habit, anatomy, leaf_shape, bloom, fruit = PROFILES[p["id"]]
-    return {
+    record = {
         "id": p["id"], "name": p["common_name"], "family": family,
         "growth_habit": habit, "diagnostic_botany": anatomy,
         "leaf_construction": leaf_shape, "flower_construction": bloom,
-        "fruit_or_harvest": fruit, "source_record": "plants.js",
+        "fruit_or_harvest": fruit, "source_record": "plants.js + tools/plant-art.py PROFILES",
         "renderer": "tools/plant-art.py", "style": "Naturalist's Plate",
-        "style_terms": ["botanical naturalist plate", "accurate species architecture",
-                        "crisp closed leaf shapes", "fine visible midribs and lateral veins",
-                        "soft upper-left light", "thin same-hue edge", "warm ivory paper",
-                        "terracotta nursery pot", "seeded natural variation"],
-        "image": f"plant-art/{p['id']}.png"
+        "style_terms": ["botanical naturalist plate", "species-specific growth architecture",
+                        "accurate leaf and reproductive morphology", "warm ivory paper",
+                        "terracotta nursery pot", "seeded natural variation"]
     }
+    # Preserve researched user-data fields and provenance when the renderer is run later.
+    if previous:
+        for key in ("user_data", "user_data_provenance", "populated_user_data_fields",
+                    "populated_user_data_count", "research_status", "research_record",
+                    "research_sources", "research_gaps", "artwork_status", "image"):
+            if key in previous:
+                record[key] = previous[key]
+    else:
+        image = ROOT / "plant-art" / f"{p['id']}.png"
+        if image.is_file():
+            record["image"] = image.relative_to(ROOT).as_posix()
+    return record
 
 def write_page(records):
     cards = []
@@ -582,6 +593,8 @@ def main():
     ap.add_argument("--replace-derived", action="store_true",
                     help="Replace files under plant-art/derived only; never changes source artwork.")
     ap.add_argument("--check", action="store_true")
+    ap.add_argument("--infocards-only", action="store_true",
+                    help="Refresh all botanical infocards without drawing or rendering any images.")
     args = ap.parse_args()
     plants = plant_list()
     missing = [p["id"] for p in plants if p["id"] not in PROFILES]
@@ -590,6 +603,18 @@ def main():
         raise SystemExit(f"Profile mismatch. Missing: {missing}; unused: {extra}")
     if args.check:
         print(f"OK: {len(plants)} plants have species-specific construction profiles.")
+        return
+    existing_cards = {}
+    if INFOCARDS.is_file():
+        try:
+            existing_cards = {item["id"]: item for item in json.loads(INFOCARDS.read_text(encoding="utf-8"))}
+        except (ValueError, KeyError, TypeError):
+            raise SystemExit(f"Could not safely read existing infocards: {INFOCARDS}")
+    if args.infocards_only:
+        records = [card_record(p, existing_cards.get(p["id"])) for p in plants]
+        INFOCARDS.parent.mkdir(parents=True, exist_ok=True)
+        INFOCARDS.write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"Updated {len(records)} botanical infocards; no images were rendered.")
         return
     selected = [p for p in plants if not args.only or p["id"] in args.only]
     known_ids = {p["id"] for p in plants}
@@ -608,7 +633,7 @@ def main():
     thumbs = []
     for p in selected:
         pid = p["id"]
-        record = card_record(p)
+        record = card_record(p, existing_cards.get(pid))
         if pid in source_images:
             src = source_images[pid]
             if not src.is_absolute():
@@ -648,6 +673,11 @@ def main():
         records.append(record)
         thumbs.append((p, image.copy()))
     (OUT / "infocards.json").write_text(json.dumps(records, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
+    merged_cards = dict(existing_cards)
+    for item in records:
+        merged_cards[item["id"]] = item
+    canonical_records = [merged_cards.get(p["id"], card_record(p)) for p in plants]
+    INFOCARDS.write_text(json.dumps(canonical_records, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")
     write_page(records)
     cols = 7
     cell_w, cell_h = 180, 220
