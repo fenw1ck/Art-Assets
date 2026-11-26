@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install renderer dependency (validation only)
+        run: python -m pip install Pillow
       - name: Validate Python syntax
         run: python -m py_compile tools/plant-art.py
       - name: Validate species construction profiles
