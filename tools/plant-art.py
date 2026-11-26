@@ -489,6 +489,198 @@ def draw_flower_plant(plant, size=768, seed=7):
     d.ellipse((cx-size*.22,base+size*.18,cx+size*.22,base+size*.23),fill=(231,222,198))
     return im
 
+
+# Architecture-specific constructors. These are deliberately separate from
+# the legacy potted-plant sketch and accept researched infocard morphology.
+def _plate_canvas(size, seed):
+    rng = random.Random(seed)
+    im = Image.new("RGB", (size, size), PAPER)
+    d = ImageDraw.Draw(im)
+    for _ in range(size * size // 2200):
+        x, y = rng.randrange(size), rng.randrange(size)
+        v = rng.choice((246, 248, 251))
+        d.point((x, y), fill=(v, v, max(225, v - 10)))
+    return im, d, rng
+
+
+def _frond(d, origin, tip, width, pairs, color, rng, sori=False, divided=1):
+    """Draw one fern frond with a continuous rachis and paired pinnae."""
+    ox, oy = origin
+    tx, ty = tip
+    dx, dy = tx - ox, ty - oy
+    length = math.hypot(dx, dy) or 1
+    nx, ny = -dy / length, dx / length
+    rachis = (82, 105, 65)
+    curve(d, [origin, ((ox + tx) / 2 + nx * width * .08,
+                       (oy + ty) / 2 + ny * width * .08), tip],
+          rachis, max(2, int(width * .045)))
+    for i in range(pairs):
+        t = (i + 1) / (pairs + 1)
+        px, py = ox + dx * t, oy + dy * t
+        taper = math.sin(math.pi * t) ** .72
+        plen = width * (.16 + .78 * taper)
+        for side in (-1, 1):
+            ex = px + nx * side * plen
+            ey = py + ny * side * plen
+            # Pinnae point slightly toward the frond apex.
+            ax = ex + dx / length * plen * .23
+            ay = ey + dy / length * plen * .23
+            col = blend(color, (190, 203, 142), rng.uniform(.02, .12))
+            d.polygon([(px, py), (ex - dx / length * plen * .18,
+                                   ey - dy / length * plen * .18),
+                       (ax, ay), (px + nx * side * plen * .12,
+                                  py + ny * side * plen * .12)],
+                      fill=col, outline=blend(col, (42, 72, 42), .42))
+            d.line([(px, py), (ax, ay)],
+                   fill=blend(col, (220, 226, 174), .42), width=1)
+            if divided > 1:
+                for j in range(1, divided + 1):
+                    q = j / (divided + 1)
+                    qx = px + (ax - px) * q
+                    qy = py + (ay - py) * q
+                    for subside in (-1, 1):
+                        sx = qx + nx * subside * plen * .12
+                        sy = qy + ny * subside * plen * .12
+                        d.line([(qx, qy), (sx, sy)],
+                               fill=blend(col, (216, 224, 169), .35), width=1)
+            if sori and i % 2 == 0:
+                for q in (.35, .65):
+                    sx = px + (ax - px) * q
+                    sy = py + (ay - py) * q
+                    rr = max(1, int(width * .009))
+                    d.ellipse((sx-rr, sy-rr, sx+rr, sy+rr),
+                              fill=(157, 111, 65))
+
+
+def draw_fern_architecture(plant, size=768, seed=7):
+    """Research-guided fern/fern-ally plate; no pot or generic broadleaf model."""
+    data = plant.get("botanical_data", {})
+    morph = data.get("morphology", {})
+    description = " ".join(str(morph.get(k, "")) for k in
+                            ("species_morphology", "construction_notes"))
+    pid = plant.get("id", "")
+    im, d, rng = _plate_canvas(size, seed + sum(map(ord, pid)))
+    green = (91, 126, 76)
+    dark = (72, 93, 58)
+    cx = size * .5
+    base = size * .86
+    if pid == "equisetum_arvense":
+        # Horsetail is a fern ally: jointed, ridged stems, not fern pinnae.
+        for i in range(5):
+            x = cx + (i - 2) * size * .055
+            top = size * (.23 + rng.random() * .12)
+            d.line([(x, base), (x, top)], fill=green, width=max(2, int(size*.009)))
+            for t in (.30, .48, .66, .82):
+                y = base - (base-top)*t
+                d.line([(x-size*.018,y-size*.008),(x+size*.018,y-size*.008)],
+                       fill=dark, width=max(1,int(size*.003)))
+                for side in (-1,1):
+                    d.line([(x,y),(x+side*size*.035,y-size*.045)],
+                           fill=green, width=max(1,int(size*.0025)))
+            d.polygon([(x-size*.018,top+size*.018),(x,top-size*.035),
+                       (x+size*.018,top+size*.018)], fill=(142,119,76))
+        return im
+    # Frond form is selected from explicit researched architecture terms.
+    divided = 3 if any(w in description.lower() for w in
+                       ("3–4-pinnate", "3-4-pinnate", "tripinnate")) else (
+               2 if "bipinnate" in description.lower() else 1)
+    pairs = 23 if pid in ("polystichum_munitum", "dryopteris_filix_mas") else 17
+    if pid == "adiantum_pedatum":
+        # Distinctive forked, pseudopedate rachis with fan-shaped pinnules.
+        for side in (-1, 1):
+            _frond(d, (cx, base), (cx + side*size*.31, size*.27),
+                   size*.24, 11, green, rng, sori=True)
+        d.line([(cx,base),(cx,size*.61)], fill=(65,54,43),
+               width=max(2,int(size*.006)))
+    elif pid == "pteridium_aquilinum":
+        # Broad triangular, highly divided blade on a long stipe.
+        _frond(d,(cx,base),(cx,size*.22),size*.38,19,green,rng,sori=True,divided=3)
+        for side in (-1,1):
+            _frond(d,(cx,base-size*.25),(cx+side*size*.27,size*.34),
+                   size*.25,15,green,rng,sori=True,divided=2)
+    else:
+        count = 5 if pid == "osmunda_regalis" else 7
+        for i in range(count):
+            angle = math.pi + (i-(count-1)/2)*.22
+            reach = size*(.25 if pid=="polypodium_vulgare" else .31)
+            tip=(cx+math.cos(angle)*reach, size*(.27+abs(i-(count-1)/2)*.025))
+            _frond(d,(cx,base),tip,size*.25,pairs,green,rng,
+                   sori=("sori" in description.lower() or pid!="osmunda_regalis"),
+                   divided=divided)
+        if pid == "osmunda_regalis":
+            # Fertile terminal pinnae are contracted and densely sporangiate.
+            for side in (-1,1):
+                d.line([(cx,base-size*.48),(cx+side*size*.035,size*.19)],
+                       fill=(113,91,58),width=max(2,int(size*.008)))
+                for j in range(13):
+                    y=size*(.20+j*.012)
+                    d.ellipse((cx+side*size*.02,y,cx+side*size*.035,y+size*.008),
+                              fill=(139,91,54))
+    return im
+
+
+def draw_graminoid_architecture(plant, size=768, seed=7):
+    """Sedge/rush/grass plate preserving culm and inflorescence placement."""
+    data = plant.get("botanical_data", {})
+    morph = data.get("morphology", {})
+    description = " ".join(str(morph.get(k, "")) for k in
+                            ("species_morphology", "construction_notes"))
+    pid = plant.get("id", "")
+    im, d, rng = _plate_canvas(size, seed + sum(map(ord, pid)))
+    green=(88,123,70); dark=(70,95,58); base=size*.86; cx=size*.5
+    n=7 if pid in ("juncus_effusus","luzula_multiflora") else 5
+    for i in range(n):
+        x=cx+(i-(n-1)/2)*size*.035
+        lean=(i-(n-1)/2)*size*.018
+        top=size*(.20+rng.random()*.09)
+        if pid in ("juncus_effusus","schoenoplectus_tabernaemontani"):
+            # Rush/bulrush culms are cylindrical and largely leafless.
+            d.line([(x,base),(x+lean,top)],fill=green,
+                   width=max(2,int(size*.008)))
+        else:
+            # Sedge culms and grass-like blades are drawn separately.
+            d.line([(x,base),(x+lean,top)],fill=green,
+                   width=max(2,int(size*.006)))
+            for side in (-1,1):
+                y=base-size*(.24+.07*((i+side)%3))
+                ex=x+lean*.45+side*size*.13
+                ey=y-size*.12
+                d.polygon([(x,y),(ex,ey),(x+side*size*.012,y+size*.012)],
+                          fill=blend(green,(170,187,119),.18),
+                          outline=dark)
+        if pid=="juncus_effusus":
+            # Inflorescence is pseudolateral, below a continuing bract.
+            fy=top+size*.28
+            d.line([(x+lean,top),(x+lean,top+size*.34)],
+                   fill=green,width=max(2,int(size*.004)))
+            for j in range(9):
+                a=j*math.tau/9
+                ex=x+lean+math.cos(a)*size*.045
+                ey=fy+math.sin(a)*size*.025
+                d.ellipse((ex-size*.006,ey-size*.006,ex+size*.006,ey+size*.006),
+                          fill=(154,137,91))
+        elif pid=="carex_aquatilis":
+            # Lower pistillate spikes; terminal staminate spikes above them.
+            for j in range(3):
+                sy=top+size*(.10+j*.075)
+                d.ellipse((x+lean-size*.012,sy,x+lean+size*.012,sy+size*.075),
+                          fill=(133,111,70),outline=(88,79,54))
+            d.ellipse((x+lean-size*.010,top-size*.045,
+                       x+lean+size*.010,top+size*.055),
+                      fill=(164,142,91),outline=(88,79,54))
+        elif pid=="eriophorum_vaginatum":
+            # Single terminal cottony spikelet on each flowering culm.
+            d.line([(x+lean,top),(x+lean,top-size*.035)],
+                   fill=(143,128,93),width=max(2,int(size*.003)))
+            for j in range(15):
+                a=j*math.tau/15
+                ex=x+lean+math.cos(a)*size*.018
+                ey=top-size*.045+math.sin(a)*size*.018
+                d.line([(x+lean,top-size*.035),(ex,ey-size*.04)],
+                       fill=(235,232,211),width=max(1,int(size*.002)))
+    return im
+
+
 def draw_plant(plant, size=768, seed=7):
     pid = plant["id"]
     if pid in FLOWER_IDS:
