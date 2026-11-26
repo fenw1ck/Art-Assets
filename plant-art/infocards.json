@@ -37,7 +37,13 @@
       "leaf_surface": "puckered",
       "branching_pattern": "axillary-shoots",
       "flower_placement_inflorescence": "truss",
-      "fruit_structure": "berry"
+      "fruit_structure": "berry",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Solanum",
+      "taxonomy_species": "Solanum lycopersicum",
+      "taxonomy_cultivar_or_group": "cherry tomato cultivar group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -148,7 +154,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": "Solanum lycopersicum",
+      "cultivar_or_horticultural_group": "cherry tomato cultivar group",
+      "taxon_id": "species:solanum_lycopersicum",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "tomato_indeterminate",
@@ -188,7 +209,13 @@
       "leaf_surface": "puckered",
       "branching_pattern": "axillary-shoots",
       "flower_placement_inflorescence": "truss",
-      "fruit_structure": "berry"
+      "fruit_structure": "berry",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Solanum",
+      "taxonomy_species": "Solanum lycopersicum",
+      "taxonomy_cultivar_or_group": "indeterminate growth-habit group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -299,7 +326,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": "Solanum lycopersicum",
+      "cultivar_or_horticultural_group": "indeterminate growth-habit group",
+      "taxon_id": "species:solanum_lycopersicum",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "tomato_determinate",
@@ -339,7 +381,13 @@
       "leaf_surface": "puckered",
       "branching_pattern": "axillary-shoots",
       "flower_placement_inflorescence": "truss",
-      "fruit_structure": "berry"
+      "fruit_structure": "berry",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Solanum",
+      "taxonomy_species": "Solanum lycopersicum",
+      "taxonomy_cultivar_or_group": "determinate growth-habit group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -450,7 +498,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": "Solanum lycopersicum",
+      "cultivar_or_horticultural_group": "determinate growth-habit group",
+      "taxon_id": "species:solanum_lycopersicum",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "pepper_bell",
@@ -490,7 +553,13 @@
       "leaf_surface": "glossy",
       "branching_pattern": "repeated-fork",
       "flower_placement_inflorescence": "single",
-      "fruit_structure": "pepper"
+      "fruit_structure": "pepper",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Capsicum",
+      "taxonomy_species": "Capsicum annuum",
+      "taxonomy_cultivar_or_group": "bell pepper cultivar group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -602,7 +671,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Capsicum",
+      "species": "Capsicum annuum",
+      "cultivar_or_horticultural_group": "bell pepper cultivar group",
+      "taxon_id": "species:capsicum_annuum",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "eggplant",
@@ -638,7 +722,13 @@
       "foliage_colour": "#4d6e46",
       "leaf_shape_detail": "larger, grey-green, wavy-edged leaves",
       "flower_structure": "purple flowers",
-      "fruit_structure": "long, glossy purple teardrop berry beneath a spiky green cap"
+      "fruit_structure": "long, glossy purple teardrop berry beneath a spiky green cap",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Solanum",
+      "taxonomy_species": "Solanum melongena",
+      "taxonomy_cultivar_or_group": "eggplant cultivar group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -742,7 +832,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": "Solanum melongena",
+      "cultivar_or_horticultural_group": "eggplant cultivar group",
+      "taxon_id": "species:solanum_melongena",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "corn_sweet",
@@ -782,7 +887,13 @@
       "branching_architecture": "One dominant upright culm with distinct nodes and internodes; usually little lateral branching. Female ear shoots arise from upper leaf axils.",
       "flower_placement_and_inflorescence": "Monoecious: terminal branched tassel is the male inflorescence; one or more lateral axillary ears are female inflorescences, wrapped in husks and bearing long silks.",
       "fruit_or_harvest_morphology": "Ear is a compact cob with kernels in longitudinal rows; silk emerges from husk tip. Kernels are caryopses, not berries.",
-      "renderer_construction_rules": "Construct a single segmented vertical culm first, then alternate sheathing leaves. Put the tassel only at the apex. Put one or two husked ears on upper axillary nodes, with silks at their tips. Never scatter ears along every node or make the tassel a flower cluster."
+      "renderer_construction_rules": "Construct a single segmented vertical culm first, then alternate sheathing leaves. Put the tassel only at the apex. Put one or two husked ears on upper axillary nodes, with silks at their tips. Never scatter ears along every node or make the tassel a flower cluster.",
+      "taxonomy_order": "Poales",
+      "taxonomy_family": "Poaceae",
+      "taxonomy_genus": "Zea",
+      "taxonomy_species": "Zea mays",
+      "taxonomy_cultivar_or_group": "sweet-corn cultivar group",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -893,7 +1004,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Poales",
+      "family": "Poaceae",
+      "genus": "Zea",
+      "species": "Zea mays",
+      "cultivar_or_horticultural_group": "sweet-corn cultivar group",
+      "taxon_id": "species:zea_mays",
+      "parent_taxon_id": "family:Poaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Poaceae"
   },
   {
     "id": "bean_bush",
@@ -933,7 +1059,13 @@
       "branching_architecture": "Several slender, often slightly hairy stems branch from the lower nodes; no twining axis and no tendrils in the typical bush form.",
       "flower_placement_and_inflorescence": "Small axillary or terminal racemes; papilionaceous pea-type flowers, often paired or solitary along the rachis; white, pink, lilac or purple.",
       "fruit_or_harvest_morphology": "Each pollinated flower produces one elongated pod; pods may be round or flattened, straight or curved, and contain several seeds.",
-      "renderer_construction_rules": "Build a low, self-supporting branching bush. Attach each trifoliate leaf to a node on a long petiole, with three distinct leaflets. Place short racemes in leaf axils and pods where flowers occurred. Do not draw climbing coils or pea tendrils."
+      "renderer_construction_rules": "Build a low, self-supporting branching bush. Attach each trifoliate leaf to a node on a long petiole, with three distinct leaflets. Place short racemes in leaf axils and pods where flowers occurred. Do not draw climbing coils or pea tendrils.",
+      "taxonomy_order": "Fabales",
+      "taxonomy_family": "Fabaceae",
+      "taxonomy_genus": "Phaseolus",
+      "taxonomy_species": "Phaseolus vulgaris",
+      "taxonomy_cultivar_or_group": "bush growth-habit cultivars",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1043,7 +1175,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Phaseolus",
+      "species": "Phaseolus vulgaris",
+      "cultivar_or_horticultural_group": "bush growth-habit cultivars",
+      "taxon_id": "species:phaseolus_vulgaris",
+      "parent_taxon_id": "family:Fabaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Fabaceae"
   },
   {
     "id": "bean_pole",
@@ -1083,7 +1230,13 @@
       "branching_architecture": "A slender twining main stem elongates upward around a stake or trellis; side branches emerge from nodes. Climbing is by stem twining, not pea-like terminal tendrils.",
       "flower_placement_and_inflorescence": "Axillary or terminal racemes bearing paired or solitary papilionaceous flowers, typically white through pink or purple.",
       "fruit_or_harvest_morphology": "Elongated pods hang from flower-bearing nodes; pods may be green, yellow, purple, round or flat depending on cultivar.",
-      "renderer_construction_rules": "Construct one or more long spiralling stems around a visible support. Keep leaf insertion alternate and trifoliate. Place racemes at leaf axils; let pods hang from those same reproductive nodes. Do not substitute tendrils for the twining stem."
+      "renderer_construction_rules": "Construct one or more long spiralling stems around a visible support. Keep leaf insertion alternate and trifoliate. Place racemes at leaf axils; let pods hang from those same reproductive nodes. Do not substitute tendrils for the twining stem.",
+      "taxonomy_order": "Fabales",
+      "taxonomy_family": "Fabaceae",
+      "taxonomy_genus": "Phaseolus",
+      "taxonomy_species": "Phaseolus vulgaris",
+      "taxonomy_cultivar_or_group": "pole/climbing growth-habit cultivars",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1188,7 +1341,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Phaseolus",
+      "species": "Phaseolus vulgaris",
+      "cultivar_or_horticultural_group": "pole/climbing growth-habit cultivars",
+      "taxon_id": "species:phaseolus_vulgaris",
+      "parent_taxon_id": "family:Fabaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Fabaceae"
   },
   {
     "id": "pea",
@@ -1228,7 +1396,13 @@
       "branching_architecture": "Slender stems extend and lean; branched tendrils at the end of each compound leaf grasp supports. This is leaf-derived tendril climbing, not twining stems.",
       "flower_placement_and_inflorescence": "One to three papilionaceous flowers on short axillary racemes; white to pink or purple; flower stalks arise from leaf axils.",
       "fruit_or_harvest_morphology": "Elongated legume pod, several seeds arranged in a single row; pods follow the axillary flower positions.",
-      "renderer_construction_rules": "Build a delicate scrambling stem with large stipules at nodes. Each compound leaf carries paired leaflets and ends in a branched tendril; tendrils should visibly coil around supports. Place flowers and pods in axils, not at the tendril tips."
+      "renderer_construction_rules": "Build a delicate scrambling stem with large stipules at nodes. Each compound leaf carries paired leaflets and ends in a branched tendril; tendrils should visibly coil around supports. Place flowers and pods in axils, not at the tendril tips.",
+      "taxonomy_order": "Fabales",
+      "taxonomy_family": "Fabaceae",
+      "taxonomy_genus": "Pisum",
+      "taxonomy_species": "Pisum sativum",
+      "taxonomy_cultivar_or_group": "garden pea",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1334,7 +1508,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Pisum",
+      "species": "Pisum sativum",
+      "cultivar_or_horticultural_group": "garden pea",
+      "taxon_id": "species:pisum_sativum",
+      "parent_taxon_id": "family:Fabaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Fabaceae"
   },
   {
     "id": "potato",
@@ -1374,7 +1563,13 @@
       "leaf_surface": "matte",
       "branching_pattern": "repeated-fork",
       "flower_placement_inflorescence": "cluster",
-      "fruit_structure": "berry"
+      "fruit_structure": "berry",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Solanum",
+      "taxonomy_species": "Solanum tuberosum",
+      "taxonomy_cultivar_or_group": "cultivated potato",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1503,7 +1698,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Solanum",
+      "species": "Solanum tuberosum",
+      "cultivar_or_horticultural_group": "cultivated potato",
+      "taxon_id": "species:solanum_tuberosum",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "squash_summer",
@@ -1543,7 +1753,13 @@
       "branching_architecture": "Angular, bristly stems; axillary tendrils commonly branched and coiling. Bush cultivars have short internodes and limited runners; vining cultivars trail.",
       "flower_placement_and_inflorescence": "Large solitary yellow funnel/bell-shaped flowers in leaf axils. Separate male and female flowers occur on the same plant; female flowers have a conspicuous inferior ovary behind the corolla.",
       "fruit_or_harvest_morphology": "Pepo develops directly behind the female flower; zucchini is elongated and harvested immature. Fruit stalk is firm and angular.",
-      "renderer_construction_rules": "Determine bush versus vining habit before construction. Use coarse, lobed leaves on long petioles and coiling branched tendrils at nodes. Show male flowers on longer stalks and female flowers with a miniature zucchini-shaped ovary. Do not put fruit at male flowers."
+      "renderer_construction_rules": "Determine bush versus vining habit before construction. Use coarse, lobed leaves on long petioles and coiling branched tendrils at nodes. Show male flowers on longer stalks and female flowers with a miniature zucchini-shaped ovary. Do not put fruit at male flowers.",
+      "taxonomy_order": "Cucurbitales",
+      "taxonomy_family": "Cucurbitaceae",
+      "taxonomy_genus": "Cucurbita",
+      "taxonomy_species": "Cucurbita pepo",
+      "taxonomy_cultivar_or_group": "summer-squash cultivar group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1653,7 +1869,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Cucurbitales",
+      "family": "Cucurbitaceae",
+      "genus": "Cucurbita",
+      "species": "Cucurbita pepo",
+      "cultivar_or_horticultural_group": "summer-squash cultivar group",
+      "taxon_id": "species:cucurbita_pepo",
+      "parent_taxon_id": "family:Cucurbitaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Cucurbitaceae"
   },
   {
     "id": "squash_winter",
@@ -1693,7 +1924,13 @@
       "branching_architecture": "Robust prostrate stems with coiling, branched tendrils at nodes. Cucurbita maxima stems can be softer and more rounded than the hard, angled stems of C. pepo.",
       "flower_placement_and_inflorescence": "Large solitary yellow unisexual flowers; male and female flowers on the same plant. Female flower has a swollen ovary below the corolla.",
       "fruit_or_harvest_morphology": "Large pepo with highly variable shape, rind and colour; mature fruit is borne at a female-flower node and has a stout, often flared peduncle.",
-      "renderer_construction_rules": "Render as a long ground-spreading vine, not a compact zucchini bush. Give leaves broad, nearly round cordate blades with shallow lobes and pale mottling only if cultivar supports it. Add branched tendrils. Place one or a few large fruits at female-flower nodes."
+      "renderer_construction_rules": "Render as a long ground-spreading vine, not a compact zucchini bush. Give leaves broad, nearly round cordate blades with shallow lobes and pale mottling only if cultivar supports it. Add branched tendrils. Place one or a few large fruits at female-flower nodes.",
+      "taxonomy_order": "Cucurbitales",
+      "taxonomy_family": "Cucurbitaceae",
+      "taxonomy_genus": "Cucurbita",
+      "taxonomy_species": "Cucurbita maxima",
+      "taxonomy_cultivar_or_group": "winter-squash representative; species selection pending",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1804,7 +2041,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Cucurbitales",
+      "family": "Cucurbitaceae",
+      "genus": "Cucurbita",
+      "species": "Cucurbita maxima",
+      "cultivar_or_horticultural_group": "winter-squash representative; species selection pending",
+      "taxon_id": "species:cucurbita_maxima",
+      "parent_taxon_id": "family:Cucurbitaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Cucurbitaceae"
   },
   {
     "id": "cucumber",
@@ -1844,7 +2096,13 @@
       "branching_architecture": "Angular, bristly stems; one simple, unbranched tendril at each leaf node, typically arising opposite the leaf. Axillary shoots may branch from nodes.",
       "flower_placement_and_inflorescence": "Monoecious: male flowers often in small axillary clusters; female flowers usually solitary and show a small prickly inferior ovary behind the yellow corolla.",
       "fruit_or_harvest_morphology": "Elongated pepo, usually green, often tuberculate or prickly when young; develops from the female ovary and hangs from its pedicel.",
-      "renderer_construction_rules": "Make a trailing or trellised vine with simple tendrils (not branched squash tendrils). Attach one rough cordate-lobed leaf and a tendril at each node. Cluster some male flowers; place solitary female flowers with miniature cucumber ovaries. Fruit only follows female flowers."
+      "renderer_construction_rules": "Make a trailing or trellised vine with simple tendrils (not branched squash tendrils). Attach one rough cordate-lobed leaf and a tendril at each node. Cluster some male flowers; place solitary female flowers with miniature cucumber ovaries. Fruit only follows female flowers.",
+      "taxonomy_order": "Cucurbitales",
+      "taxonomy_family": "Cucurbitaceae",
+      "taxonomy_genus": "Cucumis",
+      "taxonomy_species": "Cucumis sativus",
+      "taxonomy_cultivar_or_group": "cucumber",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1950,7 +2208,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Cucurbitales",
+      "family": "Cucurbitaceae",
+      "genus": "Cucumis",
+      "species": "Cucumis sativus",
+      "cultivar_or_horticultural_group": "cucumber",
+      "taxon_id": "species:cucumis_sativus",
+      "parent_taxon_id": "family:Cucurbitaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Cucurbitaceae"
   },
   {
     "id": "lettuce",
@@ -1990,7 +2263,13 @@
       "branching_architecture": "Short compressed stem in vegetative rosette; at bolting, central stem elongates and branches into a many-headed panicle.",
       "flower_placement_and_inflorescence": "Numerous small yellow Asteraceae capitula in dense corymbiform or paniculate arrays; each head contains multiple florets.",
       "fruit_or_harvest_morphology": "Small ribbed achene (cypsela) with a slender beak and white pappus; no fleshy fruit.",
-      "renderer_construction_rules": "Vegetative stage is a layered basal rosette with overlapping leaves, not a leafy upright stalk. For bolting, elongate one central stem and branch it into many small yellow heads. Preserve the leaf form of the named leaf cultivar."
+      "renderer_construction_rules": "Vegetative stage is a layered basal rosette with overlapping leaves, not a leafy upright stalk. For bolting, elongate one central stem and branch it into many small yellow heads. Preserve the leaf form of the named leaf cultivar.",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Lactuca",
+      "taxonomy_species": "Lactuca sativa",
+      "taxonomy_cultivar_or_group": "leaf-lettuce cultivar group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2101,7 +2380,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Lactuca",
+      "species": "Lactuca sativa",
+      "cultivar_or_horticultural_group": "leaf-lettuce cultivar group",
+      "taxon_id": "species:lactuca_sativa",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "spinach",
@@ -2141,7 +2435,13 @@
       "branching_architecture": "Vegetative stem is very short. Bolting produces a tall, angular, branching inflorescence axis with reduced upper leaves. Species is usually dioecious.",
       "flower_placement_and_inflorescence": "Tiny green flowers without showy petals; male flowers form clusters in spikes or leafy panicles, female flowers are sessile axillary clusters.",
       "fruit_or_harvest_morphology": "Small dry fruit enclosed by persistent hardened female perianth; fruit clusters may bear spines in some forms.",
-      "renderer_construction_rules": "Keep the edible stage as a low rosette of petiolate leaves. For mature seed-stage reference, add a separate upright branched flowering stalk. Do not render showy blossoms; male and female flower structures are minute and green."
+      "renderer_construction_rules": "Keep the edible stage as a low rosette of petiolate leaves. For mature seed-stage reference, add a separate upright branched flowering stalk. Do not render showy blossoms; male and female flower structures are minute and green.",
+      "taxonomy_order": "Caryophyllales",
+      "taxonomy_family": "Amaranthaceae",
+      "taxonomy_genus": "Spinacia",
+      "taxonomy_species": "Spinacia oleracea",
+      "taxonomy_cultivar_or_group": "spinach",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2252,7 +2552,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Caryophyllales",
+      "family": "Amaranthaceae",
+      "genus": "Spinacia",
+      "species": "Spinacia oleracea",
+      "cultivar_or_horticultural_group": "spinach",
+      "taxon_id": "species:spinacia_oleracea",
+      "parent_taxon_id": "family:Amaranthaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaranthaceae"
   },
   {
     "id": "kale",
@@ -2292,7 +2607,13 @@
       "branching_architecture": "Strong upright central stem with leaves attached at successive nodes; flowering in the second year produces an elongated branched flowering axis.",
       "flower_placement_and_inflorescence": "Yellow four-petalled cruciform flowers in loose racemes on the second-year flowering stem.",
       "fruit_or_harvest_morphology": "Long narrow siliques containing seeds; not a fleshy fruit.",
-      "renderer_construction_rules": "Construct a visible upright stem with alternate leaves at distinct nodes. Keep leaf margins cultivar-specific (curly, wavy or flat); do not fold leaves into a cabbage head. Add a flowering raceme only for the second-year stage."
+      "renderer_construction_rules": "Construct a visible upright stem with alternate leaves at distinct nodes. Keep leaf margins cultivar-specific (curly, wavy or flat); do not fold leaves into a cabbage head. Add a flowering raceme only for the second-year stage.",
+      "taxonomy_order": "Brassicales",
+      "taxonomy_family": "Brassicaceae",
+      "taxonomy_genus": "Brassica",
+      "taxonomy_species": "Brassica oleracea",
+      "taxonomy_cultivar_or_group": "Acephala Group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2403,7 +2724,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Brassica",
+      "species": "Brassica oleracea",
+      "cultivar_or_horticultural_group": "Acephala Group",
+      "taxon_id": "species:brassica_oleracea",
+      "parent_taxon_id": "family:Brassicaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Brassicaceae"
   },
   {
     "id": "cabbage",
@@ -2443,7 +2779,13 @@
       "branching_architecture": "Stem base is greatly shortened; closely spaced leaf nodes produce the compact head. In the second year a central flowering stem elongates.",
       "flower_placement_and_inflorescence": "Second-year open racemes of yellow four-petalled cruciform flowers; the edible head itself is vegetative leaf tissue, not a flower.",
       "fruit_or_harvest_morphology": "Narrow siliques after flowering.",
-      "renderer_construction_rules": "Model head formation as successive leaves with increasing inward curvature around the apical meristem. Include larger outer wrapper leaves and compact inner folded leaves. Do not draw a broccoli-like bud cluster. Flower stalk belongs only to a bolted second-year plant."
+      "renderer_construction_rules": "Model head formation as successive leaves with increasing inward curvature around the apical meristem. Include larger outer wrapper leaves and compact inner folded leaves. Do not draw a broccoli-like bud cluster. Flower stalk belongs only to a bolted second-year plant.",
+      "taxonomy_order": "Brassicales",
+      "taxonomy_family": "Brassicaceae",
+      "taxonomy_genus": "Brassica",
+      "taxonomy_species": "Brassica oleracea",
+      "taxonomy_cultivar_or_group": "Capitata Group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2554,7 +2896,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Brassica",
+      "species": "Brassica oleracea",
+      "cultivar_or_horticultural_group": "Capitata Group",
+      "taxon_id": "species:brassica_oleracea",
+      "parent_taxon_id": "family:Brassicaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Brassicaceae"
   },
   {
     "id": "broccoli",
@@ -2594,7 +2951,13 @@
       "branching_architecture": "Strong upright central stem with lateral branches; the terminal and axillary inflorescences form compact clusters of unopened flower buds.",
       "flower_placement_and_inflorescence": "Dense green clusters of immature flower buds; if allowed to bolt, branches elongate into racemes of yellow four-petalled flowers.",
       "fruit_or_harvest_morphology": "Narrow siliques develop after flowering; the edible broccoli head is not fruit but immature inflorescence.",
-      "renderer_construction_rules": "Make the edible head as many tiny tightly packed green buds on branched stalks, with a thick central stem and large leaves below. Keep the head visibly granular/branched rather than a single smooth ball. A flowering stage should open into yellow cruciform flowers on elongated racemes."
+      "renderer_construction_rules": "Make the edible head as many tiny tightly packed green buds on branched stalks, with a thick central stem and large leaves below. Keep the head visibly granular/branched rather than a single smooth ball. A flowering stage should open into yellow cruciform flowers on elongated racemes.",
+      "taxonomy_order": "Brassicales",
+      "taxonomy_family": "Brassicaceae",
+      "taxonomy_genus": "Brassica",
+      "taxonomy_species": "Brassica oleracea",
+      "taxonomy_cultivar_or_group": "Italica Group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2705,7 +3068,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Brassica",
+      "species": "Brassica oleracea",
+      "cultivar_or_horticultural_group": "Italica Group",
+      "taxon_id": "species:brassica_oleracea",
+      "parent_taxon_id": "family:Brassicaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Brassicaceae"
   },
   {
     "id": "chard",
@@ -2745,7 +3123,13 @@
       "branching_architecture": "Short crown in the vegetative stage; leaves arise from the basal crown on long, thick petioles. A tall branched flowering stem develops in the second year.",
       "flower_placement_and_inflorescence": "Small greenish flowers in clusters along a long branched paniculate spike; not showy.",
       "fruit_or_harvest_morphology": "Small fruit units grouped in persistent thickened perianth bases (glomerules/seedballs).",
-      "renderer_construction_rules": "Emphasize the fleshy petiole and midrib as structural elements; their colour may be white, yellow, orange, pink or red depending on cultivar. Do not create a swollen beet root. Keep the edible leaves in a basal clump; flowering is a tall second-year event."
+      "renderer_construction_rules": "Emphasize the fleshy petiole and midrib as structural elements; their colour may be white, yellow, orange, pink or red depending on cultivar. Do not create a swollen beet root. Keep the edible leaves in a basal clump; flowering is a tall second-year event.",
+      "taxonomy_order": "Caryophyllales",
+      "taxonomy_family": "Amaranthaceae",
+      "taxonomy_genus": "Beta",
+      "taxonomy_species": "Beta vulgaris",
+      "taxonomy_cultivar_or_group": "Cicla Group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -2856,7 +3240,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Caryophyllales",
+      "family": "Amaranthaceae",
+      "genus": "Beta",
+      "species": "Beta vulgaris",
+      "cultivar_or_horticultural_group": "Cicla Group",
+      "taxon_id": "species:beta_vulgaris",
+      "parent_taxon_id": "family:Amaranthaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaranthaceae"
   },
   {
     "id": "carrot",
@@ -2895,7 +3294,13 @@
       "branching_pattern": "basal-crown",
       "flower_placement_inflorescence": "umbel",
       "leaf_shape_detail": "finely divided, fern-like leaves",
-      "flower_structure": "white compound umbels, often umbels of smaller umbels"
+      "flower_structure": "white compound umbels, often umbels of smaller umbels",
+      "taxonomy_order": "Apiales",
+      "taxonomy_family": "Apiaceae",
+      "taxonomy_genus": "Daucus",
+      "taxonomy_species": "Daucus carota",
+      "taxonomy_cultivar_or_group": "cultivated carrot",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3004,7 +3409,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Apiales",
+      "family": "Apiaceae",
+      "genus": "Daucus",
+      "species": "Daucus carota",
+      "cultivar_or_horticultural_group": "cultivated carrot",
+      "taxon_id": "species:daucus_carota",
+      "parent_taxon_id": "family:Apiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Apiaceae"
   },
   {
     "id": "beet",
@@ -3044,7 +3464,13 @@
       "branching_architecture": "Short vegetative crown above a swollen storage organ. In the second year, a tall branched flowering stem rises from the crown.",
       "flower_placement_and_inflorescence": "Small greenish flowers in clusters along a long branched paniculate spike; not showy.",
       "fruit_or_harvest_morphology": "Seed units are grouped in persistent perianth bases into rough seedballs (glomerules); edible beet is a swollen hypocotyl/root, not a fruit.",
-      "renderer_construction_rules": "Show the swollen root at the soil line, with a narrowing taproot below and a basal rosette above. Petioles emerge from the crown. Do not give it chard's oversized colourful petioles as the primary feature. Add tall green flowering stems only in seed stage."
+      "renderer_construction_rules": "Show the swollen root at the soil line, with a narrowing taproot below and a basal rosette above. Petioles emerge from the crown. Do not give it chard's oversized colourful petioles as the primary feature. Add tall green flowering stems only in seed stage.",
+      "taxonomy_order": "Caryophyllales",
+      "taxonomy_family": "Amaranthaceae",
+      "taxonomy_genus": "Beta",
+      "taxonomy_species": "Beta vulgaris",
+      "taxonomy_cultivar_or_group": "Conditiva Group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3155,7 +3581,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Caryophyllales",
+      "family": "Amaranthaceae",
+      "genus": "Beta",
+      "species": "Beta vulgaris",
+      "cultivar_or_horticultural_group": "Conditiva Group",
+      "taxon_id": "species:beta_vulgaris",
+      "parent_taxon_id": "family:Amaranthaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaranthaceae"
   },
   {
     "id": "radish",
@@ -3195,7 +3636,13 @@
       "branching_architecture": "Short crown and swollen taproot in the edible stage; a reddish or green flowering stem elongates from the crown when bolting.",
       "flower_placement_and_inflorescence": "Four-petalled white, pink or mauve flowers in elongated racemes; typical Brassicaceae cross shape.",
       "fruit_or_harvest_morphology": "Elongated silique, often swollen or somewhat constricted around seeds; edible radish is a tuberous taproot, not fruit.",
-      "renderer_construction_rules": "Draw the root as a swollen napiform, cylindrical or tapered storage root with a fine lower taproot. Leaf rosette should be lyrate, not simple oval leaves. In flowering stage, add an erect raceme and elongated seed pods."
+      "renderer_construction_rules": "Draw the root as a swollen napiform, cylindrical or tapered storage root with a fine lower taproot. Leaf rosette should be lyrate, not simple oval leaves. In flowering stage, add an erect raceme and elongated seed pods.",
+      "taxonomy_order": "Brassicales",
+      "taxonomy_family": "Brassicaceae",
+      "taxonomy_genus": "Raphanus",
+      "taxonomy_species": "Raphanus sativus",
+      "taxonomy_cultivar_or_group": "cultivated radish",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3306,7 +3753,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Brassicales",
+      "family": "Brassicaceae",
+      "genus": "Raphanus",
+      "species": "Raphanus sativus",
+      "cultivar_or_horticultural_group": "cultivated radish",
+      "taxon_id": "species:raphanus_sativus",
+      "parent_taxon_id": "family:Brassicaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Brassicaceae"
   },
   {
     "id": "onion",
@@ -3340,7 +3802,13 @@
       "flower_construction": "allium-umbel",
       "fruit_or_harvest": "bulb",
       "foliage_colour": "#6aa58a",
-      "leaf_type": "hollow tubular leaves"
+      "leaf_type": "hollow tubular leaves",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Amaryllidaceae",
+      "taxonomy_genus": "Allium",
+      "taxonomy_species": "Allium cepa",
+      "taxonomy_cultivar_or_group": "bulb onion",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3434,7 +3902,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "species": "Allium cepa",
+      "cultivar_or_horticultural_group": "bulb onion",
+      "taxon_id": "species:allium_cepa",
+      "parent_taxon_id": "family:Amaryllidaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaryllidaceae"
   },
   {
     "id": "garlic",
@@ -3468,7 +3951,13 @@
       "flower_construction": "allium-umbel",
       "fruit_or_harvest": "bulb",
       "foliage_colour": "#6f9f6a",
-      "leaf_type": "flat keeled strap leaves"
+      "leaf_type": "flat keeled strap leaves",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Amaryllidaceae",
+      "taxonomy_genus": "Allium",
+      "taxonomy_species": "Allium sativum",
+      "taxonomy_cultivar_or_group": "cultivated garlic",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3562,7 +4051,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "species": "Allium sativum",
+      "cultivar_or_horticultural_group": "cultivated garlic",
+      "taxon_id": "species:allium_sativum",
+      "parent_taxon_id": "family:Amaryllidaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaryllidaceae"
   },
   {
     "id": "asparagus",
@@ -3602,7 +4106,13 @@
       "branching_architecture": "Several upright spears emerge from a crown. Mature stems branch repeatedly in the upper portion, with fine threadlike cladodes arranged in fascicles.",
       "flower_placement_and_inflorescence": "Small yellowish-green bell-shaped flowers in axillary racemes; plants are dioecious or bear unisexual flowers.",
       "fruit_or_harvest_morphology": "Small red berries on female plants.",
-      "renderer_construction_rules": "Distinguish the harvest spear from mature fern foliage. Mature form must be airy and finely branched, with bundles of slender cladodes along branchlets; never use broad leaves. Place small flowers and red berries at axillary positions."
+      "renderer_construction_rules": "Distinguish the harvest spear from mature fern foliage. Mature form must be airy and finely branched, with bundles of slender cladodes along branchlets; never use broad leaves. Place small flowers and red berries at axillary positions.",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Asparagaceae",
+      "taxonomy_genus": "Asparagus",
+      "taxonomy_species": "Asparagus officinalis",
+      "taxonomy_cultivar_or_group": "cultivated asparagus",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3713,7 +4223,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Asparagaceae",
+      "genus": "Asparagus",
+      "species": "Asparagus officinalis",
+      "cultivar_or_horticultural_group": "cultivated asparagus",
+      "taxon_id": "species:asparagus_officinalis",
+      "parent_taxon_id": "family:Asparagaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asparagaceae"
   },
   {
     "id": "rhubarb",
@@ -3753,7 +4278,13 @@
       "branching_architecture": "Short thick crown with leaves on individual long petioles; mature plant sends up a tall, stout, branched panicle.",
       "flower_placement_and_inflorescence": "Small greenish-white or yellowish-white flowers in a large branched panicle, not large solitary blooms.",
       "fruit_or_harvest_morphology": "Small winged triangular nutlet (achene) after flowering; edible harvest is the fleshy petiole, not the leaf blade or fruit.",
-      "renderer_construction_rules": "Build a broad low crown of oversized blades, each on its own thick, often red petiole. Leaves are not arranged on a tall leafy stem. Flowering stage adds a central tall panicle. Keep the petiole scale conspicuously thicker than ordinary leaf stalks."
+      "renderer_construction_rules": "Build a broad low crown of oversized blades, each on its own thick, often red petiole. Leaves are not arranged on a tall leafy stem. Flowering stage adds a central tall panicle. Keep the petiole scale conspicuously thicker than ordinary leaf stalks.",
+      "taxonomy_order": "Caryophyllales",
+      "taxonomy_family": "Polygonaceae",
+      "taxonomy_genus": "Rheum",
+      "taxonomy_species": "Rheum rhabarbarum",
+      "taxonomy_cultivar_or_group": "garden rhubarb",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -3863,7 +4394,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Caryophyllales",
+      "family": "Polygonaceae",
+      "genus": "Rheum",
+      "species": "Rheum rhabarbarum",
+      "cultivar_or_horticultural_group": "garden rhubarb",
+      "taxon_id": "species:rheum_rhabarbarum",
+      "parent_taxon_id": "family:Polygonaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Polygonaceae"
   },
   {
     "id": "basil",
@@ -3903,7 +4449,13 @@
       "branching_pattern": "axillary-shoots",
       "flower_placement_inflorescence": "spike-of-whorls",
       "stem_structure": "square green stems",
-      "leaf_shape_detail": "large glossy, slightly cupped ovate leaves"
+      "leaf_shape_detail": "large glossy, slightly cupped ovate leaves",
+      "taxonomy_order": "Lamiales",
+      "taxonomy_family": "Lamiaceae",
+      "taxonomy_genus": "Ocimum",
+      "taxonomy_species": "Ocimum basilicum",
+      "taxonomy_cultivar_or_group": "culinary basil",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4027,7 +4579,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Lamiales",
+      "family": "Lamiaceae",
+      "genus": "Ocimum",
+      "species": "Ocimum basilicum",
+      "cultivar_or_horticultural_group": "culinary basil",
+      "taxon_id": "species:ocimum_basilicum",
+      "parent_taxon_id": "family:Lamiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Lamiaceae"
   },
   {
     "id": "cilantro",
@@ -4066,7 +4633,13 @@
       "branching_pattern": "basal-crown",
       "flower_placement_inflorescence": "umbel",
       "leaf_shape_detail": "lower leaves rounded and lobed; upper leaves finely divided",
-      "flower_structure": "delicate white umbels"
+      "flower_structure": "delicate white umbels",
+      "taxonomy_order": "Apiales",
+      "taxonomy_family": "Apiaceae",
+      "taxonomy_genus": "Coriandrum",
+      "taxonomy_species": "Coriandrum sativum",
+      "taxonomy_cultivar_or_group": "cilantro/coriander",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4174,7 +4747,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Apiales",
+      "family": "Apiaceae",
+      "genus": "Coriandrum",
+      "species": "Coriandrum sativum",
+      "cultivar_or_horticultural_group": "cilantro/coriander",
+      "taxon_id": "species:coriandrum_sativum",
+      "parent_taxon_id": "family:Apiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Apiaceae"
   },
   {
     "id": "parsley",
@@ -4213,7 +4801,13 @@
       "branching_pattern": "basal-crown",
       "flower_placement_inflorescence": "white umbels in the second year",
       "leaf_shape_detail": "deeply divided leaves with sharply toothed leaflets",
-      "petiole_attachment": "long petioles"
+      "petiole_attachment": "long petioles",
+      "taxonomy_order": "Apiales",
+      "taxonomy_family": "Apiaceae",
+      "taxonomy_genus": "Petroselinum",
+      "taxonomy_species": "Petroselinum crispum",
+      "taxonomy_cultivar_or_group": "culinary parsley",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4321,7 +4915,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Apiales",
+      "family": "Apiaceae",
+      "genus": "Petroselinum",
+      "species": "Petroselinum crispum",
+      "cultivar_or_horticultural_group": "culinary parsley",
+      "taxon_id": "species:petroselinum_crispum",
+      "parent_taxon_id": "family:Apiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Apiaceae"
   },
   {
     "id": "dill",
@@ -4360,7 +4969,13 @@
       "branching_pattern": "basal-crown",
       "flower_placement_inflorescence": "umbel",
       "leaf_shape_detail": "very fine threadlike divided leaves",
-      "flower_structure": "broad flat yellow compound umbels"
+      "flower_structure": "broad flat yellow compound umbels",
+      "taxonomy_order": "Apiales",
+      "taxonomy_family": "Apiaceae",
+      "taxonomy_genus": "Anethum",
+      "taxonomy_species": "Anethum graveolens",
+      "taxonomy_cultivar_or_group": "dill",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4468,7 +5083,22 @@
       "resolved_sources": "Taxon-specific sources added to the linked research record and this infocard; source support is limited to the claims described in those sources."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Apiales",
+      "family": "Apiaceae",
+      "genus": "Anethum",
+      "species": "Anethum graveolens",
+      "cultivar_or_horticultural_group": "dill",
+      "taxon_id": "species:anethum_graveolens",
+      "parent_taxon_id": "family:Apiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Apiaceae"
   },
   {
     "id": "chives",
@@ -4507,7 +5137,13 @@
       "leaf_shape": "linear",
       "branching_pattern": "basal-crown",
       "flower_placement_inflorescence": "ball",
-      "stem_structure": "hollow-tube"
+      "stem_structure": "hollow-tube",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Amaryllidaceae",
+      "taxonomy_genus": "Allium",
+      "taxonomy_species": "Allium schoenoprasum",
+      "taxonomy_cultivar_or_group": "chives",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4611,7 +5247,22 @@
       "resolved_sources": "Flora of North America and Native Plant Trust Go Botany Allium references are recorded in the linked Allium research record and this infocard."
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Amaryllidaceae",
+      "genus": "Allium",
+      "species": "Allium schoenoprasum",
+      "cultivar_or_horticultural_group": "chives",
+      "taxon_id": "species:allium_schoenoprasum",
+      "parent_taxon_id": "family:Amaryllidaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Amaryllidaceae"
   },
   {
     "id": "mint",
@@ -4654,7 +5305,13 @@
       "leaf_shape_detail": "sessile ovate to lanceolate leaves; sharply serrate; rugose surface with sunken veins",
       "leaf_margin": "sharply serrate",
       "leaf_surface": "rugose; veins sunk into upper surface",
-      "growth_habit_detail": "spreading colony formed by creeping stolons that root at nodes and send up new shoots"
+      "growth_habit_detail": "spreading colony formed by creeping stolons that root at nodes and send up new shoots",
+      "taxonomy_order": "Lamiales",
+      "taxonomy_family": "Lamiaceae",
+      "taxonomy_genus": "Mentha",
+      "taxonomy_species": "Mentha spp.",
+      "taxonomy_cultivar_or_group": "culinary mint; species unspecified",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4784,7 +5441,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Lamiales",
+      "family": "Lamiaceae",
+      "genus": "Mentha",
+      "species": "Mentha spp.",
+      "cultivar_or_horticultural_group": "culinary mint; species unspecified",
+      "taxon_id": "species:mentha_spp.",
+      "parent_taxon_id": "family:Lamiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Lamiaceae"
   },
   {
     "id": "thyme",
@@ -4826,7 +5498,13 @@
       "stem_structure": "many thin woody branching stems",
       "leaf_shape_detail": "tiny, narrow grey-green leaves",
       "flower_structure": "small pink flowers in clusters",
-      "growth_habit_detail": "low woody subshrub"
+      "growth_habit_detail": "low woody subshrub",
+      "taxonomy_order": "Lamiales",
+      "taxonomy_family": "Lamiaceae",
+      "taxonomy_genus": "Thymus",
+      "taxonomy_species": "Thymus vulgaris",
+      "taxonomy_cultivar_or_group": "common thyme",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -4954,7 +5632,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Lamiales",
+      "family": "Lamiaceae",
+      "genus": "Thymus",
+      "species": "Thymus vulgaris",
+      "cultivar_or_horticultural_group": "common thyme",
+      "taxon_id": "species:thymus_vulgaris",
+      "parent_taxon_id": "family:Lamiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Lamiaceae"
   },
   {
     "id": "strawberry",
@@ -4994,7 +5687,13 @@
       "branching_architecture": "Very short compressed crown; runners (stolons) extend horizontally and produce plantlets at nodes. Flower stalks arise separately from crown.",
       "flower_placement_and_inflorescence": "Small clusters of white five-petalled flowers with yellow centres; numerous stamens and many separate carpels on a raised receptacle.",
       "fruit_or_harvest_morphology": "Accessory aggregate fruit: fleshy enlarged receptacle with many dry achenes embedded on its outer surface.",
-      "renderer_construction_rules": "Build a compact low crown, not a branched upright stem. Show three serrated leaflets per leaf. Add thin horizontal runners with daughter rosettes at their nodes. Place white flower clusters on separate stalks from crown; red berries carry visible surface achenes."
+      "renderer_construction_rules": "Build a compact low crown, not a branched upright stem. Show three serrated leaflets per leaf. Add thin horizontal runners with daughter rosettes at their nodes. Place white flower clusters on separate stalks from crown; red berries carry visible surface achenes.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Rosaceae",
+      "taxonomy_genus": "Fragaria",
+      "taxonomy_species": "Fragaria × ananassa",
+      "taxonomy_cultivar_or_group": "garden strawberry",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5105,7 +5804,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Rosaceae",
+      "genus": "Fragaria",
+      "species": "Fragaria × ananassa",
+      "cultivar_or_horticultural_group": "garden strawberry",
+      "taxon_id": "species:fragaria_×_ananassa",
+      "parent_taxon_id": "family:Rosaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rosaceae"
   },
   {
     "id": "raspberry",
@@ -5145,7 +5859,13 @@
       "branching_architecture": "Multiple upright to arching canes from crown/root suckers. Floricanes develop lateral fruiting branches from leaf axils; canes are prickly in many cultivars.",
       "flower_placement_and_inflorescence": "Small white five-petalled flowers in clusters on lateral branches of floricanes.",
       "fruit_or_harvest_morphology": "Aggregate of many drupelets, each containing a tiny stone; ripe fruit separates from the receptacle, leaving a hollow centre.",
-      "renderer_construction_rules": "Show both cane ages only when illustrating a mature planting: tall first-year leafy primocanes and older floricanes with lateral fruiting branches. Attach pinnate leaves alternately. Fruit clusters occur on floricane laterals, not uniformly along every cane."
+      "renderer_construction_rules": "Show both cane ages only when illustrating a mature planting: tall first-year leafy primocanes and older floricanes with lateral fruiting branches. Attach pinnate leaves alternately. Fruit clusters occur on floricane laterals, not uniformly along every cane.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Rosaceae",
+      "taxonomy_genus": "Rubus",
+      "taxonomy_species": "Rubus idaeus",
+      "taxonomy_cultivar_or_group": "red raspberry",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5255,7 +5975,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Rosaceae",
+      "genus": "Rubus",
+      "species": "Rubus idaeus",
+      "cultivar_or_horticultural_group": "red raspberry",
+      "taxon_id": "species:rubus_idaeus",
+      "parent_taxon_id": "family:Rosaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rosaceae"
   },
   {
     "id": "blueberry",
@@ -5295,7 +6030,13 @@
       "branching_architecture": "Several woody stems arise from crown; young twigs may be green or reddish and slightly zigzag. Flower buds are rounded and plumper than vegetative buds.",
       "flower_placement_and_inflorescence": "Small urn- or bell-shaped white to pinkish flowers in drooping clusters (corymbs) on short lateral shoots.",
       "fruit_or_harvest_morphology": "Round blue berries with a conspicuous powdery wax bloom; persistent calyx at distal end.",
-      "renderer_construction_rules": "Construct a woody multi-stem shrub with fine twig branching, not a herbaceous bush. Place flower clusters and fruit clusters on short lateral shoots. Use alternate elliptical leaves and preserve the blue-grey bloom on ripe berries."
+      "renderer_construction_rules": "Construct a woody multi-stem shrub with fine twig branching, not a herbaceous bush. Place flower clusters and fruit clusters on short lateral shoots. Use alternate elliptical leaves and preserve the blue-grey bloom on ripe berries.",
+      "taxonomy_order": "Ericales",
+      "taxonomy_family": "Ericaceae",
+      "taxonomy_genus": "Vaccinium",
+      "taxonomy_species": "Vaccinium corymbosum",
+      "taxonomy_cultivar_or_group": "highbush blueberry",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5406,7 +6147,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Ericales",
+      "family": "Ericaceae",
+      "genus": "Vaccinium",
+      "species": "Vaccinium corymbosum",
+      "cultivar_or_horticultural_group": "highbush blueberry",
+      "taxon_id": "species:vaccinium_corymbosum",
+      "parent_taxon_id": "family:Ericaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Ericaceae"
   },
   {
     "id": "marigold_french",
@@ -5446,7 +6202,13 @@
       "branching_architecture": "Many short erect or spreading branches; flower heads terminate long peduncles, often solitary at branch tips.",
       "flower_placement_and_inflorescence": "Asteraceae capitulum with outer ray florets (yellow, orange, red-brown or bicoloured) around many small disc florets; involucre forms a short cylinder below head.",
       "fruit_or_harvest_morphology": "Dark narrow achene with a small pappus of scales/bristles.",
-      "renderer_construction_rules": "Use finely divided aromatic foliage, not broad simple leaves. Keep branching compact and repeated from nodes. Each flower is one composite head on a distinct peduncle; show rays around a central disc, and retain the involucre beneath. Cultivar may be single or densely double."
+      "renderer_construction_rules": "Use finely divided aromatic foliage, not broad simple leaves. Keep branching compact and repeated from nodes. Each flower is one composite head on a distinct peduncle; show rays around a central disc, and retain the involucre beneath. Cultivar may be single or densely double.",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Tagetes",
+      "taxonomy_species": "Tagetes patula",
+      "taxonomy_cultivar_or_group": "French marigold",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5557,7 +6319,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Tagetes",
+      "species": "Tagetes patula",
+      "cultivar_or_horticultural_group": "French marigold",
+      "taxon_id": "species:tagetes_patula",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "nasturtium",
@@ -5597,7 +6374,13 @@
       "leaf_venation": "radiating-palmate",
       "flower_structure": "five-petalled-long-spurred",
       "growth_habit_detail": "trailing-scrambling",
-      "stem_structure": "succulent-soft-trailing"
+      "stem_structure": "succulent-soft-trailing",
+      "taxonomy_order": "Brassicales",
+      "taxonomy_family": "Tropaeolaceae",
+      "taxonomy_genus": "Tropaeolum",
+      "taxonomy_species": "Tropaeolum majus",
+      "taxonomy_cultivar_or_group": "garden nasturtium",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5697,7 +6480,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Brassicales",
+      "family": "Tropaeolaceae",
+      "genus": "Tropaeolum",
+      "species": "Tropaeolum majus",
+      "cultivar_or_horticultural_group": "garden nasturtium",
+      "taxon_id": "species:tropaeolum_majus",
+      "parent_taxon_id": "family:Tropaeolaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Tropaeolaceae"
   },
   {
     "id": "calendula",
@@ -5737,7 +6535,13 @@
       "leaf_margin": "entire-to-minutely-dentate",
       "flower_placement_inflorescence": "solitary-terminal-capitulum",
       "flower_structure": "radiate-head-ray-and-disc-florets",
-      "stem_structure": "branched-erect-to-sprawling"
+      "stem_structure": "branched-erect-to-sprawling",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Calendula",
+      "taxonomy_species": "Calendula officinalis",
+      "taxonomy_cultivar_or_group": "pot marigold",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5837,7 +6641,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Calendula",
+      "species": "Calendula officinalis",
+      "cultivar_or_horticultural_group": "pot marigold",
+      "taxon_id": "species:calendula_officinalis",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "pansy",
@@ -5876,7 +6695,13 @@
       "leaf_shape": "ovate-to-elliptic-or-lanceolate",
       "leaf_margin": "crenate-to-dentate",
       "flower_structure": "solitary-axillary-bilateral-five-petalled",
-      "growth_habit_detail": "compact-mounded"
+      "growth_habit_detail": "compact-mounded",
+      "taxonomy_order": "Malpighiales",
+      "taxonomy_family": "Violaceae",
+      "taxonomy_genus": "Viola",
+      "taxonomy_species": "Viola × wittrockiana",
+      "taxonomy_cultivar_or_group": "garden pansy hybrid group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -5974,7 +6799,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Malpighiales",
+      "family": "Violaceae",
+      "genus": "Viola",
+      "species": "Viola × wittrockiana",
+      "cultivar_or_horticultural_group": "garden pansy hybrid group",
+      "taxon_id": "species:viola_×_wittrockiana",
+      "parent_taxon_id": "family:Violaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Violaceae"
   },
   {
     "id": "sweet_pea",
@@ -6012,7 +6852,13 @@
       "flower_placement_inflorescence": "axillary-raceme",
       "flower_structure": "papilionaceous",
       "growth_habit_detail": "climbing-scrambling",
-      "stem_structure": "winged-climbing"
+      "stem_structure": "winged-climbing",
+      "taxonomy_order": "Fabales",
+      "taxonomy_family": "Fabaceae",
+      "taxonomy_genus": "Lathyrus",
+      "taxonomy_species": "Lathyrus odoratus",
+      "taxonomy_cultivar_or_group": "sweet pea",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6108,7 +6954,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Fabales",
+      "family": "Fabaceae",
+      "genus": "Lathyrus",
+      "species": "Lathyrus odoratus",
+      "cultivar_or_horticultural_group": "sweet pea",
+      "taxon_id": "species:lathyrus_odoratus",
+      "parent_taxon_id": "family:Fabaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Fabaceae"
   },
   {
     "id": "cosmos",
@@ -6146,7 +7007,13 @@
       "leaf_shape": "bipinnately-dissected-filiform",
       "flower_placement_inflorescence": "terminal-cymose-heads",
       "flower_structure": "radiate-composite-head",
-      "growth_habit_detail": "tall-open-branched"
+      "growth_habit_detail": "tall-open-branched",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Cosmos",
+      "taxonomy_species": "Cosmos bipinnatus",
+      "taxonomy_cultivar_or_group": "garden cosmos",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6242,7 +7109,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Cosmos",
+      "species": "Cosmos bipinnatus",
+      "cultivar_or_horticultural_group": "garden cosmos",
+      "taxon_id": "species:cosmos_bipinnatus",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "petunia",
@@ -6281,7 +7163,13 @@
       "leaf_shape": "ovate",
       "flower_placement_inflorescence": "solitary-axillary",
       "flower_structure": "funnel-trumpet-corolla",
-      "growth_habit_detail": "trailing-spreading-branched"
+      "growth_habit_detail": "trailing-spreading-branched",
+      "taxonomy_order": "Solanales",
+      "taxonomy_family": "Solanaceae",
+      "taxonomy_genus": "Petunia",
+      "taxonomy_species": "Petunia × atkinsiana",
+      "taxonomy_cultivar_or_group": "garden petunia hybrid group",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6377,7 +7265,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Solanales",
+      "family": "Solanaceae",
+      "genus": "Petunia",
+      "species": "Petunia × atkinsiana",
+      "cultivar_or_horticultural_group": "garden petunia hybrid group",
+      "taxon_id": "species:petunia_×_atkinsiana",
+      "parent_taxon_id": "family:Solanaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Solanaceae"
   },
   {
     "id": "fuchsia",
@@ -6415,7 +7318,13 @@
       "leaf_shape": "ovate-lanceolate",
       "flower_placement_inflorescence": "pendent-axillary-solitary",
       "flower_structure": "tubular-calyx-four-sepals-four-petals",
-      "growth_habit_detail": "bushy-shrub"
+      "growth_habit_detail": "bushy-shrub",
+      "taxonomy_order": "Myrtales",
+      "taxonomy_family": "Onagraceae",
+      "taxonomy_genus": "Fuchsia",
+      "taxonomy_species": "Fuchsia spp.",
+      "taxonomy_cultivar_or_group": "cultivated fuchsia; species/hybrid unspecified",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6509,7 +7418,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Myrtales",
+      "family": "Onagraceae",
+      "genus": "Fuchsia",
+      "species": "Fuchsia spp.",
+      "cultivar_or_horticultural_group": "cultivated fuchsia; species/hybrid unspecified",
+      "taxon_id": "species:fuchsia_spp.",
+      "parent_taxon_id": "family:Onagraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Onagraceae"
   },
   {
     "id": "pothos",
@@ -6549,7 +7473,13 @@
       "branching_architecture": "Long jointed stems with conspicuous nodes and long internodes; aerial roots emerge at nodes and attach to support. Branching sparse; stems may trail or climb.",
       "flower_placement_and_inflorescence": "Araceae spathe-and-spadix inflorescence is rarely produced in cultivation; not a feature of typical juvenile houseplant rendering.",
       "fruit_or_harvest_morphology": "If pollinated, berry-like fruits form along the spadix; generally absent in houseplant specimens.",
-      "renderer_construction_rules": "Choose juvenile houseplant form unless a mature climbing specimen is explicitly requested. Juvenile leaves remain entire and heart-shaped; do not add Monstera fenestrations. Show node spacing and occasional aerial roots. A mature wild-type stage may enlarge and divide leaves."
+      "renderer_construction_rules": "Choose juvenile houseplant form unless a mature climbing specimen is explicitly requested. Juvenile leaves remain entire and heart-shaped; do not add Monstera fenestrations. Show node spacing and occasional aerial roots. A mature wild-type stage may enlarge and divide leaves.",
+      "taxonomy_order": "Alismatales",
+      "taxonomy_family": "Araceae",
+      "taxonomy_genus": "Epipremnum",
+      "taxonomy_species": "Epipremnum aureum",
+      "taxonomy_cultivar_or_group": "golden pothos; cultivar variegation unspecified",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6660,7 +7590,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Alismatales",
+      "family": "Araceae",
+      "genus": "Epipremnum",
+      "species": "Epipremnum aureum",
+      "cultivar_or_horticultural_group": "golden pothos; cultivar variegation unspecified",
+      "taxon_id": "species:epipremnum_aureum",
+      "parent_taxon_id": "family:Araceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Araceae"
   },
   {
     "id": "snake_plant",
@@ -6700,7 +7645,13 @@
       "branching_architecture": "Very short stem at soil level; fleshy creeping rhizome connects separate leaf fans and produces offsets. Leaves arise in small clusters from rhizome.",
       "flower_placement_and_inflorescence": "Tall erect raceme with small clusters of greenish-white fragrant tubular flowers; flowering is occasional indoors.",
       "fruit_or_harvest_morphology": "Small orange berries after flowering.",
-      "renderer_construction_rules": "Construct individual stiff blades rising directly from the basal rhizome in distinct fans; taper each blade to a point and show transverse banding. Do not draw a branched woody stem or broad leaf canopy. Offsets arise from underground rhizome."
+      "renderer_construction_rules": "Construct individual stiff blades rising directly from the basal rhizome in distinct fans; taper each blade to a point and show transverse banding. Do not draw a branched woody stem or broad leaf canopy. Offsets arise from underground rhizome.",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Asparagaceae",
+      "taxonomy_genus": "Dracaena",
+      "taxonomy_species": "Dracaena trifasciata",
+      "taxonomy_cultivar_or_group": "snake plant",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6811,7 +7762,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Asparagaceae",
+      "genus": "Dracaena",
+      "species": "Dracaena trifasciata",
+      "cultivar_or_horticultural_group": "snake plant",
+      "taxon_id": "species:dracaena_trifasciata",
+      "parent_taxon_id": "family:Asparagaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asparagaceae"
   },
   {
     "id": "monstera",
@@ -6851,7 +7817,13 @@
       "branching_architecture": "Thick cylindrical stem with prominent leaf scars; long aerial roots emerge at nodes, grow downward and attach to supports or soil. Leaves alternate at nodes.",
       "flower_placement_and_inflorescence": "Creamy spadix surrounded by a boat-shaped white to cream spathe; typical of Araceae and uncommon on indoor houseplants.",
       "fruit_or_harvest_morphology": "Elongated compound infructescence of tightly packed berry-like segments; ripens slowly and is rarely produced indoors.",
-      "renderer_construction_rules": "Model leaf ontogeny explicitly: juvenile entire heart leaves first, then progressively larger leaves with splits and internal holes. A mature plant needs a thick climbing stem, long petioles and aerial roots at nodes. Do not make every leaf equally fenestrated on a young plant."
+      "renderer_construction_rules": "Model leaf ontogeny explicitly: juvenile entire heart leaves first, then progressively larger leaves with splits and internal holes. A mature plant needs a thick climbing stem, long petioles and aerial roots at nodes. Do not make every leaf equally fenestrated on a young plant.",
+      "taxonomy_order": "Alismatales",
+      "taxonomy_family": "Araceae",
+      "taxonomy_genus": "Monstera",
+      "taxonomy_species": "Monstera deliciosa",
+      "taxonomy_cultivar_or_group": "Swiss cheese plant",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -6963,7 +7935,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Alismatales",
+      "family": "Araceae",
+      "genus": "Monstera",
+      "species": "Monstera deliciosa",
+      "cultivar_or_horticultural_group": "Swiss cheese plant",
+      "taxon_id": "species:monstera_deliciosa",
+      "parent_taxon_id": "family:Araceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Araceae"
   },
   {
     "id": "peace_lily",
@@ -7003,7 +7990,13 @@
       "branching_architecture": "Short basal rhizome; individual petioles emerge from crown. Flowering stalks rise separately from foliage and may exceed leaf height.",
       "flower_placement_and_inflorescence": "A single white or cream spathe (modified bract) encloses a short upright cream spadix covered in tiny flowers; spathe greens with age.",
       "fruit_or_harvest_morphology": "Fruit not usually a visible ornamental feature; species-level fruit details are not required for standard houseplant image.",
-      "renderer_construction_rules": "Build a basal clump of long-petioled lanceolate leaves. Each flower stalk carries one white spathe around one central spadix. Do not depict a daisy-like flower or a many-flowered branched inflorescence."
+      "renderer_construction_rules": "Build a basal clump of long-petioled lanceolate leaves. Each flower stalk carries one white spathe around one central spadix. Do not depict a daisy-like flower or a many-flowered branched inflorescence.",
+      "taxonomy_order": "Alismatales",
+      "taxonomy_family": "Araceae",
+      "taxonomy_genus": "Spathiphyllum",
+      "taxonomy_species": "Spathiphyllum wallisii",
+      "taxonomy_cultivar_or_group": "species reference; cultivated hybrids vary",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7114,7 +8107,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Alismatales",
+      "family": "Araceae",
+      "genus": "Spathiphyllum",
+      "species": "Spathiphyllum wallisii",
+      "cultivar_or_horticultural_group": "species reference; cultivated hybrids vary",
+      "taxon_id": "species:spathiphyllum_wallisii",
+      "parent_taxon_id": "family:Araceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Araceae"
   },
   {
     "id": "spider_plant",
@@ -7154,7 +8162,13 @@
       "branching_architecture": "Short rhizome and basal crown; multiple leaves emerge from rosette. Long slender stalks arch outward and branch or carry plantlets at nodes/bracts.",
       "flower_placement_and_inflorescence": "Small white star-shaped flowers along lax arching inflorescence, borne in small clusters.",
       "fruit_or_harvest_morphology": "Small three-angled capsule; vegetative plantlets commonly form along the inflorescence and root when they touch soil.",
-      "renderer_construction_rules": "Make a fountain-like basal rosette of narrow arching leaves. Add long thin arching runners/inflorescence stems extending beyond foliage; place tiny white flowers and daughter plantlets along them. Plantlets are not berries or flowers."
+      "renderer_construction_rules": "Make a fountain-like basal rosette of narrow arching leaves. Add long thin arching runners/inflorescence stems extending beyond foliage; place tiny white flowers and daughter plantlets along them. Plantlets are not berries or flowers.",
+      "taxonomy_order": "Asparagales",
+      "taxonomy_family": "Asparagaceae",
+      "taxonomy_genus": "Chlorophytum",
+      "taxonomy_species": "Chlorophytum comosum",
+      "taxonomy_cultivar_or_group": "spider plant",
+      "taxonomy_major_clade": "Monocots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7266,7 +8280,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Monocots",
+      "order": "Asparagales",
+      "family": "Asparagaceae",
+      "genus": "Chlorophytum",
+      "species": "Chlorophytum comosum",
+      "cultivar_or_horticultural_group": "spider plant",
+      "taxon_id": "species:chlorophytum_comosum",
+      "parent_taxon_id": "family:Asparagaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asparagaceae"
   },
   {
     "id": "apple",
@@ -7306,7 +8335,13 @@
       "branching_architecture": "Woody trunk with scaffold branches and short fruiting spurs. Flower buds develop at tips of spurs; spurs are short, knobbly shoots distinct from long vegetative shoots.",
       "flower_placement_and_inflorescence": "Clusters of about 4–6 five-petalled flowers at spur tips, white to pink; central king bloom often opens first.",
       "fruit_or_harvest_morphology": "Pome develops from flowers on spurs; persistent calyx may remain at distal end. Fruit colour varies by cultivar.",
-      "renderer_construction_rules": "Build a woody central leader and scaffold branches before foliage. Distribute alternate serrate leaves along shoots; place short spur shoots on older wood and blossom clusters at their tips. Fruit should occupy the same spur positions as flowers, not hang from every leaf node."
+      "renderer_construction_rules": "Build a woody central leader and scaffold branches before foliage. Distribute alternate serrate leaves along shoots; place short spur shoots on older wood and blossom clusters at their tips. Fruit should occupy the same spur positions as flowers, not hang from every leaf node.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Rosaceae",
+      "taxonomy_genus": "Malus",
+      "taxonomy_species": "Malus domestica",
+      "taxonomy_cultivar_or_group": "semi-dwarf form; rootstock unspecified",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7416,7 +8451,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Rosaceae",
+      "genus": "Malus",
+      "species": "Malus domestica",
+      "cultivar_or_horticultural_group": "semi-dwarf form; rootstock unspecified",
+      "taxon_id": "species:malus_domestica",
+      "parent_taxon_id": "family:Rosaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rosaceae"
   },
   {
     "id": "pear",
@@ -7456,7 +8506,13 @@
       "branching_architecture": "Woody trunk and upright scaffold branches; numerous short fruiting spurs on older wood. Branches often more upright than apple depending on cultivar and training.",
       "flower_placement_and_inflorescence": "White five-petalled blossoms in clusters (corymbs) on short spurs; bloom early in spring.",
       "fruit_or_harvest_morphology": "Pome, characteristically pear-shaped with a narrow neck and broader lower portion; green to yellow-brown, sometimes blushed.",
-      "renderer_construction_rules": "Build a woody central leader with upright scaffold branches and short fruit spurs. Keep leaves simple and glossy, not compound. Put white blossom clusters and later pears on short spurs. Avoid apple's round fruit silhouette."
+      "renderer_construction_rules": "Build a woody central leader with upright scaffold branches and short fruit spurs. Keep leaves simple and glossy, not compound. Put white blossom clusters and later pears on short spurs. Avoid apple's round fruit silhouette.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Rosaceae",
+      "taxonomy_genus": "Pyrus",
+      "taxonomy_species": "Pyrus communis",
+      "taxonomy_cultivar_or_group": "dwarf form; rootstock unspecified",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7566,7 +8622,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Rosaceae",
+      "genus": "Pyrus",
+      "species": "Pyrus communis",
+      "cultivar_or_horticultural_group": "dwarf form; rootstock unspecified",
+      "taxon_id": "species:pyrus_communis",
+      "parent_taxon_id": "family:Rosaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rosaceae"
   },
   {
     "id": "peach",
@@ -7606,7 +8677,13 @@
       "branching_architecture": "Slender reddish or green current-year shoots; fruiting wood is primarily one-year-old shoots. Branching should create an open vase, not a single dense central leader.",
       "flower_placement_and_inflorescence": "Pink flowers, usually solitary or in pairs, often appearing before leaves emerge; short pedicels on previous-season wood.",
       "fruit_or_harvest_morphology": "Fuzzy-skinned fleshy drupe with a hard central stone; nectarine cultivars are smooth-skinned.",
-      "renderer_construction_rules": "Construct an open-vase tree with multiple outward scaffold limbs. Place pink flowers singly or in pairs directly on bare one-year wood before leaf-out. Later show narrow serrated leaves and peaches on current-season growth arising from that wood. Do not use apple-like spur clusters."
+      "renderer_construction_rules": "Construct an open-vase tree with multiple outward scaffold limbs. Place pink flowers singly or in pairs directly on bare one-year wood before leaf-out. Later show narrow serrated leaves and peaches on current-season growth arising from that wood. Do not use apple-like spur clusters.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Rosaceae",
+      "taxonomy_genus": "Prunus",
+      "taxonomy_species": "Prunus persica",
+      "taxonomy_cultivar_or_group": "peach",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7717,7 +8794,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Rosaceae",
+      "genus": "Prunus",
+      "species": "Prunus persica",
+      "cultivar_or_horticultural_group": "peach",
+      "taxon_id": "species:prunus_persica",
+      "parent_taxon_id": "family:Rosaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rosaceae"
   },
   {
     "id": "fig",
@@ -7757,7 +8849,13 @@
       "branching_architecture": "Woody branching framework with stout shoots and broad irregular canopy. Leaves and syconia occur at nodes along current growth.",
       "flower_placement_and_inflorescence": "Flowers are tiny and enclosed inside a hollow fleshy receptacle (syconium); no showy external petals are visible.",
       "fruit_or_harvest_morphology": "The fig is a syconium, an enclosed inflorescence that matures as a fleshy hollow structure, often pear-shaped, borne singly or in pairs in leaf axils.",
-      "renderer_construction_rules": "Use large rough deeply lobed leaves with palmate veins. Place figs in leaf axils on shoots, not as berries in exposed clusters. Never draw visible daisy-like flowers; the flowers are inside the syconium. Branching is woody and broad."
+      "renderer_construction_rules": "Use large rough deeply lobed leaves with palmate veins. Place figs in leaf axils on shoots, not as berries in exposed clusters. Never draw visible daisy-like flowers; the flowers are inside the syconium. Branching is woody and broad.",
+      "taxonomy_order": "Rosales",
+      "taxonomy_family": "Moraceae",
+      "taxonomy_genus": "Ficus",
+      "taxonomy_species": "Ficus carica",
+      "taxonomy_cultivar_or_group": "common fig",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -7868,7 +8966,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Rosales",
+      "family": "Moraceae",
+      "genus": "Ficus",
+      "species": "Ficus carica",
+      "cultivar_or_horticultural_group": "common fig",
+      "taxon_id": "species:ficus_carica",
+      "parent_taxon_id": "family:Moraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Moraceae"
   },
   {
     "id": "lemon_meyer",
@@ -7908,7 +9021,13 @@
       "branching_architecture": "Woody branching stems, sometimes spiny; new flush may be reddish before turning green. Leaves persist through the year.",
       "flower_placement_and_inflorescence": "Fragrant white flowers, often with purplish exterior, solitary or in small axillary clusters; buds may be reddish.",
       "fruit_or_harvest_morphology": "Broadly ovoid yellow to yellow-orange citrus hesperidium with aromatic rind; fruits may occur with flowers and buds simultaneously.",
-      "renderer_construction_rules": "Render an evergreen woody shrub with glossy alternate leaves and a fine branch framework. Treat petiole winging as a cultivar-level variable, not a guaranteed large wing. Put fragrant white/purple flowers in leaf axils and oval yellow fruit on short stalks; multiple stages can coexist."
+      "renderer_construction_rules": "Render an evergreen woody shrub with glossy alternate leaves and a fine branch framework. Treat petiole winging as a cultivar-level variable, not a guaranteed large wing. Put fragrant white/purple flowers in leaf axils and oval yellow fruit on short stalks; multiple stages can coexist.",
+      "taxonomy_order": "Sapindales",
+      "taxonomy_family": "Rutaceae",
+      "taxonomy_genus": "Citrus",
+      "taxonomy_species": "Citrus × meyeri",
+      "taxonomy_cultivar_or_group": "Meyer lemon",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -8020,7 +9139,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Sapindales",
+      "family": "Rutaceae",
+      "genus": "Citrus",
+      "species": "Citrus × meyeri",
+      "cultivar_or_horticultural_group": "Meyer lemon",
+      "taxon_id": "species:citrus_×_meyeri",
+      "parent_taxon_id": "family:Rutaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Rutaceae"
   },
   {
     "id": "sunflower",
@@ -8060,7 +9194,13 @@
       "branching_architecture": "Stout rough-hairy stem; typically one large terminal head in single-stem cultivars, with branches and smaller heads in branching cultivars.",
       "flower_placement_and_inflorescence": "Large terminal capitulum: outer yellow ray florets surround a central disc of numerous small tubular fertile florets; surrounded by green involucral bracts.",
       "fruit_or_harvest_morphology": "Dry achenes (sunflower seeds) develop from disc florets across the central receptacle; not a fleshy fruit.",
-      "renderer_construction_rules": "Build a stout upright stem with broad rough alternate leaves (lower opposite leaves may be shown). Place the main head at the apex. Construct a ring of ray florets around a dense disc with visible spiral seed pattern as it matures. Branching is cultivar-dependent."
+      "renderer_construction_rules": "Build a stout upright stem with broad rough alternate leaves (lower opposite leaves may be shown). Place the main head at the apex. Construct a ring of ray florets around a dense disc with visible spiral seed pattern as it matures. Branching is cultivar-dependent.",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Helianthus",
+      "taxonomy_species": "Helianthus annuus",
+      "taxonomy_cultivar_or_group": "common sunflower",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -8171,7 +9311,22 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Helianthus",
+      "species": "Helianthus annuus",
+      "cultivar_or_horticultural_group": "common sunflower",
+      "taxon_id": "species:helianthus_annuus",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "zinnia",
@@ -8209,7 +9364,13 @@
       "leaf_shape": "ovate",
       "leaf_surface": "rough-bristly",
       "flower_placement_inflorescence": "solitary-terminal-capitulum",
-      "growth_habit_detail": "bushy-branched-upright"
+      "growth_habit_detail": "bushy-branched-upright",
+      "taxonomy_order": "Asterales",
+      "taxonomy_family": "Asteraceae",
+      "taxonomy_genus": "Zinnia",
+      "taxonomy_species": "Zinnia elegans",
+      "taxonomy_cultivar_or_group": "garden zinnia",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -8304,7 +9465,22 @@
       "remaining": []
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Zinnia",
+      "species": "Zinnia elegans",
+      "cultivar_or_horticultural_group": "garden zinnia",
+      "taxon_id": "species:zinnia_elegans",
+      "parent_taxon_id": "family:Asteraceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Asteraceae"
   },
   {
     "id": "lavender",
@@ -8340,7 +9516,13 @@
       "foliage_colour": "#8aa88a",
       "leaf_shape_detail": "narrow, rolled-edged, downy grey-green leaves",
       "flower_structure": "long bare flower stalks ending in dense purple spikes",
-      "flower_placement_inflorescence": "long bare flower stalks ending in dense purple spikes"
+      "flower_placement_inflorescence": "long bare flower stalks ending in dense purple spikes",
+      "taxonomy_order": "Lamiales",
+      "taxonomy_family": "Lamiaceae",
+      "taxonomy_genus": "Lavandula",
+      "taxonomy_species": "Lavandula angustifolia",
+      "taxonomy_cultivar_or_group": "English lavender",
+      "taxonomy_major_clade": "Eudicots"
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -8456,6 +9638,21 @@
       ]
     },
     "references_policy": "Use taxonomic databases for names; floras/monographs for diagnostic morphology; horticultural institutions for cultivar-level traits; herbarium/botanical-garden photographs for visual cross-checks. Cite the exact species page/publication used in each research record.",
-    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork."
+    "render_gate": "HOLD: first 57 plant infocards are research-only until explicitly released; do not render, regenerate or replace their artwork.",
+    "taxonomy": {
+      "kingdom": "Plantae",
+      "clade": "Angiosperms",
+      "major_clade": "Eudicots",
+      "order": "Lamiales",
+      "family": "Lamiaceae",
+      "genus": "Lavandula",
+      "species": "Lavandula angustifolia",
+      "cultivar_or_horticultural_group": "English lavender",
+      "taxon_id": "species:lavandula_angustifolia",
+      "parent_taxon_id": "family:Lamiaceae",
+      "taxonomy_source": "Taxonomic placement is a working project classification; validate accepted name and synonymy against POWO/WFO before treating as authoritative.",
+      "verification_status": "provisional; taxon-level accepted-name audit pending"
+    },
+    "taxonomic_parent": "family:Lamiaceae"
   }
 ]
