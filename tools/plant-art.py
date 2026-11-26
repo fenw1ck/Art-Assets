@@ -147,7 +147,7 @@ def botanical_data(plant, infocard=None):
 
 def plant_list():
     source = SOURCE.read_text(encoding="utf-8")
-    match = re.search(r"const LIST=(\\[.*?\\]);\\s*window\\.PLANTS", source, re.S)
+    match = re.search(r"const LIST=(\[.*?\]);\s*window\.PLANTS", source, re.S)
     if not match:
         raise RuntimeError("Could not read PLANTS.list from plants.js")
     plants = json.loads(match.group(1))
