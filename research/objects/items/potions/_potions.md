@@ -6,8 +6,8 @@ parent: items
 aliases: [potion, flask, phial, vial, consumables]
 depth: outline
 updated: 2026-11-25
-gaps: [other potions besides weed killer, a pouring animation, empty flasks as items]
-used_by: [items.js potion; euclid game.html (weed killer)]
+gaps: [a pouring animation, empty flasks as items]
+used_by: [items.js potion, health; euclid game.html (weed killer, health potions)]
 ---
 
 # Potions
@@ -20,8 +20,10 @@ used_by: [items.js potion; euclid game.html (weed killer)]
 
 ## Kinds
 
-- weed-killer: the first potion.
+- weed-killer: the first potion. Poured.
+- health-potion: drunk for health; red, with a caduceus stopper (three tiers).
 
 ## Log
 
 - 2026-11-25: created for the Euclid game (weed killer).
+- 2026-11-25: added health potions; strength now also shows in a second channel (tag leaves, caduceus metal and wings), not only colour.

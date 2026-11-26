@@ -100,7 +100,7 @@ if(sheet==='plants'){
     if(i%2){const r=F.carpet(2.6,3.6,48,sd);ctx.drawImage(r,x+(192-r.width)/2,40+(288-r.height)/2);label('+ carpet',x+120,340,SUB)}});
   for(let i=0;i<4;i++){const r=F.carpet(2.2,3.2,48,i+1);ctx.drawImage(r,pad+i*240,380);label('carpet seed '+(i+1),pad+i*240,620,SUB)}
 }else if(sheet==='items'){
-  const I=ITEMART,pad=20;c.width=1100;c.height=1440;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  const I=ITEMART,pad=20;c.width=1100;c.height=1900;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   label('Coins (research/objects/items/coin.md): gold, silver, bronze × fresh, worn, rusty, muddy',pad,22,INK,'bold 13px system-ui');
   ['gold','silver','bronze'].forEach((m,j)=>['fresh','worn','rusty','muddy'].forEach((st,i)=>{I.coin(ctx,pad+60+i*120,90+j*110,42,{metal:m,state:st,seed:i+j*4});if(j===0)label(st,pad+40+i*120,46,SUB)}));
   [6,10,16,28].forEach((r,i)=>I.coin(ctx,560+i*70,120,r,{seed:3}));label('size ladder',560,46,SUB);I.coins(ctx,900,190,90,9,{seed:2});label('a heap',870,215,SUB);
@@ -113,6 +113,10 @@ if(sheet==='plants'){
   ['boots-sandals','boots-wayfarer','boots-winged','boots-greaves','shirt-chiton','pants-wool'].forEach((id,i)=>{I.draw(ctx,id,pad+70+i*150,1200,120,{seed:i});label(id,pad+20+i*150,1220,SUB)});
   label('Potions (research/objects/items/potions/): weed killer, weak / strong / strongest; full, half, nearly empty',pad,1260,INK,'bold 13px system-ui');
   ['potion-weak','potion-strong','potion-strongest'].forEach((id,i)=>{I.draw(ctx,id,pad+70+i*150,1410,120,{seed:i});label(id,pad+20+i*150,1428,SUB)});[1,.5,.15].forEach((l,i)=>I.draw(ctx,'potion-strong',pad+560+i*130,1410,110,{level:l}));
+  label('Health potions (research/objects/items/potions/health-potion.md): minor / greater / supreme; full, half, nearly empty; 32 and 48 px',pad,1460,INK,'bold 13px system-ui');
+  ['health-minor','health-greater','health-supreme'].forEach((id,i)=>{I.draw(ctx,id,pad+70+i*150,1640,150,{seed:i});label(id,pad+20+i*150,1658,SUB)});[1,.5,.15].forEach((l,i)=>I.draw(ctx,'health-greater',pad+520+i*110,1640,120,{level:l}));[32,48].forEach((s2,i)=>I.draw(ctx,'health-supreme',pad+880+i*70,1640,s2,{}));
+  label('Backpacks (research/objects/items/backpack.md): satchel 16 / rucksack 24 / expedition pack 32; 32 and 48 px',pad,1690,INK,'bold 13px system-ui');
+  ['backpack-satchel','backpack-rucksack','backpack-expedition'].forEach((id,i)=>{I.draw(ctx,id,pad+80+i*170,1870,150,{seed:i});label(id,pad+20+i*170,1888,SUB)});[32,48].forEach((s2,i)=>['backpack-satchel','backpack-rucksack','backpack-expedition'].forEach((id,j)=>I.draw(ctx,id,pad+620+j*70,1780+i*90,s2,{})));
 }else if(sheet==='tools'){
   const T=TOOLS,pad=20,cw=240;c.width=pad+3*cw+40;c.height=1420;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   label('Axes (research/objects/tools/axe.md): basic, improved, best',pad,22,INK,'bold 13px system-ui');
