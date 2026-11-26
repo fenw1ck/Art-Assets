@@ -45,8 +45,8 @@ if(sheet==='plants'){
   /* creatures (research/subjects/creatures/): five creatures x four states, then the size ladder */
   const L=CREATURES.LIST,S=CREATURES.STATES,cw=280,ch=300;c.width=140+cw*S.length;c.height=40+ch*L.length+200;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
   S.forEach((s,i)=>label(s,140+i*cw+cw/2-30,26,INK,'bold 13px system-ui'));
-  L.forEach((k,r)=>{const y0=40+r*ch;ctx.fillStyle=r%2?BG2:BG;ctx.fillRect(0,y0,c.width,ch);label(k,14,y0+24,INK,'bold 13px system-ui');S.forEach((s,i)=>{try{CREATURES.draw(ctx,k,140+i*cw+cw/2,y0+ch-24,240,s,{seed:r+1})}catch(e){label('ERR '+e.message,140+i*cw+4,y0+60,'red')}})});
-  const y1=40+ch*L.length+20;label('Size ladder (threatening): 24, 48, 96, 160 px',14,y1,INK,'bold 13px system-ui');let x=40;L.forEach(k=>{for(const s of[24,48,96,160]){CREATURES.draw(ctx,k,x+s*.4,y1+175,s,'threatening',{});x+=s*.75+12}x+=20});
+  L.forEach((k,r)=>{const y0=40+r*ch;ctx.fillStyle=r%2?BG2:BG;ctx.fillRect(0,y0,c.width,ch);label(k,14,y0+24,INK,'bold 13px system-ui');S.forEach((s,i)=>{try{ctx.save();ctx.beginPath();ctx.rect(140+i*cw+4,y0+4,cw-8,ch-8);ctx.clip();ctx.translate(140+i*cw+4,y0+4);ART_CORE.house.moon(ctx,cw-8,ch-8,(cw-8)*.62,(ch-8)*.4,(ch-8)*.7);ctx.restore();CREATURES.draw(ctx,k,140+i*cw+cw/2,y0+ch-24,240,s,{seed:r+1})}catch(e){label('ERR '+e.message,140+i*cw+4,y0+60,'red')}})});
+  const y1=40+ch*L.length+20;label('Size ladder (threatening): 24, 48, 96, 160 px',14,y1,INK,'bold 13px system-ui');ctx.save();ctx.translate(0,y1+8);ART_CORE.house.moon(ctx,c.width,186,c.width*.5,90,300);ctx.restore();let x=40;L.forEach(k=>{for(const s of[24,48,96,160]){CREATURES.draw(ctx,k,x+s*.4,y1+175,s,'threatening',{});x+=s*.75+12}x+=20});
 }else if(sheet==='weapons'){
   /* weapons (research/objects/items/weapons.md): knife, sword, staff x bronze, iron, starmetal x perfect, damaged, broken; then fuel, cauldron, dishes */
   const K=['knife','sword','staff'],M=['bronze','iron','starmetal'],St=['perfect','damaged','broken'];c.width=1300;c.height=1260;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);

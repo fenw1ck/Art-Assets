@@ -23,3 +23,7 @@ used_by: [creatures.js]
 
 - Theoi Project, fantastic creatures (basilisk, manticore): https://theoi.com/greek-mythology/fantastic-creatures.html
 - Wikipedia, List of Greek mythological creatures: https://en.wikipedia.org/wiki/List_of_Greek_mythological_creatures
+
+## Rendering notes
+
+- House style (25 Nov 2026, `research/rendering/house-style.md`): bodies from `ENGINE.skeleton` with anatomical proportions, painted as back-lit silhouettes with a cool rim and glowing eyes.
