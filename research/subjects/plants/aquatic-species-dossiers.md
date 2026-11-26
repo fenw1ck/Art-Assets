@@ -105,3 +105,16 @@ Sources: Burke Herbarium / Flora of North America (dimensions, inflorescence and
 - **Remaining gap:** regional flowering dates, plant height and leaf width vary; retain local range data when selecting a population.
 
 Sources: Kew Plants of the World Online (leaf and inflorescence dimensions), https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:836870-1/general-information ; Montana Field Guide (diagnostic width and male/female spike arrangement), https://prd.fieldguide.mt.gov/speciesDetail.aspx?elcode=PMTYP01040 .
+
+
+## *Nuphar variegata* — yellow pond-lily / spatterdock
+
+- **Taxonomy:** Nymphaeaceae; Nymphaeales; accepted name *Nuphar variegata* Durand.
+- **Habit and attachment:** rooted aquatic perennial with a thick, branched, creeping rhizome; stolons absent. Leaves are mostly floating but may be submerged or emergent under low-water conditions.
+- **Leaf construction:** floating blades broadly ovate to oblong, 7–35 × 5–25 cm, with a deep basal sinus about one-third to one-half the midrib length. Petiole is flattened on its upper surface, with a median ridge and winged margins. Blades are green on both surfaces, sometimes purple-tinged below.
+- **Reproductive construction:** yellow flowers 2.5–5 cm across; usually six sepals, green to yellow externally and often red or maroon near the base internally. True petals are small, thick and scale-like; the conspicuous yellow parts are sepals. Fruit is usually purple-tinged, ovoid and strongly ribbed, about 2–4.3 × 2–3.5 cm; stigmatic disk 8–20 mm across.
+- **Phenology and habitat:** flowering late spring through summer; ponds, lakes, sluggish streams and ditches. Floating leaves predominate; emergent leaves are associated with low water.
+- **Renderer constraints:** distinguish from *Nymphaea* by yellow, nearly globose flowers with showy sepals and tiny scale-like petals; show the winged flattened petiole and thick rhizome. Do not render a large yellow petal rosette.
+- **Remaining gap:** population-specific leaf proportions and flowering window should be confirmed for the selected region; retain the broad documented range.
+
+Sources: Flora of North America species treatment, https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=233500821 ; World Flora Online, based on Flora of North America (morphological ranges), https://www.worldfloraonline.org/taxon/wfo-0001086877 ; Go Botany key (diagnostic comparison of petioles, sepals and fruit), https://gobotany.nativeplanttrust.org/species/nuphar/variegata/ .
