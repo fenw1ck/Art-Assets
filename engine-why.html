@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Art Assets: why the engine is built this way</title>
+<style>
+:root{--bg:#f7f8f7;--ink:#18211f;--sub:#5b6663;--line:#d9dfdd;--acc:#1d7380;--ok:#2f7a3a;--part:#a06a10;--plan:#5a5aa0;--no:#8a3a2a}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+header{padding:20px 20px 8px;max-width:1200px;margin:0 auto}h1{margin:0 0 4px;font-size:26px}header p{margin:0;color:var(--sub)}
+nav.tabs{display:flex;gap:6px;margin:12px 0 0;flex-wrap:wrap}nav.tabs a{padding:6px 14px;border-radius:20px;border:1px solid var(--line);color:var(--ink);text-decoration:none;background:#fff}nav.tabs a[aria-current=page]{background:var(--acc);color:#fff;border-color:var(--acc)}
+main{max-width:1200px;margin:0 auto;padding:12px 20px 48px}
+h2{margin:28px 0 8px;font-size:21px}h3{margin:18px 0 6px;font-size:17px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:14px;background:#fff}th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:#eef1f0;position:sticky;top:0}
+td.us{background:#f4faf8}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;font-weight:600;color:#fff;white-space:nowrap}
+.ok{background:var(--ok)}.part{background:var(--part)}.plan{background:var(--plan)}.no{background:var(--no)}
+.scroll{overflow-x:auto;border-radius:10px;border:1px solid var(--line)}
+small,.sub{color:var(--sub)}code{background:#eef1f0;padding:0 4px;border-radius:4px;font-size:.92em}
+ol li,ul li{margin:3px 0}
+</style>
+</head><body>
+<header><h1>Art Assets</h1><p>Why the game engine does what it does, and doesn't do the rest. Compared part by part with Godot, Unity, Unreal Engine, CryEngine and GameMaker (25 Nov 2026).</p>
+<nav class="tabs"><a href="index.html">Art library</a><a href="engine.html">Game engine</a><a href="engine-why.html" aria-current="page">Why the engine is built this way</a></nav></header>
+<main>
+
+<div class="card">
+<h2 style="margin-top:0">The short version</h2>
+<p>Our engine (<code>engine.js</code>) is a <b>rules engine for small browser games</b>, not a general-purpose engine. The Euclid game is one HTML page that runs anywhere, offline, with nothing to install and no image or sound files. Everything is drawn and composed in code. That one fact decides most of what follows.</p>
+<ul>
+<li><b>We copy the big engines' ideas, not their size.</b> From Unreal and Unity: input as <i>actions</i> in <i>contexts</i>. From Godot: the scene tree and signals. From every engine: the fixed-step game loop. From Sequencer and AnimationPlayer: timelines.</li>
+<li><b>We skip what a single-player, hand-drawn, one-file game doesn't need.</b> That means networking, threads, a physics solver, a 3-D renderer, and an editor.</li>
+<li><b>Look and behaviour are kept apart.</b> <code>engine.js</code> holds rules and numbers only. <code>core.js</code> and the art files hold the drawing. The skeleton is geometry the art paints.</li>
+</ul>
+</div>
+
+<h2>Part by part</h2>
+<p class="sub">Status: <span class="tag ok">built</span> works in the game now · <span class="tag part">simple</span> built, deliberately small · <span class="tag plan">planned</span> on the list, with the plan · <span class="tag no">not doing</span> with the reason.</p>
+<div class="scroll"><table>
+<tr><th>Part</th><th>Godot</th><th>Unity</th><th>Unreal Engine</th><th>CryEngine</th><th>GameMaker</th><th>Ours, and why</th></tr>
+<tr><td><b>Input</b> (events and polling)</td><td>InputMap actions; <code>_input</code> events and <code>Input.is_action_pressed</code> polling</td><td>Input System: action maps, bindings, events or polling</td><td>Enhanced Input: Input Actions, Mapping Contexts (priority), Modifiers, Triggers</td><td>Action maps over CryInput</td><td>Keyboard/mouse events, or <code>keyboard_check</code> in Step</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.input</code>: actions in contexts layered by priority (like Unreal's Mapping Contexts), keys, mouse and gamepad, rebinding and saving, polled (<code>down / pressed / released</code>) <i>and</i> as events. The game still reads movement keys directly; it moves onto actions part by part.</td></tr>
+<tr><td><b>Camera / looking around</b></td><td>Camera3D, free rotation</td><td>Camera, Cinemachine</td><td>Camera component, full rotation</td><td>Full rotation</td><td>2-D views and cameras</td>
+<td class="us"><span class="tag part">simple</span> <code>ENGINE.look</code>: yaw and pitch from the mouse (L or the right button) and the right stick, eased and clamped. Our rooms are drawn as vertical walls with depth rows, the way Doom and Heretic drew them, and that kind of renderer can't truly rotate. So the view moves its vanishing point, the "y-shearing" Heretic used, applied sideways too. It looks right up to about 25°, so it is clamped there. A true 3-D camera would need the renderer below.</td></tr>
+<tr><td><b>Graphics engine</b></td><td>Vulkan/OpenGL 2-D and 3-D renderers</td><td>URP/HDRP render pipelines</td><td>Nanite, Lumen, deferred renderer</td><td>Deferred renderer, real-time GI</td><td>2-D sprite renderer</td>
+<td class="us"><span class="tag part">simple</span> Canvas 2-D, drawn in code: rooms in one-point perspective, art from <code>core.js</code> and the art files, with slow pieces cached once per size. It is small, sharp at any size and needs no assets. <b>Plan:</b> if rooms ever need true 3-D (turning all the way round), add a WebGL room renderer behind the same room data; the art becomes textures drawn by the same code.</td></tr>
+<tr><td><b>Physics engine</b></td><td>Godot Physics / Jolt, at 60 ticks a second</td><td>PhysX; <code>FixedUpdate</code> every 0.02 s</td><td>Chaos physics</td><td>CryPhysics</td><td>Box2D physics or simple collision events</td>
+<td class="us"><span class="tag part">simple</span> No solver: walking is clamped to the room, jumps follow a fixed arc (<code>moves</code>), and falls, ledges and traps are rules. A puzzle-and-exploration game needs no rigid bodies. The new <code>ENGINE.loop</code> gives a fixed 60 Hz tick (Godot's default) for anything that does. <b>Plan:</b> if pushing or throwing things arrives, add circle-and-box collision on that tick before reaching for a library.</td></tr>
+<tr><td><b>Game loop / time</b></td><td><code>_process</code> each frame, <code>_physics_process</code> fixed</td><td><code>Update</code> and <code>FixedUpdate</code></td><td>Tick groups</td><td>System update loop</td><td>Step event at the room speed</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.loop</code>: a fixed timestep with an accumulator, a cap on long frames, and an alpha for drawing between ticks (Glenn Fiedler's "Fix Your Timestep"). Plus <code>ENGINE.clock</code> for game time (1 s = 1 game minute).</td></tr>
+<tr><td><b>Sound engine</b></td><td>AudioServer, buses, effects</td><td>Audio Mixer</td><td>MetaSounds</td><td>Wwise / FMOD</td><td>Audio groups and emitters</td>
+<td class="us"><span class="tag part">simple</span> Web Audio, composed in code: ten songs generated from seeds and every sound effect synthesised, with no files. <b>Plan:</b> a small mixer part (music / effects / ambience buses with volumes, and positional sound so a fountain gets louder as you near it) moved from game.html into the engine.</td></tr>
+<tr><td><b>Networking</b></td><td>High-level multiplayer API</td><td>Netcode for GameObjects</td><td>Replication</td><td>Network synchronisation</td><td>Networking functions</td>
+<td class="us"><span class="tag no">not doing</span> A single-player learning game with saves in the browser. Networking would add servers, accounts and cheating to a game that needs none of them. If sharing ever matters (a friend's map, a race through the locks), it would be a shared save code, not live networking.</td></tr>
+<tr><td><b>Scripting</b></td><td>GDScript, C#</td><td>C#</td><td>C++ and Blueprints</td><td>C++, Lua, Schematyc</td><td>GML and visual scripting</td>
+<td class="us"><span class="tag ok">built</span> Plain JavaScript, with game content as <i>data</i>: the 48 proofs (<code>proofs.js</code>), items, recipes, creatures and traps are tables. New locks and items are mostly data, so the "scripting language" is the data format. The Edit buttons on these pages open a ticket instead of a visual editor.</td></tr>
+<tr><td><b>Animation</b></td><td>AnimationPlayer, Skeleton2D/3D, AnimationTree</td><td>Animator, Mecanim</td><td>Animation Blueprints, Control Rig</td><td>Mannequin</td><td>Sprite frames, Sequences</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.skeleton</code>: posable bodies (five anatomical body plans) with poses per state and <code>skeleton.blend</code> to ease between them, plus <code>ENGINE.timeline</code> for keyframed tracks. The art paints whatever pose the skeleton gives.</td></tr>
+<tr><td><b>Memory management</b></td><td>Reference counting</td><td>Garbage collector, Addressables</td><td>Its own garbage collector, asset streaming</td><td>Streaming</td><td>Automatic</td>
+<td class="us"><span class="tag part">simple</span> The browser's garbage collector, plus bounded caches. Every painted thing (vines, creatures, floors) is cached per size and the caches are cleared past a limit, so memory stays flat however long you play. No streaming is needed: the whole game is one page.</td></tr>
+<tr><td><b>Threads</b></td><td>WorkerThreadPool</td><td>Job System, Burst, DOTS</td><td>Task Graph</td><td>Job system</td><td>Mostly one thread</td>
+<td class="us"><span class="tag no">not doing</span> (yet) The rules take far less than a millisecond a frame. The only slow work is painting art the first time, which is cached. <b>Plan if needed:</b> paint caches in a Web Worker with OffscreenCanvas, so the first sight of a new creature never stutters.</td></tr>
+<tr><td><b>Localization</b></td><td>TranslationServer, CSV/PO files</td><td>Localization package</td><td>Localization dashboard</td><td>Localization system</td><td>Manual</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.l10n</code>: strings by key per language, English fallback, <code>{placeholders}</code>; English and Spanish to start. The game's own text moves onto keys bit by bit. The locks need almost no words, by design.</td></tr>
+<tr><td><b>Scene graph</b></td><td>The scene tree of nodes; scenes saved and instanced</td><td>GameObjects with components in scenes</td><td>Actors with components in levels</td><td>Entities with components</td><td>Rooms holding instances of objects</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.scene</code>: a small Godot-style tree (enter / ready / process / exit, paths and groups). The game's rooms are built from seeded data today, a halls tree that GameMaker would call rooms. Rooms move onto scene nodes when they grow more pieces that act on their own.</td></tr>
+<tr><td><b>Cinematics</b></td><td>AnimationPlayer</td><td>Timeline</td><td>Sequencer</td><td>Track View</td><td>Sequences</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.timeline</code>: keyframed tracks with easing and cues that fire signals. The opening scene (night sky to temple doors) is hand-timed today. It moves onto a timeline next, so cuts can be retimed without touching code.</td></tr>
+<tr><td><b>Events between systems</b></td><td>Signals</td><td>UnityEvents, C# events</td><td>Delegates, event dispatchers</td><td>Flow graph events</td><td>User events</td>
+<td class="us"><span class="tag ok">built</span> <code>ENGINE.signals</code>: on / once / off / emit, used by input and the timeline.</td></tr>
+<tr><td><b>Saving</b></td><td>Resources, ConfigFile</td><td>PlayerPrefs, serialization</td><td>SaveGame objects</td><td>Serialization</td><td>Buffers and INI files</td>
+<td class="us"><span class="tag ok">built</span> One save object in the browser's local storage. Now with <code>ENGINE.save.migrate</code>: numbered migrations, so a change to the save format never loses anyone's progress.</td></tr>
+<tr><td><b>Editor / tools</b></td><td>Full editor</td><td>Full editor</td><td>Full editor</td><td>Sandbox editor</td><td>IDE with room editor</td>
+<td class="us"><span class="tag no">not doing</span> No editor: changes come in as tickets (the Request Builder and the Edit buttons here) and are made in code. Instead, the Art library, the Game engine tab and the contact sheets act as live documentation and test benches.</td></tr>
+</table></div>
+
+<h2>What the five engines agree on, and what we took</h2>
+<ol>
+<li><b>Fixed-step rules, free-rate drawing.</b> Godot runs physics 60 times a second, Unity's FixedUpdate every 0.02 s, and GameMaker steps at the room speed. → <code>ENGINE.loop</code>.</li>
+<li><b>Input is about intent, not keys.</b> Unreal's Input Actions and Mapping Contexts, Unity's action maps and Godot's InputMap all separate "jump" from "Space". → <code>ENGINE.input</code>.</li>
+<li><b>Things are trees or bags of parts.</b> Godot nodes, Unity GameObjects with components, Unreal Actors with components, CryEngine entities, GameMaker objects in rooms. → <code>ENGINE.scene</code> (a tree, the simplest of these).</li>
+<li><b>Systems talk by events.</b> → <code>ENGINE.signals</code>.</li>
+<li><b>Motion is data on a timeline.</b> Sequencer, Timeline, AnimationPlayer. → <code>ENGINE.timeline</code>, <code>ENGINE.skeleton</code>.</li>
+<li><b>Text is looked up, not written into code.</b> → <code>ENGINE.l10n</code>.</li>
+</ol>
+
+<h2>What the game does with it now (25 Nov 2026)</h2>
+<ul>
+<li><b>Looking around:</b> press L (or hold the right mouse button) and move the mouse. Moving it forward looks up. In look mode a crosshair appears and a click acts on what's under it. Esc stops.</li>
+<li><b>The map is a house plan:</b> walled rooms with their floors (stone corridors, wooden libraries and bedrooms, tiled kitchens, glass greenhouses), doors and passages. The corner of the walking screen shows the same plan around you, with a circle where you are.</li>
+<li><b>The Papyrus Map has a Use button</b> that marks creatures, unopened chests and the way to the nearest shop.</li>
+<li><b>The shop</b> shows each item's name, price and use when you hover over it or tap it.</li>
+</ul>
+
+<h2>Next, in order</h2>
+<ol>
+<li>Move the game's movement and keys onto <code>ENGINE.input</code> (rebinding screen, full gamepad).</li>
+<li>Move the opening scene onto <code>ENGINE.timeline</code>.</li>
+<li>Move the sound into an engine mixer part with positional ambience.</li>
+<li>Move rooms onto <code>ENGINE.scene</code> nodes.</li>
+<li>Decide whether a WebGL room renderer (true 3-D turning) is worth its size.</li>
+</ol>
+
+<h2>Sources</h2>
+<ul class="sub">
+<li>Godot: <a href="https://docs.godotengine.org/en/stable/classes/class_node.html">Node</a> and <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/idle_and_physics_processing.html">Idle and Physics Processing</a></li>
+<li>Unity: <a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html">MonoBehaviour.FixedUpdate</a> and <a href="https://docs.unity3d.com/Manual/fixed-updates.html">Fixed updates</a></li>
+<li>Unreal Engine: <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/enhanced-input-in-unreal-engine">Enhanced Input</a> and <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/cinematics-and-movie-making-in-unreal-engine">Cinematics (Sequencer)</a></li>
+<li>CryEngine: <a href="https://www.cryengine.com/docs/static/engines/cryengine-5/categories/23756813/pages/29428286">Input and Action Mapping</a></li>
+<li>GameMaker: <a href="https://gamemaker.io/en/tutorials/moving-from-unity-to-gamemaker">Moving from Unity to GameMaker</a> (objects, events, rooms)</li>
+<li>Glenn Fiedler, <a href="https://gafferongames.com/post/fix_your_timestep/">Fix Your Timestep!</a></li>
+<li>Robert Nystrom, <a href="https://gameprogrammingpatterns.com/game-loop.html">Game Programming Patterns: Game Loop</a></li>
+<li>Y-shearing (looking up and down in a renderer that draws vertical walls): <a href="https://www.zdoom.org/wiki/Y-shearing">ZDoom wiki</a>, <a href="https://doomwiki.org/wiki/Free_look">Doom Wiki: Free look</a></li>
+</ul>
+</main>
+</body></html>

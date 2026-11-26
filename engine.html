@@ -19,7 +19,7 @@ small{color:var(--sub)}select{font:inherit;padding:6px;border-radius:8px;border:
 </style>
 </head><body>
 <header><h1>Art Assets</h1><p>The game engine: how the games behave, kept apart from how they look (<a href="https://github.com/fenw1ck/Art-Assets/blob/main/engine.js">engine.js</a>). Any project can load it; each part below runs live from that file. Edit a part and the Request Builder opens with a ticket about it.</p>
-<nav class="tabs"><a href="index.html">Art library</a><a href="engine.html" aria-current="page">Game engine</a></nav></header>
+<nav class="tabs"><a href="index.html">Art library</a><a href="engine.html" aria-current="page">Game engine</a><a href="engine-why.html">Why the engine is built this way</a></nav></header>
 <main id="parts"></main>
 <script src="core.js"></script><script src="plants.js"></script><script src="items.js"></script><script src="creatures.js"></script><script src="kitchen.js"></script><script src="traps.js"></script><script src="engine.js"></script>
 <script>
@@ -68,6 +68,30 @@ addEventListener('keydown',e=>{const a=E.keys.action(e.key);if(a&&$('keyout'))$(
  $('cgo').onclick=start;g.canvas.onclick=stop;addEventListener('keydown',e=>{if(e.key===' '&&run&&!run.res&&document.activeElement.tagName!=='SELECT'){e.preventDefault();stop()}});
  DEMO.cook=()=>{g.clearRect(0,0,680,120);if(!run){g.fillStyle='#5b6663';g.font='14px system-ui';g.fillText('Choose a dish and press Cook.',16,60);return}run.checks.forEach((c,i)=>{const y=14+i*26,W=520;g.fillStyle='#d9d2c4';g.fillRect(120,y,W,18);g.fillStyle=c.ok===false?'#d85a4a':c.ok?'#6ab04a':i===run.i?'#8fd46a':'#b8d8a8';g.fillRect(120+c.lo*W,y,(c.hi-c.lo)*W,18);
   g.fillStyle='#18211f';g.font='12px system-ui';g.fillText(c.label,10,y+14);if(i===run.i&&!run.res){const x=E.cook.marker((performance.now()-run.t0)/1000,c.speed);g.fillStyle='#18211f';g.fillRect(118+x*W,y-3,4,24)}});if(run.res){g.font='600 14px system-ui';g.fillText(run.res,120,112)}}}
+/* input: press keys (or a gamepad button); the card shows the action each maps to, per context */
+{const d=$('demo-input');d.innerHTML=`<div class="row"><label><input type="checkbox" id="ictx"> menu open (the menu context sits above gameplay)</label></div><p><small>Press any key here:</small> <b id="iout">…</b></p>`;
+ addEventListener('keydown',e=>{if(!$('iout'))return;E.input.context('menu',$('ictx').checked);E.input.key(e.key,true);E.input.frame();const a=E.input.action(e.key);$('iout').textContent=a?`${e.key} → ${a}${E.input.active('menu')?' (menu)':''}`:`${e.key} → nothing bound`;E.input.key(e.key,false)})}
+/* look: a corridor; drag the mouse over it (or hold the right button) to swing the view, forward to look up */
+{const g=cv('look',300),L=E.look.make();let drag=false;g.canvas.onpointerdown=e=>{drag=true;g.canvas.setPointerCapture(e.pointerId)};g.canvas.onpointerup=()=>drag=false;g.canvas.onpointermove=e=>{if(drag)E.look.feed(L,e.movementX*2,e.movementY*2)};g.canvas.ondblclick=()=>E.look.reset(L);
+ DEMO.look=dt=>{E.look.step(L,dt);const f=260,[sx,sy]=E.look.shear(L,f),vx=340+sx,vy=150+sy;g.fillStyle='#2a2420';g.fillRect(0,0,680,300);const P=(x,y,z)=>[vx+x*f/z,vy+y*f/z];g.strokeStyle='#c9a24a';g.lineWidth=1.5;
+  for(const z of[1,1.5,2.2,3.2,4.6,6.5]){const a=P(-1.5,-1.4,z),b=P(1.5,1.1,z);g.strokeRect(a[0],a[1],b[0]-a[0],b[1]-a[1])}for(const[x,y]of[[-1.5,-1.4],[1.5,-1.4],[1.5,1.1],[-1.5,1.1]]){const a=P(x,y,1),b=P(x,y,6.5);g.beginPath();g.moveTo(...a);g.lineTo(...b);g.stroke()}
+  g.fillStyle='#f3e2b4';g.font='13px system-ui';g.fillText(`yaw ${(L.yaw*57.3).toFixed(0)}°  pitch ${(L.pitch*57.3).toFixed(0)}°  · drag to look, double-click to centre`,12,22)}}
+/* loop: the same ball moved by fixed ticks (top) and by raw frame time (bottom) while the frame rate stutters */
+{const g=cv('loop',140),R=E.loop.make(60);let x1=0,px1=0,x2=0,stall=0;DEMO.loop=dt=>{const fake=Math.random()<.04?.12:dt;const o=R.frame(fake,s=>{px1=x1;x1=(x1+s*200)%640});x2=(x2+fake*200)%640;
+  g.clearRect(0,0,680,140);g.fillStyle='#1d7380';g.beginPath();g.arc(20+E.loop.lerp(px1,x1,o.alpha),40,10,0,TAU);g.fill();g.fillStyle='#c0503a';g.beginPath();g.arc(20+x2,100,10,0,TAU);g.fill();
+  g.fillStyle='#5b6663';g.font='12px system-ui';g.fillText(`fixed 60 Hz ticks, drawn between ticks (${o.ticks} this frame)`,40,20);g.fillText('raw frame time: jumps when a frame stalls',40,128)}}
+/* signals */
+{const d=$('demo-signals');d.innerHTML=`<div class="row"><button class="btn ghost" id="sg">emit 'lock:open'</button><b id="so">0 heard</b></div>`;let n=0;E.signals.on('lock:open',()=>{n++;$('so').textContent=n+' heard'});$('sg').onclick=()=>E.signals.emit('lock:open')}
+/* scene: a room as a tree */
+{const root=E.scene.root('room'),log=[];const add=(p,n,o)=>E.scene.add(p,E.scene.node(n,Object.assign({enter:()=>log.push('enter '+n),ready:()=>log.push('ready '+n)},o)));const fl=add(root,'floor'),mob=add(root,'creature',{groups:['enemy']});add(mob,'eyes');add(root,'chest',{groups:['loot']});
+ const tree=(n,i)=>'  '.repeat(i)+n.name+(n.groups.length?` [${n.groups}]`:'')+'\n'+n.children.map(c=>tree(c,i+1)).join('');$('demo-scene').innerHTML=`<pre style="margin:0;font-size:12px">${esc(tree(root,0))}</pre><small>order: ${esc(log.join(' → '))}</small>`}
+/* timeline: a camera move with two cues */
+{const g=cv('timeline',140),tl=E.timeline.make({length:4,loop:true,tracks:{x:[[0,40],[1.5,600,'inOut'],[2.5,600],[4,40,'inOut']],y:[[0,90],[1.5,40,'out'],[4,90,'inOut']]},events:[[1.5,'tl:arrive'],[4,'tl:home']]});let cue='';E.signals.on('tl:arrive',()=>cue='cue: arrive');E.signals.on('tl:home',()=>cue='cue: home');
+ DEMO.timeline=dt=>{const v=E.timeline.play(tl,dt);g.clearRect(0,0,680,140);g.strokeStyle='#d9d2c4';g.beginPath();g.moveTo(40,120);g.lineTo(640,120);g.stroke();g.fillStyle='#c9a24a';g.fillRect(40+tl.t/4*600-1,112,3,16);g.fillStyle='#1d7380';g.beginPath();g.arc(v.x,v.y,10,0,TAU);g.fill();g.fillStyle='#5b6663';g.font='12px system-ui';g.fillText(`t ${tl.t.toFixed(2)} s  ${cue}`,40,20)}}
+/* l10n */
+{const d=$('demo-l10n');d.innerHTML=`<div class="row"><select id="lg">${E.l10n.langs().map(l=>`<option>${l}</option>`).join('')}</select><b id="lo"></b></div>`;const show=()=>{E.l10n.lang=$('lg').value;$('lo').textContent=E.l10n.t('you_are_here')+' · '+E.l10n.t('look_hint')};$('lg').onchange=show;show()}
+/* save */
+{const S={solved:[1]};E.save.migrate(S,[[1,s=>s.hp=100],[2,s=>s.pack='backpack-satchel']]);$('demo-save').innerHTML=`<small>an old save, after migrations 1 and 2:</small><pre style="margin:0;font-size:12px">${esc(JSON.stringify(S))}</pre>`}
 /* skeleton: the five body plans as wireframes (outlines and bones), and the same bodies painted in the house style */
 {const d=$('demo-skeleton');d.insertAdjacentHTML('afterbegin',`<div class="row"><select id="skst">${['friendly','threatening','wounded','dead'].map(x=>`<option>${x}</option>`).join('')}</select><label><input type="checkbox" id="skpaint"> painted</label></div>`);const g=cv('skeleton',300);
  const draw=()=>{g.clearRect(0,0,680,300);const st=$('skst').value,paint=$('skpaint').checked;if(paint)ART_CORE.house.moon(g,680,300,420,110,260);
