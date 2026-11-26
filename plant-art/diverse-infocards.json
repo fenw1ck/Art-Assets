@@ -79,7 +79,7 @@
     "stem_or_root": "thick rhizome; stout petioles and flower stalks",
     "diagnostic_reproductive": "yellow flower raised above water; many stamens; distinctive many-seeded fruit",
     "habitat": "rooted; leaves float; flower usually emergent",
-    "construction_notes": "Separate the floating leaf plane from the elevated flower; use the robust peduncle and cup-shaped yellow flower rather than a water-lily petal rosette.",
+    "construction_notes": "Show thick creeping rhizome and floating leaf plane; petiole is flattened and wing-margined. The yellow flower's conspicuous parts are sepals, not large petals; distinguish it from Nymphaea by the globose flower and tiny scale-like petals.",
     "user_data": {
       "scientific_name": "Nuphar variegata",
       "family": "Nymphaeaceae",
@@ -91,7 +91,9 @@
       "stem_or_root": "thick rhizome; stout petioles and flower stalks",
       "diagnostic_reproductive": "yellow flower raised above water; many stamens; distinctive many-seeded fruit",
       "habitat": "rooted; leaves float; flower usually emergent",
-      "construction_notes": "Separate the floating leaf plane from the elevated flower; use the robust peduncle and cup-shaped yellow flower rather than a water-lily petal rosette."
+      "construction_notes": "Show thick creeping rhizome and floating leaf plane; petiole is flattened and wing-margined. The yellow flower's conspicuous parts are sepals, not large petals; distinguish it from Nymphaea by the globose flower and tiny scale-like petals.",
+      "species_dimensions": "Floating blades 7–35 × 5–25 cm; flowers 2.5–5 cm across; rhizomes 2.5–7 cm diameter; fruit about 2–4.3 × 2–3.5 cm; stigmatic disk 8–20 mm.",
+      "species_morphology": "Rooted perennial with thick branched creeping rhizome and no stolons; leaves mostly floating, broadly ovate to oblong, deep basal sinus, upper petiole surface flattened with median ridge and winged margins; yellow flowers with usually six showy sepals, tiny scale-like petals and numerous stamens; purple-tinged strongly ribbed ovoid fruit."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/aquatic-plants.md",
@@ -104,23 +106,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/aquatic-plants.md",
       "habitat": "botanical references listed in research/subjects/plants/aquatic-plants.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/aquatic-plants.md"
+      "construction_notes": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/aquatic-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/aquatic-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/aquatic-plants.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and seasonal flowering window recorded; regional variation and reference imagery remain open",
+    "research_record": "research/subjects/plants/aquatic-species-dossiers.md",
     "research_sources": [
       "https://powo.science.kew.org/",
       "https://plants.sc.egov.usda.gov/home.html",
       "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=122531"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "population-specific leaf proportions and flowering window for selected region",
+      "verified vegetative, flowering and fruiting reference photographs"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Floating blades 7–35 × 5–25 cm; flowers 2.5–5 cm across; rhizomes 2.5–7 cm diameter; fruit about 2–4.3 × 2–3.5 cm; stigmatic disk 8–20 mm.",
+    "species_morphology": "Rooted perennial with thick branched creeping rhizome and no stolons; leaves mostly floating, broadly ovate to oblong, deep basal sinus, upper petiole surface flattened with median ridge and winged margins; yellow flowers with usually six showy sepals, tiny scale-like petals and numerous stamens; purple-tinged strongly ribbed ovoid fruit."
   },
   {
     "id": "nelumbo_lutea",
