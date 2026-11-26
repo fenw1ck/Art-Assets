@@ -5333,7 +5333,7 @@
     "stem_or_root": "stout erect rhizome",
     "diagnostic_reproductive": "sporangia densely cover contracted fertile pinnae or specialized fertile fronds",
     "habitat": "wet woodland, swamp and stream margins",
-    "construction_notes": "Build large bipinnate fronds from a stout crown; fertile segments are structurally distinct and should not be generic sori dots.",
+    "construction_notes": "Create vase-like tuft of arching bipinnate fronds. Fertile pinnae are contracted, brown/green and clustered at the upper frond portion; do not place round sori across sterile pinnae.",
     "user_data": {
       "scientific_name": "Osmunda regalis",
       "family": "Osmundaceae",
@@ -5345,7 +5345,9 @@
       "stem_or_root": "stout erect rhizome",
       "diagnostic_reproductive": "sporangia densely cover contracted fertile pinnae or specialized fertile fronds",
       "habitat": "wet woodland, swamp and stream margins",
-      "construction_notes": "Build large bipinnate fronds from a stout crown; fertile segments are structurally distinct and should not be generic sori dots."
+      "construction_notes": "Create vase-like tuft of arching bipinnate fronds. Fertile pinnae are contracted, brown/green and clustered at the upper frond portion; do not place round sori across sterile pinnae.",
+      "species_dimensions": "Fronds up to about 1 m in North American treatments; fertile pinnae strongly contracted and concentrated at frond apex; sterile pinnules up to 6 cm long in FNA descriptions.",
+      "species_morphology": "Large deciduous wetland fern with erect/suberect rhizome, persistent winged stipe bases and black fibrous roots; tufted erect bipinnate fronds; sterile broad pinnae and strongly contracted fertile terminal pinnae bearing dense exposed sporangia."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5358,23 +5360,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://herbarium.ncsu.edu/common_ferns/identify.htm",
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional American variety/taxonomic concept",
+      "local frond dimensions and frequency of fertile fronds"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds up to about 1 m in North American treatments; fertile pinnae strongly contracted and concentrated at frond apex; sterile pinnules up to 6 cm long in FNA descriptions.",
+    "species_morphology": "Large deciduous wetland fern with erect/suberect rhizome, persistent winged stipe bases and black fibrous roots; tufted erect bipinnate fronds; sterile broad pinnae and strongly contracted fertile terminal pinnae bearing dense exposed sporangia."
   },
   {
     "id": "dryopteris_filix_mas",
@@ -5392,7 +5397,7 @@
     "stem_or_root": "short-creeping to erect rhizome",
     "diagnostic_reproductive": "round sori with kidney-shaped indusia",
     "habitat": "woodlands and shaded moist habitats",
-    "construction_notes": "Show divided fronds with sori in rows on underside; magnify the reniform indusium; avoid a fertile frond separate from sterile frond unless species warrants it.",
+    "construction_notes": "Show upright crown of tapering arching fronds with one- to two-level division; stipe scales include broad and hairlike forms; place round sori halfway between segment midvein and margin, not at edge.",
     "user_data": {
       "scientific_name": "Dryopteris filix-mas",
       "family": "Dryopteridaceae",
@@ -5404,7 +5409,9 @@
       "stem_or_root": "short-creeping to erect rhizome",
       "diagnostic_reproductive": "round sori with kidney-shaped indusia",
       "habitat": "woodlands and shaded moist habitats",
-      "construction_notes": "Show divided fronds with sori in rows on underside; magnify the reniform indusium; avoid a fertile frond separate from sterile frond unless species warrants it."
+      "construction_notes": "Show upright crown of tapering arching fronds with one- to two-level division; stipe scales include broad and hairlike forms; place round sori halfway between segment midvein and margin, not at edge.",
+      "species_dimensions": "Fronds 28–120 × 10–30 cm; petiole less than 1/4 frond length; pinnae commonly 20–30 pairs; sori midway between midvein and segment margin.",
+      "species_morphology": "Stout rhizomatous woodland fern; monomorphic deciduous fronds with ovate-lanceolate blade, pinnate-pinnatifid to 2-pinnate at base; pinnae in plane of blade, basal pinnae reduced; petiole with two distinct scale types (broad brown and hairlike); round medial sori with eglandular indusia."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5417,10 +5424,12 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://floraneomexicana.org/wp-content/uploads/2021/07/fnm-iii-part-1-2020.pdf",
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
@@ -5428,13 +5437,14 @@
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "North American taxonomic complex; confirm local specimen identity",
+      "regional frond size and sori timing"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds 28–120 × 10–30 cm; petiole less than 1/4 frond length; pinnae commonly 20–30 pairs; sori midway between midvein and segment margin.",
+    "species_morphology": "Stout rhizomatous woodland fern; monomorphic deciduous fronds with ovate-lanceolate blade, pinnate-pinnatifid to 2-pinnate at base; pinnae in plane of blade, basal pinnae reduced; petiole with two distinct scale types (broad brown and hairlike); round medial sori with eglandular indusia."
   },
   {
     "id": "polystichum_munitum",
@@ -5452,7 +5462,7 @@
     "stem_or_root": "stout rhizome",
     "diagnostic_reproductive": "round sori in rows on pinnae; peltate circular indusia",
     "habitat": "moist forest understory",
-    "construction_notes": "Use evergreen arching once-pinnate fronds and spiny-toothed pinnae; sori have round shield-like indusia.",
+    "construction_notes": "Show broad arching single-pinnate frond with many sword-like pinnae, basal auricles and spiny margins; include dark scaly stipe and round indusiate sori on underside.",
     "user_data": {
       "scientific_name": "Polystichum munitum",
       "family": "Dryopteridaceae",
@@ -5464,7 +5474,9 @@
       "stem_or_root": "stout rhizome",
       "diagnostic_reproductive": "round sori in rows on pinnae; peltate circular indusia",
       "habitat": "moist forest understory",
-      "construction_notes": "Use evergreen arching once-pinnate fronds and spiny-toothed pinnae; sori have round shield-like indusia."
+      "construction_notes": "Show broad arching single-pinnate frond with many sword-like pinnae, basal auricles and spiny margins; include dark scaly stipe and round indusiate sori on underside.",
+      "species_dimensions": "Fronds commonly 50–180 cm; petiole 1/8–1/4 frond length; pinnae 1–15 cm, up to about 50 pairs; sori about 1 mm diameter.",
+      "species_morphology": "Evergreen arching crown; once-pinnate linear-lanceolate blade; densely scaly dark red-brown petiole; narrowly lanceolate non-overlapping pinnae with pronounced acroscopic auricle and ascending spiny teeth; round sori with ciliate indusia."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5477,23 +5489,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://herbarium.ncsu.edu/common_ferns/identify.htm",
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "site-dependent frond size and pinnae orientation",
+      "regional sori row arrangement and specimen imagery"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds commonly 50–180 cm; petiole 1/8–1/4 frond length; pinnae 1–15 cm, up to about 50 pairs; sori about 1 mm diameter.",
+    "species_morphology": "Evergreen arching crown; once-pinnate linear-lanceolate blade; densely scaly dark red-brown petiole; narrowly lanceolate non-overlapping pinnae with pronounced acroscopic auricle and ascending spiny teeth; round sori with ciliate indusia."
   },
   {
     "id": "pteridium_aquilinum",
@@ -5511,7 +5526,7 @@
     "stem_or_root": "long-creeping rhizome",
     "diagnostic_reproductive": "continuous marginal sori protected by recurved margin and indusial tissue",
     "habitat": "open woodland, heath and disturbed ground",
-    "construction_notes": "Construct a spreading underground rhizome and widely spaced triangular fronds; fertile sori are marginal, not round dots across the blade.",
+    "construction_notes": "Build large triangular highly divided frond arising singly along long horizontal rhizome; show continuous marginal sori lines, not round dots. Regional indument varies; avoid fixing hair density without source specimen.",
     "user_data": {
       "scientific_name": "Pteridium aquilinum",
       "family": "Dennstaedtiaceae",
@@ -5523,7 +5538,9 @@
       "stem_or_root": "long-creeping rhizome",
       "diagnostic_reproductive": "continuous marginal sori protected by recurved margin and indusial tissue",
       "habitat": "open woodland, heath and disturbed ground",
-      "construction_notes": "Construct a spreading underground rhizome and widely spaced triangular fronds; fertile sori are marginal, not round dots across the blade."
+      "construction_notes": "Build large triangular highly divided frond arising singly along long horizontal rhizome; show continuous marginal sori lines, not round dots. Regional indument varies; avoid fixing hair density without source specimen.",
+      "species_dimensions": "Fronds commonly 0.5–1.5 m tall; blade 3–4-pinnate; rhizome about 7 mm diameter in dried material; stipe can reach 40 cm.",
+      "species_morphology": "Clonal perennial from long-creeping rhizomes with widely spaced erect fronds; stout woody brown stipe; large deltate/triangular 3–4-pinnate blade with deeply divided ultimate segments; sori continuous or nearly continuous submarginal lines protected by false indusium formed from inrolled margin and membranous tissue."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5536,23 +5553,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://herbarium.ncsu.edu/common_ferns/identify.htm",
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional species-complex taxon and infraspecific concept",
+      "local indument and frond dimensions"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds commonly 0.5–1.5 m tall; blade 3–4-pinnate; rhizome about 7 mm diameter in dried material; stipe can reach 40 cm.",
+    "species_morphology": "Clonal perennial from long-creeping rhizomes with widely spaced erect fronds; stout woody brown stipe; large deltate/triangular 3–4-pinnate blade with deeply divided ultimate segments; sori continuous or nearly continuous submarginal lines protected by false indusium formed from inrolled margin and membranous tissue."
   },
   {
     "id": "adiantum_pedatum",
@@ -5570,7 +5590,7 @@
     "stem_or_root": "dark wiry stipe and short rhizome",
     "diagnostic_reproductive": "marginal sori on reflexed pinnule edges",
     "habitat": "moist forests and rocky slopes",
-    "construction_notes": "Show dark wiry stipe and fan-like branching rachis; individual pinnules are fan-shaped with sori on recurved margins.",
+    "construction_notes": "Signature dark forked rachis and fan-shaped blade; fine pinnae and tiny pinnules. Sori form along lobed upper segment margins, not round mid-segment dots. Keep separate from western A. aleuticum.",
     "user_data": {
       "scientific_name": "Adiantum pedatum",
       "family": "Pteridaceae",
@@ -5582,7 +5602,9 @@
       "stem_or_root": "dark wiry stipe and short rhizome",
       "diagnostic_reproductive": "marginal sori on reflexed pinnule edges",
       "habitat": "moist forests and rocky slopes",
-      "construction_notes": "Show dark wiry stipe and fan-like branching rachis; individual pinnules are fan-shaped with sori on recurved margins."
+      "construction_notes": "Signature dark forked rachis and fan-shaped blade; fine pinnae and tiny pinnules. Sori form along lobed upper segment margins, not round mid-segment dots. Keep separate from western A. aleuticum.",
+      "species_dimensions": "Fronds 40–75 cm; blade 15–30 × 15–35 cm; indusia 1–3 mm; spores 34–40 µm.",
+      "species_morphology": "Short-creeping rhizome; slender dark chestnut/purple glabrous petiole forks into two arching rachises; blade fan-shaped and pseudopedate with finely divided proximal pinnae and oblong asymmetrical ultimate segments; marginal sori in shallow sinuses with transversely oblong false indusia."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5595,23 +5617,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://herbarium.ncsu.edu/common_ferns/identify.htm",
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "confirm strict eastern A. pedatum concept vs western A. aleuticum",
+      "local frond form and sporulation season"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Fronds 40–75 cm; blade 15–30 × 15–35 cm; indusia 1–3 mm; spores 34–40 µm.",
+    "species_morphology": "Short-creeping rhizome; slender dark chestnut/purple glabrous petiole forks into two arching rachises; blade fan-shaped and pseudopedate with finely divided proximal pinnae and oblong asymmetrical ultimate segments; marginal sori in shallow sinuses with transversely oblong false indusia."
   },
   {
     "id": "polypodium_vulgare",
@@ -5629,7 +5654,7 @@
     "stem_or_root": "creeping scaly rhizome",
     "diagnostic_reproductive": "round naked sori on underside, typically in rows",
     "habitat": "rocks, tree trunks and woodland banks",
-    "construction_notes": "Emphasize creeping rhizome and simple pinnatifid fronds; sori are round and lack an indusium.",
+    "construction_notes": "Show creeping rhizome with fronds spaced along it; simple pinnatifid blade and rows of round naked sori beneath. Do not add indusia or dense crown habit.",
     "user_data": {
       "scientific_name": "Polypodium vulgare",
       "family": "Polypodiaceae",
@@ -5641,7 +5666,9 @@
       "stem_or_root": "creeping scaly rhizome",
       "diagnostic_reproductive": "round naked sori on underside, typically in rows",
       "habitat": "rocks, tree trunks and woodland banks",
-      "construction_notes": "Emphasize creeping rhizome and simple pinnatifid fronds; sori are round and lack an indusium."
+      "construction_notes": "Show creeping rhizome with fronds spaced along it; simple pinnatifid blade and rows of round naked sori beneath. Do not add indusia or dense crown habit.",
+      "species_dimensions": "Rhizome 3–4 mm diameter; stipe 5–10 cm; blade 10–20 × 5–7 cm; 12–15 pairs of segments.",
+      "species_morphology": "Creeping scaly rhizome with spaced persistent fronds; straw-colored short stipe; oblong-lanceolate pinnatifid to pinnatisect blade with 12–15 pairs of toothed lanceolate segments; round naked sori medial or slightly nearer costa."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5654,23 +5681,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://floranorthamerica.org/",
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://herbarium.ncsu.edu/common_ferns/identify.htm"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "local species-complex/taxonomic concept",
+      "regional frond and mature sorus color"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Rhizome 3–4 mm diameter; stipe 5–10 cm; blade 10–20 × 5–7 cm; 12–15 pairs of segments.",
+    "species_morphology": "Creeping scaly rhizome with spaced persistent fronds; straw-colored short stipe; oblong-lanceolate pinnatifid to pinnatisect blade with 12–15 pairs of toothed lanceolate segments; round naked sori medial or slightly nearer costa."
   },
   {
     "id": "equisetum_arvense",
@@ -5688,7 +5718,7 @@
     "stem_or_root": "creeping rhizomes; separate fertile and sterile shoots",
     "diagnostic_reproductive": "terminal strobilus on fertile spring shoot",
     "habitat": "moist disturbed ground, ditches and stream margins",
-    "construction_notes": "Do not draw as a leafy fern: use jointed ribbed shoots, node sheaths, whorled branches and a terminal cone-like strobilus.",
+    "construction_notes": "Show fertile and sterile shoots as distinct seasonal forms, not on one stem: unbranched pale fertile stalk with cone; green jointed sterile stalk with regular branch whorls and toothed node sheaths. Include hollow internode cross-section inset.",
     "user_data": {
       "scientific_name": "Equisetum arvense",
       "family": "Equisetaceae",
@@ -5700,7 +5730,9 @@
       "stem_or_root": "creeping rhizomes; separate fertile and sterile shoots",
       "diagnostic_reproductive": "terminal strobilus on fertile spring shoot",
       "habitat": "moist disturbed ground, ditches and stream margins",
-      "construction_notes": "Do not draw as a leafy fern: use jointed ribbed shoots, node sheaths, whorled branches and a terminal cone-like strobilus."
+      "construction_notes": "Show fertile and sterile shoots as distinct seasonal forms, not on one stem: unbranched pale fertile stalk with cone; green jointed sterile stalk with regular branch whorls and toothed node sheaths. Include hollow internode cross-section inset.",
+      "species_dimensions": "Sterile green shoots 5–60 cm (rarely 1 m); fertile brown shoots 5–30 cm; terminal strobili 1–3.5 cm; sterile shoots with up to about 20 whorls of branches.",
+      "species_morphology": "Rhizomatous horsetail with dimorphic aerial shoots: early pale brown unbranched fertile stems bearing terminal blunt strobilus; separate green sterile hollow jointed stems with whorled ascending branches, nodal fused scale-leaf sheaths, ridged silicified surface and large central cavity."
     },
     "user_data_provenance": {
       "scientific_name": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
@@ -5713,23 +5745,26 @@
       "stem_or_root": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "diagnostic_reproductive": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
       "habitat": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md",
-      "construction_notes": "botanical references listed in research/subjects/plants/ferns-and-fern-allies.md"
+      "construction_notes": "research/subjects/plants/fern-species-dossiers.md",
+      "species_dimensions": "research/subjects/plants/fern-species-dossiers.md",
+      "species_morphology": "research/subjects/plants/fern-species-dossiers.md"
     },
-    "research_status": "researched outline; genus-level architecture recorded; species-level measurements and variation remain open",
-    "research_record": "research/subjects/plants/ferns-and-fern-allies.md",
+    "research_status": "species-level morphology researched; quantitative dimensions and reproductive architecture recorded; regional variation and specimen imagery remain open",
+    "research_record": "research/subjects/plants/fern-species-dossiers.md",
     "research_sources": [
       "https://forest.moscowfsl.wsu.edu/rmrs_gtr118/fern_key.html",
       "https://herbarium.ncsu.edu/common_ferns/identify.htm",
       "https://floranorthamerica.org/"
     ],
     "research_gaps": [
-      "species-specific mature dimensions",
-      "species-level seasonal or reproductive variation",
-      "verified reference photographs for each life stage"
+      "regional emergence timing and relative shoot proportions",
+      "local variation in branch whorl count and strobilus dimensions"
     ],
     "artwork_status": "not rendered",
     "renderer": "pending non-flowering lineage renderer",
-    "style": "Naturalist's Plate"
+    "style": "Naturalist's Plate",
+    "species_dimensions": "Sterile green shoots 5–60 cm (rarely 1 m); fertile brown shoots 5–30 cm; terminal strobili 1–3.5 cm; sterile shoots with up to about 20 whorls of branches.",
+    "species_morphology": "Rhizomatous horsetail with dimorphic aerial shoots: early pale brown unbranched fertile stems bearing terminal blunt strobilus; separate green sterile hollow jointed stems with whorled ascending branches, nodal fused scale-leaf sheaths, ridged silicified surface and large central cavity."
   },
   {
     "id": "betula_papyrifera",
