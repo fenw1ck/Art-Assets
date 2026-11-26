@@ -6,8 +6,10 @@ on:
       - 'tools/plant-art.py'
       - 'plants.js'
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
-  render-first-eight:
+  render-flower-infocards:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,12 +17,22 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install Pillow
-      - name: Validate species profiles
+      - name: Validate all species profiles
         run: python tools/plant-art.py --check
-      - name: Render first eight plant infocards
-        run: python tools/plant-art.py --only tomato_cherry tomato_indeterminate tomato_determinate pepper_bell eggplant corn_sweet bean_bush bean_pole
-      - uses: actions/upload-artifact@v4
+      - name: Render eight flowering plant infocards in Python
+        run: python tools/plant-art.py --only nasturtium calendula pansy sweet_pea cosmos zinnia petunia fuchsia --size 1024 --seed 7
+      - name: Upload rendered infocards
+        uses: actions/upload-artifact@v4
         with:
-          name: fenwick-first-eight-plant-art
+          name: fenwick-eight-flower-infocards
           path: plant-art/
           if-no-files-found: error
+      - name: Commit generated flower assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add plant-art/
+          if ! git diff --cached --quiet; then
+            git commit -m "Add eight Python-rendered flower infocards"
+            git push
+          fi
