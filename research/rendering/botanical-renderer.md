@@ -83,4 +83,5 @@ The Python renderer now writes only under `plant-art/derived/`; it does not over
 
 ## Log
 
+- 2026-11-25: populated all 57 plant infocards from the canonical plant list and existing construction profiles. Each record now contains at least 8 populated user-data fields, with field-level provenance, linked research records and known gaps where available. The eight existing flower image references are retained; no new images were rendered. Added a data-only `--infocards-only` command and changed CI to validate card coverage without generating images.
 - 2026-11-25: created the Botanical Renderer branch and website intake tab. The intake exports a structured brief with user evidence and explicit research tasks. Added browser-canvas source PNG export and changed Python output to a protected derived workspace. Server-side research/render job handoff and anatomy-aware editing remain future integration work.
