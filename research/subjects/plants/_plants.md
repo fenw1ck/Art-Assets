@@ -122,3 +122,30 @@ The following records document botanical construction evidence for the Botanical
 - [Fig](fig.md)
 - [Meyer lemon](lemon_meyer.md)
 - [Sunflower](sunflower.md)
+
+## Additional plant profiles (research-only)
+
+- [Oregano](oregano.md)
+- [Rosemary](rosemary.md)
+- [Garden sage](sage.md)
+- [Greek oregano](oregano_greek.md)
+- [Prostrate rosemary](rosemary_prostrate.md)
+- [Purple sage](sage_purple.md)
+- [Borage](borage.md)
+- [Lemon thyme](thyme_lemon.md)
+- [German chamomile](chamomile.md)
+- [Bush basil](bush_basil.md)
+- [Watermelon](watermelon.md)
+- [Muskmelon](melon.md)
+- [Pumpkin](pumpkin.md)
+- [Sweet potato](sweet_potato.md)
+- [Turnip](turnip.md)
+- [Celery](celery.md)
+- [Cauliflower](cauliflower.md)
+- [Brussels sprouts](brussels_sprout.md)
+- [Okra](okra.md)
+- [White eggplant](eggplant_white.md)
+
+## References and evidence policy
+
+See [Botanical research references](_references.md) for taxonomy databases, morphology sources, specimen/image resources, cultivar references, evidence hierarchy and citation rules.
