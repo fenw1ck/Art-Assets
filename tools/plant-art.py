@@ -317,7 +317,7 @@ dt{color:#77705b}dd{margin:0}.terms{font-size:11px;color:#77705b;border-top:1px 
 </style></head><body><header><h1>Plant Art Library</h1>
 <p>Species-specific botanical constructions in the Naturalist's Plate style. Growth habit, leaf architecture, flowers and harvest structures are recorded with each illustration. Artwork is generated reproducibly by tools/plant-art.py.</p></header>
 <main>
-""" + "\\n".join(cards) + """
+""" + "\n".join(cards) + """
 </main></body></html>
 """
     (OUT / "index.html").write_text(page, encoding="utf-8")
