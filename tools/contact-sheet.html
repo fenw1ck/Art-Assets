@@ -29,6 +29,32 @@ if(sheet==='plants'){
   L.forEach((p,r)=>{const y0=30+r*ch,b=BOT.test(p.id);ctx.fillStyle=r%2?BG2:BG;ctx.fillRect(0,y0,c.width,ch);
     label(p.common_name,6,y0+16,b?GOOD:INK,(b?'bold ':'')+'11px system-ui,sans-serif');label(p.silhouette,6,y0+30,SUB,'10px system-ui');label(b?'botanical':'generic',6,y0+43,SUB,'10px system-ui');
     STAGES.forEach((s,i)=>{try{PLANTS.drawFit(ctx,p,lw+i*cw+cw/2,y0+ch-8,ch-22,s,7)}catch(e){label('ERR '+e.message,lw+i*cw+4,y0+60,'red')}})});
+}else if(sheet==='flowers'){
+  /* Seven species-specific flowering architectures: all six stages, then fifteen deterministic mature seeds. */
+  const ids=['calendula','pansy','sweet_pea','cosmos','zinnia','petunia','fuchsia'];
+  const names=['Calendula','Pansy','Sweet pea','Cosmos','Zinnia','Petunia','Fuchsia'];
+  const stages=['seedling','young','mature','past','dormant','dead'];
+  const cw=112,ch=145,pad=145;c.width=pad+cw*stages.length;c.height=42+ids.length*ch+ids.length*100;
+  ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
+  stages.forEach((s,i)=>label(s,pad+i*cw+8,25,INK,'bold 12px system-ui'));
+  ids.forEach((id,r)=>{
+    const p=PLANTS.byId[id],y0=42+r*ch;
+    ctx.fillStyle=r%2?BG2:BG;ctx.fillRect(0,y0,c.width,ch);
+    label(names[r],8,y0+20,INK,'bold 12px system-ui');
+    label('individual',8,y0+36,SUB,'10px system-ui');
+    stages.forEach((s,i)=>{try{PLANTS.drawFit(ctx,p,pad+i*cw+cw/2,y0+ch-10,ch-34,s,17)}catch(e){label('ERR '+e.message,pad+i*cw+4,y0+70,'red')}});
+  });
+  const v0=42+ids.length*ch+22;
+  label('Mature deterministic seed variations (1–15)',8,v0,INK,'bold 12px system-ui');
+  ids.forEach((id,r)=>{
+    const p=PLANTS.byId[id],yy=v0+18+r*100;
+    label(names[r],8,yy+30,INK,'11px system-ui');
+    for(let seed=1;seed<=15;seed++){
+      const xx=pad+(seed-1)*((cw*stages.length-8)/15)+20;
+      PLANTS.drawFit(ctx,p,xx,yy+76,68,'mature',seed);
+      if(r===0)label(String(seed),xx-4,yy+91,SUB,'9px system-ui');
+    }
+  });
 }else if(sheet==='ladder'){
   const ids=['tomato_indeterminate','pepper_bell','basil','lettuce','apple'],sizes=[16,24,48,96,200,400];
   c.width=sizes.reduce((a,b)=>a+b+30,40);c.height=ids.length*430;ctx.fillStyle=BG;ctx.fillRect(0,0,c.width,c.height);
