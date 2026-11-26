@@ -1243,7 +1243,14 @@
       "leaf_construction": "arrow",
       "flower_construction": "green-spike",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#3f7f3a"
+      "foliage_colour": "#3f7f3a",
+      "scientific_name": "Spinacia oleracea",
+      "growth_architecture_detail": "Cool-season annual or biennial herb; basal rosette of leaves, then an erect branched seed stalk.",
+      "leaf_morphology_detail": "Alternate simple leaves in a ground-level rosette; lower leaves long-petiolate, ovate to triangular or arrow-shaped, smooth or savoyed; basal lobes may be hastate.",
+      "branching_architecture": "Vegetative stem is very short. Bolting produces a tall, angular, branching inflorescence axis with reduced upper leaves. Species is usually dioecious.",
+      "flower_placement_and_inflorescence": "Tiny green flowers without showy petals; male flowers form clusters in spikes or leafy panicles, female flowers are sessile axillary clusters.",
+      "fruit_or_harvest_morphology": "Small dry fruit enclosed by persistent hardened female perianth; fruit clusters may bear spines in some forms.",
+      "renderer_construction_rules": "Keep the edible stage as a low rosette of petiolate leaves. For mature seed-stage reference, add a separate upright branched flowering stalk. Do not render showy blossoms; male and female flower structures are minute and green."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1253,7 +1260,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/spinach.md",
+      "growth_architecture_detail": "research/subjects/plants/spinach.md",
+      "leaf_morphology_detail": "research/subjects/plants/spinach.md",
+      "branching_architecture": "research/subjects/plants/spinach.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/spinach.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/spinach.md",
+      "renderer_construction_rules": "research/subjects/plants/spinach.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1263,13 +1277,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://plantuse.plantnet.org/en/Spinacia_oleracea_%28PROSEA%29",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:167384-1/general-information"
+    ],
+    "research_gaps": [
+      "Cultivar leaf form (smooth vs savoy) and sex expression",
+      "Seed-stage plant dimensions for target cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Spinacia oleracea",
+    "research_record": "research/subjects/plants/spinach.md"
   },
   {
     "id": "kale",
@@ -1302,7 +1331,14 @@
       "leaf_construction": "ruffled",
       "flower_construction": "yellow-cross",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#3c6e5a"
+      "foliage_colour": "#3c6e5a",
+      "scientific_name": "Brassica oleracea Acephala Group",
+      "growth_architecture_detail": "Upright leafy biennial; edible leaves remain along an elongating central stem rather than forming a compact head.",
+      "leaf_morphology_detail": "Alternate simple leaves, broad ovate to oblong, blue-green or green, often waxy; margins range from wavy to deeply curled or serrated; prominent pale midrib.",
+      "branching_architecture": "Strong upright central stem with leaves attached at successive nodes; flowering in the second year produces an elongated branched flowering axis.",
+      "flower_placement_and_inflorescence": "Yellow four-petalled cruciform flowers in loose racemes on the second-year flowering stem.",
+      "fruit_or_harvest_morphology": "Long narrow siliques containing seeds; not a fleshy fruit.",
+      "renderer_construction_rules": "Construct a visible upright stem with alternate leaves at distinct nodes. Keep leaf margins cultivar-specific (curly, wavy or flat); do not fold leaves into a cabbage head. Add a flowering raceme only for the second-year stage."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1312,7 +1348,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/kale.md",
+      "growth_architecture_detail": "research/subjects/plants/kale.md",
+      "leaf_morphology_detail": "research/subjects/plants/kale.md",
+      "branching_architecture": "research/subjects/plants/kale.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/kale.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/kale.md",
+      "renderer_construction_rules": "research/subjects/plants/kale.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1322,13 +1365,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.rhs.org.uk/plants/106079/brassica-oleracea-acephala-group/details",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279435-1/general-information"
+    ],
+    "research_gaps": [
+      "Kale cultivar type not specified (curly, lacinato, flat-leaf)",
+      "Specific leaf colour and degree of margin curling"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Brassica oleracea Acephala Group",
+    "research_record": "research/subjects/plants/kale.md"
   },
   {
     "id": "cabbage",
@@ -1361,7 +1419,14 @@
       "leaf_construction": "round-waxy",
       "flower_construction": "yellow-cross",
       "fruit_or_harvest": "none",
-      "foliage_colour": "#8fb88a"
+      "foliage_colour": "#8fb88a",
+      "scientific_name": "Brassica oleracea Capitata Group",
+      "growth_architecture_detail": "Biennial crop usually harvested in the first year as a compact head formed by overlapping leaves around a shortened stem.",
+      "leaf_morphology_detail": "Large broad smooth or savoyed leaves; outer rosette leaves spread outward, while inner leaves curve inward and overlap tightly to form the head.",
+      "branching_architecture": "Stem base is greatly shortened; closely spaced leaf nodes produce the compact head. In the second year a central flowering stem elongates.",
+      "flower_placement_and_inflorescence": "Second-year open racemes of yellow four-petalled cruciform flowers; the edible head itself is vegetative leaf tissue, not a flower.",
+      "fruit_or_harvest_morphology": "Narrow siliques after flowering.",
+      "renderer_construction_rules": "Model head formation as successive leaves with increasing inward curvature around the apical meristem. Include larger outer wrapper leaves and compact inner folded leaves. Do not draw a broccoli-like bud cluster. Flower stalk belongs only to a bolted second-year plant."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1371,7 +1436,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/cabbage.md",
+      "growth_architecture_detail": "research/subjects/plants/cabbage.md",
+      "leaf_morphology_detail": "research/subjects/plants/cabbage.md",
+      "branching_architecture": "research/subjects/plants/cabbage.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/cabbage.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/cabbage.md",
+      "renderer_construction_rules": "research/subjects/plants/cabbage.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1381,13 +1453,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10934306/",
+      "https://www.worldfloraonline.org/taxon/wfo-0000571369"
+    ],
+    "research_gaps": [
+      "Cabbage type/cultivar (round, pointed, savoy, red)",
+      "Head colour, leaf blistering and wrapper-leaf habit"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Brassica oleracea Capitata Group",
+    "research_record": "research/subjects/plants/cabbage.md"
   },
   {
     "id": "broccoli",
@@ -1420,7 +1507,14 @@
       "leaf_construction": "lobed",
       "flower_construction": "yellow-cross",
       "fruit_or_harvest": "broccoli-head",
-      "foliage_colour": "#4f7f62"
+      "foliage_colour": "#4f7f62",
+      "scientific_name": "Brassica oleracea Italica Group",
+      "growth_architecture_detail": "Upright, branched biennial herb; cultivated broccoli is harvested for its enlarged immature branched inflorescence.",
+      "leaf_morphology_detail": "Alternate blue-green leaves, usually broad and lobed with a waxy surface and prominent midrib; leaf stalks attach along a thick central stem.",
+      "branching_architecture": "Strong upright central stem with lateral branches; the terminal and axillary inflorescences form compact clusters of unopened flower buds.",
+      "flower_placement_and_inflorescence": "Dense green clusters of immature flower buds; if allowed to bolt, branches elongate into racemes of yellow four-petalled flowers.",
+      "fruit_or_harvest_morphology": "Narrow siliques develop after flowering; the edible broccoli head is not fruit but immature inflorescence.",
+      "renderer_construction_rules": "Make the edible head as many tiny tightly packed green buds on branched stalks, with a thick central stem and large leaves below. Keep the head visibly granular/branched rather than a single smooth ball. A flowering stage should open into yellow cruciform flowers on elongated racemes."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1430,7 +1524,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/broccoli.md",
+      "growth_architecture_detail": "research/subjects/plants/broccoli.md",
+      "leaf_morphology_detail": "research/subjects/plants/broccoli.md",
+      "branching_architecture": "research/subjects/plants/broccoli.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/broccoli.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/broccoli.md",
+      "renderer_construction_rules": "research/subjects/plants/broccoli.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1440,13 +1541,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:279435-1/general-information",
+      "https://www.rhs.org.uk/plants/106079/brassica-oleracea-acephala-group/details"
+    ],
+    "research_gaps": [
+      "Broccoli cultivar (Calabrese vs sprouting)",
+      "Exact branching and head form for intended cultivar; cited Brassica source is species-level rather than cultivar-specific"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Brassica oleracea Italica Group",
+    "research_record": "research/subjects/plants/broccoli.md"
   },
   {
     "id": "chard",
@@ -1479,7 +1595,14 @@
       "leaf_construction": "broad",
       "flower_construction": "green-spike",
       "fruit_or_harvest": "coloured-stalk",
-      "foliage_colour": "#3f7f3a"
+      "foliage_colour": "#3f7f3a",
+      "scientific_name": "Beta vulgaris Cicla Group",
+      "growth_architecture_detail": "Upright basal clump of large leaves; cultivated primarily for broad fleshy petioles and midribs.",
+      "leaf_morphology_detail": "Large alternate leaves, ovate to cordate, glossy or puckered, with broad blades; very conspicuous thick coloured petioles and midribs.",
+      "branching_architecture": "Short crown in the vegetative stage; leaves arise from the basal crown on long, thick petioles. A tall branched flowering stem develops in the second year.",
+      "flower_placement_and_inflorescence": "Small greenish flowers in clusters along a long branched paniculate spike; not showy.",
+      "fruit_or_harvest_morphology": "Small fruit units grouped in persistent thickened perianth bases (glomerules/seedballs).",
+      "renderer_construction_rules": "Emphasize the fleshy petiole and midrib as structural elements; their colour may be white, yellow, orange, pink or red depending on cultivar. Do not create a swollen beet root. Keep the edible leaves in a basal clump; flowering is a tall second-year event."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1489,7 +1612,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/chard.md",
+      "growth_architecture_detail": "research/subjects/plants/chard.md",
+      "leaf_morphology_detail": "research/subjects/plants/chard.md",
+      "branching_architecture": "research/subjects/plants/chard.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/chard.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/chard.md",
+      "renderer_construction_rules": "research/subjects/plants/chard.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1499,13 +1629,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://plantuse.plantnet.org/en/Beta_vulgaris_%28PROSEA%29",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:164505-1/general-information"
+    ],
+    "research_gaps": [
+      "Chard cultivar and petiole colour",
+      "Exact leaf blade shape/texture for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Beta vulgaris Cicla Group",
+    "research_record": "research/subjects/plants/chard.md"
   },
   {
     "id": "carrot",
@@ -1620,7 +1765,14 @@
       "leaf_construction": "broad-veined",
       "flower_construction": "green-spike",
       "fruit_or_harvest": "beet-root",
-      "foliage_colour": "#4a7a3a"
+      "foliage_colour": "#4a7a3a",
+      "scientific_name": "Beta vulgaris Conditiva Group",
+      "growth_architecture_detail": "Biennial root crop; basal rosette above a swollen hypocotyl and upper taproot.",
+      "leaf_morphology_detail": "Basal leaves alternate in a rosette, long-petiolate, ovate to cordate, often wavy and puckered; red or purple veins may be prominent.",
+      "branching_architecture": "Short vegetative crown above a swollen storage organ. In the second year, a tall branched flowering stem rises from the crown.",
+      "flower_placement_and_inflorescence": "Small greenish flowers in clusters along a long branched paniculate spike; not showy.",
+      "fruit_or_harvest_morphology": "Seed units are grouped in persistent perianth bases into rough seedballs (glomerules); edible beet is a swollen hypocotyl/root, not a fruit.",
+      "renderer_construction_rules": "Show the swollen root at the soil line, with a narrowing taproot below and a basal rosette above. Petioles emerge from the crown. Do not give it chard's oversized colourful petioles as the primary feature. Add tall green flowering stems only in seed stage."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1630,7 +1782,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/beet.md",
+      "growth_architecture_detail": "research/subjects/plants/beet.md",
+      "leaf_morphology_detail": "research/subjects/plants/beet.md",
+      "branching_architecture": "research/subjects/plants/beet.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/beet.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/beet.md",
+      "renderer_construction_rules": "research/subjects/plants/beet.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1640,13 +1799,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://plantuse.plantnet.org/en/Beta_vulgaris_%28PROSEA%29",
+      "https://www.nzflora.info/factsheet/taxon/Beta-vulgaris.html"
+    ],
+    "research_gaps": [
+      "Beet cultivar root shape and flesh/skin colour",
+      "Leaf vein and petiole pigmentation for cultivar"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Beta vulgaris Conditiva Group",
+    "research_record": "research/subjects/plants/beet.md"
   },
   {
     "id": "radish",
@@ -1679,7 +1853,14 @@
       "leaf_construction": "lyrate",
       "flower_construction": "yellow-cross",
       "fruit_or_harvest": "radish-root",
-      "foliage_colour": "#6aa84a"
+      "foliage_colour": "#6aa84a",
+      "scientific_name": "Raphanus sativus",
+      "growth_architecture_detail": "Annual or biennial root crop with low basal rosette; flowering plants produce an erect branched stem.",
+      "leaf_morphology_detail": "Rough lyrate-pinnate basal leaves with a large terminal lobe and smaller lateral lobes; upper stem leaves become smaller and simpler.",
+      "branching_architecture": "Short crown and swollen taproot in the edible stage; a reddish or green flowering stem elongates from the crown when bolting.",
+      "flower_placement_and_inflorescence": "Four-petalled white, pink or mauve flowers in elongated racemes; typical Brassicaceae cross shape.",
+      "fruit_or_harvest_morphology": "Elongated silique, often swollen or somewhat constricted around seeds; edible radish is a tuberous taproot, not fruit.",
+      "renderer_construction_rules": "Draw the root as a swollen napiform, cylindrical or tapered storage root with a fine lower taproot. Leaf rosette should be lyrate, not simple oval leaves. In flowering stage, add an erect raceme and elongated seed pods."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1689,7 +1870,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/radish.md",
+      "growth_architecture_detail": "research/subjects/plants/radish.md",
+      "leaf_morphology_detail": "research/subjects/plants/radish.md",
+      "branching_architecture": "research/subjects/plants/radish.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/radish.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/radish.md",
+      "renderer_construction_rules": "research/subjects/plants/radish.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1699,13 +1887,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://www.nzflora.info/factsheet/taxon/Raphanus-sativus.html",
+      "https://biotanz.landcareresearch.co.nz/scientific-names/ec14d66f-f6bd-4ed4-8bd2-9948466a479a"
+    ],
+    "research_gaps": [
+      "Radish cultivar/root type (round, long, daikon)",
+      "Cultivar-specific root colour and leaf roughness"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Raphanus sativus",
+    "research_record": "research/subjects/plants/radish.md"
   },
   {
     "id": "onion",
@@ -1870,7 +2073,14 @@
       "leaf_construction": "cladode",
       "flower_construction": "tiny-bell",
       "fruit_or_harvest": "red-berry",
-      "foliage_colour": "#5f9f3a"
+      "foliage_colour": "#5f9f3a",
+      "scientific_name": "Asparagus officinalis",
+      "growth_architecture_detail": "Perennial crown with underground rhizome; spring edible spears mature into tall, finely branched fern-like shoots.",
+      "leaf_morphology_detail": "True leaves are tiny papery scales; green needle-like structures are cladodes (modified branchlets) in clusters at nodes, not broad leaves.",
+      "branching_architecture": "Several upright spears emerge from a crown. Mature stems branch repeatedly in the upper portion, with fine threadlike cladodes arranged in fascicles.",
+      "flower_placement_and_inflorescence": "Small yellowish-green bell-shaped flowers in axillary racemes; plants are dioecious or bear unisexual flowers.",
+      "fruit_or_harvest_morphology": "Small red berries on female plants.",
+      "renderer_construction_rules": "Distinguish the harvest spear from mature fern foliage. Mature form must be airy and finely branched, with bundles of slender cladodes along branchlets; never use broad leaves. Place small flowers and red berries at axillary positions."
     },
     "user_data_provenance": {
       "common_name": "plants.js",
@@ -1880,7 +2090,14 @@
       "leaf_construction": "tools/plant-art.py PROFILES",
       "flower_construction": "tools/plant-art.py PROFILES",
       "fruit_or_harvest": "tools/plant-art.py PROFILES",
-      "foliage_colour": "plants.js"
+      "foliage_colour": "plants.js",
+      "scientific_name": "research/subjects/plants/asparagus.md",
+      "growth_architecture_detail": "research/subjects/plants/asparagus.md",
+      "leaf_morphology_detail": "research/subjects/plants/asparagus.md",
+      "branching_architecture": "research/subjects/plants/asparagus.md",
+      "flower_placement_and_inflorescence": "research/subjects/plants/asparagus.md",
+      "fruit_or_harvest_morphology": "research/subjects/plants/asparagus.md",
+      "renderer_construction_rules": "research/subjects/plants/asparagus.md"
     },
     "populated_user_data_fields": [
       "common_name",
@@ -1890,13 +2107,28 @@
       "leaf_construction",
       "flower_construction",
       "fruit_or_harvest",
-      "foliage_colour"
+      "foliage_colour",
+      "scientific_name",
+      "growth_architecture_detail",
+      "leaf_morphology_detail",
+      "branching_architecture",
+      "flower_placement_and_inflorescence",
+      "fruit_or_harvest_morphology",
+      "renderer_construction_rules"
     ],
-    "populated_user_data_count": 8,
-    "research_status": "profile-only record; botanical research still needed",
-    "research_sources": [],
-    "research_gaps": [],
-    "artwork_status": "no artwork generated"
+    "populated_user_data_count": 15,
+    "research_status": "species-specific botanical research added; linked sources recorded; cultivar/stage gaps retained",
+    "research_sources": [
+      "https://efloras.org/florataxon.aspx?flora_id=1&taxon_id=200027573",
+      "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:531229-1/general-information"
+    ],
+    "research_gaps": [
+      "Cultivar and plant sex",
+      "Whether the target rendering is edible spear stage or mature fern stage"
+    ],
+    "artwork_status": "no artwork generated",
+    "scientific_name": "Asparagus officinalis",
+    "research_record": "research/subjects/plants/asparagus.md"
   },
   {
     "id": "rhubarb",
