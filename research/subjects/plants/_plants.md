@@ -76,3 +76,11 @@ Moved here from PLANT_ART.md (Planting-Guide and euclid), which this entry and i
 ## Flower workflow
 
 New flowering-plant work follows `flower-rendering-workflow.md`: species-specific botanical research, growth architecture, separate parts, seeded variation, shared life stages, and rendered contact-sheet inspection before release. The tomato's recursive shoot pattern is used only where the species' actual growth habit supports it.
+
+
+## Additional flower studies
+
+- `cosmos.md`: airy, finely dissected opposite foliage and terminal composite heads.
+- `zinnia.md`: bushy opposite-leaved growth and solitary terminal composite heads.
+- `petunia.md`: trailing/spreading branches and solitary axillary trumpet flowers.
+- `fuchsia.md`: shrub habit with pendent axillary flowers, tubular calyx and four sepals/four petals.
